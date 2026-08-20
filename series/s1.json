@@ -41,6 +41,47 @@
           "apiCalls": 33
         }
       }
+    },
+    {
+      "id": "s1/g002",
+      "card": "a-claude-opus-5-med-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "medium"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 26,
+        "W": 38
+      },
+      "moves": 64,
+      "incidents": [],
+      "tokens": {
+        "B": {
+          "input": 220,
+          "cacheRead": 16290581,
+          "cacheCreation": 312881,
+          "output": 166829,
+          "apiCalls": 110
+        },
+        "W": {
+          "input": 126,
+          "cacheRead": 15889636,
+          "cacheCreation": 494245,
+          "output": 377492,
+          "apiCalls": 63
+        }
+      },
+      "finishedAt": "2026-08-20T04:48:14.469Z"
     }
   ]
 }
