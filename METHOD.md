@@ -1,66 +1,66 @@
-# 測り方
+# Methodology
 
-モデル × Effort の対局シリーズで棋力と信頼性を測る方式。
+How match series measure the playing strength and reliability of model × effort seats.
 
-## 用語
+## Terms
 
-| 語 | 意味 |
+| Term | Meaning |
 |---|---|
-| 席 | `モデル · Effort` の組。例: `Claude · high`。Effort をモデル間で固定しない(モデルごとに最適段が違うため) |
-| 局 | 1ゲーム。計測は 8×8 のみ(4×4 は後手必勝、6×6 も後手勝ちが既知) |
-| カード | 同一ペアの4局(先後2局ずつ)。シリーズの最小単位 |
-| ラダー | 同一モデル内の隣接 Effort 戦。Phase A |
-| 代表戦 | 各モデルの代表段どうしの総当たり。Phase B |
+| Seat | A `model · effort` pair, e.g. `Claude · high`. Effort is never fixed across models — each model has its own best tier |
+| Game | One game. Measurement uses 8×8 only (4×4 is a known second-player win, and 6×6 also favors the second player) |
+| Card | Four games of the same pairing, two with each color. The smallest unit of a series |
+| Ladder | Adjacent-effort matches within one model. Phase A |
+| Finals | Round-robin between each model's representative seat. Phase B |
 
-## 指標
+## Metrics
 
-- 主指標: 局勝数(カード内)
-- 副指標: 合計石差
-- 事故率: 局ごと・サイドごとに記録
-  - 不正手試行: `play` が `illegal move` で拒否された回数(`not your turn` は待機への競合であり非計上)
-  - フォーフィット: 手番のまま15分停滞した側の負け
-  - タスク死亡: 選手プロセスの異常終了。フォーフィットとして局を閉じる
+- Primary: game wins within a card
+- Secondary: total stone margin
+- Incident rate, recorded per game and per side:
+  - Illegal-move attempts: `play` calls rejected as `illegal move` (`not your turn` is a race against `wait`, not counted)
+  - Forfeit: a side that stalls on its own turn for 15 minutes loses the game
+  - Task death: abnormal termination of a player process; the game closes as a forfeit
 
-事故率は棋力ではなく、エージェントが審判プロトコルの上で壊れず走るかという信頼性の計測。棋力と独立に読む。
+The incident rate measures reliability — whether an agent runs the referee protocol without breaking — not playing strength. Read it independently.
 
-## カード判定規則
+## Card rules
 
-1. 4局の局勝数が多い方がカード勝者
-2. 2–2 なら合計石差
-3. 石差も同なら:
-   - Phase A(ラダー): 下位 Effort の勝ち扱い(同格なら安い段を正とする)
-   - Phase B(代表戦): 引き分け
+1. More game wins takes the card
+2. At 2–2, total stone margin decides
+3. Still tied:
+   - Phase A (ladder): the lower effort wins the card (when tiers are even, the cheaper one is canonical)
+   - Phase B (finals): the card is a draw
 
-## Phase A — Effort ラダー
+## Phase A — effort ladder
 
-全 (モデル × Effort) の総当たりはしない。組合せが多すぎ、Effort の段名もベンダー間で揃っていないため。代わりにモデル内で代表段を決める。
+There is no full round-robin across every (model × effort): the combinations are too many and effort tier names are not aligned across vendors. Instead, each model settles its representative tier internally.
 
-1. モデルが受け付ける Effort の段列を昇順で確定する
-2. 中央の隣接ペア(例: medium vs high)で初戦
-3. カード勝者が、まだ当たっていない側の隣接段と次カードを戦う
-4. 両隣に勝った段(端の段は片隣)を、そのモデルの代表段とする
+1. Fix the model's accepted effort tiers in ascending order
+2. Open with the central adjacent pair (e.g. medium vs high)
+3. The card winner then plays its untested neighbor
+4. The tier that beats both neighbors (or its only neighbor, at the ends) becomes the model's representative
 
-モデルあたり2〜3カードで収束する。
+This converges in 2–3 cards per model.
 
-## Phase B — 代表戦
+## Phase B — finals
 
-代表段どうしの総当たり。1ペア1カード。勝ち点は 勝2 / 分1 / 敗0。同勝ち点は直接対決 → 合計石差の順。
+Round-robin between representatives, one card per pairing. Points: win 2 / draw 1 / loss 0. Ties break by head-to-head result, then total stone margin.
 
-## 記録形式
+## Record format
 
 ```
 matches/<seriesId>/<cardId>-g<n>.json
 ```
 
-match 記録は現行フィールド(`history` / `players` / `winner` など)に加えて、シリーズ運用で以下を拡張する(予定):
+Beyond the current fields (`history` / `players` / `winner`, …), series play will extend records with (planned):
 
 - `seats.B` / `seats.W`: `{ agentType, model, effort }`
 - `incidents`: `[{ side, kind: "illegal" | "forfeit" | "task-death", at, detail }]`
 
-`history` に全手順が残るため、記録の合法性は誰でも再生検証できる。
+The full move sequence stays in `history`, so anyone can replay a record and verify its legality.
 
-## シーズン1(予定)
+## Season 1 (planned)
 
-- 対象: Claude / Codex / Grok
-- 規模: Phase A 6〜8カード + Phase B 3カード
-- 既存のエキシビション(8×8 Grok 4.6 vs 4.5)はモデル間戦のためシーズン成績外
+- Models: Claude / Codex / Grok
+- Scale: 6–8 ladder cards + 3 finals cards
+- The existing exhibition (8×8, Grok 4.6 vs 4.5) is a cross-model game and stays outside season standings
