@@ -13,10 +13,18 @@ const previous = new Map();
 
 const labelOf = (side) => (side === "B" ? "Black" : "White");
 
+const seatLabelOf = (side, view) => {
+  const seat = view.seats?.[side];
+  if (seat) {
+    return `${seat.model} · ${seat.effort}`;
+  }
+  return view.players[side].model || "";
+};
+
 const fillSeat = (side, view) => {
   const player = view.players[side];
   document.getElementById(`name-${side}`).textContent = player.name;
-  document.getElementById(`model-${side}`).textContent = player.model || "";
+  document.getElementById(`model-${side}`).textContent = seatLabelOf(side, view);
   document.getElementById(`score-${side}`).textContent = String(view.counts[side]);
   document.getElementById(`say-${side}`).textContent = player.say || "";
   const seat = document.getElementById(`seat-${side}`);

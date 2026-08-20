@@ -332,6 +332,7 @@ const viewOf = (match) => {
     lastMove: match.lastMove,
     history: match.history,
     players: match.players,
+    seats: match.seats ?? null,
     updatedAt: match.updatedAt,
   };
 };
