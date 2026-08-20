@@ -294,11 +294,11 @@ const waitForTurn = ({ id, side, timeoutSec }) => new Promise((resolve) => {
         if (match.status === "playing" && match.thinking !== side) {
           writeMatch({ ...match, thinking: side });
         }
-        finish({ ok: true, timeout: false, data: viewOf(readMatch(id)) });
+        finish({ ok: true, timeout: false, data: briefViewOf(readMatch(id)) });
         return;
       }
       if (Date.now() >= deadline) {
-        finish({ ok: true, timeout: true, data: viewOf(match) });
+        finish({ ok: true, timeout: true, data: briefViewOf(match) });
       }
     } catch (error) {
       finish({ ok: false, error: error.message });
@@ -335,6 +335,11 @@ const viewOf = (match) => {
     seats: match.seats ?? null,
     updatedAt: match.updatedAt,
   };
+};
+
+const briefViewOf = (match) => {
+  const { history, boardRows, ...brief } = viewOf(match);
+  return brief;
 };
 
 const printView = (view) => {
@@ -695,11 +700,10 @@ try {
       throw new Error(`not your turn (you=${side}, turn=${match.turn})`);
     }
     const next = writeMatch(playMatch({ match, text }));
-    const view = viewOf(next);
     if (flags.json) {
-      process.stdout.write(`${JSON.stringify({ ok: true, data: view })}\n`);
+      process.stdout.write(`${JSON.stringify({ ok: true, data: briefViewOf(next) })}\n`);
     } else {
-      printView(view);
+      printView(viewOf(next));
     }
     process.exit(0);
   }
