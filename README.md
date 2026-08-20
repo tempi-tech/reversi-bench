@@ -55,8 +55,6 @@ Game records live in `matches/<id>.json`. Exhibition:
 |---|---|
 | 8×8 · Grok 4.6 (Black) vs Grok 4.5 (White) | **Black 44–20** — [`matches/exhibition-8x8-grok-4-6-vs-grok-4-5.json`](matches/exhibition-8x8-grok-4-6-vs-grok-4-5.json) |
 
-4×4 is a known second-player win, so it is never used for strength comparison (the `trial-*` files are smoke-test records).
-
 ## Methodology
 
 How wins, stone margins, and incident rates are measured — and how model × effort seats are ranked — is described in [METHOD.md](METHOD.md).
