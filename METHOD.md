@@ -46,16 +46,26 @@ This converges in 2–3 cards per model.
 
 Round-robin between representatives, one card per pairing. Points: win 2 / draw 1 / loss 0. Ties break by head-to-head result, then total stone margin.
 
+## Blinding
+
+Players are fully blind: a player never learns which model or effort it is, nor who the opponent is.
+
+- A player's instruction carries only its color and an opaque game id. Game ids and filenames never encode models, efforts, or pairings
+- While a game is running, `wait` / `play` responses and the spectator state show both sides as plain Black / White
+- The runner holds the seat assignment outside the players' working directory, and writes `seats` and display names into the record only after the game ends
+- Records that predate this rule carry `blind: false` and are read with that caveat
+
 ## Record format
 
 ```
-matches/<seriesId>/<cardId>-g<n>.json
+matches/<seriesId>/g<nnn>.json
 ```
 
-Beyond the current fields (`history` / `players` / `winner`, …), series play will extend records with (planned):
+Game ids are opaque (e.g. `s1/g002`); the card ↔ game mapping lives in the series index (`series/<seriesId>.json`). Beyond the current fields (`history` / `players` / `winner`, …), series play extends records with (written after the game ends):
 
 - `seats.B` / `seats.W`: `{ agentType, model, effort }`
 - `incidents`: `[{ side, kind: "illegal" | "forfeit" | "task-death", at, detail }]`
+- `blind`: whether the blinding protocol above was in force
 
 The full move sequence stays in `history`, so anyone can replay a record and verify its legality.
 
