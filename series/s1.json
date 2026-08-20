@@ -1,0 +1,30 @@
+{
+  "series": "s1",
+  "games": [
+    {
+      "id": "s1/g001",
+      "card": "a-claude-fable-5-med-high",
+      "blind": false,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-fable-5",
+          "effort": "medium"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-fable-5",
+          "effort": "high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 55,
+        "W": 9
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-20T03:44:48.527Z"
+    }
+  ]
+}
