@@ -24,7 +24,23 @@
       },
       "moves": 63,
       "incidents": [],
-      "finishedAt": "2026-08-20T03:44:48.527Z"
+      "finishedAt": "2026-08-20T03:44:48.527Z",
+      "tokens": {
+        "B": {
+          "input": 146,
+          "cacheRead": 10133795,
+          "cacheCreation": 610945,
+          "output": 285769,
+          "apiCalls": 73
+        },
+        "W": {
+          "input": 190,
+          "cacheRead": 11493199,
+          "cacheCreation": 587327,
+          "output": 481596,
+          "apiCalls": 95
+        }
+      }
     }
   ]
 }

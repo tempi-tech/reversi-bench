@@ -1,9 +1,81 @@
 {
+  "summary": {
+    "game": "s1/g001",
+    "card": "a-claude-fable-5-med-high",
+    "winner": "B",
+    "score": {
+      "B": 55,
+      "W": 9
+    },
+    "seats": {
+      "B": "claude-fable-5 · medium",
+      "W": "claude-fable-5 · high"
+    },
+    "moves": 63,
+    "blind": false,
+    "tokens": {
+      "B": {
+        "input": 146,
+        "cacheRead": 10133795,
+        "cacheCreation": 610945,
+        "output": 285769,
+        "apiCalls": 73
+      },
+      "W": {
+        "input": 190,
+        "cacheRead": 11493199,
+        "cacheCreation": 587327,
+        "output": 481596,
+        "apiCalls": 95
+      }
+    }
+  },
   "id": "s1/g001",
   "size": 8,
-  "title": "Reversi 8\u00d78",
+  "title": "Reversi 8×8",
   "createdAt": "2026-08-20T02:42:55.357Z",
   "updatedAt": "2026-08-20T03:44:48.527Z",
+  "status": "over",
+  "winner": "B",
+  "turn": "B",
+  "thinking": null,
+  "lastMove": {
+    "side": "B",
+    "move": "g1",
+    "flips": [
+      "f2",
+      "e3",
+      "d4",
+      "c5",
+      "b6"
+    ]
+  },
+  "players": {
+    "B": {
+      "name": "Fable 5 · medium",
+      "model": "claude-fable-5",
+      "say": ""
+    },
+    "W": {
+      "name": "Fable 5 · high",
+      "model": "claude-fable-5",
+      "say": ""
+    }
+  },
+  "seats": {
+    "B": {
+      "agentType": "claude",
+      "model": "claude-fable-5",
+      "effort": "medium"
+    },
+    "W": {
+      "agentType": "claude",
+      "model": "claude-fable-5",
+      "effort": "high"
+    }
+  },
+  "blind": false,
+  "incidents": [],
   "cells": [
     "B",
     "B",
@@ -70,21 +142,6 @@
     "B",
     "B"
   ],
-  "turn": "B",
-  "status": "over",
-  "winner": "B",
-  "thinking": null,
-  "lastMove": {
-    "side": "B",
-    "move": "g1",
-    "flips": [
-      "f2",
-      "e3",
-      "d4",
-      "c5",
-      "b6"
-    ]
-  },
   "history": [
     {
       "side": "B",
@@ -679,30 +736,20 @@
       "at": "2026-08-20T03:44:48.527Z"
     }
   ],
-  "players": {
+  "tokens": {
     "B": {
-      "name": "Fable 5 \u00b7 medium",
-      "model": "claude-fable-5",
-      "say": ""
+      "input": 146,
+      "cacheRead": 10133795,
+      "cacheCreation": 610945,
+      "output": 285769,
+      "apiCalls": 73
     },
     "W": {
-      "name": "Fable 5 \u00b7 high",
-      "model": "claude-fable-5",
-      "say": ""
+      "input": 190,
+      "cacheRead": 11493199,
+      "cacheCreation": 587327,
+      "output": 481596,
+      "apiCalls": 95
     }
-  },
-  "seats": {
-    "B": {
-      "agentType": "claude",
-      "model": "claude-fable-5",
-      "effort": "medium"
-    },
-    "W": {
-      "agentType": "claude",
-      "model": "claude-fable-5",
-      "effort": "high"
-    }
-  },
-  "incidents": [],
-  "blind": false
+  }
 }
