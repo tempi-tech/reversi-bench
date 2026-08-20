@@ -82,6 +82,48 @@
         }
       },
       "finishedAt": "2026-08-20T04:48:14.469Z"
+    },
+    {
+      "id": "s1/g003",
+      "card": "b-claude-fable-5-vs-claude-opus-5-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-fable-5",
+          "effort": "medium"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 13,
+        "W": 51
+      },
+      "moves": 63,
+      "incidents": [],
+      "tokens": {
+        "B": {
+          "input": 78,
+          "cacheRead": 4079449,
+          "cacheCreation": 177516,
+          "output": 132492,
+          "apiCalls": 39
+        },
+        "W": {
+          "input": 64,
+          "cacheRead": 4116852,
+          "cacheCreation": 267315,
+          "output": 224643,
+          "apiCalls": 32
+        }
+      },
+      "referee": "0d7c844",
+      "finishedAt": "2026-08-20T07:03:56.341Z"
     }
   ]
 }
