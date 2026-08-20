@@ -480,13 +480,28 @@ const serveFile = ({ response, file }) => {
   response.end(body);
 };
 
-const startServer = ({ matchId, port }) => {
+const startServer = ({ matchId, port, seatsFile, seatsKey }) => {
+  const overlayFor = (search) => {
+    if (!seatsFile || !seatsKey || search.get("key") !== seatsKey) {
+      return null;
+    }
+    try {
+      return JSON.parse(fs.readFileSync(seatsFile, "utf8"));
+    } catch {
+      return null;
+    }
+  };
+  const viewFor = (overlay) => {
+    const view = viewOf(readMatch(matchId));
+    if (overlay?.seats) {
+      return { ...view, seats: overlay.seats };
+    }
+    return view;
+  };
   const clients = new Set();
   const broadcast = () => {
-    const view = viewOf(readMatch(matchId));
-    const payload = `data: ${JSON.stringify(view)}\n\n`;
     for (const client of clients) {
-      client.write(payload);
+      client.response.write(`data: ${JSON.stringify(viewFor(client.overlay))}\n\n`);
     }
   };
   let debounce = null;
@@ -516,7 +531,7 @@ const startServer = ({ matchId, port }) => {
     }
     if (request.method === "GET" && url.pathname === "/api/state") {
       try {
-        sendJson({ response, status: 200, body: viewOf(readMatch(matchId)) });
+        sendJson({ response, status: 200, body: viewFor(overlayFor(url.searchParams)) });
       } catch (error) {
         sendJson({ response, status: 404, body: { error: error.message } });
       }
@@ -528,14 +543,15 @@ const startServer = ({ matchId, port }) => {
         "Cache-Control": "no-store",
         Connection: "keep-alive",
       });
-      clients.add(response);
+      const client = { response, overlay: overlayFor(url.searchParams) };
+      clients.add(client);
       try {
-        response.write(`data: ${JSON.stringify(viewOf(readMatch(matchId)))}\n\n`);
+        response.write(`data: ${JSON.stringify(viewFor(client.overlay))}\n\n`);
       } catch {
         response.write(`data: ${JSON.stringify({ error: "match not found" })}\n\n`);
       }
       request.on("close", () => {
-        clients.delete(response);
+        clients.delete(client);
       });
       return;
     }
@@ -616,7 +632,7 @@ const helpText = `reversi — local match referee
   node reversi.mjs thinking <B|W|clear> [--id current]
   node reversi.mjs say <B|W> <text...> [--id current]
   node reversi.mjs prompt [--id current]
-  node reversi.mjs serve [--id current] [--port 8765]
+  node reversi.mjs serve [--id current] [--port 8765] [--seats file --key token]
   node reversi.mjs selftest
 `;
 
@@ -750,7 +766,12 @@ try {
       fail("invalid port");
     }
     readMatch(matchId);
-    startServer({ matchId, port });
+    startServer({
+      matchId,
+      port,
+      seatsFile: typeof flags.seats === "string" ? flags.seats : null,
+      seatsKey: typeof flags.key === "string" ? flags.key : null,
+    });
   } else {
     fail(`unknown command: ${command}`);
   }

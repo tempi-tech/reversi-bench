@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reversi Bench — Boards</title>
+    <style>
+      body { margin: 0; background: #0c0b09; }
+      main { display: grid; width: 100vw; height: 100vh; grid-template-columns: repeat(var(--cols, 1), 1fr); }
+      .cell { position: relative; overflow: hidden; }
+      iframe { width: 1280px; height: 1080px; border: 0; transform-origin: top left; }
+    </style>
+  </head>
+  <body>
+    <main id="boards"></main>
+    <script>
+      const design = { width: 1280, height: 1080 };
+      const boards = document.getElementById("boards");
+      const frames = new URLSearchParams(window.location.search).getAll("b").map((entry) => {
+        const [port, key] = entry.split(":");
+        const cell = document.createElement("div");
+        cell.className = "cell";
+        const frame = document.createElement("iframe");
+        frame.src = `http://127.0.0.1:${port}/${key ? `?key=${key}` : ""}`;
+        cell.append(frame);
+        boards.append(cell);
+        return frame;
+      });
+      const layout = () => {
+        const count = Math.max(frames.length, 1);
+        const best = Array.from({ length: count }, (_, index) => index + 1)
+          .map((cols) => {
+            const rows = Math.ceil(count / cols);
+            const scale = Math.min(
+              window.innerWidth / cols / design.width,
+              window.innerHeight / rows / design.height,
+            );
+            return { cols, scale };
+          })
+          .reduce((left, right) => (right.scale > left.scale ? right : left));
+        boards.style.setProperty("--cols", String(best.cols));
+        for (const frame of frames) {
+          frame.style.transform = `scale(${best.scale})`;
+        }
+      };
+      window.addEventListener("resize", layout);
+      layout();
+    </script>
+  </body>
+</html>

@@ -132,8 +132,10 @@ const render = (view) => {
     : "Opening position";
 };
 
+const query = window.location.search;
+
 const pull = async () => {
-  const response = await fetch("/api/state", { cache: "no-store" });
+  const response = await fetch(`/api/state${query}`, { cache: "no-store" });
   if (!response.ok) {
     return;
   }
@@ -141,7 +143,7 @@ const pull = async () => {
 };
 
 const listen = () => {
-  const source = new EventSource("/api/events");
+  const source = new EventSource(`/api/events${query}`);
   source.onmessage = (event) => {
     render(JSON.parse(event.data));
   };
