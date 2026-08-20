@@ -54,6 +54,7 @@ Players are fully blind: a player never learns which model or effort it is, nor 
 - While a game is running, `wait` / `play` responses and the spectator state show both sides as plain Black / White
 - Players run in isolated temporary working directories, never inside the records checkout. The referee and the live match file live in a separate arena directory; finished records are copied into the archive afterwards
 - The runner holds the seat assignment outside anything players can reach, and writes `seats` and display names into the record only after the game ends
+- The live spectator board may still show seats through a keyed overlay: `serve --seats <file> --key <token>` merges the assignment only into responses carrying that unguessable key. Keyless requests — the only ones a player could make — stay neutral
 - Records that predate this rule carry `blind: false` and are read with that caveat
 
 ## Record format
