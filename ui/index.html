@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reversi Bench</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,640;1,9..144,500&family=Outfit:wght@380;500;620&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="glow"></div>
+    <div class="grain"></div>
+    <header class="mast">
+      <p class="kicker">AGI Lab · Reversi Bench</p>
+      <h1 id="title">Reversi</h1>
+      <p class="live" id="live"><span></span> Waiting for the table</p>
+    </header>
+    <main class="stage">
+      <article class="seat black" id="seat-B" data-side="B">
+        <p class="role">Black</p>
+        <h2 id="name-B">Black</h2>
+        <p class="model" id="model-B"></p>
+        <p class="score" id="score-B">0</p>
+        <p class="mood" id="mood-B">Seated</p>
+        <p class="say" id="say-B"></p>
+      </article>
+      <section class="table">
+        <div class="slab">
+          <p class="result hidden" id="result-banner">
+            <span class="result-kicker">Final</span>
+            <span id="result">—</span>
+            <span id="final-score"></span>
+          </p>
+          <div class="felt">
+            <div class="ranks" id="ranks"></div>
+            <div class="files" id="files"></div>
+            <div class="grid" id="board" style="--size: 4"></div>
+          </div>
+        </div>
+        <p class="caption" id="caption">Opening position</p>
+      </section>
+      <article class="seat white" id="seat-W" data-side="W">
+        <p class="role">White</p>
+        <h2 id="name-W">White</h2>
+        <p class="model" id="model-W"></p>
+        <p class="score" id="score-W">0</p>
+        <p class="mood" id="mood-W">Seated</p>
+        <p class="say" id="say-W"></p>
+      </article>
+    </main>
+    <footer class="strip">
+      <ol class="log" id="log"></ol>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>
