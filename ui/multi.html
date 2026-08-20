@@ -5,45 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Reversi Bench — Boards</title>
     <style>
-      body { margin: 0; background: #0c0b09; }
-      main { display: grid; width: 100vw; height: 100vh; grid-template-columns: repeat(var(--cols, 1), 1fr); }
-      .cell { position: relative; overflow: hidden; }
-      iframe { width: 1280px; height: 1080px; border: 0; transform-origin: top left; }
+      body { margin: 0; background: #0c0b09; display: flex; flex-direction: column; height: 100vh; font-family: Outfit, sans-serif; }
+      #stage { position: relative; flex: 1; overflow: hidden; }
+      #stage iframe { position: absolute; top: 0; width: 1280px; height: 1080px; border: 0; transform-origin: top left; }
+      #strip { display: flex; gap: 10px; padding: 8px 10px; justify-content: center; }
+      .thumb { position: relative; cursor: pointer; border: 1px solid rgba(243, 234, 214, 0.18); }
+      .thumb.active { border-color: #d9b56a; }
+      .thumb iframe { width: 1280px; height: 1080px; border: 0; transform-origin: top left; pointer-events: none; }
+      .thumb .label {
+        position: absolute; inset: auto 0 0 0; padding: 2px 6px;
+        background: rgba(12, 11, 9, 0.82); color: #f3ead6;
+        font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+      }
+      .thumb .label b { color: #d9b56a; font-weight: 500; }
     </style>
   </head>
   <body>
-    <main id="boards"></main>
+    <main id="stage"><iframe id="featured"></iframe></main>
+    <nav id="strip"></nav>
     <script>
       const design = { width: 1280, height: 1080 };
-      const boards = document.getElementById("boards");
-      const frames = new URLSearchParams(window.location.search).getAll("b").map((entry) => {
-        const [port, key] = entry.split(":");
-        const cell = document.createElement("div");
-        cell.className = "cell";
-        const frame = document.createElement("iframe");
-        frame.src = `http://127.0.0.1:${port}/${key ? `?key=${key}` : ""}`;
-        cell.append(frame);
-        boards.append(cell);
-        return frame;
+      const thumbScale = 0.11;
+      const stage = document.getElementById("stage");
+      const featured = document.getElementById("featured");
+      const strip = document.getElementById("strip");
+      const boards = new URLSearchParams(window.location.search).getAll("b").map((entry) => {
+        const [port, key, label] = entry.split(":");
+        return {
+          port,
+          label: label || port,
+          url: `http://127.0.0.1:${port}/${key ? `?key=${key}` : ""}`,
+          api: `http://127.0.0.1:${port}/api/state${key ? `?key=${key}` : ""}`,
+        };
       });
-      const layout = () => {
-        const count = Math.max(frames.length, 1);
-        const best = Array.from({ length: count }, (_, index) => index + 1)
-          .map((cols) => {
-            const rows = Math.ceil(count / cols);
-            const scale = Math.min(
-              window.innerWidth / cols / design.width,
-              window.innerHeight / rows / design.height,
-            );
-            return { cols, scale };
-          })
-          .reduce((left, right) => (right.scale > left.scale ? right : left));
-        boards.style.setProperty("--cols", String(best.cols));
-        for (const frame of frames) {
-          frame.style.transform = `scale(${best.scale})`;
+      const select = (index) => {
+        const board = boards[index];
+        if (featured.dataset.index !== String(index)) {
+          featured.dataset.index = String(index);
+          featured.src = board.url;
+        }
+        for (const [i, thumb] of strip.children.length ? [...strip.children].entries() : []) {
+          thumb.classList.toggle("active", i === index);
         }
       };
+      for (const [index, board] of boards.entries()) {
+        const thumb = document.createElement("div");
+        thumb.className = "thumb";
+        thumb.style.width = `${design.width * thumbScale}px`;
+        thumb.style.height = `${design.height * thumbScale}px`;
+        const frame = document.createElement("iframe");
+        frame.src = board.url;
+        frame.style.transform = `scale(${thumbScale})`;
+        const label = document.createElement("div");
+        label.className = "label";
+        label.textContent = board.label;
+        thumb.append(frame, label);
+        thumb.addEventListener("click", () => select(index));
+        strip.append(thumb);
+        fetch(board.api).then((r) => r.json()).then((state) => {
+          label.innerHTML = state.status === "playing" ? `${board.label} · <b>live</b>` : `${board.label} · final`;
+          if (state.status === "playing") {
+            select(index);
+          }
+        }).catch(() => {});
+      }
+      const layout = () => {
+        const scale = Math.min(stage.clientWidth / design.width, stage.clientHeight / design.height);
+        featured.style.transform = `scale(${scale})`;
+        featured.style.left = `${Math.max(0, (stage.clientWidth - design.width * scale) / 2)}px`;
+      };
       window.addEventListener("resize", layout);
+      select(boards.length - 1);
       layout();
     </script>
   </body>
