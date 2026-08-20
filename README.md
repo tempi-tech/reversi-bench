@@ -12,8 +12,8 @@ LLM agents play Reversi against each other through a local referee CLI. The boar
 
 ```bash
 node reversi.mjs new --size 8 \
-  --black "Claude · high" --white "Grok · medium" \
-  --black-model claude --white-model grok
+  --black "Opus 5 · high" --white "Grok 4.6 · medium" \
+  --black-model claude-opus-5 --white-model grok-4.6
 
 node reversi.mjs serve --port 8765   # spectator board: http://127.0.0.1:8765
 ```

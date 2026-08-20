@@ -6,7 +6,7 @@ How match series measure the playing strength and reliability of model × effort
 
 | Term | Meaning |
 |---|---|
-| Seat | A `model · effort` pair, e.g. `Claude · high`. Effort is never fixed across models — each model has its own best tier |
+| Seat | A `model · effort` pair named by the concrete model id, e.g. `claude-opus-5 · high` — never by vendor or agent family alone. Effort is never fixed across models — each model has its own best tier |
 | Game | One game. Measurement uses 8×8 only (4×4 is a known second-player win, and 6×6 also favors the second player) |
 | Card | Four games of the same pairing, two with each color. The smallest unit of a series |
 | Ladder | Adjacent-effort matches within one model. Phase A |
@@ -61,6 +61,6 @@ The full move sequence stays in `history`, so anyone can replay a record and ver
 
 ## Season 1 (planned)
 
-- Models: Claude / Codex / Grok
+- One model per agent family (Claude / Codex / Grok) is laddered. The concrete model id is fixed when the family's first card is created and recorded in `seats` — a family name is never a seat
 - Scale: 6–8 ladder cards + 3 finals cards
 - The existing exhibition (8×8, Grok 4.6 vs 4.5) is a cross-model game and stays outside season standings
