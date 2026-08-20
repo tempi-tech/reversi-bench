@@ -15,18 +15,18 @@
     "blind": false,
     "tokens": {
       "B": {
-        "input": 146,
-        "cacheRead": 10133795,
-        "cacheCreation": 610945,
-        "output": 285769,
-        "apiCalls": 73
+        "input": 70,
+        "cacheRead": 4907214,
+        "cacheCreation": 292478,
+        "output": 140998,
+        "apiCalls": 35
       },
       "W": {
-        "input": 190,
-        "cacheRead": 11493199,
-        "cacheCreation": 587327,
-        "output": 481596,
-        "apiCalls": 95
+        "input": 66,
+        "cacheRead": 3950562,
+        "cacheCreation": 211983,
+        "output": 160741,
+        "apiCalls": 33
       }
     }
   },
@@ -738,18 +738,18 @@
   ],
   "tokens": {
     "B": {
-      "input": 146,
-      "cacheRead": 10133795,
-      "cacheCreation": 610945,
-      "output": 285769,
-      "apiCalls": 73
+      "input": 70,
+      "cacheRead": 4907214,
+      "cacheCreation": 292478,
+      "output": 140998,
+      "apiCalls": 35
     },
     "W": {
-      "input": 190,
-      "cacheRead": 11493199,
-      "cacheCreation": 587327,
-      "output": 481596,
-      "apiCalls": 95
+      "input": 66,
+      "cacheRead": 3950562,
+      "cacheCreation": 211983,
+      "output": 160741,
+      "apiCalls": 33
     }
   }
 }
