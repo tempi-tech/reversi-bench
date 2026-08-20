@@ -65,7 +65,9 @@ matches/<seriesId>/g<nnn>.json
 
 Game ids are opaque (e.g. `s1/g002`); the card ↔ game mapping lives in the series index (`series/<seriesId>.json`). Beyond the current fields (`history` / `players` / `winner`, …), series play extends records with (written after the game ends):
 
+- `summary` (first key): `{ game, card, winner, score, seats, moves, blind, tokens }` — the record is readable at a glance before the bulky board and history fields
 - `seats.B` / `seats.W`: `{ agentType, model, effort }`
+- `tokens.B` / `tokens.W`: per-seat session usage `{ input, cacheRead, cacheCreation, output, apiCalls }` — auxiliary cost data, not a ranking metric
 - `incidents`: `[{ side, kind: "illegal" | "forfeit" | "task-death", at, detail }]`
 - `blind`: whether the blinding protocol above was in force
 
