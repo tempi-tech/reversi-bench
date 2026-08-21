@@ -124,6 +124,42 @@
       },
       "referee": "0d7c844",
       "finishedAt": "2026-08-20T07:03:56.341Z"
+    },
+    {
+      "id": "s1/g004",
+      "card": "c-ox-alpha-vs-claude-opus-5-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "cockpit",
+          "model": "openrouter/stealth/ox-alpha",
+          "note": "OpenRouter stealth model via cockpit agent; effort not exposed",
+          "display": "openrouter/stealth/ox-alpha"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 8,
+        "W": 56
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-21T06:33:57.492Z",
+      "tokens": {
+        "B": null,
+        "W": {
+          "input": 68,
+          "cacheRead": 3486374,
+          "cacheCreation": 194827,
+          "output": 171686,
+          "apiCalls": 34
+        }
+      }
     }
   ]
 }

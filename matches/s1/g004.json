@@ -1,0 +1,707 @@
+{
+  "summary": {
+    "game": "s1/g004",
+    "card": "c-ox-alpha-vs-claude-opus-5-medium",
+    "winner": "W",
+    "score": {
+      "B": 8,
+      "W": 56
+    },
+    "seats": {
+      "B": "openrouter/stealth/ox-alpha",
+      "W": "claude-opus-5 · medium"
+    },
+    "moves": 62,
+    "blind": true,
+    "referee": "d0c541f",
+    "tokens": {
+      "B": null,
+      "W": {
+        "input": 68,
+        "cacheRead": 3486374,
+        "cacheCreation": 194827,
+        "output": 171686,
+        "apiCalls": 34
+      }
+    },
+    "notes": [
+      "B tokens are null: the Black seat ran on the cockpit agent (OpenRouter stealth model ox-alpha); non-Claude transcript token collection is not implemented yet.",
+      "Game streamed live to the AGI Labo Discord forum, one board screenshot per move."
+    ]
+  },
+  "id": "current",
+  "size": 8,
+  "title": "Reversi 8×8",
+  "createdAt": "2026-08-21T05:33:51.419Z",
+  "updatedAt": "2026-08-21T06:33:57.492Z",
+  "cells": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "turn": "W",
+  "status": "over",
+  "winner": "W",
+  "thinking": null,
+  "lastMove": {
+    "side": "W",
+    "move": "d1",
+    "flips": [
+      "c2",
+      "c1",
+      "b1"
+    ]
+  },
+  "history": [
+    {
+      "side": "B",
+      "move": "f4",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-08-21T05:34:24.869Z"
+    },
+    {
+      "side": "W",
+      "move": "f3",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-08-21T05:34:52.146Z"
+    },
+    {
+      "side": "B",
+      "move": "c5",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-08-21T05:36:17.238Z"
+    },
+    {
+      "side": "W",
+      "move": "c6",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-08-21T05:37:04.236Z"
+    },
+    {
+      "side": "B",
+      "move": "e3",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-08-21T05:37:36.729Z"
+    },
+    {
+      "side": "W",
+      "move": "c4",
+      "flips": [
+        "c5"
+      ],
+      "at": "2026-08-21T05:38:21.132Z"
+    },
+    {
+      "side": "B",
+      "move": "b5",
+      "flips": [
+        "c5",
+        "d5"
+      ],
+      "at": "2026-08-21T05:39:16.745Z"
+    },
+    {
+      "side": "W",
+      "move": "a4",
+      "flips": [
+        "b5"
+      ],
+      "at": "2026-08-21T05:40:35.944Z"
+    },
+    {
+      "side": "B",
+      "move": "a5",
+      "flips": [
+        "b5"
+      ],
+      "at": "2026-08-21T05:42:21.321Z"
+    },
+    {
+      "side": "W",
+      "move": "a6",
+      "flips": [
+        "a5",
+        "b5"
+      ],
+      "at": "2026-08-21T05:43:14.274Z"
+    },
+    {
+      "side": "B",
+      "move": "c3",
+      "flips": [
+        "c4"
+      ],
+      "at": "2026-08-21T05:45:23.310Z"
+    },
+    {
+      "side": "W",
+      "move": "c2",
+      "flips": [
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "at": "2026-08-21T05:46:12.904Z"
+    },
+    {
+      "side": "B",
+      "move": "b3",
+      "flips": [
+        "c4"
+      ],
+      "at": "2026-08-21T05:47:40.910Z"
+    },
+    {
+      "side": "W",
+      "move": "a3",
+      "flips": [
+        "b3"
+      ],
+      "at": "2026-08-21T05:48:22.137Z"
+    },
+    {
+      "side": "B",
+      "move": "a2",
+      "flips": [
+        "b3"
+      ],
+      "at": "2026-08-21T05:49:59.728Z"
+    },
+    {
+      "side": "W",
+      "move": "a1",
+      "flips": [
+        "a2"
+      ],
+      "at": "2026-08-21T05:50:21.160Z"
+    },
+    {
+      "side": "B",
+      "move": "c7",
+      "flips": [
+        "c6",
+        "c5"
+      ],
+      "at": "2026-08-21T05:51:39.713Z"
+    },
+    {
+      "side": "W",
+      "move": "c8",
+      "flips": [
+        "c7",
+        "c6",
+        "c5",
+        "c4"
+      ],
+      "at": "2026-08-21T05:53:37.870Z"
+    },
+    {
+      "side": "B",
+      "move": "b6",
+      "flips": [
+        "c5"
+      ],
+      "at": "2026-08-21T05:55:22.318Z"
+    },
+    {
+      "side": "W",
+      "move": "f6",
+      "flips": [
+        "e5",
+        "d4"
+      ],
+      "at": "2026-08-21T05:57:43.898Z"
+    },
+    {
+      "side": "B",
+      "move": "d3",
+      "flips": [
+        "d4",
+        "c3"
+      ],
+      "at": "2026-08-21T05:59:26.147Z"
+    },
+    {
+      "side": "W",
+      "move": "b2",
+      "flips": [
+        "c3",
+        "d4"
+      ],
+      "at": "2026-08-21T06:00:33.437Z"
+    },
+    {
+      "side": "B",
+      "move": "c1",
+      "flips": [
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "at": "2026-08-21T06:01:16.578Z"
+    },
+    {
+      "side": "W",
+      "move": "a7",
+      "flips": [
+        "b6",
+        "c5"
+      ],
+      "at": "2026-08-21T06:02:00.126Z"
+    },
+    {
+      "side": "B",
+      "move": "g2",
+      "flips": [
+        "f3"
+      ],
+      "at": "2026-08-21T06:03:41.515Z"
+    },
+    {
+      "side": "W",
+      "move": "h1",
+      "flips": [
+        "g2",
+        "f3",
+        "e4",
+        "d5"
+      ],
+      "at": "2026-08-21T06:04:13.078Z"
+    },
+    {
+      "side": "B",
+      "move": "e6",
+      "flips": [
+        "d5",
+        "e5",
+        "e4"
+      ],
+      "at": "2026-08-21T06:05:12.903Z"
+    },
+    {
+      "side": "W",
+      "move": "b4",
+      "flips": [
+        "c4",
+        "b3"
+      ],
+      "at": "2026-08-21T06:05:58.171Z"
+    },
+    {
+      "side": "B",
+      "move": "g7",
+      "flips": [
+        "f6"
+      ],
+      "at": "2026-08-21T06:06:59.279Z"
+    },
+    {
+      "side": "W",
+      "move": "h8",
+      "flips": [
+        "g7",
+        "f6",
+        "e5"
+      ],
+      "at": "2026-08-21T06:07:07.852Z"
+    },
+    {
+      "side": "B",
+      "move": "f5",
+      "flips": [
+        "e5"
+      ],
+      "at": "2026-08-21T06:07:53.959Z"
+    },
+    {
+      "side": "W",
+      "move": "d6",
+      "flips": [
+        "e6",
+        "d5"
+      ],
+      "at": "2026-08-21T06:09:12.748Z"
+    },
+    {
+      "side": "B",
+      "move": "d7",
+      "flips": [
+        "d6",
+        "d5",
+        "d4",
+        "e6"
+      ],
+      "at": "2026-08-21T06:10:22.499Z"
+    },
+    {
+      "side": "W",
+      "move": "g4",
+      "flips": [
+        "f5",
+        "e6",
+        "d7",
+        "f4",
+        "e4",
+        "d4"
+      ],
+      "at": "2026-08-21T06:11:27.005Z"
+    },
+    {
+      "side": "B",
+      "move": "b8",
+      "flips": [
+        "c7"
+      ],
+      "at": "2026-08-21T06:12:11.010Z"
+    },
+    {
+      "side": "W",
+      "move": "a8",
+      "flips": [
+        "b8"
+      ],
+      "at": "2026-08-21T06:12:24.701Z"
+    },
+    {
+      "side": "B",
+      "move": "d8",
+      "flips": [
+        "d7"
+      ],
+      "at": "2026-08-21T06:13:22.845Z"
+    },
+    {
+      "side": "W",
+      "move": "e8",
+      "flips": [
+        "d8",
+        "d7"
+      ],
+      "at": "2026-08-21T06:14:45.074Z"
+    },
+    {
+      "side": "B",
+      "move": "e7",
+      "flips": [
+        "d7",
+        "e6"
+      ],
+      "at": "2026-08-21T06:15:19.466Z"
+    },
+    {
+      "side": "W",
+      "move": "f8",
+      "flips": [
+        "e7",
+        "d6"
+      ],
+      "at": "2026-08-21T06:16:18.249Z"
+    },
+    {
+      "side": "B",
+      "move": "h3",
+      "flips": [
+        "g4",
+        "f5"
+      ],
+      "at": "2026-08-21T06:17:04.024Z"
+    },
+    {
+      "side": "W",
+      "move": "b7",
+      "flips": [
+        "c7",
+        "d7"
+      ],
+      "at": "2026-08-21T06:17:50.972Z"
+    },
+    {
+      "side": "B",
+      "move": "f1",
+      "flips": [
+        "g2"
+      ],
+      "at": "2026-08-21T06:18:46.315Z"
+    },
+    {
+      "side": "W",
+      "move": "f7",
+      "flips": [
+        "e6",
+        "d5"
+      ],
+      "at": "2026-08-21T06:21:07.019Z"
+    },
+    {
+      "side": "B",
+      "move": "e2",
+      "flips": [
+        "f3"
+      ],
+      "at": "2026-08-21T06:22:27.431Z"
+    },
+    {
+      "side": "W",
+      "move": "g3",
+      "flips": [
+        "f3",
+        "e3",
+        "d3",
+        "c3"
+      ],
+      "at": "2026-08-21T06:23:36.538Z"
+    },
+    {
+      "side": "B",
+      "move": "f2",
+      "flips": [
+        "f3",
+        "f4"
+      ],
+      "at": "2026-08-21T06:24:08.757Z"
+    },
+    {
+      "side": "W",
+      "move": "g1",
+      "flips": [
+        "f2",
+        "g2"
+      ],
+      "at": "2026-08-21T06:25:51.067Z"
+    },
+    {
+      "side": "B",
+      "move": "h2",
+      "flips": [
+        "g3",
+        "g2",
+        "f2"
+      ],
+      "at": "2026-08-21T06:26:14.189Z"
+    },
+    {
+      "side": "W",
+      "move": "h4",
+      "flips": [
+        "g4",
+        "f4",
+        "h3",
+        "h2"
+      ],
+      "at": "2026-08-21T06:27:35.611Z"
+    },
+    {
+      "side": "B",
+      "move": "h5",
+      "flips": [
+        "g4"
+      ],
+      "at": "2026-08-21T06:27:59.315Z"
+    },
+    {
+      "side": "W",
+      "move": "g5",
+      "flips": [
+        "f5",
+        "e5",
+        "g4",
+        "g3",
+        "g2"
+      ],
+      "at": "2026-08-21T06:28:26.972Z"
+    },
+    {
+      "side": "B",
+      "move": "g6",
+      "flips": [
+        "f5",
+        "e4",
+        "d3"
+      ],
+      "at": "2026-08-21T06:28:52.532Z"
+    },
+    {
+      "side": "W",
+      "move": "h6",
+      "flips": [
+        "g6",
+        "h5"
+      ],
+      "at": "2026-08-21T06:29:42.979Z"
+    },
+    {
+      "side": "B",
+      "move": "h7",
+      "flips": [
+        "g6"
+      ],
+      "at": "2026-08-21T06:29:57.201Z"
+    },
+    {
+      "side": "W",
+      "move": "e1",
+      "flips": [
+        "e2",
+        "f2",
+        "f1"
+      ],
+      "at": "2026-08-21T06:32:42.667Z"
+    },
+    {
+      "side": "B",
+      "move": "g8",
+      "flips": [
+        "g7"
+      ],
+      "at": "2026-08-21T06:33:27.780Z"
+    },
+    {
+      "side": "W",
+      "move": "d2",
+      "flips": [
+        "d3",
+        "c2"
+      ],
+      "at": "2026-08-21T06:33:36.095Z"
+    },
+    {
+      "side": "B",
+      "move": "b1",
+      "flips": [
+        "c2",
+        "d3"
+      ],
+      "at": "2026-08-21T06:33:52.527Z"
+    },
+    {
+      "side": "W",
+      "move": "d1",
+      "flips": [
+        "c2",
+        "c1",
+        "b1"
+      ],
+      "at": "2026-08-21T06:33:57.492Z"
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-08-21T06:33:57.492Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-08-21T06:33:57.492Z"
+    }
+  ],
+  "players": {
+    "B": {
+      "name": "Black",
+      "model": "",
+      "say": ""
+    },
+    "W": {
+      "name": "White",
+      "model": "",
+      "say": ""
+    }
+  },
+  "seats": {
+    "B": {
+      "agentType": "cockpit",
+      "model": "openrouter/stealth/ox-alpha",
+      "note": "OpenRouter stealth model via cockpit agent; effort not exposed",
+      "display": "openrouter/stealth/ox-alpha"
+    },
+    "W": {
+      "agentType": "claude",
+      "model": "claude-opus-5",
+      "effort": "medium"
+    }
+  },
+  "blind": true,
+  "incidents": [],
+  "tokens": {
+    "B": null,
+    "W": {
+      "input": 68,
+      "cacheRead": 3486374,
+      "cacheCreation": 194827,
+      "output": 171686,
+      "apiCalls": 34
+    }
+  }
+}

@@ -3,8 +3,15 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-21T05:09:05.935Z",
+  "generatedAt": "2026-08-21T06:35:50.684Z",
   "standings": [
+    {
+      "player": "claude-opus-5 · medium",
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "stoneDiff": 74
+    },
     {
       "player": "grok-4.6",
       "games": 1,
@@ -18,13 +25,6 @@
       "wins": 1,
       "losses": 0,
       "stoneDiff": 12
-    },
-    {
-      "player": "claude-opus-5 · medium",
-      "games": 2,
-      "wins": 1,
-      "losses": 1,
-      "stoneDiff": 26
     },
     {
       "player": "claude-fable-5 · medium",
@@ -46,6 +46,13 @@
       "wins": 0,
       "losses": 1,
       "stoneDiff": -46
+    },
+    {
+      "player": "openrouter/stealth/ox-alpha",
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "stoneDiff": -48
     }
   ],
   "games": [
@@ -122,6 +129,25 @@
       "outputTokens": {
         "B": 132492,
         "W": 224643
+      },
+      "incidents": []
+    },
+    {
+      "id": "s1/g004",
+      "card": "c-ox-alpha-vs-claude-opus-5-medium",
+      "blind": true,
+      "playedAt": "2026-08-21T06:33:57.492Z",
+      "black": "openrouter/stealth/ox-alpha",
+      "white": "claude-opus-5 · medium",
+      "winner": "W",
+      "score": {
+        "B": 8,
+        "W": 56
+      },
+      "moves": 62,
+      "outputTokens": {
+        "B": null,
+        "W": 171686
       },
       "incidents": []
     }
