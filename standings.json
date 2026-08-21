@@ -3,21 +3,14 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-21T08:50:21.266Z",
+  "generatedAt": "2026-08-21T09:23:34.522Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
-      "games": 4,
-      "wins": 3,
+      "games": 5,
+      "wins": 4,
       "losses": 1,
-      "stoneDiff": 116
-    },
-    {
-      "player": "codex · gpt-5.6-sol · medium",
-      "games": 1,
-      "wins": 1,
-      "losses": 0,
-      "stoneDiff": 26
+      "stoneDiff": 140
     },
     {
       "player": "grok-4.6",
@@ -39,6 +32,13 @@
       "wins": 1,
       "losses": 1,
       "stoneDiff": 8
+    },
+    {
+      "player": "codex · gpt-5.6-sol · medium",
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "stoneDiff": 2
     },
     {
       "player": "claude-sonnet-5 · medium",
@@ -226,6 +226,25 @@
       "outputTokens": {
         "B": 34020,
         "W": null
+      },
+      "incidents": []
+    },
+    {
+      "id": "s1/g008",
+      "card": "g-claude-opus-5-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "playedAt": "2026-08-21T09:22:40.189Z",
+      "black": "codex · gpt-5.6-sol · medium",
+      "white": "claude-opus-5 · medium",
+      "winner": "W",
+      "score": {
+        "B": 20,
+        "W": 44
+      },
+      "moves": 63,
+      "outputTokens": {
+        "B": null,
+        "W": 161542
       },
       "incidents": []
     }
