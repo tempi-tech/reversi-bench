@@ -4,13 +4,9 @@ import { fileURLToPath } from "node:url";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 
-const seatLabelOf = (seat) => {
-  if (typeof seat.display === "string") {
-    return seat.display;
-  }
-  const redundant = typeof seat.model === "string" && typeof seat.agentType === "string" && seat.model.startsWith(seat.agentType);
-  return [redundant ? null : seat.agentType, seat.model, seat.effort].filter(Boolean).join(" · ");
-};
+const seatLabelOf = (seat) => (typeof seat.display === "string"
+  ? seat.display
+  : [seat.model, seat.effort].filter(Boolean).join(" · "));
 
 const series = JSON.parse(fs.readFileSync(path.join(here, "series", "s1.json"), "utf8"));
 

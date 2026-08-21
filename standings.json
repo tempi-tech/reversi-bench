@@ -3,11 +3,11 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-21T16:08:22.686Z",
+  "generatedAt": "2026-08-21T16:08:43.934Z",
   "standings": [
     {
-      "player": "codex · gpt-5.6-sol · high",
-      "rating": 1732,
+      "player": "gpt-5.6-sol · high",
+      "rating": 1743,
       "games": 2,
       "wins": 2,
       "losses": 0,
@@ -15,7 +15,7 @@
     },
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1695,
+      "rating": 1702,
       "games": 6,
       "wins": 5,
       "losses": 1,
@@ -23,11 +23,19 @@
     },
     {
       "player": "claude-opus-5 · high",
-      "rating": 1605,
+      "rating": 1610,
       "games": 2,
       "wins": 1,
       "losses": 1,
       "stoneDiff": -14
+    },
+    {
+      "player": "gpt-5.6-sol · medium",
+      "rating": 1593,
+      "games": 5,
+      "wins": 3,
+      "losses": 2,
+      "stoneDiff": 36
     },
     {
       "player": "grok-4.6",
@@ -46,24 +54,8 @@
       "stoneDiff": 16
     },
     {
-      "player": "gpt-5.6-sol · medium",
-      "rating": 1590,
-      "games": 1,
-      "wins": 1,
-      "losses": 0,
-      "stoneDiff": 10
-    },
-    {
-      "player": "codex · gpt-5.6-sol · medium",
-      "rating": 1555,
-      "games": 4,
-      "wins": 2,
-      "losses": 2,
-      "stoneDiff": 26
-    },
-    {
       "player": "claude-fable-5 · medium",
-      "rating": 1517,
+      "rating": 1518,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -71,15 +63,15 @@
     },
     {
       "player": "claude-sonnet-5 · medium",
-      "rating": 1465,
+      "rating": 1475,
       "games": 3,
       "wins": 1,
       "losses": 2,
       "stoneDiff": -20
     },
     {
-      "player": "codex · gpt-5.6-terra · medium",
-      "rating": 1457,
+      "player": "gpt-5.6-terra · medium",
+      "rating": 1466,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -87,7 +79,7 @@
     },
     {
       "player": "claude-opus-4-8 · medium",
-      "rating": 1435,
+      "rating": 1436,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -95,7 +87,7 @@
     },
     {
       "player": "openrouter/stealth/ox-alpha",
-      "rating": 1435,
+      "rating": 1436,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -103,7 +95,7 @@
     },
     {
       "player": "gpt-5.6-terra · max",
-      "rating": 1407,
+      "rating": 1408,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -127,23 +119,23 @@
     },
     {
       "player": "claude-fable-5 · high",
-      "rating": 1384,
+      "rating": 1385,
       "games": 1,
       "wins": 0,
       "losses": 1,
       "stoneDiff": -46
     },
     {
-      "player": "codex · gpt-5.6-luna · max",
-      "rating": 1364,
+      "player": "gpt-5.6-luna · max",
+      "rating": 1367,
       "games": 1,
       "wins": 0,
       "losses": 1,
       "stoneDiff": -8
     },
     {
-      "player": "codex · gpt-5.6-luna · medium",
-      "rating": 1364,
+      "player": "gpt-5.6-luna · medium",
+      "rating": 1367,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -251,7 +243,7 @@
       "card": "d-claude-sonnet-5-vs-gpt-5.6-terra-medium",
       "blind": true,
       "playedAt": "2026-08-21T07:17:41.461Z",
-      "black": "codex · gpt-5.6-terra · medium",
+      "black": "gpt-5.6-terra · medium",
       "white": "claude-sonnet-5 · medium",
       "winner": "W",
       "score": {
@@ -290,7 +282,7 @@
       "blind": true,
       "playedAt": "2026-08-21T08:47:02.725Z",
       "black": "claude-sonnet-5 · medium",
-      "white": "codex · gpt-5.6-sol · medium",
+      "white": "gpt-5.6-sol · medium",
       "winner": "W",
       "score": {
         "B": 19,
@@ -308,7 +300,7 @@
       "card": "g-claude-opus-5-vs-gpt-5.6-sol-medium",
       "blind": true,
       "playedAt": "2026-08-21T09:22:40.189Z",
-      "black": "codex · gpt-5.6-sol · medium",
+      "black": "gpt-5.6-sol · medium",
       "white": "claude-opus-5 · medium",
       "winner": "W",
       "score": {
@@ -346,8 +338,8 @@
       "card": "i-gpt-5.6-terra-vs-gpt-5.6-luna-medium",
       "blind": true,
       "playedAt": "2026-08-21T11:26:33.130Z",
-      "black": "codex · gpt-5.6-terra · medium",
-      "white": "codex · gpt-5.6-luna · medium",
+      "black": "gpt-5.6-terra · medium",
+      "white": "gpt-5.6-luna · medium",
       "winner": "B",
       "score": {
         "B": 44,
@@ -365,8 +357,8 @@
       "card": "j-gpt-5.6-sol-vs-gpt-5.6-terra-medium",
       "blind": true,
       "playedAt": "2026-08-21T11:33:02.127Z",
-      "black": "codex · gpt-5.6-terra · medium",
-      "white": "codex · gpt-5.6-sol · medium",
+      "black": "gpt-5.6-terra · medium",
+      "white": "gpt-5.6-sol · medium",
       "winner": "W",
       "score": {
         "B": 12,
@@ -384,8 +376,8 @@
       "card": "k-gpt-5.6-sol-med-high",
       "blind": true,
       "playedAt": "2026-08-21T11:44:32.717Z",
-      "black": "codex · gpt-5.6-sol · medium",
-      "white": "codex · gpt-5.6-sol · high",
+      "black": "gpt-5.6-sol · medium",
+      "white": "gpt-5.6-sol · high",
       "winner": "W",
       "score": {
         "B": 24,
@@ -403,8 +395,8 @@
       "card": "l-gpt-5.6-luna-max-vs-terra-medium",
       "blind": true,
       "playedAt": "2026-08-21T11:53:11.489Z",
-      "black": "codex · gpt-5.6-luna · max",
-      "white": "codex · gpt-5.6-terra · medium",
+      "black": "gpt-5.6-luna · max",
+      "white": "gpt-5.6-terra · medium",
       "winner": "W",
       "score": {
         "B": 28,
@@ -422,7 +414,7 @@
       "card": "m-claude-opus-5-high-vs-gpt-5.6-sol-high",
       "blind": true,
       "playedAt": "2026-08-21T13:21:36.530Z",
-      "black": "codex · gpt-5.6-sol · high",
+      "black": "gpt-5.6-sol · high",
       "white": "claude-opus-5 · high",
       "winner": "B",
       "score": {
