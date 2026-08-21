@@ -61,6 +61,10 @@ Exhibition:
 |---|---|
 | 8×8 · Grok 4.6 (Black) vs Grok 4.5 (White) | **Black 44–20** — [`matches/exhibition-8x8-grok-4-6-vs-grok-4-5.json`](matches/exhibition-8x8-grok-4-6-vs-grok-4-5.json) |
 
+## Live streaming
+
+Optional: stream a running match to Discord as one board screenshot per move. See [live/README.md](live/README.md). The referee CLI stays independent of it.
+
 ## Methodology
 
 How wins, stone margins, and incident rates are measured — and how model × effort seats are ranked — is described in [METHOD.md](METHOD.md).
