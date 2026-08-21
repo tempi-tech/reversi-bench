@@ -434,6 +434,35 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g013",
+      "card": "l-gpt-5.6-luna-max-vs-terra-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-luna",
+          "effort": "max"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-terra",
+          "effort": "medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 28,
+        "W": 36
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-21T11:53:11.489Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
