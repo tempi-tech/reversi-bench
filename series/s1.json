@@ -560,6 +560,124 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g016",
+      "card": "o-kimi-k3-vs-glm-5.3-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "qoder",
+          "model": "gmodel",
+          "effort": "high",
+          "display": "glm-5.3 · high",
+          "note": "qoder alias gmodel resolves to GLM-5.3"
+        },
+        "W": {
+          "agentType": "qoder",
+          "model": "kmodel_latest",
+          "effort": "high",
+          "display": "kimi-k3 · high",
+          "note": "qoder alias kmodel_latest resolves to Kimi-K3"
+        }
+      },
+      "winner": "draw",
+      "score": {
+        "B": 32,
+        "W": 32
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "B",
+          "resumed": true
+        },
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ],
+      "finishedAt": "2026-08-21T21:06:43.692Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g017",
+      "card": "p-kimi-k3-vs-deepseek-v4-pro-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "qoder",
+          "model": "dmodel",
+          "effort": "high",
+          "display": "deepseek-v4-pro · high"
+        },
+        "W": {
+          "agentType": "qoder",
+          "model": "kmodel_latest",
+          "effort": "high",
+          "display": "kimi-k3 · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 38,
+        "W": 26
+      },
+      "moves": 63,
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ],
+      "finishedAt": "2026-08-21T17:22:52.815Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g018",
+      "card": "q-glm-5.3-vs-deepseek-v4-pro-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "qoder",
+          "model": "gmodel",
+          "effort": "high",
+          "display": "glm-5.3 · high"
+        },
+        "W": {
+          "agentType": "qoder",
+          "model": "dmodel",
+          "effort": "high",
+          "display": "deepseek-v4-pro · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 33,
+        "W": 31
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ],
+      "finishedAt": "2026-08-21T18:43:15.316Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }

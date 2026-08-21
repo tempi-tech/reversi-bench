@@ -3,22 +3,24 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-21T16:08:43.934Z",
+  "generatedAt": "2026-08-21T21:08:32.707Z",
   "standings": [
     {
       "player": "gpt-5.6-sol · high",
-      "rating": 1743,
+      "rating": 1744,
       "games": 2,
       "wins": 2,
       "losses": 0,
+      "draws": 0,
       "stoneDiff": 42
     },
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1702,
+      "rating": 1703,
       "games": 6,
       "wins": 5,
       "losses": 1,
+      "draws": 0,
       "stoneDiff": 166
     },
     {
@@ -27,15 +29,26 @@
       "games": 2,
       "wins": 1,
       "losses": 1,
+      "draws": 0,
       "stoneDiff": -14
     },
     {
       "player": "gpt-5.6-sol · medium",
-      "rating": 1593,
+      "rating": 1594,
       "games": 5,
       "wins": 3,
       "losses": 2,
+      "draws": 0,
       "stoneDiff": 36
+    },
+    {
+      "player": "glm-5.3 · high",
+      "rating": 1592,
+      "games": 2,
+      "wins": 1,
+      "losses": 0,
+      "draws": 1,
+      "stoneDiff": 2
     },
     {
       "player": "grok-4.6",
@@ -43,30 +56,43 @@
       "games": 1,
       "wins": 1,
       "losses": 0,
+      "draws": 0,
       "stoneDiff": 24
     },
     {
-      "player": "kimi-k3 · high",
-      "rating": 1590,
-      "games": 1,
-      "wins": 1,
-      "losses": 0,
-      "stoneDiff": 16
-    },
-    {
-      "player": "claude-fable-5 · medium",
-      "rating": 1518,
+      "player": "deepseek-v4-pro · high",
+      "rating": 1521,
       "games": 2,
       "wins": 1,
       "losses": 1,
+      "draws": 0,
+      "stoneDiff": 10
+    },
+    {
+      "player": "claude-fable-5 · medium",
+      "rating": 1519,
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0,
       "stoneDiff": 8
     },
     {
+      "player": "kimi-k3 · high",
+      "rating": 1498,
+      "games": 3,
+      "wins": 1,
+      "losses": 1,
+      "draws": 1,
+      "stoneDiff": 4
+    },
+    {
       "player": "claude-sonnet-5 · medium",
-      "rating": 1475,
+      "rating": 1476,
       "games": 3,
       "wins": 1,
       "losses": 2,
+      "draws": 0,
       "stoneDiff": -20
     },
     {
@@ -75,22 +101,25 @@
       "games": 4,
       "wins": 2,
       "losses": 2,
+      "draws": 0,
       "stoneDiff": -36
     },
     {
       "player": "claude-opus-4-8 · medium",
-      "rating": 1436,
+      "rating": 1437,
       "games": 1,
       "wins": 0,
       "losses": 1,
+      "draws": 0,
       "stoneDiff": -26
     },
     {
       "player": "openrouter/stealth/ox-alpha",
-      "rating": 1436,
+      "rating": 1437,
       "games": 1,
       "wins": 0,
       "losses": 1,
+      "draws": 0,
       "stoneDiff": -48
     },
     {
@@ -99,15 +128,8 @@
       "games": 1,
       "wins": 0,
       "losses": 1,
+      "draws": 0,
       "stoneDiff": -10
-    },
-    {
-      "player": "qwen3.8-max · high",
-      "rating": 1407,
-      "games": 1,
-      "wins": 0,
-      "losses": 1,
-      "stoneDiff": -16
     },
     {
       "player": "grok-4.5",
@@ -115,6 +137,7 @@
       "games": 1,
       "wins": 0,
       "losses": 1,
+      "draws": 0,
       "stoneDiff": -24
     },
     {
@@ -123,7 +146,17 @@
       "games": 1,
       "wins": 0,
       "losses": 1,
+      "draws": 0,
       "stoneDiff": -46
+    },
+    {
+      "player": "qwen3.8-max · high",
+      "rating": 1378,
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": -16
     },
     {
       "player": "gpt-5.6-luna · max",
@@ -131,6 +164,7 @@
       "games": 1,
       "wins": 0,
       "losses": 1,
+      "draws": 0,
       "stoneDiff": -8
     },
     {
@@ -139,6 +173,7 @@
       "games": 1,
       "wins": 0,
       "losses": 1,
+      "draws": 0,
       "stoneDiff": -44
     }
   ],
@@ -465,6 +500,86 @@
         "W": null
       },
       "incidents": []
+    },
+    {
+      "id": "s1/g017",
+      "card": "p-kimi-k3-vs-deepseek-v4-pro-high",
+      "blind": true,
+      "playedAt": "2026-08-21T17:22:52.815Z",
+      "black": "deepseek-v4-pro · high",
+      "white": "kimi-k3 · high",
+      "winner": "B",
+      "score": {
+        "B": 38,
+        "W": 26
+      },
+      "moves": 63,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ]
+    },
+    {
+      "id": "s1/g018",
+      "card": "q-glm-5.3-vs-deepseek-v4-pro-high",
+      "blind": true,
+      "playedAt": "2026-08-21T18:43:15.316Z",
+      "black": "glm-5.3 · high",
+      "white": "deepseek-v4-pro · high",
+      "winner": "B",
+      "score": {
+        "B": 33,
+        "W": 31
+      },
+      "moves": 62,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ]
+    },
+    {
+      "id": "s1/g016",
+      "card": "o-kimi-k3-vs-glm-5.3-high",
+      "blind": true,
+      "playedAt": "2026-08-21T21:06:43.692Z",
+      "black": "glm-5.3 · high",
+      "white": "kimi-k3 · high",
+      "winner": "draw",
+      "score": {
+        "B": 32,
+        "W": 32
+      },
+      "moves": 62,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "B",
+          "resumed": true
+        },
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ]
     }
   ]
 }

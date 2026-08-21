@@ -53,16 +53,24 @@ const exhibitionGames = fs.readdirSync(path.join(here, "matches"))
 const games = [...exhibitionGames, ...seriesGames]
   .sort((a, b) => String(a.playedAt).localeCompare(String(b.playedAt)));
 
+const outcomeOf = (winner, side) => (winner === side ? "win" : winner === "B" || winner === "W" ? "loss" : "draw");
+
 const results = games.flatMap((game) => [
-  { player: game.black, won: game.winner === "B", diff: game.score.B - game.score.W },
-  { player: game.white, won: game.winner === "W", diff: game.score.W - game.score.B },
+  { player: game.black, outcome: outcomeOf(game.winner, "B"), diff: game.score.B - game.score.W },
+  { player: game.white, outcome: outcomeOf(game.winner, "W"), diff: game.score.W - game.score.B },
 ]);
 
 const players = [...new Set(results.map((result) => result.player))];
 
-const outcomes = games.map((game) => (game.winner === "B"
-  ? { winner: game.black, loser: game.white }
-  : { winner: game.white, loser: game.black }));
+const meetings = games.map((game) => ({ home: game.black, away: game.white }));
+
+const creditsOf = (player) => games.reduce((sum, game) => {
+  const side = game.black === player ? "B" : game.white === player ? "W" : null;
+  if (!side) {
+    return sum;
+  }
+  return sum + (game.winner === side ? 1 : game.winner === "B" || game.winner === "W" ? 0 : 0.5);
+}, 0);
 
 const PRIOR_GAMES = 1;
 const FITTING_ROUNDS = 3000;
@@ -70,10 +78,10 @@ const FITTING_ROUNDS = 3000;
 const strengthsOf = () => {
   const step = (theta) => {
     const next = Object.fromEntries(players.map((player) => {
-      const wins = outcomes.filter((outcome) => outcome.winner === player).length + PRIOR_GAMES;
-      const played = outcomes.filter((outcome) => outcome.winner === player || outcome.loser === player);
-      const pairs = played.reduce((sum, outcome) => {
-        const other = outcome.winner === player ? outcome.loser : outcome.winner;
+      const wins = creditsOf(player) + PRIOR_GAMES;
+      const played = meetings.filter((meeting) => meeting.home === player || meeting.away === player);
+      const pairs = played.reduce((sum, meeting) => {
+        const other = meeting.home === player ? meeting.away : meeting.home;
         return sum + 1 / (Math.exp(theta[player]) + Math.exp(theta[other]));
       }, 0);
       const prior = (2 * PRIOR_GAMES) / (Math.exp(theta[player]) + 1);
@@ -97,8 +105,9 @@ const standings = players
       player,
       rating: Math.round(1500 + (400 * strengths[player]) / Math.LN10),
       games: rows.length,
-      wins: rows.filter((row) => row.won).length,
-      losses: rows.filter((row) => !row.won).length,
+      wins: rows.filter((row) => row.outcome === "win").length,
+      losses: rows.filter((row) => row.outcome === "loss").length,
+      draws: rows.filter((row) => row.outcome === "draw").length,
       stoneDiff: rows.reduce((sum, row) => sum + row.diff, 0),
     };
   })

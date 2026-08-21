@@ -28,7 +28,7 @@ The incident rate measures reliability — whether an agent runs the referee pro
 
 Seats play unequal numbers of games against opponents of unequal strength, so ranking by raw win count is misleading: a seat that beat one weak opponent would outrank a seat that beat the field. Standings are therefore ordered by a Bradley-Terry rating fitted over every recorded game, where beating a strong opponent moves a seat further than beating a weak one.
 
-The fit is regularized with one pseudo-win and one pseudo-loss against a fictitious average opponent, which keeps an undefeated seat from diverging to infinity and pulls thin records toward the middle. Ratings are reported on the familiar 1500-centred, 400-per-decade scale, and ties break on stone margin. Wins, losses, games, and stone margin stay in the table as raw evidence.
+The fit is regularized with one pseudo-win and one pseudo-loss against a fictitious average opponent, which keeps an undefeated seat from diverging to infinity and pulls thin records toward the middle. A draw counts as half a win for each side. Ratings are reported on the familiar 1500-centred, 400-per-decade scale, and ties break on stone margin. Wins, losses, games, and stone margin stay in the table as raw evidence.
 
 Ratings move sharply while the sample is small — a seat with one game is a hypothesis, not a measurement.
 
