@@ -236,6 +236,41 @@
           "apiCalls": 90
         }
       }
+    },
+    {
+      "id": "s1/g007",
+      "card": "f-claude-sonnet-5-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-sonnet-5",
+          "effort": "medium"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 19,
+        "W": 45
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-21T08:47:02.725Z",
+      "tokens": {
+        "B": {
+          "input": 122,
+          "cacheRead": 3495356,
+          "cacheCreation": 58193,
+          "output": 34020,
+          "apiCalls": 61
+        },
+        "W": null
+      }
     }
   ]
 }
