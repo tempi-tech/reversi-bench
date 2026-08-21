@@ -405,6 +405,35 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g012",
+      "card": "k-gpt-5.6-sol-med-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 24,
+        "W": 40
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-21T11:44:32.717Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }

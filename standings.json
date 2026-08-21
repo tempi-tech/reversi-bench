@@ -3,11 +3,11 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-21T11:34:02.201Z",
+  "generatedAt": "2026-08-21T11:45:05.149Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1716,
+      "rating": 1704,
       "games": 6,
       "wins": 5,
       "losses": 1,
@@ -15,11 +15,19 @@
     },
     {
       "player": "claude-opus-5 · high",
-      "rating": 1699,
+      "rating": 1695,
       "games": 1,
       "wins": 1,
       "losses": 0,
       "stoneDiff": 12
+    },
+    {
+      "player": "codex · gpt-5.6-sol · high",
+      "rating": 1628,
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "stoneDiff": 16
     },
     {
       "player": "grok-4.6",
@@ -31,15 +39,15 @@
     },
     {
       "player": "codex · gpt-5.6-sol · medium",
-      "rating": 1589,
-      "games": 3,
+      "rating": 1525,
+      "games": 4,
       "wins": 2,
-      "losses": 1,
-      "stoneDiff": 42
+      "losses": 2,
+      "stoneDiff": 26
     },
     {
       "player": "claude-fable-5 · medium",
-      "rating": 1521,
+      "rating": 1519,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -47,7 +55,7 @@
     },
     {
       "player": "claude-sonnet-5 · medium",
-      "rating": 1463,
+      "rating": 1445,
       "games": 3,
       "wins": 1,
       "losses": 2,
@@ -55,7 +63,7 @@
     },
     {
       "player": "claude-opus-4-8 · medium",
-      "rating": 1440,
+      "rating": 1437,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -63,7 +71,7 @@
     },
     {
       "player": "openrouter/stealth/ox-alpha",
-      "rating": 1440,
+      "rating": 1437,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -79,7 +87,7 @@
     },
     {
       "player": "codex · gpt-5.6-terra · medium",
-      "rating": 1405,
+      "rating": 1389,
       "games": 3,
       "wins": 1,
       "losses": 2,
@@ -87,7 +95,7 @@
     },
     {
       "player": "claude-fable-5 · high",
-      "rating": 1386,
+      "rating": 1385,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -95,7 +103,7 @@
     },
     {
       "player": "codex · gpt-5.6-luna · medium",
-      "rating": 1345,
+      "rating": 1339,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -325,6 +333,25 @@
         "W": 52
       },
       "moves": 62,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "incidents": []
+    },
+    {
+      "id": "s1/g012",
+      "card": "k-gpt-5.6-sol-med-high",
+      "blind": true,
+      "playedAt": "2026-08-21T11:44:32.717Z",
+      "black": "codex · gpt-5.6-sol · medium",
+      "white": "codex · gpt-5.6-sol · high",
+      "winner": "W",
+      "score": {
+        "B": 24,
+        "W": 40
+      },
+      "moves": 63,
       "outputTokens": {
         "B": null,
         "W": null
