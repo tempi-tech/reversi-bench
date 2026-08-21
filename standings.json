@@ -3,11 +3,11 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-21T11:26:57.206Z",
+  "generatedAt": "2026-08-21T11:34:02.201Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1708,
+      "rating": 1716,
       "games": 6,
       "wins": 5,
       "losses": 1,
@@ -15,7 +15,7 @@
     },
     {
       "player": "claude-opus-5 · high",
-      "rating": 1696,
+      "rating": 1699,
       "games": 1,
       "wins": 1,
       "losses": 0,
@@ -23,7 +23,7 @@
     },
     {
       "player": "grok-4.6",
-      "rating": 1589,
+      "rating": 1590,
       "games": 1,
       "wins": 1,
       "losses": 0,
@@ -31,15 +31,15 @@
     },
     {
       "player": "codex · gpt-5.6-sol · medium",
-      "rating": 1539,
-      "games": 2,
-      "wins": 1,
+      "rating": 1589,
+      "games": 3,
+      "wins": 2,
       "losses": 1,
-      "stoneDiff": 2
+      "stoneDiff": 42
     },
     {
       "player": "claude-fable-5 · medium",
-      "rating": 1519,
+      "rating": 1521,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -54,16 +54,8 @@
       "stoneDiff": -20
     },
     {
-      "player": "codex · gpt-5.6-terra · medium",
-      "rating": 1456,
-      "games": 2,
-      "wins": 1,
-      "losses": 1,
-      "stoneDiff": -4
-    },
-    {
       "player": "claude-opus-4-8 · medium",
-      "rating": 1438,
+      "rating": 1440,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -71,7 +63,7 @@
     },
     {
       "player": "openrouter/stealth/ox-alpha",
-      "rating": 1438,
+      "rating": 1440,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -86,8 +78,16 @@
       "stoneDiff": -24
     },
     {
+      "player": "codex · gpt-5.6-terra · medium",
+      "rating": 1405,
+      "games": 3,
+      "wins": 1,
+      "losses": 2,
+      "stoneDiff": -44
+    },
+    {
       "player": "claude-fable-5 · high",
-      "rating": 1385,
+      "rating": 1386,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -95,7 +95,7 @@
     },
     {
       "player": "codex · gpt-5.6-luna · medium",
-      "rating": 1364,
+      "rating": 1345,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -306,6 +306,25 @@
         "W": 0
       },
       "moves": 45,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "incidents": []
+    },
+    {
+      "id": "s1/g011",
+      "card": "j-gpt-5.6-sol-vs-gpt-5.6-terra-medium",
+      "blind": true,
+      "playedAt": "2026-08-21T11:33:02.127Z",
+      "black": "codex · gpt-5.6-terra · medium",
+      "white": "codex · gpt-5.6-sol · medium",
+      "winner": "W",
+      "score": {
+        "B": 12,
+        "W": 52
+      },
+      "moves": 62,
       "outputTokens": {
         "B": null,
         "W": null

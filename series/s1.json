@@ -376,6 +376,35 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g011",
+      "card": "j-gpt-5.6-sol-vs-gpt-5.6-terra-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-terra",
+          "effort": "medium"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 12,
+        "W": 52
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-21T11:33:02.127Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
