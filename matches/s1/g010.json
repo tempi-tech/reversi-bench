@@ -1,0 +1,520 @@
+{
+  "summary": {
+    "game": "s1/g010",
+    "card": "i-gpt-5.6-terra-vs-gpt-5.6-luna-medium",
+    "winner": "B",
+    "score": {
+      "B": 44,
+      "W": 0
+    },
+    "seats": {
+      "B": "codex · gpt-5.6-terra · medium",
+      "W": "codex · gpt-5.6-luna · medium"
+    },
+    "moves": 45,
+    "blind": true,
+    "referee": "260a36d",
+    "tokens": {
+      "B": null,
+      "W": null
+    },
+    "notes": [
+      "Tokens are null for both seats: codex-seat transcript token collection is not implemented yet.",
+      "Wipeout: white lost every stone on move 45, so the game ended before the board filled.",
+      "Same-generation variant card - terra had been last in the standings after losing 8-56 in s1/g005."
+    ]
+  },
+  "id": "current",
+  "size": 8,
+  "title": "Reversi 8×8",
+  "createdAt": "2026-08-21T11:24:40.201Z",
+  "updatedAt": "2026-08-21T11:26:33.130Z",
+  "cells": [
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    ".",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    ".",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    ".",
+    ".",
+    ".",
+    ".",
+    "B",
+    "B",
+    "B",
+    "B",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    "B",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    "B"
+  ],
+  "turn": "B",
+  "status": "over",
+  "winner": "B",
+  "thinking": null,
+  "lastMove": {
+    "side": "B",
+    "move": "e3",
+    "flips": [
+      "f3",
+      "g3"
+    ]
+  },
+  "history": [
+    {
+      "side": "B",
+      "move": "d6",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-08-21T11:25:02.394Z"
+    },
+    {
+      "side": "W",
+      "move": "e6",
+      "flips": [
+        "e5"
+      ],
+      "at": "2026-08-21T11:25:07.557Z"
+    },
+    {
+      "side": "B",
+      "move": "f5",
+      "flips": [
+        "e5"
+      ],
+      "at": "2026-08-21T11:25:09.572Z"
+    },
+    {
+      "side": "W",
+      "move": "c4",
+      "flips": [
+        "d5",
+        "d4"
+      ],
+      "at": "2026-08-21T11:25:13.751Z"
+    },
+    {
+      "side": "B",
+      "move": "f6",
+      "flips": [
+        "e6"
+      ],
+      "at": "2026-08-21T11:25:15.455Z"
+    },
+    {
+      "side": "W",
+      "move": "d7",
+      "flips": [
+        "d6"
+      ],
+      "at": "2026-08-21T11:25:17.249Z"
+    },
+    {
+      "side": "B",
+      "move": "c7",
+      "flips": [
+        "d6"
+      ],
+      "at": "2026-08-21T11:25:19.456Z"
+    },
+    {
+      "side": "W",
+      "move": "b7",
+      "flips": [
+        "c7"
+      ],
+      "at": "2026-08-21T11:25:21.202Z"
+    },
+    {
+      "side": "B",
+      "move": "c8",
+      "flips": [
+        "d7"
+      ],
+      "at": "2026-08-21T11:25:25.183Z"
+    },
+    {
+      "side": "W",
+      "move": "d8",
+      "flips": [
+        "d7",
+        "d6"
+      ],
+      "at": "2026-08-21T11:25:26.982Z"
+    },
+    {
+      "side": "B",
+      "move": "e8",
+      "flips": [
+        "d8"
+      ],
+      "at": "2026-08-21T11:25:29.330Z"
+    },
+    {
+      "side": "W",
+      "move": "e7",
+      "flips": [
+        "e6",
+        "e5"
+      ],
+      "at": "2026-08-21T11:25:32.485Z"
+    },
+    {
+      "side": "B",
+      "move": "c6",
+      "flips": [
+        "c7",
+        "d7",
+        "d6",
+        "e6"
+      ],
+      "at": "2026-08-21T11:25:34.591Z"
+    },
+    {
+      "side": "W",
+      "move": "b8",
+      "flips": [
+        "c7",
+        "d6"
+      ],
+      "at": "2026-08-21T11:25:36.344Z"
+    },
+    {
+      "side": "B",
+      "move": "a8",
+      "flips": [
+        "b8",
+        "b7"
+      ],
+      "at": "2026-08-21T11:25:38.081Z"
+    },
+    {
+      "side": "W",
+      "move": "a7",
+      "flips": [
+        "b7"
+      ],
+      "at": "2026-08-21T11:25:40.035Z"
+    },
+    {
+      "side": "B",
+      "move": "a6",
+      "flips": [
+        "a7",
+        "b7"
+      ],
+      "at": "2026-08-21T11:25:41.957Z"
+    },
+    {
+      "side": "W",
+      "move": "b6",
+      "flips": [
+        "c6"
+      ],
+      "at": "2026-08-21T11:25:43.612Z"
+    },
+    {
+      "side": "B",
+      "move": "a5",
+      "flips": [
+        "b6",
+        "c7"
+      ],
+      "at": "2026-08-21T11:25:46.529Z"
+    },
+    {
+      "side": "W",
+      "move": "f7",
+      "flips": [
+        "e6"
+      ],
+      "at": "2026-08-21T11:25:48.210Z"
+    },
+    {
+      "side": "B",
+      "move": "f8",
+      "flips": [
+        "f7"
+      ],
+      "at": "2026-08-21T11:25:50.325Z"
+    },
+    {
+      "side": "W",
+      "move": "g8",
+      "flips": [
+        "f7"
+      ],
+      "at": "2026-08-21T11:25:51.998Z"
+    },
+    {
+      "side": "B",
+      "move": "h8",
+      "flips": [
+        "g8"
+      ],
+      "at": "2026-08-21T11:25:53.719Z"
+    },
+    {
+      "side": "W",
+      "move": "g7",
+      "flips": [
+        "f6"
+      ],
+      "at": "2026-08-21T11:25:55.398Z"
+    },
+    {
+      "side": "B",
+      "move": "h7",
+      "flips": [
+        "g7",
+        "f7",
+        "e7"
+      ],
+      "at": "2026-08-21T11:25:57.470Z"
+    },
+    {
+      "side": "W",
+      "move": "g6",
+      "flips": [
+        "f5"
+      ],
+      "at": "2026-08-21T11:25:59.251Z"
+    },
+    {
+      "side": "B",
+      "move": "h6",
+      "flips": [
+        "g6",
+        "f6",
+        "e6",
+        "d6",
+        "c6"
+      ],
+      "at": "2026-08-21T11:26:01.566Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-08-21T11:26:01.567Z"
+    },
+    {
+      "side": "B",
+      "move": "f4",
+      "flips": [
+        "e5",
+        "f5"
+      ],
+      "at": "2026-08-21T11:26:03.605Z"
+    },
+    {
+      "side": "W",
+      "move": "g5",
+      "flips": [
+        "f5",
+        "e5"
+      ],
+      "at": "2026-08-21T11:26:05.344Z"
+    },
+    {
+      "side": "B",
+      "move": "h4",
+      "flips": [
+        "g5"
+      ],
+      "at": "2026-08-21T11:26:10.001Z"
+    },
+    {
+      "side": "W",
+      "move": "h5",
+      "flips": [
+        "g5"
+      ],
+      "at": "2026-08-21T11:26:11.588Z"
+    },
+    {
+      "side": "B",
+      "move": "g4",
+      "flips": [
+        "f5",
+        "g5"
+      ],
+      "at": "2026-08-21T11:26:15.178Z"
+    },
+    {
+      "side": "W",
+      "move": "f3",
+      "flips": [
+        "g4"
+      ],
+      "at": "2026-08-21T11:26:16.779Z"
+    },
+    {
+      "side": "B",
+      "move": "h3",
+      "flips": [
+        "g4"
+      ],
+      "at": "2026-08-21T11:26:18.973Z"
+    },
+    {
+      "side": "W",
+      "move": "h2",
+      "flips": [
+        "h3",
+        "h4"
+      ],
+      "at": "2026-08-21T11:26:21.045Z"
+    },
+    {
+      "side": "B",
+      "move": "h1",
+      "flips": [
+        "h2",
+        "h3",
+        "h4",
+        "h5"
+      ],
+      "at": "2026-08-21T11:26:22.697Z"
+    },
+    {
+      "side": "W",
+      "move": "g3",
+      "flips": [
+        "f4"
+      ],
+      "at": "2026-08-21T11:26:24.381Z"
+    },
+    {
+      "side": "B",
+      "move": "c5",
+      "flips": [
+        "d5",
+        "e5"
+      ],
+      "at": "2026-08-21T11:26:27.273Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-08-21T11:26:27.274Z"
+    },
+    {
+      "side": "B",
+      "move": "b4",
+      "flips": [
+        "c4",
+        "d4",
+        "e4",
+        "f4"
+      ],
+      "at": "2026-08-21T11:26:30.684Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-08-21T11:26:30.685Z"
+    },
+    {
+      "side": "B",
+      "move": "e3",
+      "flips": [
+        "f3",
+        "g3"
+      ],
+      "at": "2026-08-21T11:26:33.129Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-08-21T11:26:33.130Z"
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-08-21T11:26:33.130Z"
+    }
+  ],
+  "players": {
+    "B": {
+      "name": "Black",
+      "model": "",
+      "say": ""
+    },
+    "W": {
+      "name": "White",
+      "model": "",
+      "say": ""
+    }
+  },
+  "seats": {
+    "B": {
+      "agentType": "codex",
+      "model": "gpt-5.6-terra",
+      "effort": "medium"
+    },
+    "W": {
+      "agentType": "codex",
+      "model": "gpt-5.6-luna",
+      "effort": "medium"
+    }
+  },
+  "blind": true,
+  "incidents": [],
+  "tokens": {
+    "B": null,
+    "W": null
+  }
+}
