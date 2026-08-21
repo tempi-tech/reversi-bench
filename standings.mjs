@@ -62,18 +62,51 @@ const results = games.flatMap((game) => [
   { player: game.white, won: game.winner === "W", diff: game.score.W - game.score.B },
 ]);
 
-const standings = [...new Set(results.map((result) => result.player))]
+const players = [...new Set(results.map((result) => result.player))];
+
+const outcomes = games.map((game) => (game.winner === "B"
+  ? { winner: game.black, loser: game.white }
+  : { winner: game.white, loser: game.black }));
+
+const PRIOR_GAMES = 1;
+const FITTING_ROUNDS = 3000;
+
+const strengthsOf = () => {
+  const step = (theta) => {
+    const next = Object.fromEntries(players.map((player) => {
+      const wins = outcomes.filter((outcome) => outcome.winner === player).length + PRIOR_GAMES;
+      const played = outcomes.filter((outcome) => outcome.winner === player || outcome.loser === player);
+      const pairs = played.reduce((sum, outcome) => {
+        const other = outcome.winner === player ? outcome.loser : outcome.winner;
+        return sum + 1 / (Math.exp(theta[player]) + Math.exp(theta[other]));
+      }, 0);
+      const prior = (2 * PRIOR_GAMES) / (Math.exp(theta[player]) + 1);
+      return [player, Math.log(wins) - Math.log(pairs + prior)];
+    }));
+    const mean = Object.values(next).reduce((sum, value) => sum + value, 0) / players.length;
+    return Object.fromEntries(Object.entries(next).map(([player, value]) => [player, value - mean]));
+  };
+  return Array.from({ length: FITTING_ROUNDS }).reduce(
+    (theta) => step(theta),
+    Object.fromEntries(players.map((player) => [player, 0])),
+  );
+};
+
+const strengths = strengthsOf();
+
+const standings = players
   .map((player) => {
     const rows = results.filter((result) => result.player === player);
     return {
       player,
+      rating: Math.round(1500 + (400 * strengths[player]) / Math.LN10),
       games: rows.length,
       wins: rows.filter((row) => row.won).length,
       losses: rows.filter((row) => !row.won).length,
       stoneDiff: rows.reduce((sum, row) => sum + row.diff, 0),
     };
   })
-  .sort((a, b) => b.wins - a.wins || a.losses - b.losses || b.stoneDiff - a.stoneDiff);
+  .sort((a, b) => b.rating - a.rating || b.stoneDiff - a.stoneDiff);
 
 const doc = {
   bench: "Reversi Bench",

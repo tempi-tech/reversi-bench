@@ -16,12 +16,21 @@ How match series measure the playing strength and reliability of model × effort
 
 - Primary: game wins within a card
 - Secondary: total stone margin
+- Standings rating: a regularized Bradley-Terry fit over every recorded game
 - Incident rate, recorded per game and per side:
   - Illegal-move attempts: `play` calls rejected as `illegal move` (`not your turn` is a race against `wait`, not counted)
   - Forfeit: a side that stalls on its own turn for 15 minutes loses the game
   - Task death: abnormal termination of a player process; the game closes as a forfeit
 
 The incident rate measures reliability — whether an agent runs the referee protocol without breaking — not playing strength. Read it independently.
+
+## Standings rating
+
+Seats play unequal numbers of games against opponents of unequal strength, so ranking by raw win count is misleading: a seat that beat one weak opponent would outrank a seat that beat the field. Standings are therefore ordered by a Bradley-Terry rating fitted over every recorded game, where beating a strong opponent moves a seat further than beating a weak one.
+
+The fit is regularized with one pseudo-win and one pseudo-loss against a fictitious average opponent, which keeps an undefeated seat from diverging to infinity and pulls thin records toward the middle. Ratings are reported on the familiar 1500-centred, 400-per-decade scale, and ties break on stone margin. Wins, losses, games, and stone margin stay in the table as raw evidence.
+
+Ratings move sharply while the sample is small — a seat with one game is a hypothesis, not a measurement.
 
 ## Card rules
 
