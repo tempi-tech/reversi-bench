@@ -49,7 +49,13 @@ node reversi.mjs selftest
 
 ## Records
 
-Game records live in `matches/<id>.json`. Exhibition:
+Game records live in `matches/<id>.json`. [standings.json](standings.json) holds the aggregated ladder standings and game index, regenerated mechanically after every game:
+
+```bash
+node standings.mjs
+```
+
+Exhibition:
 
 | Game | Result |
 |---|---|

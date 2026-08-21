@@ -1,0 +1,110 @@
+{
+  "bench": "Reversi Bench",
+  "series": "s1",
+  "tagline": "Does more thinking make a stronger player?",
+  "source": "https://github.com/tempi-tech/reversi-bench",
+  "generatedAt": "2026-08-21T04:50:17.105Z",
+  "standings": [
+    {
+      "player": "claude-opus-5 · medium",
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "stoneDiff": 26
+    },
+    {
+      "player": "claude-opus-5 · high",
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "stoneDiff": 12
+    },
+    {
+      "player": "claude-fable-5 · medium",
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "stoneDiff": 8
+    },
+    {
+      "player": "claude-fable-5 · high",
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "stoneDiff": -46
+    }
+  ],
+  "games": [
+    {
+      "id": "s1/g001",
+      "card": "a-claude-fable-5-med-high",
+      "blind": false,
+      "playedAt": "2026-08-20T03:44:48.527Z",
+      "black": "claude-fable-5 · medium",
+      "white": "claude-fable-5 · high",
+      "winner": "B",
+      "score": {
+        "B": 55,
+        "W": 9
+      },
+      "moves": 63,
+      "outputTokens": {
+        "B": 140998,
+        "W": 160741
+      },
+      "incidents": []
+    },
+    {
+      "id": "s1/g002",
+      "card": "a-claude-opus-5-med-high",
+      "blind": true,
+      "playedAt": "2026-08-20T04:48:14.469Z",
+      "black": "claude-opus-5 · medium",
+      "white": "claude-opus-5 · high",
+      "winner": "W",
+      "score": {
+        "B": 26,
+        "W": 38
+      },
+      "moves": 64,
+      "outputTokens": {
+        "B": 166829,
+        "W": 377492
+      },
+      "incidents": []
+    },
+    {
+      "id": "s1/g003",
+      "card": "b-claude-fable-5-vs-claude-opus-5-medium",
+      "blind": true,
+      "playedAt": "2026-08-20T07:03:56.341Z",
+      "black": "claude-fable-5 · medium",
+      "white": "claude-opus-5 · medium",
+      "winner": "W",
+      "score": {
+        "B": 13,
+        "W": 51
+      },
+      "moves": 63,
+      "outputTokens": {
+        "B": 132492,
+        "W": 224643
+      },
+      "incidents": []
+    }
+  ],
+  "exhibitions": [
+    {
+      "id": "exhibition-8x8-grok-4-6-vs-grok-4-5",
+      "title": "Reversi 8×8",
+      "black": "Grok 4.6",
+      "white": "Grok 4.5",
+      "winner": "B",
+      "score": {
+        "B": 44,
+        "W": 20
+      },
+      "playedAt": "2026-08-19T09:29:02.883Z"
+    }
+  ]
+}
