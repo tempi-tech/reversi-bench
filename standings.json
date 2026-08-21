@@ -3,14 +3,14 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-21T04:50:17.105Z",
+  "generatedAt": "2026-08-21T05:09:05.935Z",
   "standings": [
     {
-      "player": "claude-opus-5 · medium",
-      "games": 2,
+      "player": "grok-4.6",
+      "games": 1,
       "wins": 1,
-      "losses": 1,
-      "stoneDiff": 26
+      "losses": 0,
+      "stoneDiff": 24
     },
     {
       "player": "claude-opus-5 · high",
@@ -20,11 +20,25 @@
       "stoneDiff": 12
     },
     {
+      "player": "claude-opus-5 · medium",
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "stoneDiff": 26
+    },
+    {
       "player": "claude-fable-5 · medium",
       "games": 2,
       "wins": 1,
       "losses": 1,
       "stoneDiff": 8
+    },
+    {
+      "player": "grok-4.5",
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "stoneDiff": -24
     },
     {
       "player": "claude-fable-5 · high",
@@ -35,6 +49,25 @@
     }
   ],
   "games": [
+    {
+      "id": "exhibition-8x8-grok-4-6-vs-grok-4-5",
+      "card": "exhibition",
+      "blind": false,
+      "playedAt": "2026-08-19T09:29:02.883Z",
+      "black": "grok-4.6",
+      "white": "grok-4.5",
+      "winner": "B",
+      "score": {
+        "B": 44,
+        "W": 20
+      },
+      "moves": 65,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "incidents": []
+    },
     {
       "id": "s1/g001",
       "card": "a-claude-fable-5-med-high",
@@ -91,20 +124,6 @@
         "W": 224643
       },
       "incidents": []
-    }
-  ],
-  "exhibitions": [
-    {
-      "id": "exhibition-8x8-grok-4-6-vs-grok-4-5",
-      "title": "Reversi 8×8",
-      "black": "Grok 4.6",
-      "white": "Grok 4.5",
-      "winner": "B",
-      "score": {
-        "B": 44,
-        "W": 20
-      },
-      "playedAt": "2026-08-19T09:29:02.883Z"
     }
   ]
 }

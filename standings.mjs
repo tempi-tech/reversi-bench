@@ -11,7 +11,7 @@ const seatLabelOf = (seat) => {
 
 const series = JSON.parse(fs.readFileSync(path.join(here, "series", "s1.json"), "utf8"));
 
-const games = series.games.map((game) => ({
+const seriesGames = series.games.map((game) => ({
   id: game.id,
   card: game.card,
   blind: game.blind,
@@ -27,6 +27,32 @@ const games = series.games.map((game) => ({
   },
   incidents: game.incidents ?? [],
 }));
+
+const exhibitionGames = fs.readdirSync(path.join(here, "matches"))
+  .filter((name) => name.startsWith("exhibition-") && name.endsWith(".json"))
+  .sort()
+  .map((name) => {
+    const match = JSON.parse(fs.readFileSync(path.join(here, "matches", name), "utf8"));
+    return {
+      id: match.id,
+      card: "exhibition",
+      blind: false,
+      playedAt: match.updatedAt ?? null,
+      black: match.players.B.model,
+      white: match.players.W.model,
+      winner: match.winner,
+      score: {
+        B: match.cells.filter((cell) => cell === "B").length,
+        W: match.cells.filter((cell) => cell === "W").length,
+      },
+      moves: match.history.length,
+      outputTokens: { B: null, W: null },
+      incidents: [],
+    };
+  });
+
+const games = [...exhibitionGames, ...seriesGames]
+  .sort((a, b) => String(a.playedAt).localeCompare(String(b.playedAt)));
 
 const results = games.flatMap((game) => [
   { player: game.black, won: game.winner === "B", diff: game.score.B - game.score.W },
@@ -44,26 +70,7 @@ const standings = [...new Set(results.map((result) => result.player))]
       stoneDiff: rows.reduce((sum, row) => sum + row.diff, 0),
     };
   })
-  .sort((a, b) => b.wins - a.wins || b.stoneDiff - a.stoneDiff);
-
-const exhibitions = fs.readdirSync(path.join(here, "matches"))
-  .filter((name) => name.startsWith("exhibition-") && name.endsWith(".json"))
-  .sort()
-  .map((name) => {
-    const match = JSON.parse(fs.readFileSync(path.join(here, "matches", name), "utf8"));
-    return {
-      id: match.id,
-      title: match.title,
-      black: match.players.B.name,
-      white: match.players.W.name,
-      winner: match.winner,
-      score: {
-        B: match.cells.filter((cell) => cell === "B").length,
-        W: match.cells.filter((cell) => cell === "W").length,
-      },
-      playedAt: match.updatedAt ?? null,
-    };
-  });
+  .sort((a, b) => b.wins - a.wins || a.losses - b.losses || b.stoneDiff - a.stoneDiff);
 
 const doc = {
   bench: "Reversi Bench",
@@ -73,8 +80,7 @@ const doc = {
   generatedAt: new Date().toISOString(),
   standings,
   games,
-  exhibitions,
 };
 
 fs.writeFileSync(path.join(here, "standings.json"), `${JSON.stringify(doc, null, 2)}\n`);
-process.stdout.write(`${JSON.stringify({ ok: true, games: games.length, players: standings.length, exhibitions: exhibitions.length })}\n`);
+process.stdout.write(`${JSON.stringify({ ok: true, games: games.length, players: standings.length })}\n`);
