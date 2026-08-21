@@ -1,6 +1,6 @@
 # Live streaming
 
-Optional tooling that streams a running match to a Discord forum as one board screenshot per move. The referee CLI does not depend on any of it — this folder talks to the referee only through `reversi.mjs state --json`.
+Optional tooling that streams a running match to a Discord forum as one board image per move. The referee CLI does not depend on any of it — this folder talks to the referee only through `reversi.mjs state --json`.
 
 Requires [AGI Wings](https://agi-labo.com) for the credential-free Discord call; the Discord bot token lives in a Wings connection, so no credential ever reaches this code. Board images are drawn locally with [Pillow](https://python-pillow.org).
 
@@ -15,7 +15,7 @@ wings handler deploy --name reversi-live-discord --file live/discord-handler.js 
 
 ## Run
 
-Serve the match, open the spectator page in a Cockpit browser tab, then start the stream:
+Start the stream once the match exists:
 
 ```bash
 python3 live/discord-stream.py \
