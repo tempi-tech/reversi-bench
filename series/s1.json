@@ -160,6 +160,41 @@
           "apiCalls": 34
         }
       }
+    },
+    {
+      "id": "s1/g005",
+      "card": "d-claude-sonnet-5-vs-gpt-5.6-terra-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-terra",
+          "effort": "medium"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-sonnet-5",
+          "effort": "medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 8,
+        "W": 56
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-21T07:17:41.461Z",
+      "tokens": {
+        "B": null,
+        "W": {
+          "input": 122,
+          "cacheRead": 2717765,
+          "cacheCreation": 58253,
+          "output": 8088,
+          "apiCalls": 61
+        }
+      }
     }
   ]
 }
