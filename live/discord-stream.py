@@ -6,11 +6,14 @@ import subprocess
 import sys
 import time
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 parser = argparse.ArgumentParser(description="Stream a reversi-bench game to a Discord forum as board screenshots")
 parser.add_argument("--arena", required=True, help="directory holding reversi.mjs and the live match")
 parser.add_argument("--handler", required=True, help="AGI Wings handler id running live/discord-handler.js")
 parser.add_argument("--channel", required=True, help="Discord forum channel id to open the live post in")
-parser.add_argument("--tab", required=True, help="AGI Cockpit browser tab id showing the spectator page")
+parser.add_argument("--tab", default="", help="AGI Cockpit browser tab id, used only when --render screenshot")
+parser.add_argument("--render", choices=["local", "screenshot"], default="local", help="draw the board locally (needs Pillow) or screenshot the spectator page")
 parser.add_argument("--black", required=True)
 parser.add_argument("--white", required=True)
 parser.add_argument("--title", required=True)
@@ -51,6 +54,16 @@ def state():
     return json.loads(result.stdout)["data"]
 
 
+def board_local(snapshot):
+    try:
+        import board
+        board.render(snapshot, SHOT, args.black, args.white)
+        return base64.b64encode(open(SHOT, "rb").read()).decode()
+    except Exception as error:
+        log(f"local render failed: {type(error).__name__} {str(error)[:120]}")
+        return None
+
+
 def board_shot():
     for attempt in range(3):
         try:
@@ -89,7 +102,7 @@ def line_of(index, entry):
 
 def post_update(thread, snapshot, lines, tail):
     content = "\n".join(lines + [tail])
-    shot = board_shot()
+    shot = board_local(snapshot) if args.render == "local" else board_shot()
     if shot:
         return invoke({"op": "image", "channelId": thread, "content": content, "dataBase64": shot, "filename": "board.jpg"})
     return invoke({"op": "post", "channelId": thread, "content": content + "\n```\n" + board_text(snapshot["boardRows"]) + "\n```"})

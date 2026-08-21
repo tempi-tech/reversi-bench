@@ -3,27 +3,27 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-21T09:31:03.320Z",
+  "generatedAt": "2026-08-21T10:57:55.454Z",
   "standings": [
     {
+      "player": "claude-opus-5 · medium",
+      "rating": 1704,
+      "games": 6,
+      "wins": 5,
+      "losses": 1,
+      "stoneDiff": 166
+    },
+    {
       "player": "claude-opus-5 · high",
-      "rating": 1684,
+      "rating": 1694,
       "games": 1,
       "wins": 1,
       "losses": 0,
       "stoneDiff": 12
     },
     {
-      "player": "claude-opus-5 · medium",
-      "rating": 1676,
-      "games": 5,
-      "wins": 4,
-      "losses": 1,
-      "stoneDiff": 140
-    },
-    {
       "player": "grok-4.6",
-      "rating": 1590,
+      "rating": 1589,
       "games": 1,
       "wins": 1,
       "losses": 0,
@@ -31,7 +31,7 @@
     },
     {
       "player": "codex · gpt-5.6-sol · medium",
-      "rating": 1525,
+      "rating": 1532,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -39,7 +39,7 @@
     },
     {
       "player": "claude-fable-5 · medium",
-      "rating": 1513,
+      "rating": 1519,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -47,15 +47,23 @@
     },
     {
       "player": "claude-sonnet-5 · medium",
-      "rating": 1434,
+      "rating": 1440,
       "games": 3,
       "wins": 1,
       "losses": 2,
       "stoneDiff": -20
     },
     {
+      "player": "claude-opus-4-8 · medium",
+      "rating": 1437,
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "stoneDiff": -26
+    },
+    {
       "player": "openrouter/stealth/ox-alpha",
-      "rating": 1430,
+      "rating": 1437,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -71,7 +79,7 @@
     },
     {
       "player": "claude-fable-5 · high",
-      "rating": 1383,
+      "rating": 1385,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -79,7 +87,7 @@
     },
     {
       "player": "codex · gpt-5.6-terra · medium",
-      "rating": 1356,
+      "rating": 1358,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -255,6 +263,25 @@
       "outputTokens": {
         "B": null,
         "W": 161542
+      },
+      "incidents": []
+    },
+    {
+      "id": "s1/g009",
+      "card": "h-claude-opus-4-8-vs-claude-opus-5-medium",
+      "blind": true,
+      "playedAt": "2026-08-21T10:56:50.283Z",
+      "black": "claude-opus-4-8 · medium",
+      "white": "claude-opus-5 · medium",
+      "winner": "W",
+      "score": {
+        "B": 19,
+        "W": 45
+      },
+      "moves": 62,
+      "outputTokens": {
+        "B": 135547,
+        "W": 146868
       },
       "incidents": []
     }
