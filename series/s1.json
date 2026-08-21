@@ -498,6 +498,37 @@
           "apiCalls": 60
         }
       }
+    },
+    {
+      "id": "s1/g015",
+      "card": "n-kimi-k3-vs-qwen3.8-max-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "cockpit",
+          "model": "openrouter/qwen/qwen3.8-max",
+          "effort": "high",
+          "display": "qwen3.8-max · high"
+        },
+        "W": {
+          "agentType": "cockpit",
+          "model": "openrouter/moonshotai/kimi-k3",
+          "effort": "high",
+          "display": "kimi-k3 · high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 24,
+        "W": 40
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-21T14:29:01.380Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
