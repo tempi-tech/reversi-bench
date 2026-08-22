@@ -1215,6 +1215,55 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g030",
+      "card": "x-gemini-3.7-flash-openrouter-high-vs-grok-4.6-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "cockpit",
+          "model": "openrouter/google/gemini-3.7-flash",
+          "effort": "high",
+          "display": "openrouter/google/gemini-3.7-flash · high"
+        },
+        "W": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "high",
+          "display": "grok-4.6 · high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 22,
+        "W": 42
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-22T14:36:56.735Z",
+      "tokens": {
+        "B": {
+          "input": 300977,
+          "cacheRead": 1841617,
+          "cacheCreation": 0,
+          "output": 14778,
+          "reasoning": 12124,
+          "apiCalls": 66
+        },
+        "W": {
+          "input": 408244,
+          "cacheRead": 2275456,
+          "cacheCreation": 0,
+          "output": 32464,
+          "reasoning": 30730,
+          "apiCalls": 62
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
