@@ -678,6 +678,37 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g020",
+      "card": "x-grok-4.6-medium-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "medium",
+          "display": "grok-4.6 · medium"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 45,
+        "W": 19
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-22T00:53:54.034Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
