@@ -27,31 +27,7 @@ const seriesGames = series.games.map((game) => ({
   incidents: game.incidents ?? [],
 }));
 
-const exhibitionGames = fs.readdirSync(path.join(here, "matches"))
-  .filter((name) => name.startsWith("exhibition-") && name.endsWith(".json"))
-  .sort()
-  .map((name) => {
-    const match = JSON.parse(fs.readFileSync(path.join(here, "matches", name), "utf8"));
-    return {
-      id: match.id,
-      card: "exhibition",
-      blind: false,
-      playedAt: match.updatedAt ?? null,
-      black: match.players.B.model,
-      white: match.players.W.model,
-      winner: match.winner,
-      score: {
-        B: match.cells.filter((cell) => cell === "B").length,
-        W: match.cells.filter((cell) => cell === "W").length,
-      },
-      moves: match.history.length,
-      outputTokens: { B: null, W: null },
-      incidents: [],
-    };
-  });
-
-const games = [...exhibitionGames, ...seriesGames]
-  .sort((a, b) => String(a.playedAt).localeCompare(String(b.playedAt)));
+const games = [...seriesGames].sort((a, b) => String(a.playedAt).localeCompare(String(b.playedAt)));
 
 const outcomeOf = (winner, side) => (winner === side ? "win" : winner === "B" || winner === "W" ? "loss" : "draw");
 
