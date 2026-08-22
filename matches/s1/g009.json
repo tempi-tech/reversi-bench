@@ -15,20 +15,8 @@
     "blind": true,
     "referee": "13961d9",
     "tokens": {
-      "B": {
-        "input": 124,
-        "cacheRead": 6153176,
-        "cacheCreation": 179188,
-        "output": 135547,
-        "apiCalls": 62
-      },
-      "W": {
-        "input": 130,
-        "cacheRead": 7323139,
-        "cacheCreation": 171822,
-        "output": 146868,
-        "apiCalls": 65
-      }
+      "B": 135547,
+      "W": 146868
     },
     "notes": [
       "First cross-generation card: the same model family one version apart, both at medium effort.",
@@ -754,6 +742,7 @@
       "cacheRead": 6153176,
       "cacheCreation": 179188,
       "output": 135547,
+      "reasoning": 0,
       "apiCalls": 62
     },
     "W": {
@@ -761,6 +750,7 @@
       "cacheRead": 7323139,
       "cacheCreation": 171822,
       "output": 146868,
+      "reasoning": 0,
       "apiCalls": 65
     }
   }

@@ -3,11 +3,11 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-22T00:54:20.696Z",
+  "generatedAt": "2026-08-22T04:02:25.256Z",
   "standings": [
     {
       "player": "gpt-5.6-sol · high",
-      "rating": 1729,
+      "rating": 1728,
       "games": 2,
       "wins": 2,
       "losses": 0,
@@ -16,25 +16,25 @@
     },
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1693,
-      "games": 6,
+      "rating": 1685,
+      "games": 7,
       "wins": 5,
       "losses": 1,
-      "draws": 0,
+      "draws": 1,
       "stoneDiff": 166
     },
     {
       "player": "grok-4.6 · medium",
-      "rating": 1634,
-      "games": 1,
+      "rating": 1648,
+      "games": 2,
       "wins": 1,
       "losses": 0,
-      "draws": 0,
+      "draws": 1,
       "stoneDiff": 26
     },
     {
       "player": "claude-opus-5 · high",
-      "rating": 1604,
+      "rating": 1602,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -52,7 +52,7 @@
     },
     {
       "player": "gpt-5.6-sol · medium",
-      "rating": 1543,
+      "rating": 1544,
       "games": 6,
       "wins": 3,
       "losses": 3,
@@ -70,7 +70,7 @@
     },
     {
       "player": "claude-fable-5 · medium",
-      "rating": 1517,
+      "rating": 1515,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -88,7 +88,7 @@
     },
     {
       "player": "claude-sonnet-5 · medium",
-      "rating": 1462,
+      "rating": 1461,
       "games": 3,
       "wins": 1,
       "losses": 2,
@@ -106,7 +106,7 @@
     },
     {
       "player": "claude-opus-4-8 · medium",
-      "rating": 1434,
+      "rating": 1433,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -115,7 +115,7 @@
     },
     {
       "player": "openrouter/stealth/ox-alpha",
-      "rating": 1434,
+      "rating": 1433,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -186,6 +186,10 @@
         "B": 140998,
         "W": 160741
       },
+      "credits": {
+        "B": null,
+        "W": null
+      },
       "incidents": []
     },
     {
@@ -204,6 +208,10 @@
       "outputTokens": {
         "B": 166829,
         "W": 377492
+      },
+      "credits": {
+        "B": null,
+        "W": null
       },
       "incidents": []
     },
@@ -224,6 +232,10 @@
         "B": 132492,
         "W": 224643
       },
+      "credits": {
+        "B": null,
+        "W": null
+      },
       "incidents": []
     },
     {
@@ -240,8 +252,12 @@
       },
       "moves": 62,
       "outputTokens": {
-        "B": null,
+        "B": 131354,
         "W": 171686
+      },
+      "credits": {
+        "B": null,
+        "W": null
       },
       "incidents": []
     },
@@ -259,8 +275,12 @@
       },
       "moves": 63,
       "outputTokens": {
-        "B": null,
+        "B": 3446,
         "W": 8088
+      },
+      "credits": {
+        "B": null,
+        "W": null
       },
       "incidents": []
     },
@@ -281,6 +301,10 @@
         "B": 219328,
         "W": 10668
       },
+      "credits": {
+        "B": null,
+        "W": null
+      },
       "incidents": []
     },
     {
@@ -298,6 +322,10 @@
       "moves": 63,
       "outputTokens": {
         "B": 34020,
+        "W": 8569
+      },
+      "credits": {
+        "B": null,
         "W": null
       },
       "incidents": []
@@ -316,8 +344,12 @@
       },
       "moves": 63,
       "outputTokens": {
-        "B": null,
+        "B": 13466,
         "W": 161542
+      },
+      "credits": {
+        "B": null,
+        "W": null
       },
       "incidents": []
     },
@@ -338,6 +370,10 @@
         "B": 135547,
         "W": 146868
       },
+      "credits": {
+        "B": null,
+        "W": null
+      },
       "incidents": []
     },
     {
@@ -354,6 +390,10 @@
       },
       "moves": 45,
       "outputTokens": {
+        "B": 3149,
+        "W": 3128
+      },
+      "credits": {
         "B": null,
         "W": null
       },
@@ -373,6 +413,10 @@
       },
       "moves": 62,
       "outputTokens": {
+        "B": 7544,
+        "W": 9017
+      },
+      "credits": {
         "B": null,
         "W": null
       },
@@ -392,6 +436,10 @@
       },
       "moves": 63,
       "outputTokens": {
+        "B": 8486,
+        "W": 13587
+      },
+      "credits": {
         "B": null,
         "W": null
       },
@@ -411,6 +459,10 @@
       },
       "moves": 63,
       "outputTokens": {
+        "B": 22938,
+        "W": 6355
+      },
+      "credits": {
         "B": null,
         "W": null
       },
@@ -430,8 +482,12 @@
       },
       "moves": 63,
       "outputTokens": {
-        "B": null,
+        "B": 22310,
         "W": 307598
+      },
+      "credits": {
+        "B": null,
+        "W": null
       },
       "incidents": []
     },
@@ -449,6 +505,10 @@
       },
       "moves": 64,
       "outputTokens": {
+        "B": 10006,
+        "W": 48373
+      },
+      "credits": {
         "B": null,
         "W": null
       },
@@ -468,6 +528,10 @@
       },
       "moves": 62,
       "outputTokens": {
+        "B": 329811,
+        "W": 69150
+      },
+      "credits": {
         "B": null,
         "W": null
       },
@@ -489,6 +553,10 @@
       "outputTokens": {
         "B": null,
         "W": null
+      },
+      "credits": {
+        "B": 18.4071,
+        "W": 332.0417
       },
       "incidents": [
         {
@@ -515,6 +583,10 @@
         "B": null,
         "W": null
       },
+      "credits": {
+        "B": 333.7244,
+        "W": 144.5245
+      },
       "incidents": [
         {
           "kind": "turn_ended_early",
@@ -539,6 +611,10 @@
       "outputTokens": {
         "B": null,
         "W": null
+      },
+      "credits": {
+        "B": 481.9891,
+        "W": 773.2125
       },
       "incidents": [
         {
@@ -567,6 +643,33 @@
       },
       "moves": 63,
       "outputTokens": {
+        "B": 29805,
+        "W": 9889
+      },
+      "credits": {
+        "B": null,
+        "W": null
+      },
+      "incidents": []
+    },
+    {
+      "id": "s1/g021",
+      "card": "x-grok-4.6-medium-vs-claude-opus-5-medium",
+      "blind": true,
+      "playedAt": "2026-08-22T03:37:10.548Z",
+      "black": "claude-opus-5 · medium",
+      "white": "grok-4.6 · medium",
+      "winner": "draw",
+      "score": {
+        "B": 32,
+        "W": 32
+      },
+      "moves": 62,
+      "outputTokens": {
+        "B": 177873,
+        "W": 36226
+      },
+      "credits": {
         "B": null,
         "W": null
       },

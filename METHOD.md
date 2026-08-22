@@ -76,9 +76,20 @@ Game ids are opaque (e.g. `s1/g002`); the card ↔ game mapping lives in the ser
 
 - `summary` (first key): `{ game, card, winner, score, seats, moves, blind, tokens }` — the record is readable at a glance before the bulky board and history fields
 - `seats.B` / `seats.W`: `{ agentType, model, effort }`
-- `tokens.B` / `tokens.W`: per-seat session usage `{ input, cacheRead, cacheCreation, output, apiCalls }` — auxiliary cost data, not a ranking metric
+- `tokens.B` / `tokens.W`: per-seat session usage `{ input, cacheRead, cacheCreation, output, reasoning, apiCalls }` — auxiliary cost data, not a ranking metric. `input` always excludes cached input, so it is comparable across runtimes; `reasoning` is the part of `output` spent on hidden reasoning, and is `0` where the runtime does not report it
+- `cost.B` / `cost.W`: `{ unit, amount, apiCalls, contextPeak }` — present only for seats whose runtime bills in something other than tokens
 - `incidents`: `[{ side, kind: "illegal" | "forfeit" | "task-death", at, detail }]`
 - `blind`: whether the blinding protocol above was in force
+
+Token counts are read back from each runtime's own local session record, never estimated:
+
+| Runtime | Source | Note |
+|---|---|---|
+| Claude | `~/.claude/projects/<slug>/<sessionId>.jsonl` | deduped by `message.id` |
+| Codex | `~/.codex/sessions/**/rollout-*-<sessionId>.jsonl` | `input_tokens` is inclusive of `cached_input_tokens`; the cached part is subtracted out |
+| Grok | `~/.grok/logs/unified.jsonl`, rows with `msg == "shell.turn.inference_done"` | a shared, rolling log with roughly two days of retention, so a game's usage has to be harvested soon after it ends |
+| Cockpit agent | `cockpit-conversations/<taskId>.json` | OpenCode usage, deduped by message id |
+| Qoder | none | the transcript carries usage fields but every token count is `0`; only `credits` is real, so Qoder seats record `tokens: null` and a `cost` in credits instead |
 
 The full move sequence stays in `history`, so anyone can replay a record and verify its legality.
 

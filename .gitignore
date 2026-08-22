@@ -2,3 +2,5 @@
 matches/selftest.json
 matches/*.tmp
 matches/**/*.tmp
+__pycache__/
+*.pyc

@@ -24,6 +24,10 @@ const seriesGames = series.games.map((game) => ({
     B: game.tokens?.B?.output ?? null,
     W: game.tokens?.W?.output ?? null,
   },
+  credits: {
+    B: game.cost?.B?.amount ?? null,
+    W: game.cost?.W?.amount ?? null,
+  },
   incidents: game.incidents ?? [],
 }));
 

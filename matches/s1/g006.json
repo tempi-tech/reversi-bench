@@ -15,20 +15,8 @@
     "blind": true,
     "referee": "b0de00b",
     "tokens": {
-      "B": {
-        "input": 124,
-        "cacheRead": 8941154,
-        "cacheCreation": 264072,
-        "output": 219328,
-        "apiCalls": 62
-      },
-      "W": {
-        "input": 180,
-        "cacheRead": 4600367,
-        "cacheCreation": 72219,
-        "output": 10668,
-        "apiCalls": 90
-      }
+      "B": 219328,
+      "W": 10668
     },
     "notes": [
       "Head-to-head between the two Claude seats that had each won by a wide margin: opus took it 53-11.",
@@ -747,6 +735,7 @@
       "cacheRead": 8941154,
       "cacheCreation": 264072,
       "output": 219328,
+      "reasoning": 0,
       "apiCalls": 62
     },
     "W": {
@@ -754,6 +743,7 @@
       "cacheRead": 4600367,
       "cacheCreation": 72219,
       "output": 10668,
+      "reasoning": 0,
       "apiCalls": 90
     }
   }

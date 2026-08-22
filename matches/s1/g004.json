@@ -15,14 +15,8 @@
     "blind": true,
     "referee": "d0c541f",
     "tokens": {
-      "B": null,
-      "W": {
-        "input": 68,
-        "cacheRead": 3486374,
-        "cacheCreation": 194827,
-        "output": 171686,
-        "apiCalls": 34
-      }
+      "B": 131354,
+      "W": 171686
     },
     "notes": [
       "B tokens are null: the Black seat ran on the cockpit agent (OpenRouter stealth model ox-alpha); non-Claude transcript token collection is not implemented yet.",
@@ -695,12 +689,20 @@
   "blind": true,
   "incidents": [],
   "tokens": {
-    "B": null,
+    "B": {
+      "input": 1106022,
+      "cacheRead": 5532608,
+      "cacheCreation": 0,
+      "output": 131354,
+      "reasoning": 0,
+      "apiCalls": 67
+    },
     "W": {
       "input": 68,
       "cacheRead": 3486374,
       "cacheCreation": 194827,
       "output": 171686,
+      "reasoning": 0,
       "apiCalls": 34
     }
   }

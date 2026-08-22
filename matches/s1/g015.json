@@ -15,8 +15,8 @@
     "blind": true,
     "referee": "4633906",
     "tokens": {
-      "B": null,
-      "W": null
+      "B": 329811,
+      "W": 69150
     },
     "notes": [
       "Tokens are null for both seats: cockpit-agent transcript token collection is not implemented yet.",
@@ -744,7 +744,21 @@
   "blind": true,
   "incidents": [],
   "tokens": {
-    "B": null,
-    "W": null
+    "B": {
+      "input": 2441623,
+      "cacheRead": 10847488,
+      "cacheCreation": 0,
+      "output": 329811,
+      "reasoning": 319823,
+      "apiCalls": 67
+    },
+    "W": {
+      "input": 366273,
+      "cacheRead": 4956625,
+      "cacheCreation": 0,
+      "output": 69150,
+      "reasoning": 42734,
+      "apiCalls": 94
+    }
   }
 }

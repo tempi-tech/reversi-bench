@@ -15,8 +15,8 @@
     "blind": true,
     "referee": "726600e",
     "tokens": {
-      "B": null,
-      "W": null
+      "B": 8486,
+      "W": 13587
     },
     "notes": [
       "Tokens are null for both seats: codex-seat transcript token collection is not implemented yet.",
@@ -686,7 +686,21 @@
   "blind": true,
   "incidents": [],
   "tokens": {
-    "B": null,
-    "W": null
+    "B": {
+      "input": 107623,
+      "cacheRead": 2006016,
+      "cacheCreation": 0,
+      "output": 8486,
+      "reasoning": 4627,
+      "apiCalls": 68
+    },
+    "W": {
+      "input": 107572,
+      "cacheRead": 2048256,
+      "cacheCreation": 0,
+      "output": 13587,
+      "reasoning": 9826,
+      "apiCalls": 63
+    }
   }
 }

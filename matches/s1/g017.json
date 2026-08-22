@@ -29,7 +29,11 @@
       "The kimi seat ended its turn mid-game and was resumed once; counted as a protocol incident.",
       "DeepSeek V4 Pro, released 2026-08-13, won its first recorded game.",
       "Tokens are null for both seats: qoder-seat transcript token collection is not implemented yet."
-    ]
+    ],
+    "cost": {
+      "B": 18.4071,
+      "W": 332.0417
+    }
   },
   "id": "current",
   "size": 8,
@@ -750,5 +754,19 @@
   "tokens": {
     "B": null,
     "W": null
+  },
+  "cost": {
+    "B": {
+      "unit": "credits",
+      "amount": 18.4071,
+      "apiCalls": 236,
+      "contextPeak": 0.088
+    },
+    "W": {
+      "unit": "credits",
+      "amount": 332.0417,
+      "apiCalls": 121,
+      "contextPeak": 0.9006
+    }
   }
 }

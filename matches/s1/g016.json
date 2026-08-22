@@ -34,7 +34,11 @@
       "Draw: both seats finished on 32 stones.",
       "Both qoder seats ended their turn mid-game and had to be resumed; counted as protocol incidents, not playing strength.",
       "Tokens are null for both seats: qoder-seat transcript token collection is not implemented yet."
-    ]
+    ],
+    "cost": {
+      "B": 481.9891,
+      "W": 773.2125
+    }
   },
   "id": "current",
   "size": 8,
@@ -772,5 +776,19 @@
   "tokens": {
     "B": null,
     "W": null
+  },
+  "cost": {
+    "B": {
+      "unit": "credits",
+      "amount": 481.9891,
+      "apiCalls": 224,
+      "contextPeak": 0.923
+    },
+    "W": {
+      "unit": "credits",
+      "amount": 773.2125,
+      "apiCalls": 338,
+      "contextPeak": 0.8735
+    }
   }
 }

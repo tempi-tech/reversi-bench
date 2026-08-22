@@ -29,7 +29,11 @@
       "The deepseek seat ended its turn mid-game and was resumed once; counted as a protocol incident.",
       "Two-stone finish, the closest decisive game recorded so far.",
       "Tokens are null for both seats: qoder-seat transcript token collection is not implemented yet."
-    ]
+    ],
+    "cost": {
+      "B": 333.7244,
+      "W": 144.5245
+    }
   },
   "id": "current",
   "size": 8,
@@ -800,5 +804,19 @@
   "tokens": {
     "B": null,
     "W": null
+  },
+  "cost": {
+    "B": {
+      "unit": "credits",
+      "amount": 333.7244,
+      "apiCalls": 208,
+      "contextPeak": 0.9241
+    },
+    "W": {
+      "unit": "credits",
+      "amount": 144.5245,
+      "apiCalls": 295,
+      "contextPeak": 0.1664
+    }
   }
 }
