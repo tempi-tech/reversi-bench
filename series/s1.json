@@ -938,6 +938,100 @@
           "apiCalls": 90
         }
       }
+    },
+    {
+      "id": "s1/g023",
+      "card": "x-deepseek-v4-pro-high-vs-qwen3.8-max-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "qoder",
+          "model": "qmodel_38max",
+          "effort": "xhigh",
+          "display": "qwen3.8-max · xhigh"
+        },
+        "W": {
+          "agentType": "qoder",
+          "model": "dmodel",
+          "effort": "high",
+          "display": "deepseek-v4-pro · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 49,
+        "W": 14
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-22T03:47:00.008Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      },
+      "cost": {
+        "B": {
+          "unit": "credits",
+          "amount": 98.399,
+          "apiCalls": 120,
+          "contextPeak": 0.899
+        },
+        "W": {
+          "unit": "credits",
+          "amount": 78.7035,
+          "apiCalls": 130,
+          "contextPeak": 0.0585
+        }
+      }
+    },
+    {
+      "id": "s1/g025",
+      "card": "x-grok-4.6-high-vs-gpt-5.6-sol-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "display": "gpt-5.6-sol · high"
+        },
+        "W": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "high",
+          "display": "grok-4.6 · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 33,
+        "W": 31
+      },
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-08-22T04:03:40.447Z",
+      "tokens": {
+        "B": {
+          "input": 141940,
+          "cacheRead": 3254272,
+          "cacheCreation": 0,
+          "output": 16764,
+          "reasoning": 11874,
+          "apiCalls": 96
+        },
+        "W": {
+          "input": 430006,
+          "cacheRead": 2861568,
+          "cacheCreation": 0,
+          "output": 47484,
+          "reasoning": 45647,
+          "apiCalls": 65
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
