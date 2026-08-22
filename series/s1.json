@@ -1032,6 +1032,96 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g022",
+      "card": "x-glm-5.3-high-vs-qwen3.8-max-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "qoder",
+          "model": "gmodel",
+          "effort": "high",
+          "display": "glm-5.3 · high"
+        },
+        "W": {
+          "agentType": "qoder",
+          "model": "qmodel_38max",
+          "effort": "xhigh",
+          "display": "qwen3.8-max · xhigh"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 31,
+        "W": 33
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-22T04:45:16.604Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      },
+      "cost": {
+        "B": {
+          "unit": "credits",
+          "amount": 177.8781,
+          "apiCalls": 128,
+          "contextPeak": 0.9186
+        },
+        "W": {
+          "unit": "credits",
+          "amount": 135.6119,
+          "apiCalls": 139,
+          "contextPeak": 0.8909
+        }
+      }
+    },
+    {
+      "id": "s1/g024",
+      "card": "x-kimi-k3-high-vs-qwen3.8-max-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "qoder",
+          "model": "kmodel_latest",
+          "effort": "high",
+          "display": "kimi-k3 · high"
+        },
+        "W": {
+          "agentType": "qoder",
+          "model": "qmodel_38max",
+          "effort": "xhigh",
+          "display": "qwen3.8-max · xhigh"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 36,
+        "W": 28
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-22T05:11:49.077Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      },
+      "cost": {
+        "B": {
+          "unit": "credits",
+          "amount": 337.3143,
+          "apiCalls": 137,
+          "contextPeak": 0.8953
+        },
+        "W": {
+          "unit": "credits",
+          "amount": 158.0376,
+          "apiCalls": 163,
+          "contextPeak": 0.863
+        }
+      }
     }
   ]
 }
