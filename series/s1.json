@@ -1264,6 +1264,349 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g033",
+      "card": "x-gpt-5.6-terra-low-vs-gpt-5.6-luna-max",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-terra",
+          "effort": "low",
+          "display": "gpt-5.6-terra · low"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-luna",
+          "effort": "max",
+          "display": "gpt-5.6-luna · max"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 3,
+        "W": 61
+      },
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-08-23T08:52:38.729Z",
+      "tokens": {
+        "B": {
+          "input": 72510,
+          "cacheRead": 2031360,
+          "cacheCreation": 0,
+          "output": 4382,
+          "reasoning": 481,
+          "apiCalls": 73
+        },
+        "W": {
+          "input": 98560,
+          "cacheRead": 2624000,
+          "cacheCreation": 0,
+          "output": 26418,
+          "reasoning": 22779,
+          "apiCalls": 63
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g032",
+      "card": "k-gpt-5.6-sol-med-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "display": "gpt-5.6-sol · high"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 7,
+        "W": 57
+      },
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-08-23T08:57:46.600Z",
+      "tokens": {
+        "B": {
+          "input": 133707,
+          "cacheRead": 2228736,
+          "cacheCreation": 0,
+          "output": 10020,
+          "reasoning": 5990,
+          "apiCalls": 74
+        },
+        "W": {
+          "input": 78585,
+          "cacheRead": 2287104,
+          "cacheCreation": 0,
+          "output": 12847,
+          "reasoning": 8948,
+          "apiCalls": 70
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g034",
+      "card": "x-gpt-5.6-terra-low-vs-gpt-5.6-luna-max",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-luna",
+          "effort": "max",
+          "display": "gpt-5.6-luna · max"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-terra",
+          "effort": "low",
+          "display": "gpt-5.6-terra · low"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 24,
+        "W": 39
+      },
+      "moves": 61,
+      "incidents": [],
+      "finishedAt": "2026-08-23T09:04:22.656Z",
+      "tokens": {
+        "B": {
+          "input": 141490,
+          "cacheRead": 2091008,
+          "cacheCreation": 0,
+          "output": 21749,
+          "reasoning": 18255,
+          "apiCalls": 61
+        },
+        "W": {
+          "input": 89222,
+          "cacheRead": 1999616,
+          "cacheCreation": 0,
+          "output": 6238,
+          "reasoning": 2304,
+          "apiCalls": 73
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g035",
+      "card": "k-gpt-5.6-sol-med-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "display": "gpt-5.6-sol · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 51,
+        "W": 13
+      },
+      "moves": 65,
+      "incidents": [],
+      "finishedAt": "2026-08-23T09:09:20.969Z",
+      "tokens": {
+        "B": {
+          "input": 104905,
+          "cacheRead": 2215680,
+          "cacheCreation": 0,
+          "output": 9422,
+          "reasoning": 5486,
+          "apiCalls": 73
+        },
+        "W": {
+          "input": 129176,
+          "cacheRead": 1832960,
+          "cacheCreation": 0,
+          "output": 10410,
+          "reasoning": 6961,
+          "apiCalls": 60
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g036",
+      "card": "x-gpt-5.6-terra-low-vs-gpt-5.6-luna-max",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-terra",
+          "effort": "low",
+          "display": "gpt-5.6-terra · low"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-luna",
+          "effort": "max",
+          "display": "gpt-5.6-luna · max"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 34,
+        "W": 30
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-23T09:14:05.329Z",
+      "tokens": {
+        "B": {
+          "input": 71032,
+          "cacheRead": 1864192,
+          "cacheCreation": 0,
+          "output": 5252,
+          "reasoning": 878,
+          "apiCalls": 66
+        },
+        "W": {
+          "input": 83133,
+          "cacheRead": 2690048,
+          "cacheCreation": 0,
+          "output": 35127,
+          "reasoning": 31631,
+          "apiCalls": 60
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g038",
+      "card": "x-gpt-5.6-terra-low-vs-gpt-5.6-luna-max",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-luna",
+          "effort": "max",
+          "display": "gpt-5.6-luna · max"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-terra",
+          "effort": "low",
+          "display": "gpt-5.6-terra · low"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 54,
+        "W": 10
+      },
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-08-23T09:19:47.180Z",
+      "tokens": {
+        "B": {
+          "input": 116391,
+          "cacheRead": 1994496,
+          "cacheCreation": 0,
+          "output": 11495,
+          "reasoning": 8700,
+          "apiCalls": 62
+        },
+        "W": {
+          "input": 67651,
+          "cacheRead": 1664768,
+          "cacheCreation": 0,
+          "output": 5752,
+          "reasoning": 2229,
+          "apiCalls": 61
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g037",
+      "card": "k-gpt-5.6-sol-med-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "display": "gpt-5.6-sol · high"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 49,
+        "W": 15
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-23T09:24:51.213Z",
+      "tokens": {
+        "B": {
+          "input": 125703,
+          "cacheRead": 2565376,
+          "cacheCreation": 0,
+          "output": 15446,
+          "reasoning": 11395,
+          "apiCalls": 75
+        },
+        "W": {
+          "input": 125632,
+          "cacheRead": 2480384,
+          "cacheCreation": 0,
+          "output": 13437,
+          "reasoning": 9406,
+          "apiCalls": 75
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
