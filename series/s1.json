@@ -2034,6 +2034,90 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g049",
+      "card": "x-grok-4.6-medium-vs-grok-4.6-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "medium",
+          "display": "grok-4.6 · medium"
+        },
+        "W": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "high",
+          "display": "grok-4.6 · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 35,
+        "W": 29
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-24T05:02:36.184Z",
+      "tokens": {
+        "B": {
+          "input": 292033,
+          "cacheRead": 3858944,
+          "cacheCreation": 0,
+          "output": 28865,
+          "reasoning": 28350,
+          "apiCalls": 89
+        },
+        "W": {
+          "input": 348740,
+          "cacheRead": 3620992,
+          "cacheCreation": 0,
+          "output": 61225,
+          "reasoning": 59785,
+          "apiCalls": 67
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g050",
+      "card": "x-gemini-3.7-flash-high-vs-gemini-3.7-flash-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "medium",
+          "display": "gemini-3.7-flash · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 51,
+        "W": 13
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-24T04:42:40.451Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
