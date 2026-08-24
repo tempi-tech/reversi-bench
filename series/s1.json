@@ -2407,6 +2407,66 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g057",
+      "card": "x-gpt-5.6-sol-medium-vs-claude-fable-5-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-fable-5",
+          "effort": "medium",
+          "display": "claude-fable-5 · medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 8,
+        "W": 56
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "B",
+          "resumed": true
+        },
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ],
+      "finishedAt": "2026-08-24T10:42:48.440Z",
+      "tokens": {
+        "B": {
+          "input": 175177,
+          "cacheRead": 3581696,
+          "cacheCreation": 0,
+          "output": 14319,
+          "reasoning": 8175,
+          "apiCalls": 111
+        },
+        "W": {
+          "input": 126,
+          "cacheRead": 5337336,
+          "cacheCreation": 241607,
+          "output": 96991,
+          "reasoning": 91426,
+          "apiCalls": 65
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
