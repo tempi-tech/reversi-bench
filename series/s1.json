@@ -1607,6 +1607,97 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g039",
+      "card": "x-gpt-5.6-sol-xhigh-vs-gemini-3.7-flash-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "xhigh",
+          "display": "gpt-5.6-sol · xhigh"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 29,
+        "W": 35
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-24T01:52:26.123Z",
+      "tokens": {
+        "B": {
+          "input": 98836,
+          "cacheRead": 2567424,
+          "cacheCreation": 0,
+          "output": 26901,
+          "reasoning": 22749,
+          "apiCalls": 63
+        },
+        "W": null
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g040",
+      "card": "x-gpt-5.6-sol-medium-vs-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "xhigh",
+          "display": "gpt-5.6-sol · xhigh"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 45,
+        "W": 19
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-24T01:56:59.799Z",
+      "tokens": {
+        "B": {
+          "input": 144417,
+          "cacheRead": 3122176,
+          "cacheCreation": 0,
+          "output": 10234,
+          "reasoning": 5128,
+          "apiCalls": 93
+        },
+        "W": {
+          "input": 123945,
+          "cacheRead": 2226944,
+          "cacheCreation": 0,
+          "output": 28711,
+          "reasoning": 24660,
+          "apiCalls": 61
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
