@@ -2251,6 +2251,104 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g055",
+      "card": "x-gpt-5.6-sol-medium-vs-gpt-5.6-sol-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "xhigh",
+          "display": "gpt-5.6-sol · xhigh"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 19,
+        "W": 45
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-24T07:55:00.144Z",
+      "tokens": {
+        "B": {
+          "input": 141988,
+          "cacheRead": 2612992,
+          "cacheCreation": 0,
+          "output": 29455,
+          "reasoning": 25270,
+          "apiCalls": 68
+        },
+        "W": {
+          "input": 135569,
+          "cacheRead": 3255808,
+          "cacheCreation": 0,
+          "output": 13333,
+          "reasoning": 7758,
+          "apiCalls": 98
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g056",
+      "card": "x-gpt-5.6-sol-high-vs-gpt-5.6-sol-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "display": "gpt-5.6-sol · high"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "xhigh",
+          "display": "gpt-5.6-sol · xhigh"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 24,
+        "W": 40
+      },
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-08-24T07:57:14.505Z",
+      "tokens": {
+        "B": {
+          "input": 142695,
+          "cacheRead": 3131904,
+          "cacheCreation": 0,
+          "output": 19108,
+          "reasoning": 13917,
+          "apiCalls": 90
+        },
+        "W": {
+          "input": 155614,
+          "cacheRead": 3368192,
+          "cacheCreation": 0,
+          "output": 30774,
+          "reasoning": 26116,
+          "apiCalls": 79
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
