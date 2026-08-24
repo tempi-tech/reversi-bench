@@ -1,0 +1,749 @@
+{
+  "summary": {
+    "game": "s1/g053",
+    "card": "x-grok-4.6-medium-vs-claude-opus-5-medium",
+    "winner": "W",
+    "score": {
+      "B": 25,
+      "W": 39
+    },
+    "seats": {
+      "B": "grok-4.6 · medium",
+      "W": "claude-opus-5 · medium"
+    },
+    "moves": 64,
+    "blind": true,
+    "referee": "8d502c4",
+    "tokens": {
+      "B": 26698,
+      "W": 176689
+    },
+    "cost": {
+      "B": null,
+      "W": null
+    },
+    "notes": [
+      "Claude Opus 5 medium defeated Grok 4.6 medium 39-25 as White, becoming the first seat to beat Grok medium.",
+      "The two-game card closes 1-0-1 for Claude Opus 5 medium after the earlier 32-32 draw.",
+      "Claude initially received a transient API 529 before its first move; the same task retried and completed the game without a game-state incident.",
+      "Token usage for both seats was harvested from their runtime logs immediately after the game.",
+      "Discord live thread: https://discord.com/channels/842347959102603274/1541320453174460456"
+    ]
+  },
+  "id": "current",
+  "size": 8,
+  "title": "Reversi 8×8",
+  "createdAt": "2026-08-24T05:36:37.229Z",
+  "updatedAt": "2026-08-24T06:25:58.445Z",
+  "cells": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "B"
+  ],
+  "turn": "W",
+  "status": "over",
+  "winner": "W",
+  "thinking": null,
+  "lastMove": {
+    "side": "W",
+    "move": "a7",
+    "flips": [
+      "b6"
+    ]
+  },
+  "history": [
+    {
+      "side": "B",
+      "move": "d6",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-08-24T05:37:41.297Z"
+    },
+    {
+      "side": "W",
+      "move": "c4",
+      "flips": [
+        "d4"
+      ],
+      "at": "2026-08-24T05:44:54.344Z"
+    },
+    {
+      "side": "B",
+      "move": "c3",
+      "flips": [
+        "d4"
+      ],
+      "at": "2026-08-24T05:45:19.530Z"
+    },
+    {
+      "side": "W",
+      "move": "e6",
+      "flips": [
+        "d5",
+        "e5"
+      ],
+      "at": "2026-08-24T05:46:02.825Z"
+    },
+    {
+      "side": "B",
+      "move": "f6",
+      "flips": [
+        "e6",
+        "e5"
+      ],
+      "at": "2026-08-24T05:46:16.995Z"
+    },
+    {
+      "side": "W",
+      "move": "d3",
+      "flips": [
+        "d4"
+      ],
+      "at": "2026-08-24T05:46:50.686Z"
+    },
+    {
+      "side": "B",
+      "move": "c5",
+      "flips": [
+        "d5",
+        "c4"
+      ],
+      "at": "2026-08-24T05:47:08.658Z"
+    },
+    {
+      "side": "W",
+      "move": "c6",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-08-24T05:47:36.086Z"
+    },
+    {
+      "side": "B",
+      "move": "e3",
+      "flips": [
+        "d4",
+        "e4",
+        "d3"
+      ],
+      "at": "2026-08-24T05:47:50.927Z"
+    },
+    {
+      "side": "W",
+      "move": "f3",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-08-24T05:48:22.601Z"
+    },
+    {
+      "side": "B",
+      "move": "f5",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-08-24T05:48:36.879Z"
+    },
+    {
+      "side": "W",
+      "move": "g6",
+      "flips": [
+        "f6",
+        "e6",
+        "d6"
+      ],
+      "at": "2026-08-24T05:50:20.724Z"
+    },
+    {
+      "side": "B",
+      "move": "d7",
+      "flips": [
+        "d6",
+        "d5",
+        "e6"
+      ],
+      "at": "2026-08-24T05:50:41.839Z"
+    },
+    {
+      "side": "W",
+      "move": "f4",
+      "flips": [
+        "f5"
+      ],
+      "at": "2026-08-24T05:51:29.430Z"
+    },
+    {
+      "side": "B",
+      "move": "g5",
+      "flips": [
+        "f5",
+        "f4"
+      ],
+      "at": "2026-08-24T05:52:02.774Z"
+    },
+    {
+      "side": "W",
+      "move": "e8",
+      "flips": [
+        "d7"
+      ],
+      "at": "2026-08-24T05:52:54.288Z"
+    },
+    {
+      "side": "B",
+      "move": "d8",
+      "flips": [
+        "d7"
+      ],
+      "at": "2026-08-24T05:53:13.906Z"
+    },
+    {
+      "side": "W",
+      "move": "c8",
+      "flips": [
+        "d8"
+      ],
+      "at": "2026-08-24T05:53:32.831Z"
+    },
+    {
+      "side": "B",
+      "move": "c7",
+      "flips": [
+        "c6"
+      ],
+      "at": "2026-08-24T05:53:55.317Z"
+    },
+    {
+      "side": "W",
+      "move": "h4",
+      "flips": [
+        "g5"
+      ],
+      "at": "2026-08-24T05:54:44.413Z"
+    },
+    {
+      "side": "B",
+      "move": "h6",
+      "flips": [
+        "g6",
+        "f6",
+        "g5"
+      ],
+      "at": "2026-08-24T05:54:57.603Z"
+    },
+    {
+      "side": "W",
+      "move": "g4",
+      "flips": [
+        "f5",
+        "e6",
+        "d7"
+      ],
+      "at": "2026-08-24T05:55:42.642Z"
+    },
+    {
+      "side": "B",
+      "move": "e7",
+      "flips": [
+        "d7",
+        "e6"
+      ],
+      "at": "2026-08-24T05:56:01.101Z"
+    },
+    {
+      "side": "W",
+      "move": "b4",
+      "flips": [
+        "c4",
+        "d4",
+        "e4",
+        "f4"
+      ],
+      "at": "2026-08-24T05:58:02.712Z"
+    },
+    {
+      "side": "B",
+      "move": "g3",
+      "flips": [
+        "f4",
+        "g4",
+        "f3"
+      ],
+      "at": "2026-08-24T05:58:18.352Z"
+    },
+    {
+      "side": "W",
+      "move": "f8",
+      "flips": [
+        "e7",
+        "d6",
+        "c5"
+      ],
+      "at": "2026-08-24T05:59:12.058Z"
+    },
+    {
+      "side": "B",
+      "move": "a4",
+      "flips": [
+        "b4",
+        "c4",
+        "d4",
+        "e4"
+      ],
+      "at": "2026-08-24T05:59:27.782Z"
+    },
+    {
+      "side": "W",
+      "move": "b8",
+      "flips": [
+        "c7"
+      ],
+      "at": "2026-08-24T06:00:27.042Z"
+    },
+    {
+      "side": "B",
+      "move": "f7",
+      "flips": [
+        "e7"
+      ],
+      "at": "2026-08-24T06:00:53.519Z"
+    },
+    {
+      "side": "W",
+      "move": "b6",
+      "flips": [
+        "c6"
+      ],
+      "at": "2026-08-24T06:02:25.796Z"
+    },
+    {
+      "side": "B",
+      "move": "a6",
+      "flips": [
+        "b6",
+        "c6",
+        "d6"
+      ],
+      "at": "2026-08-24T06:02:37.430Z"
+    },
+    {
+      "side": "W",
+      "move": "b5",
+      "flips": [
+        "c6",
+        "d7"
+      ],
+      "at": "2026-08-24T06:03:14.592Z"
+    },
+    {
+      "side": "B",
+      "move": "a5",
+      "flips": [
+        "b5",
+        "c5"
+      ],
+      "at": "2026-08-24T06:03:19.873Z"
+    },
+    {
+      "side": "W",
+      "move": "g2",
+      "flips": [
+        "f3",
+        "e4",
+        "d5"
+      ],
+      "at": "2026-08-24T06:05:37.303Z"
+    },
+    {
+      "side": "B",
+      "move": "e2",
+      "flips": [
+        "f3"
+      ],
+      "at": "2026-08-24T06:05:50.293Z"
+    },
+    {
+      "side": "W",
+      "move": "f2",
+      "flips": [
+        "f3",
+        "f4",
+        "g3"
+      ],
+      "at": "2026-08-24T06:07:39.051Z"
+    },
+    {
+      "side": "B",
+      "move": "f1",
+      "flips": [
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "at": "2026-08-24T06:07:50.645Z"
+    },
+    {
+      "side": "W",
+      "move": "b3",
+      "flips": [
+        "c4",
+        "c3",
+        "d3",
+        "e3",
+        "f3"
+      ],
+      "at": "2026-08-24T06:09:32.993Z"
+    },
+    {
+      "side": "B",
+      "move": "c2",
+      "flips": [
+        "b3",
+        "c3",
+        "c4",
+        "d3",
+        "e4"
+      ],
+      "at": "2026-08-24T06:09:42.363Z"
+    },
+    {
+      "side": "W",
+      "move": "a3",
+      "flips": [
+        "b4",
+        "c5",
+        "d6",
+        "e7",
+        "b3",
+        "c3",
+        "d3"
+      ],
+      "at": "2026-08-24T06:11:22.695Z"
+    },
+    {
+      "side": "B",
+      "move": "h1",
+      "flips": [
+        "g2",
+        "f3"
+      ],
+      "at": "2026-08-24T06:11:34.292Z"
+    },
+    {
+      "side": "W",
+      "move": "g8",
+      "flips": [
+        "f7",
+        "e6"
+      ],
+      "at": "2026-08-24T06:12:38.048Z"
+    },
+    {
+      "side": "B",
+      "move": "d2",
+      "flips": [
+        "c3",
+        "b4",
+        "d3",
+        "e3"
+      ],
+      "at": "2026-08-24T06:12:52.636Z"
+    },
+    {
+      "side": "W",
+      "move": "g1",
+      "flips": [
+        "f2",
+        "e3",
+        "d4",
+        "g2"
+      ],
+      "at": "2026-08-24T06:17:01.301Z"
+    },
+    {
+      "side": "B",
+      "move": "h2",
+      "flips": [
+        "g3",
+        "g2",
+        "f2"
+      ],
+      "at": "2026-08-24T06:17:10.436Z"
+    },
+    {
+      "side": "W",
+      "move": "h5",
+      "flips": [
+        "g6",
+        "g5",
+        "f5",
+        "e5"
+      ],
+      "at": "2026-08-24T06:18:36.320Z"
+    },
+    {
+      "side": "B",
+      "move": "h3",
+      "flips": [
+        "h4",
+        "h5"
+      ],
+      "at": "2026-08-24T06:18:54.355Z"
+    },
+    {
+      "side": "W",
+      "move": "b1",
+      "flips": [
+        "c2",
+        "d3",
+        "e4"
+      ],
+      "at": "2026-08-24T06:19:45.000Z"
+    },
+    {
+      "side": "B",
+      "move": "d1",
+      "flips": [
+        "c2",
+        "b3"
+      ],
+      "at": "2026-08-24T06:19:56.093Z"
+    },
+    {
+      "side": "W",
+      "move": "e1",
+      "flips": [
+        "e2",
+        "f1"
+      ],
+      "at": "2026-08-24T06:20:28.107Z"
+    },
+    {
+      "side": "B",
+      "move": "b7",
+      "flips": [
+        "c6",
+        "d5",
+        "e4"
+      ],
+      "at": "2026-08-24T06:21:10.040Z"
+    },
+    {
+      "side": "W",
+      "move": "a2",
+      "flips": [
+        "b3",
+        "c4",
+        "d5"
+      ],
+      "at": "2026-08-24T06:23:53.783Z"
+    },
+    {
+      "side": "B",
+      "move": "a1",
+      "flips": [
+        "a2",
+        "a3"
+      ],
+      "at": "2026-08-24T06:24:04.600Z"
+    },
+    {
+      "side": "W",
+      "move": "a8",
+      "flips": [
+        "b7",
+        "c6"
+      ],
+      "at": "2026-08-24T06:24:21.824Z"
+    },
+    {
+      "side": "B",
+      "move": "c1",
+      "flips": [
+        "b1"
+      ],
+      "at": "2026-08-24T06:24:34.628Z"
+    },
+    {
+      "side": "W",
+      "move": "b2",
+      "flips": [
+        "c3",
+        "c2",
+        "d2"
+      ],
+      "at": "2026-08-24T06:25:15.803Z"
+    },
+    {
+      "side": "B",
+      "move": "g7",
+      "flips": [
+        "g6",
+        "g5"
+      ],
+      "at": "2026-08-24T06:25:27.454Z"
+    },
+    {
+      "side": "W",
+      "move": "h8",
+      "flips": [
+        "g7",
+        "f6"
+      ],
+      "at": "2026-08-24T06:25:49.714Z"
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-08-24T06:25:49.715Z"
+    },
+    {
+      "side": "W",
+      "move": "h7",
+      "flips": [
+        "g6"
+      ],
+      "at": "2026-08-24T06:25:55.593Z"
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-08-24T06:25:55.594Z"
+    },
+    {
+      "side": "W",
+      "move": "a7",
+      "flips": [
+        "b6"
+      ],
+      "at": "2026-08-24T06:25:58.444Z"
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-08-24T06:25:58.445Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-08-24T06:25:58.445Z"
+    }
+  ],
+  "players": {
+    "B": {
+      "name": "Black",
+      "model": "",
+      "say": ""
+    },
+    "W": {
+      "name": "White",
+      "model": "",
+      "say": ""
+    }
+  },
+  "seats": {
+    "B": {
+      "agentType": "grok",
+      "model": "grok-4.6",
+      "effort": "medium",
+      "display": "grok-4.6 · medium"
+    },
+    "W": {
+      "agentType": "claude",
+      "model": "claude-opus-5",
+      "effort": "medium",
+      "display": "claude-opus-5 · medium"
+    }
+  },
+  "blind": true,
+  "incidents": [],
+  "tokens": {
+    "B": {
+      "input": 1215445,
+      "cacheRead": 3459968,
+      "cacheCreation": 0,
+      "output": 26698,
+      "reasoning": 24548,
+      "apiCalls": 101
+    },
+    "W": {
+      "input": 124,
+      "cacheRead": 6838209,
+      "cacheCreation": 220639,
+      "output": 176689,
+      "reasoning": 173227,
+      "apiCalls": 63
+    }
+  },
+  "cost": {
+    "B": null,
+    "W": null
+  }
+}
