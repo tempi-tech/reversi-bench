@@ -1698,6 +1698,174 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g041",
+      "card": "x-gemini-3.7-flash-high-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 38,
+        "W": 26
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-24T02:43:50.540Z",
+      "tokens": {
+        "B": null,
+        "W": {
+          "input": 135051,
+          "cacheRead": 2682880,
+          "cacheCreation": 0,
+          "output": 11109,
+          "reasoning": 5864,
+          "apiCalls": 88
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g042",
+      "card": "x-gemini-3.7-flash-high-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 51,
+        "W": 13
+      },
+      "moves": 65,
+      "incidents": [],
+      "finishedAt": "2026-08-24T02:45:19.751Z",
+      "tokens": {
+        "B": {
+          "input": 156614,
+          "cacheRead": 2838016,
+          "cacheCreation": 0,
+          "output": 11715,
+          "reasoning": 6215,
+          "apiCalls": 94
+        },
+        "W": null
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g043",
+      "card": "x-gemini-3.7-flash-high-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 36,
+        "W": 28
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-24T02:53:00.116Z",
+      "tokens": {
+        "B": null,
+        "W": {
+          "input": 73682,
+          "cacheRead": 1933056,
+          "cacheCreation": 0,
+          "output": 9536,
+          "reasoning": 5529,
+          "apiCalls": 61
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g044",
+      "card": "x-gemini-3.7-flash-high-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 19,
+        "W": 45
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-24T02:53:23.657Z",
+      "tokens": {
+        "B": {
+          "input": 105581,
+          "cacheRead": 1873408,
+          "cacheCreation": 0,
+          "output": 10263,
+          "reasoning": 6194,
+          "apiCalls": 62
+        },
+        "W": null
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
