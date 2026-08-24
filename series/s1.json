@@ -2118,6 +2118,90 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g051",
+      "card": "x-grok-4.6-medium-vs-gemini-3.7-flash-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        },
+        "W": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "medium",
+          "display": "grok-4.6 · medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 22,
+        "W": 42
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-24T05:29:45.476Z",
+      "tokens": {
+        "B": null,
+        "W": {
+          "input": 291731,
+          "cacheRead": 2161664,
+          "cacheCreation": 0,
+          "output": 26699,
+          "reasoning": 26169,
+          "apiCalls": 61
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g052",
+      "card": "x-grok-4.6-high-vs-gemini-3.7-flash-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "high",
+          "display": "grok-4.6 · high"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "medium",
+          "display": "gemini-3.7-flash · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 45,
+        "W": 0
+      },
+      "moves": 43,
+      "incidents": [],
+      "finishedAt": "2026-08-24T05:29:01.154Z",
+      "tokens": {
+        "B": {
+          "input": 246732,
+          "cacheRead": 1381504,
+          "cacheCreation": 0,
+          "output": 27201,
+          "reasoning": 25954,
+          "apiCalls": 43
+        },
+        "W": null
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
