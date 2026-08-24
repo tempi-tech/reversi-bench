@@ -3,11 +3,11 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-24T10:45:29.227Z",
+  "generatedAt": "2026-08-24T10:51:12.236Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1808,
+      "rating": 1814,
       "games": 13,
       "wins": 10,
       "losses": 2,
@@ -16,7 +16,7 @@
     },
     {
       "player": "grok-4.6 · medium",
-      "rating": 1733,
+      "rating": 1739,
       "games": 5,
       "wins": 3,
       "losses": 1,
@@ -25,7 +25,7 @@
     },
     {
       "player": "gemini-3.7-flash · high",
-      "rating": 1667,
+      "rating": 1676,
       "games": 12,
       "wins": 7,
       "losses": 5,
@@ -34,7 +34,7 @@
     },
     {
       "player": "claude-fable-5 · medium",
-      "rating": 1631,
+      "rating": 1637,
       "games": 3,
       "wins": 2,
       "losses": 1,
@@ -42,8 +42,17 @@
       "stoneDiff": 56
     },
     {
+      "player": "gpt-5.6-sol · medium",
+      "rating": 1584,
+      "games": 17,
+      "wins": 9,
+      "losses": 8,
+      "draws": 0,
+      "stoneDiff": 64
+    },
+    {
       "player": "claude-opus-5 · high",
-      "rating": 1581,
+      "rating": 1584,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -60,26 +69,8 @@
       "stoneDiff": 29
     },
     {
-      "player": "gpt-5.6-sol · medium",
-      "rating": 1566,
-      "games": 16,
-      "wins": 8,
-      "losses": 8,
-      "draws": 0,
-      "stoneDiff": 60
-    },
-    {
-      "player": "kimi-k3 · high",
-      "rating": 1549,
-      "games": 4,
-      "wins": 2,
-      "losses": 1,
-      "draws": 1,
-      "stoneDiff": 12
-    },
-    {
       "player": "gpt-5.6-sol · high",
-      "rating": 1543,
+      "rating": 1552,
       "games": 8,
       "wins": 4,
       "losses": 4,
@@ -87,8 +78,17 @@
       "stoneDiff": -56
     },
     {
+      "player": "kimi-k3 · high",
+      "rating": 1548,
+      "games": 4,
+      "wins": 2,
+      "losses": 1,
+      "draws": 1,
+      "stoneDiff": 12
+    },
+    {
       "player": "kimi-k3 · max",
-      "rating": 1541,
+      "rating": 1542,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -97,7 +97,7 @@
     },
     {
       "player": "glm-5.3 · high",
-      "rating": 1515,
+      "rating": 1514,
       "games": 3,
       "wins": 1,
       "losses": 1,
@@ -106,7 +106,7 @@
     },
     {
       "player": "grok-4.6 · high",
-      "rating": 1495,
+      "rating": 1498,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -115,7 +115,7 @@
     },
     {
       "player": "claude-sonnet-5 · medium",
-      "rating": 1484,
+      "rating": 1490,
       "games": 3,
       "wins": 1,
       "losses": 2,
@@ -124,7 +124,7 @@
     },
     {
       "player": "gpt-5.6-terra · medium",
-      "rating": 1471,
+      "rating": 1475,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -133,7 +133,7 @@
     },
     {
       "player": "claude-opus-4-8 · medium",
-      "rating": 1458,
+      "rating": 1459,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -142,7 +142,7 @@
     },
     {
       "player": "openrouter/stealth/ox-alpha",
-      "rating": 1458,
+      "rating": 1459,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -151,12 +151,21 @@
     },
     {
       "player": "deepseek-v4-pro · high",
-      "rating": 1456,
+      "rating": 1455,
       "games": 3,
       "wins": 1,
       "losses": 2,
       "draws": 0,
       "stoneDiff": -25
+    },
+    {
+      "player": "gpt-5.6-sol · xhigh",
+      "rating": 1441,
+      "games": 4,
+      "wins": 1,
+      "losses": 3,
+      "draws": 0,
+      "stoneDiff": -42
     },
     {
       "player": "gpt-5.6-terra · low",
@@ -168,17 +177,8 @@
       "stoneDiff": -83
     },
     {
-      "player": "gpt-5.6-sol · xhigh",
-      "rating": 1433,
-      "games": 4,
-      "wins": 1,
-      "losses": 3,
-      "draws": 0,
-      "stoneDiff": -42
-    },
-    {
       "player": "claude-fable-5 · high",
-      "rating": 1419,
+      "rating": 1420,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -195,8 +195,17 @@
       "stoneDiff": 75
     },
     {
+      "player": "gpt-5.6-sol · low",
+      "rating": 1405,
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": -4
+    },
+    {
       "player": "gpt-5.6-terra · max",
-      "rating": 1400,
+      "rating": 1405,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -205,7 +214,7 @@
     },
     {
       "player": "qwen3.8-max · high",
-      "rating": 1395,
+      "rating": 1394,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -223,7 +232,7 @@
     },
     {
       "player": "openrouter/google/gemini-3.7-flash · high",
-      "rating": 1377,
+      "rating": 1378,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -232,7 +241,7 @@
     },
     {
       "player": "gpt-5.6-luna · medium",
-      "rating": 1369,
+      "rating": 1370,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -241,7 +250,7 @@
     },
     {
       "player": "gemini-3.7-flash · medium",
-      "rating": 1341,
+      "rating": 1343,
       "games": 2,
       "wins": 0,
       "losses": 2,
@@ -1525,6 +1534,40 @@
       "outputTokens": {
         "B": 14319,
         "W": 96991
+      },
+      "credits": {
+        "B": null,
+        "W": null
+      },
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "B",
+          "resumed": true
+        },
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ]
+    },
+    {
+      "id": "s1/g058",
+      "card": "x-gpt-5.6-sol-low-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "playedAt": "2026-08-24T10:49:53.874Z",
+      "black": "gpt-5.6-sol · low",
+      "white": "gpt-5.6-sol · medium",
+      "winner": "W",
+      "score": {
+        "B": 30,
+        "W": 34
+      },
+      "moves": 64,
+      "outputTokens": {
+        "B": 6938,
+        "W": 8569
       },
       "credits": {
         "B": null,
