@@ -2253,6 +2253,64 @@
       }
     },
     {
+      "id": "s1/g054",
+      "card": "x-kimi-k3-max-vs-claude-opus-5-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "qoder",
+          "model": "kmodel_latest",
+          "effort": "max",
+          "display": "kimi-k3 · max"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "medium",
+          "display": "claude-opus-5 · medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 31,
+        "W": 33
+      },
+      "moves": 63,
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "B",
+          "resumed": true
+        },
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ],
+      "finishedAt": "2026-08-24T10:28:25.175Z",
+      "tokens": {
+        "B": null,
+        "W": {
+          "input": 242,
+          "cacheRead": 19235504,
+          "cacheCreation": 266260,
+          "output": 230807,
+          "reasoning": 215030,
+          "apiCalls": 126
+        }
+      },
+      "cost": {
+        "B": {
+          "unit": "credits",
+          "amount": 578.6052,
+          "apiCalls": 160,
+          "contextPeak": 0.92
+        },
+        "W": null
+      }
+    },
+    {
       "id": "s1/g055",
       "card": "x-gpt-5.6-sol-medium-vs-gpt-5.6-sol-xhigh",
       "blind": true,
