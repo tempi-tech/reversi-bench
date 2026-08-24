@@ -3,11 +3,11 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-24T14:26:49.257Z",
+  "generatedAt": "2026-08-24T14:42:30.731Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1777,
+      "rating": 1775,
       "games": 14,
       "wins": 10,
       "losses": 3,
@@ -16,7 +16,7 @@
     },
     {
       "player": "grok-4.6 · medium",
-      "rating": 1728,
+      "rating": 1727,
       "games": 5,
       "wins": 3,
       "losses": 1,
@@ -25,7 +25,7 @@
     },
     {
       "player": "gemini-3.7-flash · high",
-      "rating": 1698,
+      "rating": 1695,
       "games": 13,
       "wins": 8,
       "losses": 5,
@@ -43,7 +43,7 @@
     },
     {
       "player": "claude-opus-5 · high",
-      "rating": 1577,
+      "rating": 1576,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -61,21 +61,12 @@
     },
     {
       "player": "gpt-5.6-sol · medium",
-      "rating": 1567,
+      "rating": 1566,
       "games": 18,
       "wins": 9,
       "losses": 9,
       "draws": 0,
       "stoneDiff": 32
-    },
-    {
-      "player": "gpt-5.6-sol · high",
-      "rating": 1552,
-      "games": 8,
-      "wins": 4,
-      "losses": 4,
-      "draws": 0,
-      "stoneDiff": -56
     },
     {
       "player": "kimi-k3 · high",
@@ -85,6 +76,15 @@
       "losses": 1,
       "draws": 1,
       "stoneDiff": 12
+    },
+    {
+      "player": "gpt-5.6-sol · high",
+      "rating": 1548,
+      "games": 8,
+      "wins": 4,
+      "losses": 4,
+      "draws": 0,
+      "stoneDiff": -56
     },
     {
       "player": "kimi-k3 · max",
@@ -105,22 +105,22 @@
       "stoneDiff": 0
     },
     {
+      "player": "gpt-5.6-sol · low",
+      "rating": 1507,
+      "games": 4,
+      "wins": 2,
+      "losses": 2,
+      "draws": 0,
+      "stoneDiff": 12
+    },
+    {
       "player": "grok-4.6 · high",
-      "rating": 1497,
+      "rating": 1496,
       "games": 4,
       "wins": 2,
       "losses": 2,
       "draws": 0,
       "stoneDiff": 57
-    },
-    {
-      "player": "gpt-5.6-sol · xhigh",
-      "rating": 1495,
-      "games": 5,
-      "wins": 2,
-      "losses": 3,
-      "draws": 0,
-      "stoneDiff": -14
     },
     {
       "player": "claude-sonnet-5 · medium",
@@ -150,13 +150,13 @@
       "stoneDiff": -25
     },
     {
-      "player": "gpt-5.6-sol · low",
-      "rating": 1454,
-      "games": 3,
-      "wins": 1,
-      "losses": 2,
+      "player": "gpt-5.6-sol · xhigh",
+      "rating": 1456,
+      "games": 6,
+      "wins": 2,
+      "losses": 4,
       "draws": 0,
-      "stoneDiff": 0
+      "stoneDiff": -26
     },
     {
       "player": "claude-opus-4-8 · medium",
@@ -250,7 +250,7 @@
     },
     {
       "player": "gemini-3.7-flash · medium",
-      "rating": 1347,
+      "rating": 1346,
       "games": 2,
       "wins": 0,
       "losses": 2,
@@ -1676,6 +1676,29 @@
           "resumed": true
         }
       ]
+    },
+    {
+      "id": "s1/g061",
+      "card": "x-gpt-5.6-sol-low-vs-gpt-5.6-sol-xhigh",
+      "blind": true,
+      "playedAt": "2026-08-24T14:40:31.236Z",
+      "black": "gpt-5.6-sol · xhigh",
+      "white": "gpt-5.6-sol · low",
+      "winner": "W",
+      "score": {
+        "B": 26,
+        "W": 38
+      },
+      "moves": 62,
+      "outputTokens": {
+        "B": 22092,
+        "W": 7704
+      },
+      "credits": {
+        "B": null,
+        "W": null
+      },
+      "incidents": []
     }
   ]
 }
