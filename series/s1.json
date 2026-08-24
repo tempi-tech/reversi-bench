@@ -1866,6 +1866,174 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g045",
+      "card": "x-gemini-3.7-flash-high-vs-claude-opus-5-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "medium",
+          "display": "claude-opus-5 · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 38,
+        "W": 26
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-24T04:14:32.819Z",
+      "tokens": {
+        "B": null,
+        "W": {
+          "input": 124,
+          "cacheRead": 11973937,
+          "cacheCreation": 391898,
+          "output": 348294,
+          "reasoning": 340552,
+          "apiCalls": 62
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g046",
+      "card": "x-gemini-3.7-flash-high-vs-claude-opus-5-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "medium",
+          "display": "claude-opus-5 · medium"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 37,
+        "W": 27
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-24T03:48:02.149Z",
+      "tokens": {
+        "B": {
+          "input": 128,
+          "cacheRead": 7970729,
+          "cacheCreation": 206160,
+          "output": 188004,
+          "reasoning": 183022,
+          "apiCalls": 64
+        },
+        "W": null
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g047",
+      "card": "x-gemini-3.7-flash-high-vs-claude-opus-5-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "medium",
+          "display": "claude-opus-5 · medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 0,
+        "W": 51
+      },
+      "moves": 60,
+      "incidents": [],
+      "finishedAt": "2026-08-24T04:05:22.873Z",
+      "tokens": {
+        "B": null,
+        "W": {
+          "input": 100,
+          "cacheRead": 6448076,
+          "cacheCreation": 241410,
+          "output": 227671,
+          "reasoning": 222057,
+          "apiCalls": 50
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g048",
+      "card": "x-gemini-3.7-flash-high-vs-claude-opus-5-medium",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "medium",
+          "display": "claude-opus-5 · medium"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 53,
+        "W": 11
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-24T04:10:39.707Z",
+      "tokens": {
+        "B": {
+          "input": 126,
+          "cacheRead": 10598843,
+          "cacheCreation": 271973,
+          "output": 253663,
+          "reasoning": 248806,
+          "apiCalls": 63
+        },
+        "W": null
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
