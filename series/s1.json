@@ -2770,6 +2770,22 @@
         "W": {"input": 1235663, "cacheRead": 7396864, "cacheCreation": 0, "output": 42151, "reasoning": 39621, "apiCalls": 136}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g071",
+      "card": "x-gemini-3.7-flash-high-vs-grok-4.6-medium",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "antigravity", "model": "gemini-3.7-flash", "effort": "high", "display": "gemini-3.7-flash · high"},
+        "W": {"agentType": "grok", "model": "grok-4.6", "effort": "medium", "display": "grok-4.6 · medium"}
+      },
+      "winner": "W",
+      "score": {"B": 9, "W": 55},
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-08-25T06:30:35.703Z",
+      "tokens": {"B": null, "W": null},
+      "cost": {"B": null, "W": null}
     }
   ]
 }
