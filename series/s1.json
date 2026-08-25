@@ -2805,6 +2805,28 @@
         "W": {"input": 120, "cacheRead": 11381846, "cacheCreation": 353613, "output": 312896, "reasoning": 306483, "apiCalls": 60}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g073",
+      "card": "x-claude-opus-5-high-vs-gemini-3.7-flash-high",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "antigravity", "model": "gemini-3.7-flash", "effort": "high", "display": "gemini-3.7-flash · high"},
+        "W": {"agentType": "claude", "model": "claude-opus-5", "effort": "high", "display": "claude-opus-5 · high"}
+      },
+      "winner": "W",
+      "score": {"B": 2, "W": 58},
+      "moves": 58,
+      "incidents": [
+        {"kind": "turn_ended_early", "side": "B", "resumed": true},
+        {"kind": "turn_ended_early", "side": "W", "resumed": true}
+      ],
+      "finishedAt": "2026-08-25T14:48:57.981Z",
+      "tokens": {
+        "B": null,
+        "W": {"input": 74, "cacheRead": 6137896, "cacheCreation": 310349, "output": 295909, "reasoning": 289384, "apiCalls": 38}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }

@@ -3,11 +3,11 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-25T13:51:37.154Z",
+  "generatedAt": "2026-08-25T14:52:47.290Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1768,
+      "rating": 1765,
       "games": 14,
       "wins": 10,
       "losses": 3,
@@ -16,16 +16,16 @@
     },
     {
       "player": "claude-opus-5 · high",
-      "rating": 1711,
-      "games": 6,
-      "wins": 4,
+      "rating": 1745,
+      "games": 7,
+      "wins": 5,
       "losses": 2,
       "draws": 0,
-      "stoneDiff": 84
+      "stoneDiff": 140
     },
     {
       "player": "grok-4.6 · medium",
-      "rating": 1677,
+      "rating": 1680,
       "games": 8,
       "wins": 4,
       "losses": 3,
@@ -34,16 +34,16 @@
     },
     {
       "player": "gemini-3.7-flash · high",
-      "rating": 1659,
-      "games": 15,
+      "rating": 1643,
+      "games": 16,
       "wins": 8,
-      "losses": 7,
+      "losses": 8,
       "draws": 0,
-      "stoneDiff": -99
+      "stoneDiff": -155
     },
     {
       "player": "claude-fable-5 · medium",
-      "rating": 1637,
+      "rating": 1636,
       "games": 3,
       "wins": 2,
       "losses": 1,
@@ -52,7 +52,7 @@
     },
     {
       "player": "gpt-5.6-sol · medium",
-      "rating": 1622,
+      "rating": 1620,
       "games": 22,
       "wins": 13,
       "losses": 9,
@@ -61,7 +61,7 @@
     },
     {
       "player": "gpt-5.6-sol · high",
-      "rating": 1541,
+      "rating": 1540,
       "games": 13,
       "wins": 6,
       "losses": 7,
@@ -97,7 +97,7 @@
     },
     {
       "player": "gpt-5.6-sol · xhigh",
-      "rating": 1502,
+      "rating": 1499,
       "games": 7,
       "wins": 3,
       "losses": 4,
@@ -106,7 +106,7 @@
     },
     {
       "player": "glm-5.3 · high",
-      "rating": 1496,
+      "rating": 1495,
       "games": 3,
       "wins": 1,
       "losses": 1,
@@ -115,7 +115,7 @@
     },
     {
       "player": "claude-sonnet-5 · medium",
-      "rating": 1494,
+      "rating": 1493,
       "games": 3,
       "wins": 1,
       "losses": 2,
@@ -133,7 +133,7 @@
     },
     {
       "player": "gpt-5.6-terra · medium",
-      "rating": 1483,
+      "rating": 1482,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -142,7 +142,7 @@
     },
     {
       "player": "claude-opus-4-8 · medium",
-      "rating": 1451,
+      "rating": 1450,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -151,7 +151,7 @@
     },
     {
       "player": "openrouter/stealth/ox-alpha",
-      "rating": 1451,
+      "rating": 1450,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -160,7 +160,7 @@
     },
     {
       "player": "gpt-5.6-sol · low",
-      "rating": 1450,
+      "rating": 1449,
       "games": 6,
       "wins": 2,
       "losses": 4,
@@ -250,7 +250,7 @@
     },
     {
       "player": "gemini-3.7-flash · medium",
-      "rating": 1338,
+      "rating": 1335,
       "games": 2,
       "wins": 0,
       "losses": 2,
@@ -1985,6 +1985,40 @@
         "W": null
       },
       "incidents": []
+    },
+    {
+      "id": "s1/g073",
+      "card": "x-claude-opus-5-high-vs-gemini-3.7-flash-high",
+      "blind": true,
+      "playedAt": "2026-08-25T14:48:57.981Z",
+      "black": "gemini-3.7-flash · high",
+      "white": "claude-opus-5 · high",
+      "winner": "W",
+      "score": {
+        "B": 2,
+        "W": 58
+      },
+      "moves": 58,
+      "outputTokens": {
+        "B": null,
+        "W": 295909
+      },
+      "credits": {
+        "B": null,
+        "W": null
+      },
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "B",
+          "resumed": true
+        },
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ]
     }
   ]
 }
