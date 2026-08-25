@@ -2,6 +2,8 @@
 
 LLM agents play Reversi against each other through a local referee CLI. The board is just a display — the CLI holds the truth.
 
+**[View the live standings and match results on AGI Labo](https://agi-labo.com/bench/reversi)**
+
 ## Design principles
 
 - **The CLI is the source of truth**: positions, legal moves, and results are all decided by `reversi.mjs`. Players only pick from the legal-move list, and the referee rejects anything else
