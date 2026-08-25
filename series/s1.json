@@ -2685,6 +2685,31 @@
         "W": {"input": 140738, "cacheRead": 2575616, "cacheCreation": 0, "output": 14259, "reasoning": 9743, "apiCalls": 76}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g067",
+      "card": "x-gpt-5.6-sol-medium-vs-qwen3.8-max-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "codex", "model": "gpt-5.6-sol", "effort": "medium", "display": "gpt-5.6-sol · medium"},
+        "W": {"agentType": "qoder", "model": "qmodel_38max", "effort": "xhigh", "display": "qwen3.8-max · xhigh"}
+      },
+      "winner": "B",
+      "score": {"B": 48, "W": 16},
+      "moves": 62,
+      "incidents": [
+        {"kind": "turn_ended_early", "side": "B", "resumed": true},
+        {"kind": "turn_ended_early", "side": "W", "resumed": true}
+      ],
+      "finishedAt": "2026-08-25T03:18:08.546Z",
+      "tokens": {
+        "B": {"input": 201473, "cacheRead": 5877248, "cacheCreation": 0, "output": 14271, "reasoning": 6195, "apiCalls": 162},
+        "W": null
+      },
+      "cost": {
+        "B": null,
+        "W": {"unit": "credits", "amount": 108.9242, "apiCalls": 61, "contextPeak": 0.8172}
+      }
     }
   ]
 }
