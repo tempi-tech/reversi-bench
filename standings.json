@@ -3,7 +3,7 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-26T11:31:27.868Z",
+  "generatedAt": "2026-08-26T12:06:29.289Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
@@ -60,15 +60,6 @@
       "stoneDiff": -155
     },
     {
-      "player": "deepseek-v4-pro · max",
-      "rating": 1591,
-      "games": 1,
-      "wins": 1,
-      "losses": 0,
-      "draws": 0,
-      "stoneDiff": 36
-    },
-    {
       "player": "gpt-5.6-sol · high",
       "rating": 1578,
       "games": 14,
@@ -112,6 +103,24 @@
       "losses": 4,
       "draws": 0,
       "stoneDiff": -24
+    },
+    {
+      "player": "deepseek-v4-pro · max",
+      "rating": 1499,
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": 26
+    },
+    {
+      "player": "deepseek-v4-flash · max",
+      "rating": 1499,
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": -26
     },
     {
       "player": "glm-5.3 · high",
@@ -220,15 +229,6 @@
       "losses": 3,
       "draws": 0,
       "stoneDiff": 75
-    },
-    {
-      "player": "deepseek-v4-flash · max",
-      "rating": 1408,
-      "games": 1,
-      "wins": 0,
-      "losses": 1,
-      "draws": 0,
-      "stoneDiff": -36
     },
     {
       "player": "qwen3.8-max · high",
@@ -2183,6 +2183,40 @@
       "credits": {
         "B": 88.7231,
         "W": 14.9204
+      },
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "B",
+          "resumed": true
+        },
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ]
+    },
+    {
+      "id": "s1/g079",
+      "card": "x-deepseek-v4-pro-max-vs-deepseek-v4-flash-max",
+      "blind": true,
+      "playedAt": "2026-08-26T12:04:52.081Z",
+      "black": "deepseek-v4-flash · max",
+      "white": "deepseek-v4-pro · max",
+      "winner": "B",
+      "score": {
+        "B": 37,
+        "W": 27
+      },
+      "moves": 64,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "credits": {
+        "B": 9.302,
+        "W": 30.5714
       },
       "incidents": [
         {
