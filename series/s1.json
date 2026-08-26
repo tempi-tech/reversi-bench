@@ -2868,6 +2868,28 @@
         "W": {"input": 128, "cacheRead": 11891349, "cacheCreation": 300572, "output": 286540, "reasoning": 281292, "apiCalls": 65}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g076",
+      "card": "x-kimi-k3-max-vs-qwen3.8-max-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "qoder", "model": "kimi-k3", "effort": "max", "display": "kimi-k3 · max"},
+        "W": {"agentType": "qoder", "model": "qwen3.8-max", "effort": "xhigh", "display": "qwen3.8-max · xhigh"}
+      },
+      "winner": "B",
+      "score": {"B": 35, "W": 29},
+      "moves": 65,
+      "incidents": [
+        {"kind": "turn_ended_early", "side": "B", "resumed": true},
+        {"kind": "turn_ended_early", "side": "W", "resumed": true}
+      ],
+      "finishedAt": "2026-08-26T06:39:16.430Z",
+      "tokens": {"B": null, "W": null},
+      "cost": {
+        "B": {"unit": "credits", "amount": 343.4883, "apiCalls": 86, "contextPeak": 0.8805},
+        "W": {"unit": "credits", "amount": 140.6924, "apiCalls": 82, "contextPeak": 0.9194}
+      }
     }
   ]
 }
