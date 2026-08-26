@@ -3,7 +3,7 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-26T10:18:29.855Z",
+  "generatedAt": "2026-08-26T11:31:27.868Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
@@ -34,7 +34,7 @@
     },
     {
       "player": "gpt-5.6-sol · medium",
-      "rating": 1643,
+      "rating": 1644,
       "games": 23,
       "wins": 14,
       "losses": 9,
@@ -58,6 +58,15 @@
       "losses": 8,
       "draws": 0,
       "stoneDiff": -155
+    },
+    {
+      "player": "deepseek-v4-pro · max",
+      "rating": 1591,
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0,
+      "stoneDiff": 36
     },
     {
       "player": "gpt-5.6-sol · high",
@@ -97,7 +106,7 @@
     },
     {
       "player": "gpt-5.6-sol · xhigh",
-      "rating": 1516,
+      "rating": 1517,
       "games": 7,
       "wins": 3,
       "losses": 4,
@@ -211,6 +220,15 @@
       "losses": 3,
       "draws": 0,
       "stoneDiff": 75
+    },
+    {
+      "player": "deepseek-v4-flash · max",
+      "rating": 1408,
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": -36
     },
     {
       "player": "qwen3.8-max · high",
@@ -2131,6 +2149,40 @@
       "credits": {
         "B": 140.5198,
         "W": 461.2814
+      },
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "B",
+          "resumed": true
+        },
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ]
+    },
+    {
+      "id": "s1/g078",
+      "card": "x-deepseek-v4-pro-max-vs-deepseek-v4-flash-max",
+      "blind": true,
+      "playedAt": "2026-08-26T11:30:00.109Z",
+      "black": "deepseek-v4-pro · max",
+      "white": "deepseek-v4-flash · max",
+      "winner": "B",
+      "score": {
+        "B": 50,
+        "W": 14
+      },
+      "moves": 63,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "credits": {
+        "B": 88.7231,
+        "W": 14.9204
       },
       "incidents": [
         {
