@@ -3060,6 +3060,28 @@
         "B": {"unit": "credits", "amount": 61.2784, "apiCalls": 65, "contextPeak": 0.5446},
         "W": {"unit": "credits", "amount": 100.4137, "apiCalls": 61, "contextPeak": 0.9184}
       }
+    },
+    {
+      "id": "s1/g083",
+      "card": "x-qwen3.8-max-medium-vs-qwen3.8-max-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "qoder", "model": "qwen3.8-max", "effort": "medium", "display": "qwen3.8-max · medium"},
+        "W": {"agentType": "qoder", "model": "qwen3.8-max", "effort": "xhigh", "display": "qwen3.8-max · xhigh"}
+      },
+      "winner": "W",
+      "score": {"B": 18, "W": 46},
+      "moves": 62,
+      "incidents": [
+        {"kind": "turn_ended_early", "side": "B", "resumed": true},
+        {"kind": "turn_ended_early", "side": "W", "resumed": true}
+      ],
+      "finishedAt": "2026-08-27T05:51:54.561Z",
+      "tokens": {"B": null, "W": null},
+      "cost": {
+        "B": {"unit": "credits", "amount": 98.954, "apiCalls": 80, "contextPeak": 0.8869},
+        "W": {"unit": "credits", "amount": 149.0679, "apiCalls": 67, "contextPeak": 0.9192}
+      }
     }
   ]
 }
