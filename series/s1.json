@@ -3324,6 +3324,25 @@
         "B": {"unit": "credits", "amount": 78.4237, "apiCalls": 62, "contextPeak": 0.9094},
         "W": {"unit": "credits", "amount": 51.3937, "apiCalls": 70, "contextPeak": 0.8414}
       }
+    },
+    {
+      "id": "s1/g098",
+      "card": "a-claude-fable-5-med-high",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "claude", "model": "claude-fable-5", "effort": "high", "display": "claude-fable-5 · high"},
+        "W": {"agentType": "claude", "model": "claude-fable-5", "effort": "medium", "display": "claude-fable-5 · medium"}
+      },
+      "winner": "B",
+      "score": {"B": 46, "W": 18},
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-08-27T19:24:32.162Z",
+      "tokens": {
+        "B": {"input": 1944, "cacheRead": 1453269, "cacheCreation": 68790, "output": 23119, "reasoning": 20062, "apiCalls": 33},
+        "W": {"input": 1712, "cacheRead": 1307504, "cacheCreation": 44879, "output": 20934, "reasoning": 17904, "apiCalls": 31}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
