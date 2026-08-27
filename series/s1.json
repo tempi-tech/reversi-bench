@@ -3182,6 +3182,25 @@
         "B": {"unit": "credits", "amount": 277.1835, "apiCalls": 118, "contextPeak": 0.9236},
         "W": null
       }
+    },
+    {
+      "id": "s1/g091",
+      "card": "x-gpt-5.6-sol-medium-vs-grok-4.6-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "grok", "model": "grok-4.6", "effort": "xhigh", "display": "grok-4.6 · xhigh"},
+        "W": {"agentType": "codex", "model": "gpt-5.6-sol", "effort": "medium", "display": "gpt-5.6-sol · medium"}
+      },
+      "winner": "B",
+      "score": {"B": 35, "W": 29},
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-08-27T14:29:33.569Z",
+      "tokens": {
+        "B": {"input": 672558, "cacheRead": 2663552, "cacheCreation": 0, "output": 52564, "reasoning": 50666, "apiCalls": 63},
+        "W": {"input": 137056, "cacheRead": 3244288, "cacheCreation": 0, "output": 14652, "reasoning": 9308, "apiCalls": 95}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
