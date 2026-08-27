@@ -3,11 +3,11 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-26T16:08:43.941Z",
+  "generatedAt": "2026-08-27T04:33:27.203Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1758,
+      "rating": 1744,
       "games": 14,
       "wins": 10,
       "losses": 3,
@@ -16,7 +16,7 @@
     },
     {
       "player": "grok-4.6 · medium",
-      "rating": 1661,
+      "rating": 1648,
       "games": 8,
       "wins": 4,
       "losses": 3,
@@ -24,17 +24,8 @@
       "stoneDiff": 11
     },
     {
-      "player": "claude-opus-5 · high",
-      "rating": 1652,
-      "games": 9,
-      "wins": 5,
-      "losses": 4,
-      "draws": 0,
-      "stoneDiff": 110
-    },
-    {
       "player": "gpt-5.6-sol · medium",
-      "rating": 1648,
+      "rating": 1639,
       "games": 23,
       "wins": 14,
       "losses": 9,
@@ -42,8 +33,17 @@
       "stoneDiff": 143
     },
     {
+      "player": "claude-opus-5 · high",
+      "rating": 1639,
+      "games": 9,
+      "wins": 5,
+      "losses": 4,
+      "draws": 0,
+      "stoneDiff": 110
+    },
+    {
       "player": "claude-fable-5 · medium",
-      "rating": 1642,
+      "rating": 1637,
       "games": 3,
       "wins": 2,
       "losses": 1,
@@ -51,17 +51,26 @@
       "stoneDiff": 56
     },
     {
-      "player": "gemini-3.7-flash · high",
-      "rating": 1638,
-      "games": 16,
-      "wins": 8,
-      "losses": 8,
+      "player": "qwen3.8-max · xhigh",
+      "rating": 1623,
+      "games": 9,
+      "wins": 6,
+      "losses": 3,
       "draws": 0,
-      "stoneDiff": -155
+      "stoneDiff": 136
+    },
+    {
+      "player": "gemini-3.7-flash · high",
+      "rating": 1608,
+      "games": 17,
+      "wins": 8,
+      "losses": 9,
+      "draws": 0,
+      "stoneDiff": -212
     },
     {
       "player": "gpt-5.6-sol · high",
-      "rating": 1581,
+      "rating": 1572,
       "games": 14,
       "wins": 7,
       "losses": 7,
@@ -69,17 +78,8 @@
       "stoneDiff": 3
     },
     {
-      "player": "qwen3.8-max · xhigh",
-      "rating": 1577,
-      "games": 8,
-      "wins": 5,
-      "losses": 3,
-      "draws": 0,
-      "stoneDiff": 79
-    },
-    {
       "player": "kimi-k3 · high",
-      "rating": 1550,
+      "rating": 1564,
       "games": 4,
       "wins": 2,
       "losses": 1,
@@ -88,7 +88,7 @@
     },
     {
       "player": "kimi-k3 · max",
-      "rating": 1548,
+      "rating": 1564,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -96,17 +96,8 @@
       "stoneDiff": -12
     },
     {
-      "player": "gpt-5.6-sol · xhigh",
-      "rating": 1519,
-      "games": 7,
-      "wins": 3,
-      "losses": 4,
-      "draws": 0,
-      "stoneDiff": -24
-    },
-    {
       "player": "glm-5.3 · high",
-      "rating": 1516,
+      "rating": 1531,
       "games": 3,
       "wins": 1,
       "losses": 1,
@@ -114,8 +105,17 @@
       "stoneDiff": 0
     },
     {
+      "player": "gpt-5.6-sol · xhigh",
+      "rating": 1510,
+      "games": 7,
+      "wins": 3,
+      "losses": 4,
+      "draws": 0,
+      "stoneDiff": -24
+    },
+    {
       "player": "claude-sonnet-5 · medium",
-      "rating": 1499,
+      "rating": 1495,
       "games": 3,
       "wins": 1,
       "losses": 2,
@@ -124,7 +124,7 @@
     },
     {
       "player": "grok-4.6 · high",
-      "rating": 1492,
+      "rating": 1487,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -133,7 +133,7 @@
     },
     {
       "player": "gpt-5.6-terra · medium",
-      "rating": 1488,
+      "rating": 1486,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -141,17 +141,8 @@
       "stoneDiff": -36
     },
     {
-      "player": "gpt-5.6-sol · low",
-      "rating": 1470,
-      "games": 6,
-      "wins": 2,
-      "losses": 4,
-      "draws": 0,
-      "stoneDiff": -71
-    },
-    {
       "player": "deepseek-v4-pro · high",
-      "rating": 1457,
+      "rating": 1472,
       "games": 3,
       "wins": 1,
       "losses": 2,
@@ -159,8 +150,26 @@
       "stoneDiff": -25
     },
     {
-      "player": "claude-opus-4-8 · medium",
+      "player": "gpt-5.6-sol · low",
+      "rating": 1464,
+      "games": 6,
+      "wins": 2,
+      "losses": 4,
+      "draws": 0,
+      "stoneDiff": -71
+    },
+    {
+      "player": "deepseek-v4-flash · max",
       "rating": 1449,
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": -26
+    },
+    {
+      "player": "claude-opus-4-8 · medium",
+      "rating": 1446,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -169,7 +178,7 @@
     },
     {
       "player": "openrouter/stealth/ox-alpha",
-      "rating": 1449,
+      "rating": 1446,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -186,17 +195,8 @@
       "stoneDiff": -83
     },
     {
-      "player": "deepseek-v4-flash · max",
-      "rating": 1441,
-      "games": 2,
-      "wins": 1,
-      "losses": 1,
-      "draws": 0,
-      "stoneDiff": -26
-    },
-    {
       "player": "gpt-5.6-terra · max",
-      "rating": 1424,
+      "rating": 1421,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -205,7 +205,7 @@
     },
     {
       "player": "claude-fable-5 · high",
-      "rating": 1422,
+      "rating": 1421,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -222,17 +222,8 @@
       "stoneDiff": 75
     },
     {
-      "player": "qwen3.8-max · high",
-      "rating": 1396,
-      "games": 1,
-      "wins": 0,
-      "losses": 1,
-      "draws": 0,
-      "stoneDiff": -16
-    },
-    {
       "player": "glm-5.3 · max",
-      "rating": 1395,
+      "rating": 1400,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -240,8 +231,17 @@
       "stoneDiff": -2
     },
     {
+      "player": "qwen3.8-max · high",
+      "rating": 1400,
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": -16
+    },
+    {
       "player": "deepseek-v4-pro · max",
-      "rating": 1382,
+      "rating": 1398,
       "games": 4,
       "wins": 1,
       "losses": 3,
@@ -250,7 +250,7 @@
     },
     {
       "player": "openrouter/google/gemini-3.7-flash · high",
-      "rating": 1377,
+      "rating": 1375,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -268,7 +268,7 @@
     },
     {
       "player": "gemini-3.7-flash · medium",
-      "rating": 1336,
+      "rating": 1329,
       "games": 2,
       "wins": 0,
       "losses": 2,
@@ -2276,6 +2276,40 @@
         "W": 63.5257
       },
       "incidents": []
+    },
+    {
+      "id": "s1/g082",
+      "card": "x-gemini-3.7-flash-high-vs-qwen3.8-max-xhigh",
+      "blind": true,
+      "playedAt": "2026-08-27T04:18:50.813Z",
+      "black": "qwen3.8-max · xhigh",
+      "white": "gemini-3.7-flash · high",
+      "winner": "B",
+      "score": {
+        "B": 60,
+        "W": 3
+      },
+      "moves": 63,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "credits": {
+        "B": 115.1164,
+        "W": null
+      },
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "B",
+          "resumed": true
+        },
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ]
     }
   ]
 }
