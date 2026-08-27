@@ -3,7 +3,7 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-27T04:33:27.203Z",
+  "generatedAt": "2026-08-27T04:57:36.403Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
@@ -69,6 +69,15 @@
       "stoneDiff": -212
     },
     {
+      "player": "qwen3.8-max · none",
+      "rating": 1591,
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0,
+      "stoneDiff": 4
+    },
+    {
       "player": "gpt-5.6-sol · high",
       "rating": 1572,
       "games": 14,
@@ -115,7 +124,7 @@
     },
     {
       "player": "claude-sonnet-5 · medium",
-      "rating": 1495,
+      "rating": 1496,
       "games": 3,
       "wins": 1,
       "losses": 2,
@@ -220,6 +229,15 @@
       "losses": 3,
       "draws": 0,
       "stoneDiff": 75
+    },
+    {
+      "player": "qwen3.8-max · low",
+      "rating": 1408,
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": -4
     },
     {
       "player": "glm-5.3 · max",
@@ -2297,6 +2315,40 @@
       "credits": {
         "B": 115.1164,
         "W": null
+      },
+      "incidents": [
+        {
+          "kind": "turn_ended_early",
+          "side": "B",
+          "resumed": true
+        },
+        {
+          "kind": "turn_ended_early",
+          "side": "W",
+          "resumed": true
+        }
+      ]
+    },
+    {
+      "id": "s1/g084",
+      "card": "x-qwen3.8-max-none-vs-qwen3.8-max-low",
+      "blind": true,
+      "playedAt": "2026-08-27T04:47:42.937Z",
+      "black": "qwen3.8-max · none",
+      "white": "qwen3.8-max · low",
+      "winner": "B",
+      "score": {
+        "B": 34,
+        "W": 30
+      },
+      "moves": 67,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "credits": {
+        "B": 23.7693,
+        "W": 50.9499
       },
       "incidents": [
         {
