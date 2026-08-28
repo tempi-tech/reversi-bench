@@ -3343,6 +3343,25 @@
         "W": {"input": 1712, "cacheRead": 1307504, "cacheCreation": 44879, "output": 20934, "reasoning": 17904, "apiCalls": 31}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g099",
+      "card": "a-deepseek-v4-pro-high-max",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "qoder", "model": "dmodel", "effort": "max", "display": "deepseek-v4-pro · max"},
+        "W": {"agentType": "qoder", "model": "dmodel", "effort": "high", "display": "deepseek-v4-pro · high"}
+      },
+      "winner": "draw",
+      "score": {"B": 32, "W": 32},
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-08-28T00:39:51.379Z",
+      "tokens": {"B": null, "W": null},
+      "cost": {
+        "B": {"unit": "credits", "amount": 183.1496, "apiCalls": 186, "contextPeak": 0.1307},
+        "W": {"unit": "credits", "amount": 143.4043, "apiCalls": 80, "contextPeak": 0.09}
+      }
     }
   ]
 }

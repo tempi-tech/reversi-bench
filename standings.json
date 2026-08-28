@@ -3,7 +3,7 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-08-27T19:26:13.833Z",
+  "generatedAt": "2026-08-28T00:43:54.558Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
@@ -87,15 +87,6 @@
       "stoneDiff": -18
     },
     {
-      "player": "kimi-k3 · high",
-      "rating": 1538,
-      "games": 4,
-      "wins": 2,
-      "losses": 1,
-      "draws": 1,
-      "stoneDiff": 12
-    },
-    {
       "player": "qwen3.8-max · xhigh",
       "rating": 1536,
       "games": 16,
@@ -103,6 +94,15 @@
       "losses": 8,
       "draws": 0,
       "stoneDiff": 76
+    },
+    {
+      "player": "kimi-k3 · high",
+      "rating": 1536,
+      "games": 4,
+      "wins": 2,
+      "losses": 1,
+      "draws": 1,
+      "stoneDiff": 12
     },
     {
       "player": "kimi-k3 · max",
@@ -124,7 +124,7 @@
     },
     {
       "player": "glm-5.3 · high",
-      "rating": 1503,
+      "rating": 1500,
       "games": 3,
       "wins": 1,
       "losses": 1,
@@ -204,15 +204,6 @@
       "stoneDiff": 47
     },
     {
-      "player": "deepseek-v4-pro · high",
-      "rating": 1445,
-      "games": 3,
-      "wins": 1,
-      "losses": 2,
-      "draws": 0,
-      "stoneDiff": -25
-    },
-    {
       "player": "gpt-5.6-terra · low",
       "rating": 1442,
       "games": 4,
@@ -223,12 +214,21 @@
     },
     {
       "player": "deepseek-v4-flash · max",
-      "rating": 1433,
+      "rating": 1439,
       "games": 2,
       "wins": 1,
       "losses": 1,
       "draws": 0,
       "stoneDiff": -26
+    },
+    {
+      "player": "deepseek-v4-pro · high",
+      "rating": 1432,
+      "games": 4,
+      "wins": 1,
+      "losses": 2,
+      "draws": 1,
+      "stoneDiff": -25
     },
     {
       "player": "gpt-5.6-terra · max",
@@ -250,7 +250,7 @@
     },
     {
       "player": "qwen3.8-max · high",
-      "rating": 1392,
+      "rating": 1391,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -265,6 +265,15 @@
       "losses": 1,
       "draws": 0,
       "stoneDiff": -2
+    },
+    {
+      "player": "deepseek-v4-pro · max",
+      "rating": 1379,
+      "games": 5,
+      "wins": 1,
+      "losses": 3,
+      "draws": 1,
+      "stoneDiff": -44
     },
     {
       "player": "openrouter/google/gemini-3.7-flash · high",
@@ -292,15 +301,6 @@
       "losses": 3,
       "draws": 0,
       "stoneDiff": -68
-    },
-    {
-      "player": "deepseek-v4-pro · max",
-      "rating": 1367,
-      "games": 4,
-      "wins": 1,
-      "losses": 3,
-      "draws": 0,
-      "stoneDiff": -44
     },
     {
       "player": "gemini-3.7-flash · medium",
@@ -2751,6 +2751,29 @@
       "credits": {
         "B": null,
         "W": null
+      },
+      "incidents": []
+    },
+    {
+      "id": "s1/g099",
+      "card": "a-deepseek-v4-pro-high-max",
+      "blind": true,
+      "playedAt": "2026-08-28T00:39:51.379Z",
+      "black": "deepseek-v4-pro · max",
+      "white": "deepseek-v4-pro · high",
+      "winner": "draw",
+      "score": {
+        "B": 32,
+        "W": 32
+      },
+      "moves": 64,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "credits": {
+        "B": 183.1496,
+        "W": 143.4043
       },
       "incidents": []
     }
