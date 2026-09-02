@@ -3565,6 +3565,25 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g111",
+      "card": "x-claude-fable-5-medium-vs-claude-fable-5-1-medium",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "claude", "model": "claude-fable-5", "effort": "medium", "display": "claude-fable-5 · medium"},
+        "W": {"agentType": "claude", "model": "claude-fable-5-1", "effort": "medium", "display": "claude-fable-5.1 · medium"}
+      },
+      "winner": "W",
+      "score": {"B": 17, "W": 47},
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-09-02T02:43:50.700Z",
+      "tokens": {
+        "B": {"input": 64, "cacheRead": 2388825, "cacheCreation": 145204, "output": 103670, "reasoning": 100632, "apiCalls": 32},
+        "W": {"input": 2162, "cacheRead": 1202674, "cacheCreation": 45638, "output": 18595, "reasoning": 15620, "apiCalls": 32}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
