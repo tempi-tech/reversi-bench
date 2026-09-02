@@ -3663,6 +3663,28 @@
         "W": {"input": 3292, "cacheRead": 7876149, "cacheCreation": 236824, "output": 211428, "reasoning": 205479, "apiCalls": 56}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g116",
+      "card": "a-claude-fable-5-1-high-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "claude", "model": "claude-fable-5-1", "effort": "xhigh", "display": "claude-fable-5.1 · xhigh"},
+        "W": {"agentType": "claude", "model": "claude-fable-5-1", "effort": "high", "display": "claude-fable-5.1 · high"}
+      },
+      "winner": "B",
+      "score": {"B": 43, "W": 21},
+      "moves": 62,
+      "incidents": [
+        {"kind": "turn_ended_early", "side": "B", "resumed": true},
+        {"kind": "turn_ended_early", "side": "W", "resumed": true}
+      ],
+      "finishedAt": "2026-09-02T09:59:26.198Z",
+      "tokens": {
+        "B": {"input": 3772, "cacheRead": 10841351, "cacheCreation": 290415, "output": 261451, "reasoning": 255899, "apiCalls": 66},
+        "W": {"input": 2364, "cacheRead": 3208976, "cacheCreation": 140378, "output": 109763, "reasoning": 105897, "apiCalls": 43}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
