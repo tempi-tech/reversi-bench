@@ -3685,6 +3685,22 @@
         "W": {"input": 2364, "cacheRead": 3208976, "cacheCreation": 140378, "output": 109763, "reasoning": 105897, "apiCalls": 43}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g117",
+      "card": "x-gemini-3.7-flash-high-vs-qwen3.8-max-v2-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "qoder", "model": "qwen3.8-max-v2", "effort": "xhigh", "display": "qwen3.8-max-v2 · xhigh"},
+        "W": {"agentType": "antigravity", "model": "gemini-3.7-flash", "effort": "high", "display": "gemini-3.7-flash · high"}
+      },
+      "winner": "B",
+      "score": {"B": 40, "W": 24},
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-09-02T14:35:43.537Z",
+      "tokens": {"B": null, "W": null},
+      "cost": {"B": 193.5795, "W": null}
     }
   ]
 }
