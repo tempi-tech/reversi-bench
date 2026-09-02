@@ -2,6 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { reasoningStatsOf } from "./reasoning-stats.mjs";
+
 const here = path.dirname(fileURLToPath(import.meta.url));
 
 const seatLabelOf = (seat) => (typeof seat.display === "string"
@@ -9,6 +11,14 @@ const seatLabelOf = (seat) => (typeof seat.display === "string"
   : [seat.model, seat.effort].filter(Boolean).join(" · "));
 
 const series = JSON.parse(fs.readFileSync(path.join(here, "series", "s1.json"), "utf8"));
+const matches = Object.fromEntries(series.games.map((game) => {
+  const matchPath = path.join(here, "matches", ...game.id.split("/")) + ".json";
+  return [game.id, JSON.parse(fs.readFileSync(matchPath, "utf8"))];
+}));
+
+const decisionsOf = ({ game, side }) => {
+  return matches[game.id].history.filter((entry) => entry.side === side && entry.move !== "pass").length;
+};
 
 const seriesGames = series.games.map((game) => ({
   id: game.id,
@@ -23,6 +33,14 @@ const seriesGames = series.games.map((game) => ({
   outputTokens: {
     B: game.tokens?.B?.output ?? null,
     W: game.tokens?.W?.output ?? null,
+  },
+  reasoningTokens: {
+    B: game.tokens?.B?.reasoning > 0 ? game.tokens.B.reasoning : null,
+    W: game.tokens?.W?.reasoning > 0 ? game.tokens.W.reasoning : null,
+  },
+  decisions: {
+    B: decisionsOf({ game, side: "B" }),
+    W: decisionsOf({ game, side: "W" }),
   },
   credits: {
     B: game.cost?.B?.amount ?? null,
@@ -81,6 +99,10 @@ const strengths = strengthsOf();
 const standings = players
   .map((player) => {
     const rows = results.filter((result) => result.player === player);
+    const reasoningSamples = games.flatMap((game) => {
+      const side = game.black === player ? "B" : game.white === player ? "W" : null;
+      return side ? [{ tokens: game.reasoningTokens[side], moves: game.decisions[side] }] : [];
+    });
     return {
       player,
       rating: Math.round(1500 + (400 * strengths[player]) / Math.LN10),
@@ -89,6 +111,7 @@ const standings = players
       losses: rows.filter((row) => row.outcome === "loss").length,
       draws: rows.filter((row) => row.outcome === "draw").length,
       stoneDiff: rows.reduce((sum, row) => sum + row.diff, 0),
+      reasoning: reasoningStatsOf(reasoningSamples),
     };
   })
   .sort((a, b) => b.rating - a.rating || b.stoneDiff - a.stoneDiff);

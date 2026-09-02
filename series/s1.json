@@ -1201,7 +1201,7 @@
       "incidents": [],
       "finishedAt": "2026-08-22T10:31:19.414Z",
       "tokens": {
-        "B": null,
+        "B": {"input":389576,"cacheRead":2646968,"cacheCreation":0,"output":29589,"reasoning":25225},
         "W": {
           "input": 86785,
           "cacheRead": 2273024,
@@ -1678,7 +1678,7 @@
           "reasoning": 22749,
           "apiCalls": 63
         },
-        "W": null
+        "W": {"input":504754,"cacheRead":4150697,"cacheCreation":0,"output":35068,"reasoning":28468}
       },
       "cost": {
         "B": null,
@@ -1761,7 +1761,7 @@
       "incidents": [],
       "finishedAt": "2026-08-24T02:43:50.540Z",
       "tokens": {
-        "B": null,
+        "B": {"input":337564,"cacheRead":1751416,"cacheCreation":0,"output":12275,"reasoning":7415},
         "W": {
           "input": 135051,
           "cacheRead": 2682880,
@@ -1811,7 +1811,7 @@
           "reasoning": 6215,
           "apiCalls": 94
         },
-        "W": null
+        "W": {"input":341492,"cacheRead":2027136,"cacheCreation":0,"output":26931,"reasoning":22411}
       },
       "cost": {
         "B": null,
@@ -1845,7 +1845,7 @@
       "incidents": [],
       "finishedAt": "2026-08-24T02:53:00.116Z",
       "tokens": {
-        "B": null,
+        "B": {"input":369291,"cacheRead":2287109,"cacheCreation":0,"output":29358,"reasoning":24378},
         "W": {
           "input": 73682,
           "cacheRead": 1933056,
@@ -1895,7 +1895,7 @@
           "reasoning": 6194,
           "apiCalls": 62
         },
-        "W": null
+        "W": {"input":337995,"cacheRead":2270092,"cacheCreation":0,"output":21618,"reasoning":16202}
       },
       "cost": {
         "B": null,
@@ -1929,7 +1929,7 @@
       "incidents": [],
       "finishedAt": "2026-08-24T04:14:32.819Z",
       "tokens": {
-        "B": null,
+        "B": {"input":804511,"cacheRead":7934403,"cacheCreation":0,"output":32234,"reasoning":22186},
         "W": {
           "input": 124,
           "cacheRead": 11973937,
@@ -1979,7 +1979,7 @@
           "reasoning": 183022,
           "apiCalls": 64
         },
-        "W": null
+        "W": {"input":426615,"cacheRead":3762301,"cacheCreation":0,"output":41484,"reasoning":36488}
       },
       "cost": {
         "B": null,
@@ -2013,7 +2013,7 @@
       "incidents": [],
       "finishedAt": "2026-08-24T04:05:22.873Z",
       "tokens": {
-        "B": null,
+        "B": {"input":378800,"cacheRead":1894623,"cacheCreation":0,"output":10858,"reasoning":7006},
         "W": {
           "input": 100,
           "cacheRead": 6448076,
@@ -2063,7 +2063,7 @@
           "reasoning": 248806,
           "apiCalls": 63
         },
-        "W": null
+        "W": {"input":629295,"cacheRead":3612395,"cacheCreation":0,"output":21854,"reasoning":16254}
       },
       "cost": {
         "B": null,
@@ -2146,8 +2146,8 @@
       "incidents": [],
       "finishedAt": "2026-08-24T04:42:40.451Z",
       "tokens": {
-        "B": null,
-        "W": null
+        "B": {"input":343072,"cacheRead":1669388,"cacheCreation":0,"output":17972,"reasoning":13170},
+        "W": {"input":344721,"cacheRead":1286483,"cacheCreation":0,"output":8968,"reasoning":4226}
       },
       "cost": {
         "B": null,
@@ -2181,7 +2181,7 @@
       "incidents": [],
       "finishedAt": "2026-08-24T05:29:45.476Z",
       "tokens": {
-        "B": null,
+        "B": {"input":391146,"cacheRead":2401740,"cacheCreation":0,"output":18464,"reasoning":13511},
         "W": {
           "input": 291731,
           "cacheRead": 2161664,
@@ -2231,7 +2231,7 @@
           "reasoning": 25954,
           "apiCalls": 43
         },
-        "W": null
+        "W": {"input":310387,"cacheRead":1422805,"cacheCreation":0,"output":7450,"reasoning":3971}
       },
       "cost": {
         "B": null,
@@ -2748,7 +2748,7 @@
       "finishedAt": "2026-08-25T05:49:57.948Z",
       "tokens": {
         "B": {"input": 134, "cacheRead": 14596206, "cacheCreation": 389237, "output": 367999, "reasoning": 360027, "apiCalls": 68},
-        "W": null
+        "W": {"input":768861,"cacheRead":5426597,"cacheCreation":0,"output":28964,"reasoning":21911}
       },
       "cost": {"B": null, "W": null}
     },
@@ -2823,7 +2823,7 @@
       ],
       "finishedAt": "2026-08-25T14:48:57.981Z",
       "tokens": {
-        "B": null,
+        "B": {"input":529599,"cacheRead":4918074,"cacheCreation":0,"output":41772,"reasoning":36067},
         "W": {"input": 74, "cacheRead": 6137896, "cacheCreation": 310349, "output": 295909, "reasoning": 289384, "apiCalls": 38}
       },
       "cost": {"B": null, "W": null}
@@ -3011,7 +3011,7 @@
         {"kind": "turn_ended_early", "side": "W", "resumed": true}
       ],
       "finishedAt": "2026-08-27T04:18:50.813Z",
-      "tokens": {"B": null, "W": null},
+      "tokens": {"B": null, "W": {"input":492895,"cacheRead":3912674,"cacheCreation":0,"output":32644,"reasoning":27085}},
       "cost": {
         "B": {"unit": "credits", "amount": 115.1164, "apiCalls": 61, "contextPeak": 0.8631},
         "W": null
@@ -3300,7 +3300,7 @@
       "moves": 65,
       "incidents": [],
       "finishedAt": "2026-08-27T18:06:34.750Z",
-      "tokens": {"B": null, "W": null},
+      "tokens": {"B": {"input":469276,"cacheRead":3685977,"cacheCreation":0,"output":39282,"reasoning":34035}, "W": null},
       "cost": {
         "B": null,
         "W": {"unit": "credits", "amount": 44.8628, "apiCalls": 58, "contextPeak": 0.8241}

@@ -3,7 +3,7 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-09-02T02:00:49.942Z",
+  "generatedAt": "2026-09-02T02:07:37.488Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
@@ -12,7 +12,17 @@
       "wins": 15,
       "losses": 3,
       "draws": 1,
-      "stoneDiff": 369
+      "stoneDiff": 369,
+      "reasoning": {
+        "averagePerMove": 9239.283582089553,
+        "total": 3095160,
+        "medianPerGame": 248806,
+        "q1PerGame": 218543.5,
+        "q3PerGame": 335123.5,
+        "iqrPerGame": 116580,
+        "games": 11,
+        "moves": 335
+      }
     },
     {
       "player": "grok-4.6 · medium",
@@ -21,7 +31,17 @@
       "wins": 6,
       "losses": 4,
       "draws": 1,
-      "stoneDiff": 55
+      "stoneDiff": 55,
+      "reasoning": {
+        "averagePerMove": 986.2627986348123,
+        "total": 288975,
+        "medianPerGame": 28208,
+        "q1PerGame": 25630.5,
+        "q3PerGame": 31869.25,
+        "iqrPerGame": 6238.75,
+        "games": 10,
+        "moves": 293
+      }
     },
     {
       "player": "claude-opus-5 · high",
@@ -30,7 +50,17 @@
       "wins": 6,
       "losses": 5,
       "draws": 0,
-      "stoneDiff": 142
+      "stoneDiff": 142,
+      "reasoning": {
+        "averagePerMove": 18207.461254612546,
+        "total": 4934222,
+        "medianPerGame": 360027,
+        "q1PerGame": 289384,
+        "q3PerGame": 488242,
+        "iqrPerGame": 198858,
+        "games": 9,
+        "moves": 271
+      }
     },
     {
       "player": "claude-fable-5 · medium",
@@ -39,7 +69,17 @@
       "wins": 3,
       "losses": 2,
       "draws": 0,
-      "stoneDiff": 50
+      "stoneDiff": 50,
+      "reasoning": {
+        "averagePerMove": 1352.7977528089887,
+        "total": 120399,
+        "medianPerGame": 17904,
+        "q1PerGame": 14486.5,
+        "q3PerGame": 54665,
+        "iqrPerGame": 40178.5,
+        "games": 3,
+        "moves": 89
+      }
     },
     {
       "player": "claude-fable-5 · high",
@@ -48,7 +88,17 @@
       "wins": 2,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": 38
+      "stoneDiff": 38,
+      "reasoning": {
+        "averagePerMove": 822.9122807017544,
+        "total": 46906,
+        "medianPerGame": 23453,
+        "q1PerGame": 21757.5,
+        "q3PerGame": 25148.5,
+        "iqrPerGame": 3391,
+        "games": 2,
+        "moves": 57
+      }
     },
     {
       "player": "grok-4.6 · xhigh",
@@ -57,7 +107,17 @@
       "wins": 3,
       "losses": 2,
       "draws": 0,
-      "stoneDiff": -24
+      "stoneDiff": -24,
+      "reasoning": {
+        "averagePerMove": 1568.7,
+        "total": 235305,
+        "medianPerGame": 48162,
+        "q1PerGame": 42096,
+        "q3PerGame": 50666,
+        "iqrPerGame": 8570,
+        "games": 5,
+        "moves": 150
+      }
     },
     {
       "player": "gemini-3.7-flash · high",
@@ -66,7 +126,17 @@
       "wins": 9,
       "losses": 9,
       "draws": 0,
-      "stoneDiff": -184
+      "stoneDiff": -184,
+      "reasoning": {
+        "averagePerMove": 758.2155172413793,
+        "total": 351812,
+        "medianPerGame": 22298.5,
+        "q1PerGame": 15529.25,
+        "q3PerGame": 27430.75,
+        "iqrPerGame": 11901.5,
+        "games": 16,
+        "moves": 464
+      }
     },
     {
       "player": "gpt-5.6-sol · medium",
@@ -75,7 +145,17 @@
       "wins": 15,
       "losses": 12,
       "draws": 0,
-      "stoneDiff": 69
+      "stoneDiff": 69,
+      "reasoning": {
+        "averagePerMove": 232.68511685116852,
+        "total": 189173,
+        "medianPerGame": 6195,
+        "q1PerGame": 5408.5,
+        "q3PerGame": 9128,
+        "iqrPerGame": 3719.5,
+        "games": 27,
+        "moves": 813
+      }
     },
     {
       "player": "gpt-5.6-sol · high",
@@ -84,7 +164,17 @@
       "wins": 7,
       "losses": 7,
       "draws": 0,
-      "stoneDiff": 3
+      "stoneDiff": 3,
+      "reasoning": {
+        "averagePerMove": 365.9095238095238,
+        "total": 153682,
+        "medianPerGame": 11150.5,
+        "q1PerGame": 9610,
+        "q3PerGame": 12538.25,
+        "iqrPerGame": 2928.25,
+        "games": 14,
+        "moves": 420
+      }
     },
     {
       "player": "qwen3.8-max · xhigh",
@@ -93,7 +183,8 @@
       "wins": 9,
       "losses": 8,
       "draws": 0,
-      "stoneDiff": 96
+      "stoneDiff": 96,
+      "reasoning": null
     },
     {
       "player": "kimi-k3 · max",
@@ -102,7 +193,8 @@
       "wins": 2,
       "losses": 2,
       "draws": 0,
-      "stoneDiff": -12
+      "stoneDiff": -12,
+      "reasoning": null
     },
     {
       "player": "kimi-k3 · high",
@@ -111,7 +203,17 @@
       "wins": 2,
       "losses": 1,
       "draws": 1,
-      "stoneDiff": 12
+      "stoneDiff": 12,
+      "reasoning": {
+        "averagePerMove": 1424.4666666666667,
+        "total": 42734,
+        "medianPerGame": 42734,
+        "q1PerGame": 42734,
+        "q3PerGame": 42734,
+        "iqrPerGame": 0,
+        "games": 1,
+        "moves": 30
+      }
     },
     {
       "player": "glm-5.3 · high",
@@ -120,7 +222,8 @@
       "wins": 1,
       "losses": 1,
       "draws": 1,
-      "stoneDiff": 0
+      "stoneDiff": 0,
+      "reasoning": null
     },
     {
       "player": "gpt-5.6-sol · xhigh",
@@ -129,7 +232,17 @@
       "wins": 4,
       "losses": 5,
       "draws": 0,
-      "stoneDiff": -18
+      "stoneDiff": -18,
+      "reasoning": {
+        "averagePerMove": 791.6185185185185,
+        "total": 213737,
+        "medianPerGame": 24660,
+        "q1PerGame": 19070,
+        "q3PerGame": 26116,
+        "iqrPerGame": 7046,
+        "games": 9,
+        "moves": 270
+      }
     },
     {
       "player": "claude-sonnet-5 · medium",
@@ -138,7 +251,8 @@
       "wins": 1,
       "losses": 2,
       "draws": 0,
-      "stoneDiff": -20
+      "stoneDiff": -20,
+      "reasoning": null
     },
     {
       "player": "grok-4.6 · high",
@@ -147,7 +261,17 @@
       "wins": 3,
       "losses": 3,
       "draws": 0,
-      "stoneDiff": 51
+      "stoneDiff": 51,
+      "reasoning": {
+        "averagePerMove": 1459.535294117647,
+        "total": 248121,
+        "medianPerGame": 43002.5,
+        "q1PerGame": 33212.5,
+        "q3PerGame": 45571.5,
+        "iqrPerGame": 12359,
+        "games": 6,
+        "moves": 170
+      }
     },
     {
       "player": "gpt-5.6-terra · medium",
@@ -156,7 +280,17 @@
       "wins": 2,
       "losses": 2,
       "draws": 0,
-      "stoneDiff": -36
+      "stoneDiff": -36,
+      "reasoning": {
+        "averagePerMove": 72.95535714285714,
+        "total": 8171,
+        "medianPerGame": 1916,
+        "q1PerGame": 1158.5,
+        "q3PerGame": 2800.25,
+        "iqrPerGame": 1641.75,
+        "games": 4,
+        "moves": 112
+      }
     },
     {
       "player": "qwen3.8-max · none",
@@ -165,7 +299,8 @@
       "wins": 1,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -45
+      "stoneDiff": -45,
+      "reasoning": null
     },
     {
       "player": "claude-opus-4-8 · medium",
@@ -174,7 +309,8 @@
       "wins": 0,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -26
+      "stoneDiff": -26,
+      "reasoning": null
     },
     {
       "player": "claude-opus-5 · max",
@@ -183,7 +319,17 @@
       "wins": 0,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -42
+      "stoneDiff": -42,
+      "reasoning": {
+        "averagePerMove": 49251.21428571428,
+        "total": 1379034,
+        "medianPerGame": 1379034,
+        "q1PerGame": 1379034,
+        "q3PerGame": 1379034,
+        "iqrPerGame": 0,
+        "games": 1,
+        "moves": 28
+      }
     },
     {
       "player": "openrouter/stealth/ox-alpha",
@@ -192,7 +338,8 @@
       "wins": 0,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -48
+      "stoneDiff": -48,
+      "reasoning": null
     },
     {
       "player": "gpt-5.6-sol · low",
@@ -201,7 +348,17 @@
       "wins": 2,
       "losses": 4,
       "draws": 0,
-      "stoneDiff": -71
+      "stoneDiff": -71,
+      "reasoning": {
+        "averagePerMove": 137.71751412429379,
+        "total": 24376,
+        "medianPerGame": 2891,
+        "q1PerGame": 2596.5,
+        "q3PerGame": 4126,
+        "iqrPerGame": 1529.5,
+        "games": 6,
+        "moves": 177
+      }
     },
     {
       "player": "qwen3.8-max · low",
@@ -210,7 +367,8 @@
       "wins": 2,
       "losses": 2,
       "draws": 0,
-      "stoneDiff": 47
+      "stoneDiff": 47,
+      "reasoning": null
     },
     {
       "player": "deepseek-v4-flash · max",
@@ -219,7 +377,8 @@
       "wins": 1,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -26
+      "stoneDiff": -26,
+      "reasoning": null
     },
     {
       "player": "gpt-5.6-terra · low",
@@ -228,7 +387,17 @@
       "wins": 2,
       "losses": 2,
       "draws": 0,
-      "stoneDiff": -83
+      "stoneDiff": -83,
+      "reasoning": {
+        "averagePerMove": 49.51260504201681,
+        "total": 5892,
+        "medianPerGame": 1553.5,
+        "q1PerGame": 778.75,
+        "q3PerGame": 2247.75,
+        "iqrPerGame": 1469,
+        "games": 4,
+        "moves": 119
+      }
     },
     {
       "player": "deepseek-v4-pro · high",
@@ -237,7 +406,8 @@
       "wins": 1,
       "losses": 2,
       "draws": 1,
-      "stoneDiff": -25
+      "stoneDiff": -25,
+      "reasoning": null
     },
     {
       "player": "claude-fable-5.1 · medium",
@@ -246,7 +416,17 @@
       "wins": 0,
       "losses": 2,
       "draws": 0,
-      "stoneDiff": -40
+      "stoneDiff": -40,
+      "reasoning": {
+        "averagePerMove": 800.8793103448276,
+        "total": 46451,
+        "medianPerGame": 23225.5,
+        "q1PerGame": 18170.25,
+        "q3PerGame": 28280.75,
+        "iqrPerGame": 10110.5,
+        "games": 2,
+        "moves": 58
+      }
     },
     {
       "player": "gpt-5.6-terra · max",
@@ -255,7 +435,17 @@
       "wins": 0,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -10
+      "stoneDiff": -10,
+      "reasoning": {
+        "averagePerMove": 1537.4137931034484,
+        "total": 44585,
+        "medianPerGame": 44585,
+        "q1PerGame": 44585,
+        "q3PerGame": 44585,
+        "iqrPerGame": 0,
+        "games": 1,
+        "moves": 29
+      }
     },
     {
       "player": "gpt-5.6-luna · max",
@@ -264,7 +454,17 @@
       "wins": 2,
       "losses": 3,
       "draws": 0,
-      "stoneDiff": 75
+      "stoneDiff": 75,
+      "reasoning": {
+        "averagePerMove": 670.64,
+        "total": 100596,
+        "medianPerGame": 19231,
+        "q1PerGame": 18255,
+        "q3PerGame": 22779,
+        "iqrPerGame": 4524,
+        "games": 5,
+        "moves": 150
+      }
     },
     {
       "player": "glm-5.3-flash · high",
@@ -273,7 +473,8 @@
       "wins": 0,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -20
+      "stoneDiff": -20,
+      "reasoning": null
     },
     {
       "player": "glm-5.3 · max",
@@ -282,7 +483,8 @@
       "wins": 0,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -2
+      "stoneDiff": -2,
+      "reasoning": null
     },
     {
       "player": "qwen3.8-max · high",
@@ -291,7 +493,17 @@
       "wins": 0,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -16
+      "stoneDiff": -16,
+      "reasoning": {
+        "averagePerMove": 10660.766666666666,
+        "total": 319823,
+        "medianPerGame": 319823,
+        "q1PerGame": 319823,
+        "q3PerGame": 319823,
+        "iqrPerGame": 0,
+        "games": 1,
+        "moves": 30
+      }
     },
     {
       "player": "deepseek-v4-pro · max",
@@ -300,7 +512,8 @@
       "wins": 1,
       "losses": 3,
       "draws": 1,
-      "stoneDiff": -44
+      "stoneDiff": -44,
+      "reasoning": null
     },
     {
       "player": "qwen3.8-max · medium",
@@ -309,7 +522,8 @@
       "wins": 1,
       "losses": 3,
       "draws": 0,
-      "stoneDiff": -68
+      "stoneDiff": -68,
+      "reasoning": null
     },
     {
       "player": "openrouter/google/gemini-3.7-flash · high",
@@ -318,7 +532,17 @@
       "wins": 0,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -20
+      "stoneDiff": -20,
+      "reasoning": {
+        "averagePerMove": 391.0967741935484,
+        "total": 12124,
+        "medianPerGame": 12124,
+        "q1PerGame": 12124,
+        "q3PerGame": 12124,
+        "iqrPerGame": 0,
+        "games": 1,
+        "moves": 31
+      }
     },
     {
       "player": "gpt-5.6-luna · medium",
@@ -327,7 +551,17 @@
       "wins": 0,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -44
+      "stoneDiff": -44,
+      "reasoning": {
+        "averagePerMove": 49.888888888888886,
+        "total": 898,
+        "medianPerGame": 898,
+        "q1PerGame": 898,
+        "q3PerGame": 898,
+        "iqrPerGame": 0,
+        "games": 1,
+        "moves": 18
+      }
     },
     {
       "player": "gemini-3.7-flash · medium",
@@ -336,7 +570,17 @@
       "wins": 0,
       "losses": 2,
       "draws": 0,
-      "stoneDiff": -83
+      "stoneDiff": -83,
+      "reasoning": {
+        "averagePerMove": 163.94,
+        "total": 8197,
+        "medianPerGame": 4098.5,
+        "q1PerGame": 4034.75,
+        "q3PerGame": 4162.25,
+        "iqrPerGame": 127.5,
+        "games": 2,
+        "moves": 50
+      }
     }
   ],
   "games": [
@@ -356,6 +600,14 @@
       "outputTokens": {
         "B": 140998,
         "W": 160741
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -380,6 +632,14 @@
         "B": 166829,
         "W": 377492
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 29,
+        "W": 31
+      },
       "credits": {
         "B": null,
         "W": null
@@ -402,6 +662,14 @@
       "outputTokens": {
         "B": 132492,
         "W": 224643
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -426,6 +694,14 @@
         "B": 131354,
         "W": 171686
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -448,6 +724,14 @@
       "outputTokens": {
         "B": 3446,
         "W": 8088
+      },
+      "reasoningTokens": {
+        "B": 1318,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -472,6 +756,14 @@
         "B": 219328,
         "W": 10668
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": null,
         "W": null
@@ -494,6 +786,14 @@
       "outputTokens": {
         "B": 34020,
         "W": 8569
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": 4857
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -518,6 +818,14 @@
         "B": 13466,
         "W": 161542
       },
+      "reasoningTokens": {
+        "B": 5798,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": null,
         "W": null
@@ -540,6 +848,14 @@
       "outputTokens": {
         "B": 135547,
         "W": 146868
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -564,6 +880,14 @@
         "B": 3149,
         "W": 3128
       },
+      "reasoningTokens": {
+        "B": 680,
+        "W": 898
+      },
+      "decisions": {
+        "B": 22,
+        "W": 18
+      },
       "credits": {
         "B": null,
         "W": null
@@ -586,6 +910,14 @@
       "outputTokens": {
         "B": 7544,
         "W": 9017
+      },
+      "reasoningTokens": {
+        "B": 3659,
+        "W": 5217
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -610,6 +942,14 @@
         "B": 8486,
         "W": 13587
       },
+      "reasoningTokens": {
+        "B": 4627,
+        "W": 9826
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -632,6 +972,14 @@
       "outputTokens": {
         "B": 22938,
         "W": 6355
+      },
+      "reasoningTokens": {
+        "B": 19231,
+        "W": 2514
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -656,6 +1004,14 @@
         "B": 22310,
         "W": 307598
       },
+      "reasoningTokens": {
+        "B": 10293,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": null,
         "W": null
@@ -678,6 +1034,14 @@
       "outputTokens": {
         "B": 10006,
         "W": 48373
+      },
+      "reasoningTokens": {
+        "B": 5331,
+        "W": 44585
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -702,6 +1066,14 @@
         "B": 329811,
         "W": 69150
       },
+      "reasoningTokens": {
+        "B": 319823,
+        "W": 42734
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -724,6 +1096,14 @@
       "outputTokens": {
         "B": null,
         "W": null
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": 18.4071,
@@ -754,6 +1134,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": 333.7244,
         "W": 144.5245
@@ -782,6 +1170,14 @@
       "outputTokens": {
         "B": null,
         "W": null
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": 481.9891,
@@ -817,6 +1213,14 @@
         "B": 29805,
         "W": 9889
       },
+      "reasoningTokens": {
+        "B": 28066,
+        "W": 5608
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": null,
         "W": null
@@ -839,6 +1243,14 @@
       "outputTokens": {
         "B": 177873,
         "W": 36226
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": 34062
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -863,6 +1275,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 29,
+        "W": 30
+      },
       "credits": {
         "B": 98.399,
         "W": 78.7035
@@ -885,6 +1305,14 @@
       "outputTokens": {
         "B": 16764,
         "W": 47484
+      },
+      "reasoningTokens": {
+        "B": 11874,
+        "W": 45647
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -909,6 +1337,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": 177.8781,
         "W": 135.6119
@@ -932,6 +1368,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": 337.3143,
         "W": 158.0376
@@ -952,8 +1396,16 @@
       },
       "moves": 63,
       "outputTokens": {
-        "B": null,
+        "B": 29589,
         "W": 19739
+      },
+      "reasoningTokens": {
+        "B": 25225,
+        "W": 16021
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -977,6 +1429,14 @@
       "outputTokens": {
         "B": null,
         "W": null
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": 396.2665,
@@ -1007,6 +1467,14 @@
         "B": 14778,
         "W": 32464
       },
+      "reasoningTokens": {
+        "B": 12124,
+        "W": 30730
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1029,6 +1497,14 @@
       "outputTokens": {
         "B": null,
         "W": null
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -1053,6 +1529,14 @@
         "B": 4382,
         "W": 26418
       },
+      "reasoningTokens": {
+        "B": 481,
+        "W": 22779
+      },
+      "decisions": {
+        "B": 29,
+        "W": 31
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1075,6 +1559,14 @@
       "outputTokens": {
         "B": 10020,
         "W": 12847
+      },
+      "reasoningTokens": {
+        "B": 5990,
+        "W": 8948
+      },
+      "decisions": {
+        "B": 29,
+        "W": 31
       },
       "credits": {
         "B": null,
@@ -1099,6 +1591,14 @@
         "B": 21749,
         "W": 6238
       },
+      "reasoningTokens": {
+        "B": 18255,
+        "W": 2304
+      },
+      "decisions": {
+        "B": 30,
+        "W": 29
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1121,6 +1621,14 @@
       "outputTokens": {
         "B": 9422,
         "W": 10410
+      },
+      "reasoningTokens": {
+        "B": 5486,
+        "W": 6961
+      },
+      "decisions": {
+        "B": 32,
+        "W": 28
       },
       "credits": {
         "B": null,
@@ -1145,6 +1653,14 @@
         "B": 5252,
         "W": 35127
       },
+      "reasoningTokens": {
+        "B": 878,
+        "W": 31631
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1167,6 +1683,14 @@
       "outputTokens": {
         "B": 11495,
         "W": 5752
+      },
+      "reasoningTokens": {
+        "B": 8700,
+        "W": 2229
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1191,6 +1715,14 @@
         "B": 15446,
         "W": 13437
       },
+      "reasoningTokens": {
+        "B": 11395,
+        "W": 9406
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1212,7 +1744,15 @@
       "moves": 62,
       "outputTokens": {
         "B": 26901,
-        "W": null
+        "W": 35068
+      },
+      "reasoningTokens": {
+        "B": 22749,
+        "W": 28468
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1237,6 +1777,14 @@
         "B": 10234,
         "W": 28711
       },
+      "reasoningTokens": {
+        "B": 5128,
+        "W": 24660
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1257,8 +1805,16 @@
       },
       "moves": 63,
       "outputTokens": {
-        "B": null,
+        "B": 12275,
         "W": 11109
+      },
+      "reasoningTokens": {
+        "B": 7415,
+        "W": 5864
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1281,7 +1837,15 @@
       "moves": 65,
       "outputTokens": {
         "B": 11715,
-        "W": null
+        "W": 26931
+      },
+      "reasoningTokens": {
+        "B": 6215,
+        "W": 22411
+      },
+      "decisions": {
+        "B": 32,
+        "W": 28
       },
       "credits": {
         "B": null,
@@ -1303,8 +1867,16 @@
       },
       "moves": 62,
       "outputTokens": {
-        "B": null,
+        "B": 29358,
         "W": 9536
+      },
+      "reasoningTokens": {
+        "B": 24378,
+        "W": 5529
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1327,7 +1899,15 @@
       "moves": 62,
       "outputTokens": {
         "B": 10263,
-        "W": null
+        "W": 21618
+      },
+      "reasoningTokens": {
+        "B": 6194,
+        "W": 16202
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1350,7 +1930,15 @@
       "moves": 62,
       "outputTokens": {
         "B": 188004,
-        "W": null
+        "W": 41484
+      },
+      "reasoningTokens": {
+        "B": 183022,
+        "W": 36488
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1372,8 +1960,16 @@
       },
       "moves": 60,
       "outputTokens": {
-        "B": null,
+        "B": 10858,
         "W": 227671
+      },
+      "reasoningTokens": {
+        "B": 7006,
+        "W": 222057
+      },
+      "decisions": {
+        "B": 18,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -1396,7 +1992,15 @@
       "moves": 63,
       "outputTokens": {
         "B": 253663,
-        "W": null
+        "W": 21854
+      },
+      "reasoningTokens": {
+        "B": 248806,
+        "W": 16254
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -1418,8 +2022,16 @@
       },
       "moves": 63,
       "outputTokens": {
-        "B": null,
+        "B": 32234,
         "W": 348294
+      },
+      "reasoningTokens": {
+        "B": 22186,
+        "W": 340552
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -1441,8 +2053,16 @@
       },
       "moves": 62,
       "outputTokens": {
-        "B": null,
-        "W": null
+        "B": 17972,
+        "W": 8968
+      },
+      "reasoningTokens": {
+        "B": 13170,
+        "W": 4226
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1467,6 +2087,14 @@
         "B": 28865,
         "W": 61225
       },
+      "reasoningTokens": {
+        "B": 28350,
+        "W": 59785
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1488,7 +2116,15 @@
       "moves": 43,
       "outputTokens": {
         "B": 27201,
-        "W": null
+        "W": 7450
+      },
+      "reasoningTokens": {
+        "B": 25954,
+        "W": 3971
+      },
+      "decisions": {
+        "B": 21,
+        "W": 20
       },
       "credits": {
         "B": null,
@@ -1510,8 +2146,16 @@
       },
       "moves": 62,
       "outputTokens": {
-        "B": null,
+        "B": 18464,
         "W": 26699
+      },
+      "reasoningTokens": {
+        "B": 13511,
+        "W": 26169
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1536,6 +2180,14 @@
         "B": 26698,
         "W": 176689
       },
+      "reasoningTokens": {
+        "B": 24548,
+        "W": 173227
+      },
+      "decisions": {
+        "B": 29,
+        "W": 31
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1558,6 +2210,14 @@
       "outputTokens": {
         "B": 29455,
         "W": 13333
+      },
+      "reasoningTokens": {
+        "B": 25270,
+        "W": 7758
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1582,6 +2242,14 @@
         "B": 19108,
         "W": 30774
       },
+      "reasoningTokens": {
+        "B": 13917,
+        "W": 26116
+      },
+      "decisions": {
+        "B": 29,
+        "W": 31
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1604,6 +2272,14 @@
       "outputTokens": {
         "B": null,
         "W": 230807
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": 215030
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": 578.6052,
@@ -1639,6 +2315,14 @@
         "B": 14319,
         "W": 96991
       },
+      "reasoningTokens": {
+        "B": 8175,
+        "W": 91426
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1672,6 +2356,14 @@
       "outputTokens": {
         "B": 6938,
         "W": 8569
+      },
+      "reasoningTokens": {
+        "B": 2769,
+        "W": 4428
+      },
+      "decisions": {
+        "B": 29,
+        "W": 31
       },
       "credits": {
         "B": null,
@@ -1707,6 +2399,14 @@
         "B": 8298,
         "W": 6686
       },
+      "reasoningTokens": {
+        "B": 4112,
+        "W": 2539
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1740,6 +2440,14 @@
       "outputTokens": {
         "B": 14427,
         "W": 22815
+      },
+      "reasoningTokens": {
+        "B": 9406,
+        "W": 18348
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1775,6 +2483,14 @@
         "B": 22092,
         "W": 7704
       },
+      "reasoningTokens": {
+        "B": 17986,
+        "W": 3013
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1797,6 +2513,14 @@
       "outputTokens": {
         "B": 9385,
         "W": 16798
+      },
+      "reasoningTokens": {
+        "B": 4497,
+        "W": 12711
+      },
+      "decisions": {
+        "B": 29,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1832,6 +2556,14 @@
         "B": 12876,
         "W": 6334
       },
+      "reasoningTokens": {
+        "B": 8730,
+        "W": 2152
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1854,6 +2586,14 @@
       "outputTokens": {
         "B": 23799,
         "W": 18936
+      },
+      "reasoningTokens": {
+        "B": 19070,
+        "W": 13500
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1878,6 +2618,14 @@
         "B": 14495,
         "W": 13870
       },
+      "reasoningTokens": {
+        "B": 9891,
+        "W": 9538
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1901,6 +2649,14 @@
         "B": 15299,
         "W": 14259
       },
+      "reasoningTokens": {
+        "B": 10906,
+        "W": 9743
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1923,6 +2679,14 @@
       "outputTokens": {
         "B": 14271,
         "W": null
+      },
+      "reasoningTokens": {
+        "B": 6195,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -1958,6 +2722,14 @@
         "B": 387885,
         "W": 24534
       },
+      "reasoningTokens": {
+        "B": 381986,
+        "W": 10143
+      },
+      "decisions": {
+        "B": 29,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -1979,7 +2751,15 @@
       "moves": 63,
       "outputTokens": {
         "B": 367999,
-        "W": null
+        "W": 28964
+      },
+      "reasoningTokens": {
+        "B": 360027,
+        "W": 21911
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -2015,6 +2795,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -2037,6 +2825,14 @@
       "outputTokens": {
         "B": 497898,
         "W": 42151
+      },
+      "reasoningTokens": {
+        "B": 488242,
+        "W": 39621
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -2061,6 +2857,14 @@
         "B": 22012,
         "W": 312896
       },
+      "reasoningTokens": {
+        "B": 20261,
+        "W": 306483
+      },
+      "decisions": {
+        "B": 25,
+        "W": 32
+      },
       "credits": {
         "B": null,
         "W": null
@@ -2081,8 +2885,16 @@
       },
       "moves": 58,
       "outputTokens": {
-        "B": null,
+        "B": 41772,
         "W": 295909
+      },
+      "reasoningTokens": {
+        "B": 36067,
+        "W": 289384
+      },
+      "decisions": {
+        "B": 28,
+        "W": 28
       },
       "credits": {
         "B": null,
@@ -2118,6 +2930,14 @@
         "B": 288963,
         "W": 22880
       },
+      "reasoningTokens": {
+        "B": 284598,
+        "W": 12020
+      },
+      "decisions": {
+        "B": 28,
+        "W": 32
+      },
       "credits": {
         "B": null,
         "W": null
@@ -2140,6 +2960,14 @@
       "outputTokens": {
         "B": 18017,
         "W": 286540
+      },
+      "reasoningTokens": {
+        "B": 6867,
+        "W": 281292
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -2175,6 +3003,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 29,
+        "W": 31
+      },
       "credits": {
         "B": 343.4883,
         "W": 140.6924
@@ -2208,6 +3044,14 @@
       "outputTokens": {
         "B": null,
         "W": null
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": 140.5198,
@@ -2243,6 +3087,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": 88.7231,
         "W": 14.9204
@@ -2276,6 +3128,14 @@
       "outputTokens": {
         "B": null,
         "W": null
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": 9.302,
@@ -2311,6 +3171,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": 181.6018,
         "W": 76.1213
@@ -2334,6 +3202,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 29,
+        "W": 31
+      },
       "credits": {
         "B": 21.8918,
         "W": 63.5257
@@ -2355,7 +3231,15 @@
       "moves": 63,
       "outputTokens": {
         "B": null,
-        "W": null
+        "W": 32644
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": 27085
+      },
+      "decisions": {
+        "B": 31,
+        "W": 28
       },
       "credits": {
         "B": 115.1164,
@@ -2391,6 +3275,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 33,
+        "W": 27
+      },
       "credits": {
         "B": 23.7693,
         "W": 50.9499
@@ -2424,6 +3316,14 @@
       "outputTokens": {
         "B": null,
         "W": null
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": 61.2784,
@@ -2459,6 +3359,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": 98.954,
         "W": 149.0679
@@ -2493,6 +3401,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 23,
+        "W": 22
+      },
       "credits": {
         "B": 34.481,
         "W": 18.5411
@@ -2515,6 +3431,14 @@
       "outputTokens": {
         "B": 41858,
         "W": 26781
+      },
+      "reasoningTokens": {
+        "B": 40875,
+        "W": 25451
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -2539,6 +3463,14 @@
         "B": 33312,
         "W": 55877
       },
+      "reasoningTokens": {
+        "B": 32515,
+        "W": 53506
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -2562,6 +3494,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": 56.0796,
         "W": 54.4233
@@ -2584,6 +3524,14 @@
       "outputTokens": {
         "B": null,
         "W": 306426
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": 294274
+      },
+      "decisions": {
+        "B": 29,
+        "W": 31
       },
       "credits": {
         "B": 277.1835,
@@ -2614,6 +3562,14 @@
         "B": 52564,
         "W": 14652
       },
+      "reasoningTokens": {
+        "B": 50666,
+        "W": 9308
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": null,
         "W": null
@@ -2636,6 +3592,14 @@
       "outputTokens": {
         "B": 50074,
         "W": null
+      },
+      "reasoningTokens": {
+        "B": 48162,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -2660,6 +3624,14 @@
         "B": 14865,
         "W": null
       },
+      "reasoningTokens": {
+        "B": 11069,
+        "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": 69.5998
@@ -2682,6 +3654,14 @@
       "outputTokens": {
         "B": 14767,
         "W": 31562
+      },
+      "reasoningTokens": {
+        "B": 9883,
+        "W": 29932
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -2706,6 +3686,14 @@
         "B": null,
         "W": 21905
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": 11589
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": 69.1511,
         "W": null
@@ -2726,8 +3714,16 @@
       },
       "moves": 65,
       "outputTokens": {
-        "B": null,
+        "B": 39282,
         "W": null
+      },
+      "reasoningTokens": {
+        "B": 34035,
+        "W": null
+      },
+      "decisions": {
+        "B": 32,
+        "W": 28
       },
       "credits": {
         "B": null,
@@ -2752,6 +3748,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
       "credits": {
         "B": 78.4237,
         "W": 51.3937
@@ -2774,6 +3778,14 @@
       "outputTokens": {
         "B": 23119,
         "W": 20934
+      },
+      "reasoningTokens": {
+        "B": 20062,
+        "W": 17904
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": null,
@@ -2798,6 +3810,14 @@
         "B": null,
         "W": null
       },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 29,
+        "W": 31
+      },
       "credits": {
         "B": 183.1496,
         "W": 143.4043
@@ -2820,6 +3840,14 @@
       "outputTokens": {
         "B": 1222669,
         "W": 44099
+      },
+      "reasoningTokens": {
+        "B": 1196423,
+        "W": 42096
+      },
+      "decisions": {
+        "B": 33,
+        "W": 27
       },
       "credits": {
         "B": null,
@@ -2844,6 +3872,14 @@
         "B": 10498,
         "W": 31996
       },
+      "reasoningTokens": {
+        "B": 6873,
+        "W": 26844
+      },
+      "decisions": {
+        "B": 26,
+        "W": 26
+      },
       "credits": {
         "B": null,
         "W": null
@@ -2866,6 +3902,14 @@
       "outputTokens": {
         "B": null,
         "W": null
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
       },
       "credits": {
         "B": 282.2722,
@@ -2890,6 +3934,14 @@
         "B": 1398867,
         "W": 487392
       },
+      "reasoningTokens": {
+        "B": 1379034,
+        "W": 474967
+      },
+      "decisions": {
+        "B": 28,
+        "W": 32
+      },
       "credits": {
         "B": null,
         "W": null
@@ -2912,6 +3964,14 @@
       "outputTokens": {
         "B": 1369674,
         "W": 420520
+      },
+      "reasoningTokens": {
+        "B": 1345787,
+        "W": 385099
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -2936,6 +3996,14 @@
         "B": 42482,
         "W": 36044
       },
+      "reasoningTokens": {
+        "B": 40660,
+        "W": 30453
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
       "credits": {
         "B": null,
         "W": null
@@ -2959,6 +4027,14 @@
         "B": 34217,
         "W": 46989
       },
+      "reasoningTokens": {
+        "B": 29085,
+        "W": 45345
+      },
+      "decisions": {
+        "B": 29,
+        "W": 31
+      },
       "credits": {
         "B": null,
         "W": null
@@ -2981,6 +4057,14 @@
       "outputTokens": {
         "B": 37966,
         "W": 233320
+      },
+      "reasoningTokens": {
+        "B": 33336,
+        "W": 228431
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
@@ -3015,6 +4099,14 @@
       "outputTokens": {
         "B": 336325,
         "W": 18277
+      },
+      "reasoningTokens": {
+        "B": 329695,
+        "W": 13115
+      },
+      "decisions": {
+        "B": 32,
+        "W": 28
       },
       "credits": {
         "B": null,
