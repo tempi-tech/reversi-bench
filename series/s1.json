@@ -3717,6 +3717,63 @@
       "finishedAt": "2026-09-03T02:32:47.482Z",
       "tokens": {"B": null, "W": null},
       "cost": {"B": null, "W": 250.2668}
+    },
+    {
+      "id": "s1/g120",
+      "card": "x-gemini-3.8-flash-high-vs-claude-opus-5-medium",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "antigravity", "model": "gemini-3.8-flash", "effort": "high", "display": "gemini-3.8-flash · high"},
+        "W": {"agentType": "claude", "model": "claude-opus-5", "effort": "medium", "display": "claude-opus-5 · medium"}
+      },
+      "winner": "B",
+      "score": {"B": 56, "W": 8},
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-09-03T05:54:39.222Z",
+      "tokens": {
+        "B": null,
+        "W": {"input": 126, "cacheRead": 7286042, "cacheCreation": 176439, "output": 160857, "reasoning": 154775, "apiCalls": 63}
+      },
+      "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g121",
+      "card": "x-gemini-3.8-flash-high-vs-grok-4.6-medium",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "grok", "model": "grok-4.6", "effort": "medium", "display": "grok-4.6 · medium"},
+        "W": {"agentType": "antigravity", "model": "gemini-3.8-flash", "effort": "high", "display": "gemini-3.8-flash · high"}
+      },
+      "winner": "W",
+      "score": {"B": 19, "W": 45},
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-09-03T05:33:37.836Z",
+      "tokens": {
+        "B": {"input": 2770367, "cacheRead": 2455168, "cacheCreation": 0, "output": 25430, "reasoning": 23574, "apiCalls": 63},
+        "W": null
+      },
+      "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g122",
+      "card": "x-gemini-3.8-flash-high-vs-claude-opus-5-high",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "antigravity", "model": "gemini-3.8-flash", "effort": "high", "display": "gemini-3.8-flash · high"},
+        "W": {"agentType": "claude", "model": "claude-opus-5", "effort": "high", "display": "claude-opus-5 · high"}
+      },
+      "winner": "W",
+      "score": {"B": 15, "W": 49},
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-09-03T06:44:24.469Z",
+      "tokens": {
+        "B": null,
+        "W": {"input": 126, "cacheRead": 18438067, "cacheCreation": 527347, "output": 485582, "reasoning": 473545, "apiCalls": 63}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
