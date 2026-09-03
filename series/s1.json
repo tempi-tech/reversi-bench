@@ -3793,6 +3793,25 @@
         "W": {"input": 124273, "cacheRead": 4715904, "cacheCreation": 0, "output": 15770, "reasoning": 8577, "apiCalls": 132}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g124",
+      "card": "x-claude-fable-5-1-high-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "codex", "model": "gpt-5.6-sol", "effort": "medium", "display": "gpt-5.6-sol · medium"},
+        "W": {"agentType": "claude", "model": "claude-fable-5-1", "effort": "high", "display": "claude-fable-5.1 · high"}
+      },
+      "winner": "W",
+      "score": {"B": 12, "W": 52},
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-09-03T10:03:04.356Z",
+      "tokens": {
+        "B": {"input": 59631, "cacheRead": 3192064, "cacheCreation": 0, "output": 13623, "reasoning": 8403, "apiCalls": 89},
+        "W": {"input": 1828, "cacheRead": 1674708, "cacheCreation": 75267, "output": 55444, "reasoning": 51571, "apiCalls": 32}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
