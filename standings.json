@@ -3,7 +3,7 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-09-03T07:50:58.937Z",
+  "generatedAt": "2026-09-03T08:12:18.912Z",
   "standings": [
     {
       "player": "claude-opus-5 · medium",
@@ -22,6 +22,18 @@
         "iqrPerGame": 125381.25,
         "games": 12,
         "moves": 364
+      },
+      "time": {
+        "averagePerMoveMs": 104579.18624161073,
+        "totalMs": 62329195,
+        "medianPerMoveMs": 70580,
+        "q1PerMoveMs": 42403.75,
+        "q3PerMoveMs": 102809,
+        "iqrPerMoveMs": 60405.25,
+        "standardDeviationPerMoveMs": 294990.62765579903,
+        "games": 20,
+        "moves": 596,
+        "decisions": 602
       }
     },
     {
@@ -32,7 +44,19 @@
       "losses": 1,
       "draws": 0,
       "stoneDiff": 40,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 8855.078651685393,
+        "totalMs": 788102,
+        "medianPerMoveMs": 7630,
+        "q1PerMoveMs": 5329,
+        "q3PerMoveMs": 11510,
+        "iqrPerMoveMs": 6181,
+        "standardDeviationPerMoveMs": 4691.006775399884,
+        "games": 3,
+        "moves": 89,
+        "decisions": 91
+      }
     },
     {
       "player": "claude-opus-5 · high",
@@ -51,6 +75,18 @@
         "iqrPerGame": 182960,
         "games": 11,
         "moves": 332
+      },
+      "time": {
+        "averagePerMoveMs": 131660.68393782384,
+        "totalMs": 50821024,
+        "medianPerMoveMs": 116556,
+        "q1PerMoveMs": 72960.25,
+        "q3PerMoveMs": 171609.25,
+        "iqrPerMoveMs": 98649,
+        "standardDeviationPerMoveMs": 102958.99698843143,
+        "games": 13,
+        "moves": 386,
+        "decisions": 392
       }
     },
     {
@@ -70,6 +106,18 @@
         "iqrPerGame": 6224,
         "games": 11,
         "moves": 323
+      },
+      "time": {
+        "averagePerMoveMs": 16623.657060518733,
+        "totalMs": 5768409,
+        "medianPerMoveMs": 15321,
+        "q1PerMoveMs": 11504,
+        "q3PerMoveMs": 19917.5,
+        "iqrPerMoveMs": 8413.5,
+        "standardDeviationPerMoveMs": 8139.565579077921,
+        "games": 12,
+        "moves": 347,
+        "decisions": 353
       }
     },
     {
@@ -89,6 +137,18 @@
         "iqrPerGame": 8570,
         "games": 5,
         "moves": 150
+      },
+      "time": {
+        "averagePerMoveMs": 26671.38775510204,
+        "totalMs": 3920694,
+        "medianPerMoveMs": 24335,
+        "q1PerMoveMs": 17449,
+        "q3PerMoveMs": 32315.5,
+        "iqrPerMoveMs": 14866.5,
+        "standardDeviationPerMoveMs": 15058.66486680457,
+        "games": 5,
+        "moves": 147,
+        "decisions": 150
       }
     },
     {
@@ -108,6 +168,18 @@
         "iqrPerGame": 3391,
         "games": 2,
         "moves": 57
+      },
+      "time": {
+        "averagePerMoveMs": 28933.647058823528,
+        "totalMs": 2459360,
+        "medianPerMoveMs": 10674,
+        "q1PerMoveMs": 7954,
+        "q3PerMoveMs": 54012,
+        "iqrPerMoveMs": 46058,
+        "standardDeviationPerMoveMs": 32229.075079610913,
+        "games": 3,
+        "moves": 85,
+        "decisions": 86
       }
     },
     {
@@ -127,6 +199,18 @@
         "iqrPerGame": 11901.5,
         "games": 16,
         "moves": 464
+      },
+      "time": {
+        "averagePerMoveMs": 5355.027729636048,
+        "totalMs": 3089851,
+        "medianPerMoveMs": 3821,
+        "q1PerMoveMs": 2957,
+        "q3PerMoveMs": 5416,
+        "iqrPerMoveMs": 2459,
+        "standardDeviationPerMoveMs": 19484.342192162305,
+        "games": 20,
+        "moves": 577,
+        "decisions": 589
       }
     },
     {
@@ -146,6 +230,18 @@
         "iqrPerGame": 3719.5,
         "games": 27,
         "moves": 813
+      },
+      "time": {
+        "averagePerMoveMs": 26810.583229036296,
+        "totalMs": 21421656,
+        "medianPerMoveMs": 8746,
+        "q1PerMoveMs": 5669,
+        "q3PerMoveMs": 12347,
+        "iqrPerMoveMs": 6678,
+        "standardDeviationPerMoveMs": 337001.5553859633,
+        "games": 27,
+        "moves": 799,
+        "decisions": 813
       }
     },
     {
@@ -165,6 +261,18 @@
         "iqrPerGame": 77532.25,
         "games": 4,
         "moves": 119
+      },
+      "time": {
+        "averagePerMoveMs": 33772.59090909091,
+        "totalMs": 5943976,
+        "medianPerMoveMs": 26092.5,
+        "q1PerMoveMs": 8517.75,
+        "q3PerMoveMs": 51343.75,
+        "iqrPerMoveMs": 42826,
+        "standardDeviationPerMoveMs": 29191.89722342656,
+        "games": 6,
+        "moves": 176,
+        "decisions": 180
       }
     },
     {
@@ -184,6 +292,18 @@
         "iqrPerGame": 23939,
         "games": 5,
         "moves": 155
+      },
+      "time": {
+        "averagePerMoveMs": 53387.69078947369,
+        "totalMs": 8114929,
+        "medianPerMoveMs": 33602,
+        "q1PerMoveMs": 15972.75,
+        "q3PerMoveMs": 49483.25,
+        "iqrPerMoveMs": 33510.5,
+        "standardDeviationPerMoveMs": 215998.23070538873,
+        "games": 5,
+        "moves": 152,
+        "decisions": 155
       }
     },
     {
@@ -203,6 +323,18 @@
         "iqrPerGame": 2928.25,
         "games": 14,
         "moves": 420
+      },
+      "time": {
+        "averagePerMoveMs": 18579.426150121064,
+        "totalMs": 7673303,
+        "medianPerMoveMs": 12604,
+        "q1PerMoveMs": 7686,
+        "q3PerMoveMs": 18389,
+        "iqrPerMoveMs": 10703,
+        "standardDeviationPerMoveMs": 85864.41383747838,
+        "games": 14,
+        "moves": 413,
+        "decisions": 420
       }
     },
     {
@@ -213,7 +345,19 @@
       "losses": 1,
       "draws": 0,
       "stoneDiff": -28,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 325481.10909090907,
+        "totalMs": 17901461,
+        "medianPerMoveMs": 269361,
+        "q1PerMoveMs": 191184.5,
+        "q3PerMoveMs": 429358,
+        "iqrPerMoveMs": 238173.5,
+        "standardDeviationPerMoveMs": 213490.1979047429,
+        "games": 2,
+        "moves": 55,
+        "decisions": 56
+      }
     },
     {
       "player": "qwen3.8-max · xhigh",
@@ -223,7 +367,19 @@
       "losses": 8,
       "draws": 0,
       "stoneDiff": 96,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 122449.750499002,
+        "totalMs": 61347325,
+        "medianPerMoveMs": 81264,
+        "q1PerMoveMs": 42604,
+        "q3PerMoveMs": 130391,
+        "iqrPerMoveMs": 87787,
+        "standardDeviationPerMoveMs": 311321.47222261736,
+        "games": 17,
+        "moves": 501,
+        "decisions": 509
+      }
     },
     {
       "player": "kimi-k3 · high",
@@ -242,6 +398,18 @@
         "iqrPerGame": 0,
         "games": 1,
         "moves": 30
+      },
+      "time": {
+        "averagePerMoveMs": 283951.40336134454,
+        "totalMs": 33790217,
+        "medianPerMoveMs": 140016,
+        "q1PerMoveMs": 66371,
+        "q3PerMoveMs": 207776.5,
+        "iqrPerMoveMs": 141405.5,
+        "standardDeviationPerMoveMs": 782525.6358749325,
+        "games": 4,
+        "moves": 119,
+        "decisions": 120
       }
     },
     {
@@ -252,7 +420,19 @@
       "losses": 2,
       "draws": 0,
       "stoneDiff": -12,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 369153.19658119656,
+        "totalMs": 43190924,
+        "medianPerMoveMs": 190337,
+        "q1PerMoveMs": 113489,
+        "q3PerMoveMs": 333985,
+        "iqrPerMoveMs": 220496,
+        "standardDeviationPerMoveMs": 1127285.7000227123,
+        "games": 4,
+        "moves": 117,
+        "decisions": 119
+      }
     },
     {
       "player": "claude-fable-5.1 · xhigh",
@@ -271,6 +451,18 @@
         "iqrPerGame": 25210,
         "games": 2,
         "moves": 57
+      },
+      "time": {
+        "averagePerMoveMs": 118018.03571428571,
+        "totalMs": 6609010,
+        "medianPerMoveMs": 85828.5,
+        "q1PerMoveMs": 28648.5,
+        "q3PerMoveMs": 119076.5,
+        "iqrPerMoveMs": 90428,
+        "standardDeviationPerMoveMs": 231011.65751784385,
+        "games": 2,
+        "moves": 56,
+        "decisions": 57
       }
     },
     {
@@ -281,7 +473,19 @@
       "losses": 1,
       "draws": 1,
       "stoneDiff": 0,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 258242.0344827586,
+        "totalMs": 22467057,
+        "medianPerMoveMs": 88256,
+        "q1PerMoveMs": 59562,
+        "q3PerMoveMs": 202682,
+        "iqrPerMoveMs": 143120,
+        "standardDeviationPerMoveMs": 896053.1011827271,
+        "games": 3,
+        "moves": 87,
+        "decisions": 90
+      }
     },
     {
       "player": "gpt-5.6-sol · xhigh",
@@ -300,6 +504,18 @@
         "iqrPerGame": 7046,
         "games": 9,
         "moves": 270
+      },
+      "time": {
+        "averagePerMoveMs": 31669.20754716981,
+        "totalMs": 8392340,
+        "medianPerMoveMs": 19760,
+        "q1PerMoveMs": 11232,
+        "q3PerMoveMs": 31767,
+        "iqrPerMoveMs": 20535,
+        "standardDeviationPerMoveMs": 82913.74669445134,
+        "games": 9,
+        "moves": 265,
+        "decisions": 270
       }
     },
     {
@@ -319,6 +535,18 @@
         "iqrPerGame": 12359,
         "games": 6,
         "moves": 170
+      },
+      "time": {
+        "averagePerMoveMs": 25651.125,
+        "totalMs": 4309389,
+        "medianPerMoveMs": 23631.5,
+        "q1PerMoveMs": 17245,
+        "q3PerMoveMs": 31111,
+        "iqrPerMoveMs": 13866,
+        "standardDeviationPerMoveMs": 12757.792192275267,
+        "games": 6,
+        "moves": 168,
+        "decisions": 170
       }
     },
     {
@@ -329,7 +557,19 @@
       "losses": 2,
       "draws": 0,
       "stoneDiff": -20,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 5323.772727272727,
+        "totalMs": 468492,
+        "medianPerMoveMs": 3657.5,
+        "q1PerMoveMs": 1898.75,
+        "q3PerMoveMs": 8118.25,
+        "iqrPerMoveMs": 6219.5,
+        "standardDeviationPerMoveMs": 4167.466291316127,
+        "games": 3,
+        "moves": 88,
+        "decisions": 89
+      }
     },
     {
       "player": "gpt-5.6-terra · medium",
@@ -348,6 +588,18 @@
         "iqrPerGame": 1641.75,
         "games": 4,
         "moves": 112
+      },
+      "time": {
+        "averagePerMoveMs": 2895.6422018348626,
+        "totalMs": 315625,
+        "medianPerMoveMs": 2621,
+        "q1PerMoveMs": 2196,
+        "q3PerMoveMs": 3210,
+        "iqrPerMoveMs": 1014,
+        "standardDeviationPerMoveMs": 1046.6955387693004,
+        "games": 4,
+        "moves": 109,
+        "decisions": 112
       }
     },
     {
@@ -358,7 +610,19 @@
       "losses": 1,
       "draws": 0,
       "stoneDiff": -45,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 3938.314814814815,
+        "totalMs": 212669,
+        "medianPerMoveMs": 3129.5,
+        "q1PerMoveMs": 2626.5,
+        "q3PerMoveMs": 4402.25,
+        "iqrPerMoveMs": 1775.75,
+        "standardDeviationPerMoveMs": 2351.596792599809,
+        "games": 2,
+        "moves": 54,
+        "decisions": 55
+      }
     },
     {
       "player": "gpt-5.6-sol · low",
@@ -377,6 +641,18 @@
         "iqrPerGame": 1529.5,
         "games": 6,
         "moves": 177
+      },
+      "time": {
+        "averagePerMoveMs": 50753.39655172414,
+        "totalMs": 8831091,
+        "medianPerMoveMs": 6233.5,
+        "q1PerMoveMs": 4562.25,
+        "q3PerMoveMs": 8770.25,
+        "iqrPerMoveMs": 4208,
+        "standardDeviationPerMoveMs": 568399.2298364558,
+        "games": 6,
+        "moves": 174,
+        "decisions": 177
       }
     },
     {
@@ -387,7 +663,19 @@
       "losses": 1,
       "draws": 0,
       "stoneDiff": -26,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 60941.51724137931,
+        "totalMs": 1767304,
+        "medianPerMoveMs": 43348,
+        "q1PerMoveMs": 25260,
+        "q3PerMoveMs": 75255,
+        "iqrPerMoveMs": 49995,
+        "standardDeviationPerMoveMs": 61307.4050866337,
+        "games": 1,
+        "moves": 29,
+        "decisions": 30
+      }
     },
     {
       "player": "claude-opus-5 · max",
@@ -406,6 +694,18 @@
         "iqrPerGame": 0,
         "games": 1,
         "moves": 28
+      },
+      "time": {
+        "averagePerMoveMs": 167420.77777777778,
+        "totalMs": 4520361,
+        "medianPerMoveMs": 163681,
+        "q1PerMoveMs": 120857,
+        "q3PerMoveMs": 221978,
+        "iqrPerMoveMs": 101121,
+        "standardDeviationPerMoveMs": 78851.68247075731,
+        "games": 1,
+        "moves": 27,
+        "decisions": 28
       }
     },
     {
@@ -416,7 +716,19 @@
       "losses": 1,
       "draws": 0,
       "stoneDiff": -48,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 60628.34482758621,
+        "totalMs": 1758222,
+        "medianPerMoveMs": 55613,
+        "q1PerMoveMs": 34392,
+        "q3PerMoveMs": 85092,
+        "iqrPerMoveMs": 50700,
+        "standardDeviationPerMoveMs": 30633.761497199474,
+        "games": 1,
+        "moves": 29,
+        "decisions": 30
+      }
     },
     {
       "player": "qwen3.8-max · low",
@@ -426,7 +738,19 @@
       "losses": 2,
       "draws": 0,
       "stoneDiff": 47,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 43045.28971962617,
+        "totalMs": 4605846,
+        "medianPerMoveMs": 21617,
+        "q1PerMoveMs": 14692,
+        "q3PerMoveMs": 31247.5,
+        "iqrPerMoveMs": 16555.5,
+        "standardDeviationPerMoveMs": 198553.05265871296,
+        "games": 4,
+        "moves": 107,
+        "decisions": 109
+      }
     },
     {
       "player": "gpt-5.6-terra · low",
@@ -445,6 +769,18 @@
         "iqrPerGame": 1469,
         "games": 4,
         "moves": 119
+      },
+      "time": {
+        "averagePerMoveMs": 2734.7948717948716,
+        "totalMs": 319971,
+        "medianPerMoveMs": 2541,
+        "q1PerMoveMs": 2025,
+        "q3PerMoveMs": 3030,
+        "iqrPerMoveMs": 1005,
+        "standardDeviationPerMoveMs": 946.1752926483263,
+        "games": 4,
+        "moves": 117,
+        "decisions": 119
       }
     },
     {
@@ -455,7 +791,19 @@
       "losses": 1,
       "draws": 0,
       "stoneDiff": -26,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 512176.86440677964,
+        "totalMs": 30218435,
+        "medianPerMoveMs": 9894,
+        "q1PerMoveMs": 4219,
+        "q3PerMoveMs": 41174,
+        "iqrPerMoveMs": 36955,
+        "standardDeviationPerMoveMs": 3675797.6715495186,
+        "games": 2,
+        "moves": 59,
+        "decisions": 60
+      }
     },
     {
       "player": "deepseek-v4-pro · high",
@@ -465,7 +813,19 @@
       "losses": 2,
       "draws": 1,
       "stoneDiff": -25,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 239521.5041322314,
+        "totalMs": 28982102,
+        "medianPerMoveMs": 15633,
+        "q1PerMoveMs": 5709,
+        "q3PerMoveMs": 85548,
+        "iqrPerMoveMs": 79839,
+        "standardDeviationPerMoveMs": 1425863.3765588787,
+        "games": 4,
+        "moves": 121,
+        "decisions": 122
+      }
     },
     {
       "player": "claude-fable-5.1 · medium",
@@ -484,6 +844,18 @@
         "iqrPerGame": 14993,
         "games": 5,
         "moves": 145
+      },
+      "time": {
+        "averagePerMoveMs": 13169.846153846154,
+        "totalMs": 1883288,
+        "medianPerMoveMs": 10628,
+        "q1PerMoveMs": 7119,
+        "q3PerMoveMs": 17823,
+        "iqrPerMoveMs": 10704,
+        "standardDeviationPerMoveMs": 8530.392737503453,
+        "games": 5,
+        "moves": 143,
+        "decisions": 145
       }
     },
     {
@@ -503,6 +875,18 @@
         "iqrPerGame": 4524,
         "games": 5,
         "moves": 150
+      },
+      "time": {
+        "averagePerMoveMs": 11050.517006802722,
+        "totalMs": 1624426,
+        "medianPerMoveMs": 8961,
+        "q1PerMoveMs": 5495.5,
+        "q3PerMoveMs": 14283,
+        "iqrPerMoveMs": 8787.5,
+        "standardDeviationPerMoveMs": 8160.613013316593,
+        "games": 5,
+        "moves": 147,
+        "decisions": 150
       }
     },
     {
@@ -522,6 +906,18 @@
         "iqrPerGame": 0,
         "games": 1,
         "moves": 29
+      },
+      "time": {
+        "averagePerMoveMs": 19760.44827586207,
+        "totalMs": 573053,
+        "medianPerMoveMs": 13507,
+        "q1PerMoveMs": 9541,
+        "q3PerMoveMs": 26843,
+        "iqrPerMoveMs": 17302,
+        "standardDeviationPerMoveMs": 14413.963317671745,
+        "games": 1,
+        "moves": 29,
+        "decisions": 29
       }
     },
     {
@@ -532,7 +928,19 @@
       "losses": 1,
       "draws": 0,
       "stoneDiff": -20,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 1007736.8275862068,
+        "totalMs": 29224368,
+        "medianPerMoveMs": 89719,
+        "q1PerMoveMs": 61099,
+        "q3PerMoveMs": 134445,
+        "iqrPerMoveMs": 73346,
+        "standardDeviationPerMoveMs": 4317767.250137043,
+        "games": 1,
+        "moves": 29,
+        "decisions": 29
+      }
     },
     {
       "player": "glm-5.3 · max",
@@ -542,7 +950,19 @@
       "losses": 1,
       "draws": 0,
       "stoneDiff": -2,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 312196.9655172414,
+        "totalMs": 9053712,
+        "medianPerMoveMs": 137940,
+        "q1PerMoveMs": 86651,
+        "q3PerMoveMs": 297154,
+        "iqrPerMoveMs": 210503,
+        "standardDeviationPerMoveMs": 592342.2318148045,
+        "games": 1,
+        "moves": 29,
+        "decisions": 30
+      }
     },
     {
       "player": "qwen3.8-max · high",
@@ -561,6 +981,18 @@
         "iqrPerGame": 0,
         "games": 1,
         "moves": 30
+      },
+      "time": {
+        "averagePerMoveMs": 193440.5172413793,
+        "totalMs": 5609775,
+        "medianPerMoveMs": 181569,
+        "q1PerMoveMs": 140471,
+        "q3PerMoveMs": 263996,
+        "iqrPerMoveMs": 123525,
+        "standardDeviationPerMoveMs": 93113.7779654994,
+        "games": 1,
+        "moves": 29,
+        "decisions": 30
       }
     },
     {
@@ -571,7 +1003,19 @@
       "losses": 3,
       "draws": 1,
       "stoneDiff": -44,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 264969.5931034483,
+        "totalMs": 38420591,
+        "medianPerMoveMs": 25639,
+        "q1PerMoveMs": 11066,
+        "q3PerMoveMs": 73890,
+        "iqrPerMoveMs": 62824,
+        "standardDeviationPerMoveMs": 2226047.6052770624,
+        "games": 5,
+        "moves": 145,
+        "decisions": 148
+      }
     },
     {
       "player": "openrouter/google/gemini-3.7-flash · high",
@@ -590,6 +1034,18 @@
         "iqrPerGame": 0,
         "games": 1,
         "moves": 31
+      },
+      "time": {
+        "averagePerMoveMs": 4629.9,
+        "totalMs": 138897,
+        "medianPerMoveMs": 4496.5,
+        "q1PerMoveMs": 3688.75,
+        "q3PerMoveMs": 5563.25,
+        "iqrPerMoveMs": 1874.5,
+        "standardDeviationPerMoveMs": 1251.8193786112543,
+        "games": 1,
+        "moves": 30,
+        "decisions": 31
       }
     },
     {
@@ -600,7 +1056,19 @@
       "losses": 3,
       "draws": 0,
       "stoneDiff": -68,
-      "reasoning": null
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 61196.44915254237,
+        "totalMs": 7221181,
+        "medianPerMoveMs": 41063,
+        "q1PerMoveMs": 25078.25,
+        "q3PerMoveMs": 56434.75,
+        "iqrPerMoveMs": 31356.5,
+        "standardDeviationPerMoveMs": 192927.50931876546,
+        "games": 4,
+        "moves": 118,
+        "decisions": 120
+      }
     },
     {
       "player": "gpt-5.6-luna · medium",
@@ -619,6 +1087,18 @@
         "iqrPerGame": 0,
         "games": 1,
         "moves": 18
+      },
+      "time": {
+        "averagePerMoveMs": 2149.722222222222,
+        "totalMs": 38695,
+        "medianPerMoveMs": 1749.5,
+        "q1PerMoveMs": 1679.5,
+        "q3PerMoveMs": 1915.25,
+        "iqrPerMoveMs": 235.75,
+        "standardDeviationPerMoveMs": 968.253284445504,
+        "games": 1,
+        "moves": 18,
+        "decisions": 18
       }
     },
     {
@@ -638,6 +1118,18 @@
         "iqrPerGame": 127.5,
         "games": 2,
         "moves": 50
+      },
+      "time": {
+        "averagePerMoveMs": 2847.16,
+        "totalMs": 142358,
+        "medianPerMoveMs": 2102.5,
+        "q1PerMoveMs": 1773.75,
+        "q3PerMoveMs": 3027,
+        "iqrPerMoveMs": 1253.25,
+        "standardDeviationPerMoveMs": 2240.183067162146,
+        "games": 2,
+        "moves": 50,
+        "decisions": 50
       }
     }
   ],

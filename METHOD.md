@@ -18,6 +18,7 @@ How match series measure the playing strength and reliability of model × effort
 - Secondary: total stone margin
 - Standings rating: a regularized Bradley-Terry fit over every recorded game
 - Reasoning efficiency: provider-reported reasoning tokens divided by the seat's non-pass moves. Player summaries also publish total reasoning tokens, median per-game reasoning tokens, per-game interquartile range, and the number of measured games. Legacy zeroes and runtimes that do not report reasoning usage are excluded rather than treated as free reasoning.
+- Move time: observed wall-clock time between the preceding history record and each non-pass move. The opening move of each game is excluded because game creation precedes player-task startup, while an automatic pass resets the clock for the next move without becoming a sample itself. Summaries publish the mean, median, interquartile range, standard deviation, total measured time, and coverage. Missing or backward timestamps are excluded. This metric includes runtime, browser, network, rate-limit, and recovery delays, so it measures end-to-end latency rather than pure model inference time.
 - Incident rate, recorded per game and per side:
   - Illegal-move attempts: `play` calls rejected as `illegal move` (`not your turn` is a race against `wait`, not counted)
   - Forfeit: a side that stalls on its own turn for 15 minutes loses the game

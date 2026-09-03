@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { reasoningStatsOf } from "./reasoning-stats.mjs";
+import { moveDurationsOf, timeStatsOf } from "./time-stats.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 
@@ -103,6 +104,10 @@ const standings = players
       const side = game.black === player ? "B" : game.white === player ? "W" : null;
       return side ? [{ tokens: game.reasoningTokens[side], moves: game.decisions[side] }] : [];
     });
+    const timeSamples = games.flatMap((game) => {
+      const side = game.black === player ? "B" : game.white === player ? "W" : null;
+      return side ? [{ durations: moveDurationsOf({ history: matches[game.id].history, side }), moves: game.decisions[side] }] : [];
+    });
     return {
       player,
       rating: Math.round(1500 + (400 * strengths[player]) / Math.LN10),
@@ -112,6 +117,7 @@ const standings = players
       draws: rows.filter((row) => row.outcome === "draw").length,
       stoneDiff: rows.reduce((sum, row) => sum + row.diff, 0),
       reasoning: reasoningStatsOf(reasoningSamples),
+      time: timeStatsOf(timeSamples),
     };
   })
   .sort((a, b) => b.rating - a.rating || b.stoneDiff - a.stoneDiff);
