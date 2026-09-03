@@ -3701,6 +3701,22 @@
       "finishedAt": "2026-09-02T14:35:43.537Z",
       "tokens": {"B": null, "W": null},
       "cost": {"B": 193.5795, "W": null}
+    },
+    {
+      "id": "s1/g118",
+      "card": "x-gemini-3.7-flash-high-vs-qwen3.8-max-v2-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "antigravity", "model": "gemini-3.7-flash", "effort": "high", "display": "gemini-3.7-flash · high"},
+        "W": {"agentType": "qoder", "model": "qwen3.8-max-v2", "effort": "xhigh", "display": "qwen3.8-max-v2 · xhigh"}
+      },
+      "winner": "B",
+      "score": {"B": 54, "W": 10},
+      "moves": 67,
+      "incidents": [],
+      "finishedAt": "2026-09-03T02:32:47.482Z",
+      "tokens": {"B": null, "W": null},
+      "cost": {"B": null, "W": 250.2668}
     }
   ]
 }
