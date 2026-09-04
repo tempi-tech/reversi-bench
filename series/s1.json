@@ -3926,6 +3926,25 @@
         "W": {"input": 76335, "cacheRead": 2901259, "cacheCreation": 0, "output": 39736, "reasoning": 34060, "apiCalls": 60}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g131",
+      "card": "x-muse-spark-1-3-contributor-free-medium-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "codex", "model": "gpt-5.6-sol", "effort": "medium", "display": "gpt-5.6-sol · medium"},
+        "W": {"agentType": "cockpit", "model": "opencode/muse-spark-1.3-contributor-free", "effort": "medium", "display": "muse-spark-1.3-contributor-free · medium"}
+      },
+      "winner": "W",
+      "score": {"B": 20, "W": 44},
+      "moves": 62,
+      "incidents": [{"kind": "turn_ended_early", "side": "W", "resumed": true}],
+      "finishedAt": "2026-09-04T08:46:12.794Z",
+      "tokens": {
+        "B": {"input": 136361, "cacheRead": 7049984, "cacheCreation": 0, "output": 18525, "reasoning": 8137, "apiCalls": 170},
+        "W": {"input": 117499, "cacheRead": 2411825, "cacheCreation": 0, "output": 60489, "reasoning": 53061, "apiCalls": 68}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
