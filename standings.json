@@ -3,7 +3,7 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-09-05T02:04:21.613Z",
+  "generatedAt": "2026-09-05T02:10:57.765Z",
   "standings": [
     {
       "player": "gpt-6-astra · medium",
@@ -307,6 +307,37 @@
       }
     },
     {
+      "player": "gpt-6-astra · max",
+      "rating": 1591,
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "draws": 0,
+      "stoneDiff": 4,
+      "reasoning": {
+        "averagePerMove": 1633.2333333333333,
+        "total": 48997,
+        "medianPerGame": 48997,
+        "q1PerGame": 48997,
+        "q3PerGame": 48997,
+        "iqrPerGame": 0,
+        "games": 1,
+        "moves": 30
+      },
+      "time": {
+        "averagePerMoveMs": 51286.5,
+        "totalMs": 1538595,
+        "medianPerMoveMs": 47243,
+        "q1PerMoveMs": 24908.5,
+        "q3PerMoveMs": 79310.75,
+        "iqrPerMoveMs": 54402.25,
+        "standardDeviationPerMoveMs": 30715.640579081748,
+        "games": 1,
+        "moves": 30,
+        "decisions": 30
+      }
+    },
+    {
       "player": "gpt-5.6-sol · high",
       "rating": 1584,
       "games": 15,
@@ -338,30 +369,8 @@
       }
     },
     {
-      "player": "qwen3.8-max-v2 · xhigh",
-      "rating": 1567,
-      "games": 4,
-      "wins": 2,
-      "losses": 2,
-      "draws": 0,
-      "stoneDiff": -80,
-      "reasoning": null,
-      "time": {
-        "averagePerMoveMs": 363501.7522123894,
-        "totalMs": 41075698,
-        "medianPerMoveMs": 245043,
-        "q1PerMoveMs": 146926,
-        "q3PerMoveMs": 376518,
-        "iqrPerMoveMs": 229592,
-        "standardDeviationPerMoveMs": 612487.113320972,
-        "games": 4,
-        "moves": 113,
-        "decisions": 115
-      }
-    },
-    {
       "player": "claude-fable-5 · medium",
-      "rating": 1566,
+      "rating": 1567,
       "games": 6,
       "wins": 3,
       "losses": 3,
@@ -388,6 +397,28 @@
         "games": 6,
         "moves": 176,
         "decisions": 180
+      }
+    },
+    {
+      "player": "qwen3.8-max-v2 · xhigh",
+      "rating": 1567,
+      "games": 4,
+      "wins": 2,
+      "losses": 2,
+      "draws": 0,
+      "stoneDiff": -80,
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 363501.7522123894,
+        "totalMs": 41075698,
+        "medianPerMoveMs": 245043,
+        "q1PerMoveMs": 146926,
+        "q3PerMoveMs": 376518,
+        "iqrPerMoveMs": 229592,
+        "standardDeviationPerMoveMs": 612487.113320972,
+        "games": 4,
+        "moves": 113,
+        "decisions": 115
       }
     },
     {
@@ -984,7 +1015,7 @@
     },
     {
       "player": "gpt-5.6-terra · max",
-      "rating": 1409,
+      "rating": 1410,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -1011,6 +1042,37 @@
         "games": 1,
         "moves": 29,
         "decisions": 29
+      }
+    },
+    {
+      "player": "gpt-6-astra · xhigh",
+      "rating": 1408,
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": -4,
+      "reasoning": {
+        "averagePerMove": 1458.3666666666666,
+        "total": 43751,
+        "medianPerGame": 43751,
+        "q1PerGame": 43751,
+        "q3PerGame": 43751,
+        "iqrPerGame": 0,
+        "games": 1,
+        "moves": 30
+      },
+      "time": {
+        "averagePerMoveMs": 47630.75862068965,
+        "totalMs": 1381292,
+        "medianPerMoveMs": 33415,
+        "q1PerMoveMs": 20960,
+        "q3PerMoveMs": 61290,
+        "iqrPerMoveMs": 40330,
+        "standardDeviationPerMoveMs": 39363.43852082939,
+        "games": 1,
+        "moves": 29,
+        "decisions": 30
       }
     },
     {
@@ -5491,6 +5553,37 @@
       "decisions": {
         "B": 31,
         "W": 29
+      },
+      "credits": {
+        "B": null,
+        "W": null
+      },
+      "incidents": []
+    },
+    {
+      "id": "s1/g140",
+      "card": "x-gpt-6-astra-xhigh-vs-gpt-6-astra-max",
+      "blind": true,
+      "playedAt": "2026-09-05T02:09:47.992Z",
+      "black": "gpt-6-astra · xhigh",
+      "white": "gpt-6-astra · max",
+      "winner": "W",
+      "score": {
+        "B": 30,
+        "W": 34
+      },
+      "moves": 62,
+      "outputTokens": {
+        "B": 49629,
+        "W": 54853
+      },
+      "reasoningTokens": {
+        "B": 43751,
+        "W": 48997
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
       },
       "credits": {
         "B": null,
