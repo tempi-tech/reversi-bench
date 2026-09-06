@@ -4534,6 +4534,25 @@
         "W": null
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g168",
+      "card": "x-kimi-k3-high-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "qoder", "model": "kmodel_latest", "effort": "high", "display": "kimi-k3 · high"},
+        "W": {"agentType": "codex", "model": "gpt-5.6-sol", "effort": "medium", "display": "gpt-5.6-sol · medium"}
+      },
+      "winner": "W",
+      "score": {"B": 18, "W": 46},
+      "moves": 69,
+      "incidents": [],
+      "finishedAt": "2026-09-06T21:26:21.485Z",
+      "tokens": {
+        "B": null,
+        "W": {"input": 145174, "cacheRead": 6886016, "cacheCreation": 0, "output": 23614, "reasoning": 9834, "apiCalls": 203}
+      },
+      "cost": {"B": 292.8632, "W": null}
     }
   ]
 }
