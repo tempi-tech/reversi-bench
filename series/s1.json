@@ -4553,6 +4553,25 @@
         "W": {"input": 145174, "cacheRead": 6886016, "cacheCreation": 0, "output": 23614, "reasoning": 9834, "apiCalls": 203}
       },
       "cost": {"B": 292.8632, "W": null}
+    },
+    {
+      "id": "s1/g169",
+      "card": "x-claude-fable-5-1-high-vs-grok-4.6-xhigh",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "claude", "model": "claude-fable-5-1", "effort": "high", "display": "claude-fable-5.1 · high"},
+        "W": {"agentType": "grok", "model": "grok-4.6", "effort": "xhigh", "display": "grok-4.6 · xhigh"}
+      },
+      "winner": "B",
+      "score": {"B": 38, "W": 26},
+      "moves": 65,
+      "incidents": [],
+      "finishedAt": "2026-09-06T21:50:05.025Z",
+      "tokens": {
+        "B": {"input": 1058, "cacheRead": 1475554, "cacheCreation": 74420, "output": 34802, "reasoning": 0, "apiCalls": 34},
+        "W": {"input": 397799, "cacheRead": 3190784, "cacheCreation": 0, "output": 50530, "reasoning": 48544, "apiCalls": 66}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
