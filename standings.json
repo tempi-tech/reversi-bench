@@ -3,11 +3,11 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-09-06T18:59:48.982Z",
+  "generatedAt": "2026-09-06T19:16:27.907Z",
   "standings": [
     {
       "player": "gpt-6-astra · medium",
-      "rating": 1790,
+      "rating": 1791,
       "games": 13,
       "wins": 10,
       "losses": 3,
@@ -38,7 +38,7 @@
     },
     {
       "player": "gpt-6-astra · max",
-      "rating": 1785,
+      "rating": 1786,
       "games": 7,
       "wins": 5,
       "losses": 2,
@@ -69,7 +69,7 @@
     },
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1766,
+      "rating": 1767,
       "games": 27,
       "wins": 20,
       "losses": 6,
@@ -100,7 +100,7 @@
     },
     {
       "player": "claude-opus-5 · high",
-      "rating": 1661,
+      "rating": 1664,
       "games": 13,
       "wins": 8,
       "losses": 5,
@@ -131,7 +131,7 @@
     },
     {
       "player": "claude-fable-5 · high",
-      "rating": 1624,
+      "rating": 1625,
       "games": 3,
       "wins": 2,
       "losses": 1,
@@ -193,7 +193,7 @@
     },
     {
       "player": "grok-4.6 · xhigh",
-      "rating": 1605,
+      "rating": 1606,
       "games": 5,
       "wins": 3,
       "losses": 2,
@@ -224,7 +224,7 @@
     },
     {
       "player": "claude-fable-5 · medium",
-      "rating": 1601,
+      "rating": 1602,
       "games": 7,
       "wins": 4,
       "losses": 3,
@@ -255,7 +255,7 @@
     },
     {
       "player": "claude-fable-5.1 · high",
-      "rating": 1596,
+      "rating": 1597,
       "games": 7,
       "wins": 4,
       "losses": 2,
@@ -286,7 +286,7 @@
     },
     {
       "player": "gemini-3.7-flash · high",
-      "rating": 1589,
+      "rating": 1591,
       "games": 20,
       "wins": 10,
       "losses": 10,
@@ -317,38 +317,38 @@
     },
     {
       "player": "gpt-5.6-sol · high",
-      "rating": 1576,
-      "games": 16,
-      "wins": 9,
+      "rating": 1589,
+      "games": 17,
+      "wins": 10,
       "losses": 7,
       "draws": 0,
-      "stoneDiff": 13,
+      "stoneDiff": 27,
       "reasoning": {
-        "averagePerMove": 395.28274428274426,
-        "total": 190131,
-        "medianPerGame": 11634.5,
-        "q1PerGame": 9754,
-        "q3PerGame": 13604.25,
-        "iqrPerGame": 3850.25,
-        "games": 16,
-        "moves": 481
+        "averagePerMove": 389.5518590998043,
+        "total": 199061,
+        "medianPerGame": 11395,
+        "q1PerGame": 9538,
+        "q3PerGame": 13500,
+        "iqrPerGame": 3962,
+        "games": 17,
+        "moves": 511
       },
       "time": {
-        "averagePerMoveMs": 18187.18181818182,
-        "totalMs": 8602537,
-        "medianPerMoveMs": 12600,
-        "q1PerMoveMs": 7589,
-        "q3PerMoveMs": 18644,
-        "iqrPerMoveMs": 11055,
-        "standardDeviationPerMoveMs": 80337.90575195279,
-        "games": 16,
-        "moves": 473,
-        "decisions": 481
+        "averagePerMoveMs": 17610.20079522863,
+        "totalMs": 8857931,
+        "medianPerMoveMs": 12212,
+        "q1PerMoveMs": 7509,
+        "q3PerMoveMs": 18267.5,
+        "iqrPerMoveMs": 10758.5,
+        "standardDeviationPerMoveMs": 77944.03142170561,
+        "games": 17,
+        "moves": 503,
+        "decisions": 511
       }
     },
     {
       "player": "grok-4.6 · medium",
-      "rating": 1566,
+      "rating": 1567,
       "games": 14,
       "wins": 6,
       "losses": 7,
@@ -379,7 +379,7 @@
     },
     {
       "player": "gpt-5.6-sol · medium",
-      "rating": 1564,
+      "rating": 1566,
       "games": 41,
       "wins": 21,
       "losses": 19,
@@ -410,7 +410,7 @@
     },
     {
       "player": "kimi-k3 · high",
-      "rating": 1533,
+      "rating": 1534,
       "games": 4,
       "wins": 2,
       "losses": 1,
@@ -440,30 +440,8 @@
       }
     },
     {
-      "player": "kimi-k3 · max",
-      "rating": 1531,
-      "games": 4,
-      "wins": 2,
-      "losses": 2,
-      "draws": 0,
-      "stoneDiff": -12,
-      "reasoning": null,
-      "time": {
-        "averagePerMoveMs": 369153.19658119656,
-        "totalMs": 43190924,
-        "medianPerMoveMs": 190337,
-        "q1PerMoveMs": 113489,
-        "q3PerMoveMs": 333985,
-        "iqrPerMoveMs": 220496,
-        "standardDeviationPerMoveMs": 1127285.7000227123,
-        "games": 4,
-        "moves": 117,
-        "decisions": 119
-      }
-    },
-    {
       "player": "muse-spark-1.3-contributor-free · medium",
-      "rating": 1531,
+      "rating": 1533,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -493,8 +471,30 @@
       }
     },
     {
+      "player": "kimi-k3 · max",
+      "rating": 1531,
+      "games": 4,
+      "wins": 2,
+      "losses": 2,
+      "draws": 0,
+      "stoneDiff": -12,
+      "reasoning": null,
+      "time": {
+        "averagePerMoveMs": 369153.19658119656,
+        "totalMs": 43190924,
+        "medianPerMoveMs": 190337,
+        "q1PerMoveMs": 113489,
+        "q3PerMoveMs": 333985,
+        "iqrPerMoveMs": 220496,
+        "standardDeviationPerMoveMs": 1127285.7000227123,
+        "games": 4,
+        "moves": 117,
+        "decisions": 119
+      }
+    },
+    {
       "player": "qwen3.8-max · xhigh",
-      "rating": 1528,
+      "rating": 1529,
       "games": 17,
       "wins": 9,
       "losses": 8,
@@ -516,7 +516,7 @@
     },
     {
       "player": "gemini-3.8-flash · high",
-      "rating": 1522,
+      "rating": 1523,
       "games": 7,
       "wins": 2,
       "losses": 5,
@@ -538,7 +538,7 @@
     },
     {
       "player": "gpt-6-astra · high",
-      "rating": 1516,
+      "rating": 1517,
       "games": 4,
       "wins": 1,
       "losses": 3,
@@ -569,7 +569,7 @@
     },
     {
       "player": "gpt-6-astra · low",
-      "rating": 1509,
+      "rating": 1511,
       "games": 7,
       "wins": 2,
       "losses": 5,
@@ -600,7 +600,7 @@
     },
     {
       "player": "qwen3.8-max-v2 · xhigh",
-      "rating": 1507,
+      "rating": 1508,
       "games": 5,
       "wins": 2,
       "losses": 3,
@@ -643,39 +643,8 @@
       }
     },
     {
-      "player": "gpt-5.6-sol · xhigh",
-      "rating": 1486,
-      "games": 9,
-      "wins": 4,
-      "losses": 5,
-      "draws": 0,
-      "stoneDiff": -18,
-      "reasoning": {
-        "averagePerMove": 791.6185185185185,
-        "total": 213737,
-        "medianPerGame": 24660,
-        "q1PerGame": 19070,
-        "q3PerGame": 26116,
-        "iqrPerGame": 7046,
-        "games": 9,
-        "moves": 270
-      },
-      "time": {
-        "averagePerMoveMs": 31669.20754716981,
-        "totalMs": 8392340,
-        "medianPerMoveMs": 19760,
-        "q1PerMoveMs": 11232,
-        "q3PerMoveMs": 31767,
-        "iqrPerMoveMs": 20535,
-        "standardDeviationPerMoveMs": 82913.74669445134,
-        "games": 9,
-        "moves": 265,
-        "decisions": 270
-      }
-    },
-    {
       "player": "claude-fable-5.1 · xhigh",
-      "rating": 1482,
+      "rating": 1485,
       "games": 3,
       "wins": 1,
       "losses": 2,
@@ -705,8 +674,39 @@
       }
     },
     {
+      "player": "gpt-5.6-sol · xhigh",
+      "rating": 1484,
+      "games": 9,
+      "wins": 4,
+      "losses": 5,
+      "draws": 0,
+      "stoneDiff": -18,
+      "reasoning": {
+        "averagePerMove": 791.6185185185185,
+        "total": 213737,
+        "medianPerGame": 24660,
+        "q1PerGame": 19070,
+        "q3PerGame": 26116,
+        "iqrPerGame": 7046,
+        "games": 9,
+        "moves": 270
+      },
+      "time": {
+        "averagePerMoveMs": 31669.20754716981,
+        "totalMs": 8392340,
+        "medianPerMoveMs": 19760,
+        "q1PerMoveMs": 11232,
+        "q3PerMoveMs": 31767,
+        "iqrPerMoveMs": 20535,
+        "standardDeviationPerMoveMs": 82913.74669445134,
+        "games": 9,
+        "moves": 265,
+        "decisions": 270
+      }
+    },
+    {
       "player": "claude-sonnet-5 · medium",
-      "rating": 1479,
+      "rating": 1480,
       "games": 3,
       "wins": 1,
       "losses": 2,
@@ -724,37 +724,6 @@
         "games": 3,
         "moves": 88,
         "decisions": 89
-      }
-    },
-    {
-      "player": "grok-4.6 · high",
-      "rating": 1476,
-      "games": 6,
-      "wins": 3,
-      "losses": 3,
-      "draws": 0,
-      "stoneDiff": 51,
-      "reasoning": {
-        "averagePerMove": 1459.535294117647,
-        "total": 248121,
-        "medianPerGame": 43002.5,
-        "q1PerGame": 33212.5,
-        "q3PerGame": 45571.5,
-        "iqrPerGame": 12359,
-        "games": 6,
-        "moves": 170
-      },
-      "time": {
-        "averagePerMoveMs": 25651.125,
-        "totalMs": 4309389,
-        "medianPerMoveMs": 23631.5,
-        "q1PerMoveMs": 17245,
-        "q3PerMoveMs": 31111,
-        "iqrPerMoveMs": 13866,
-        "standardDeviationPerMoveMs": 12757.792192275267,
-        "games": 6,
-        "moves": 168,
-        "decisions": 170
       }
     },
     {
@@ -781,7 +750,7 @@
     },
     {
       "player": "gpt-5.6-terra · medium",
-      "rating": 1470,
+      "rating": 1471,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -887,7 +856,7 @@
     },
     {
       "player": "qwen3.8-max · low",
-      "rating": 1447,
+      "rating": 1448,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -908,8 +877,39 @@
       }
     },
     {
+      "player": "grok-4.6 · high",
+      "rating": 1447,
+      "games": 7,
+      "wins": 3,
+      "losses": 4,
+      "draws": 0,
+      "stoneDiff": 37,
+      "reasoning": {
+        "averagePerMove": 1411.76,
+        "total": 282352,
+        "medianPerGame": 40660,
+        "q1PerGame": 32480.5,
+        "q3PerGame": 45496,
+        "iqrPerGame": 13015.5,
+        "games": 7,
+        "moves": 200
+      },
+      "time": {
+        "averagePerMoveMs": 24738.238578680204,
+        "totalMs": 4873433,
+        "medianPerMoveMs": 22505,
+        "q1PerMoveMs": 15011,
+        "q3PerMoveMs": 30301,
+        "iqrPerMoveMs": 15290,
+        "standardDeviationPerMoveMs": 12787.299361608173,
+        "games": 7,
+        "moves": 197,
+        "decisions": 200
+      }
+    },
+    {
       "player": "claude-fable-5.1 · medium",
-      "rating": 1445,
+      "rating": 1446,
       "games": 5,
       "wins": 1,
       "losses": 4,
@@ -940,7 +940,7 @@
     },
     {
       "player": "gpt-5.6-sol · low",
-      "rating": 1441,
+      "rating": 1444,
       "games": 6,
       "wins": 2,
       "losses": 4,
@@ -1024,7 +1024,7 @@
     },
     {
       "player": "deepseek-v4-pro · high",
-      "rating": 1429,
+      "rating": 1430,
       "games": 4,
       "wins": 1,
       "losses": 2,
@@ -1046,7 +1046,7 @@
     },
     {
       "player": "gpt-5.6-luna · max",
-      "rating": 1410,
+      "rating": 1411,
       "games": 5,
       "wins": 2,
       "losses": 3,
@@ -1077,7 +1077,7 @@
     },
     {
       "player": "gpt-5.6-terra · max",
-      "rating": 1399,
+      "rating": 1400,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -1161,7 +1161,7 @@
     },
     {
       "player": "glm-5.3-flash · high",
-      "rating": 1388,
+      "rating": 1389,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -1201,37 +1201,6 @@
         "games": 5,
         "moves": 145,
         "decisions": 148
-      }
-    },
-    {
-      "player": "openrouter/google/gemini-3.7-flash · high",
-      "rating": 1371,
-      "games": 1,
-      "wins": 0,
-      "losses": 1,
-      "draws": 0,
-      "stoneDiff": -20,
-      "reasoning": {
-        "averagePerMove": 391.0967741935484,
-        "total": 12124,
-        "medianPerGame": 12124,
-        "q1PerGame": 12124,
-        "q3PerGame": 12124,
-        "iqrPerGame": 0,
-        "games": 1,
-        "moves": 31
-      },
-      "time": {
-        "averagePerMoveMs": 4629.9,
-        "totalMs": 138897,
-        "medianPerMoveMs": 4496.5,
-        "q1PerMoveMs": 3688.75,
-        "q3PerMoveMs": 5563.25,
-        "iqrPerMoveMs": 1874.5,
-        "standardDeviationPerMoveMs": 1251.8193786112543,
-        "games": 1,
-        "moves": 30,
-        "decisions": 31
       }
     },
     {
@@ -1288,8 +1257,39 @@
       }
     },
     {
+      "player": "openrouter/google/gemini-3.7-flash · high",
+      "rating": 1361,
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": -20,
+      "reasoning": {
+        "averagePerMove": 391.0967741935484,
+        "total": 12124,
+        "medianPerGame": 12124,
+        "q1PerGame": 12124,
+        "q3PerGame": 12124,
+        "iqrPerGame": 0,
+        "games": 1,
+        "moves": 31
+      },
+      "time": {
+        "averagePerMoveMs": 4629.9,
+        "totalMs": 138897,
+        "medianPerMoveMs": 4496.5,
+        "q1PerMoveMs": 3688.75,
+        "q3PerMoveMs": 5563.25,
+        "iqrPerMoveMs": 1874.5,
+        "standardDeviationPerMoveMs": 1251.8193786112543,
+        "games": 1,
+        "moves": 30,
+        "decisions": 31
+      }
+    },
+    {
       "player": "muse-spark-1.3-contributor-free · high",
-      "rating": 1339,
+      "rating": 1340,
       "games": 2,
       "wins": 0,
       "losses": 2,
@@ -1320,7 +1320,7 @@
     },
     {
       "player": "gemini-3.7-flash · medium",
-      "rating": 1322,
+      "rating": 1314,
       "games": 2,
       "wins": 0,
       "losses": 2,
@@ -6417,6 +6417,37 @@
       "reasoningTokens": {
         "B": null,
         "W": null
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
+      "credits": {
+        "B": null,
+        "W": null
+      },
+      "incidents": []
+    },
+    {
+      "id": "s1/g166",
+      "card": "x-grok-4.6-high-vs-gpt-5.6-sol-high",
+      "blind": true,
+      "playedAt": "2026-09-06T19:15:02.571Z",
+      "black": "grok-4.6 · high",
+      "white": "gpt-5.6-sol · high",
+      "winner": "W",
+      "score": {
+        "B": 25,
+        "W": 39
+      },
+      "moves": 62,
+      "outputTokens": {
+        "B": 35753,
+        "W": 13217
+      },
+      "reasoningTokens": {
+        "B": 34231,
+        "W": 8930
       },
       "decisions": {
         "B": 30,
