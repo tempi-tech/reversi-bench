@@ -4211,6 +4211,25 @@
         "W": {"input": 87471, "cacheRead": 5785344, "cacheCreation": 0, "output": 7071, "reasoning": 2314, "apiCalls": 135}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g151",
+      "card": "x-gpt-6-astra-low-vs-gpt-5.6-sol-medium",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "codex", "model": "gpt-5.6-sol", "effort": "medium", "display": "gpt-5.6-sol · medium"},
+        "W": {"agentType": "codex", "model": "gpt-6-astra", "effort": "low", "display": "gpt-6-astra · low"}
+      },
+      "winner": "B",
+      "score": {"B": 48, "W": 16},
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-09-06T01:41:26.001Z",
+      "tokens": {
+        "B": {"input": 47816, "cacheRead": 1910656, "cacheCreation": 0, "output": 10450, "reasoning": 6378, "apiCalls": 62},
+        "W": {"input": 64700, "cacheRead": 2499712, "cacheCreation": 0, "output": 4332, "reasoning": 2461, "apiCalls": 62}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
