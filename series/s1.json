@@ -4363,6 +4363,25 @@
         "W": null
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g159",
+      "card": "x-gpt-6-astra-medium-vs-gemini-3.8-flash-high",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "antigravity", "model": "gemini-3.8-flash", "effort": "high", "display": "gemini-3.8-flash · high"},
+        "W": {"agentType": "codex", "model": "gpt-6-astra", "effort": "medium", "display": "gpt-6-astra · medium"}
+      },
+      "winner": "W",
+      "score": {"B": 7, "W": 57},
+      "moves": 66,
+      "incidents": [],
+      "finishedAt": "2026-09-06T08:31:29.405Z",
+      "tokens": {
+        "B": null,
+        "W": {"input": 78448, "cacheRead": 3355008, "cacheCreation": 0, "output": 5152, "reasoning": 2435, "apiCalls": 74}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
