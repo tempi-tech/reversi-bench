@@ -1,0 +1,713 @@
+{
+  "summary": {
+    "game": "s1/g177",
+    "card": "x-claude-fable-5-1-xhigh-vs-gpt-5.6-sol-high",
+    "winner": "W",
+    "score": {"B": 11, "W": 53},
+    "seats": {"B": "gpt-5.6-sol · high", "W": "claude-fable-5.1 · xhigh"},
+    "moves": 64,
+    "blind": true,
+    "referee": "e089770",
+    "tokens": {"B": 16991, "W": 181525},
+    "cost": {"B": null, "W": null},
+    "notes": [
+      "Claude Fable 5.1 xhigh defeated GPT-5.6 Sol high 53-11 as White.",
+      "Independent replay reproduced all 64 history records, including 60 played moves and four automatic passes, the final board and winner.",
+      "Both players used account Auto, initially default. Actual sessions from run-metadata.json: Black Codex 01a07b47-87dc-7543-ad0b-1b648e3862c8 and White Claude 8f1252b6-cee7-4517-917e-97cd6225adaf. Usage was collected from these sessions. Claude reasoning zero is an unavailable sentinel, not evidence of zero reasoning tokens.",
+      "Together with reverse-color g164 (Sol high won 33-31 as White), the pair split 1-1 with both White seats winning. Aggregate stones favor Fable xhigh 84-44. This preserves Fable xhigh as a candidate but does not establish a definitive effort ordering or strongest twelve.",
+      "Native claude-fable-5-1 and xhigh were verified against Cockpit capabilities and actual runtime resolution.",
+      "Eighth game of the sequential frontier-confirmation-ten queue g170 through g179. Only g178 follows this result. Preserve all existing results; ultra is prohibited and discarded g142 remains excluded. Stop after g179.",
+      "Discord relay ran from the parent shell, never a Cockpit terminal task, and delivered the final result.",
+      "Discord live thread: https://discord.com/channels/842347959102603274/1546458017027858432"
+    ]
+  },
+  "id": "current",
+  "size": 8,
+  "title": "Reversi 8×8",
+  "createdAt": "2026-09-07T09:51:16.393Z",
+  "updatedAt": "2026-09-07T10:30:50.908Z",
+  "cells": [
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "B",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "W",
+    "B",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W"
+  ],
+  "turn": "W",
+  "status": "over",
+  "winner": "W",
+  "thinking": null,
+  "lastMove": {
+    "side": "W",
+    "move": "a2",
+    "flips": [
+      "b3",
+      "c4",
+      "d5",
+      "e6",
+      "b2",
+      "c2",
+      "d2",
+      "e2"
+    ]
+  },
+  "history": [
+    {
+      "side": "B",
+      "move": "d6",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-09-07T09:51:35.479Z"
+    },
+    {
+      "side": "W",
+      "move": "c6",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-09-07T09:52:21.486Z"
+    },
+    {
+      "side": "B",
+      "move": "c5",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-09-07T09:52:31.077Z"
+    },
+    {
+      "side": "W",
+      "move": "e6",
+      "flips": [
+        "d6",
+        "e5"
+      ],
+      "at": "2026-09-07T09:53:19.870Z"
+    },
+    {
+      "side": "B",
+      "move": "f5",
+      "flips": [
+        "e5"
+      ],
+      "at": "2026-09-07T09:53:34.873Z"
+    },
+    {
+      "side": "W",
+      "move": "d3",
+      "flips": [
+        "d4",
+        "d5"
+      ],
+      "at": "2026-09-07T09:53:58.969Z"
+    },
+    {
+      "side": "B",
+      "move": "c3",
+      "flips": [
+        "d4"
+      ],
+      "at": "2026-09-07T09:54:17.977Z"
+    },
+    {
+      "side": "W",
+      "move": "c4",
+      "flips": [
+        "c5",
+        "d4"
+      ],
+      "at": "2026-09-07T09:55:14.401Z"
+    },
+    {
+      "side": "B",
+      "move": "e3",
+      "flips": [
+        "e4",
+        "d3"
+      ],
+      "at": "2026-09-07T09:55:22.619Z"
+    },
+    {
+      "side": "W",
+      "move": "f4",
+      "flips": [
+        "e5",
+        "e4"
+      ],
+      "at": "2026-09-07T09:57:56.053Z"
+    },
+    {
+      "side": "B",
+      "move": "f3",
+      "flips": [
+        "f4"
+      ],
+      "at": "2026-09-07T09:58:07.088Z"
+    },
+    {
+      "side": "W",
+      "move": "g6",
+      "flips": [
+        "f5"
+      ],
+      "at": "2026-09-07T09:59:50.332Z"
+    },
+    {
+      "side": "B",
+      "move": "f6",
+      "flips": [
+        "e5",
+        "d4",
+        "f5"
+      ],
+      "at": "2026-09-07T10:00:07.028Z"
+    },
+    {
+      "side": "W",
+      "move": "g5",
+      "flips": [
+        "f5",
+        "e5"
+      ],
+      "at": "2026-09-07T10:01:06.130Z"
+    },
+    {
+      "side": "B",
+      "move": "h6",
+      "flips": [
+        "g6",
+        "g5"
+      ],
+      "at": "2026-09-07T10:01:23.992Z"
+    },
+    {
+      "side": "W",
+      "move": "h5",
+      "flips": [
+        "g5"
+      ],
+      "at": "2026-09-07T10:03:48.237Z"
+    },
+    {
+      "side": "B",
+      "move": "h4",
+      "flips": [
+        "g5",
+        "h5"
+      ],
+      "at": "2026-09-07T10:03:57.875Z"
+    },
+    {
+      "side": "W",
+      "move": "g4",
+      "flips": [
+        "f4"
+      ],
+      "at": "2026-09-07T10:06:23.191Z"
+    },
+    {
+      "side": "B",
+      "move": "g3",
+      "flips": [
+        "g4"
+      ],
+      "at": "2026-09-07T10:06:33.733Z"
+    },
+    {
+      "side": "W",
+      "move": "h3",
+      "flips": [
+        "g4"
+      ],
+      "at": "2026-09-07T10:07:48.245Z"
+    },
+    {
+      "side": "B",
+      "move": "b4",
+      "flips": [
+        "c4"
+      ],
+      "at": "2026-09-07T10:08:21.650Z"
+    },
+    {
+      "side": "W",
+      "move": "a4",
+      "flips": [
+        "b4",
+        "c4",
+        "d4"
+      ],
+      "at": "2026-09-07T10:09:34.176Z"
+    },
+    {
+      "side": "B",
+      "move": "d7",
+      "flips": [
+        "d6",
+        "d5",
+        "d4"
+      ],
+      "at": "2026-09-07T10:09:53.190Z"
+    },
+    {
+      "side": "W",
+      "move": "c8",
+      "flips": [
+        "d7"
+      ],
+      "at": "2026-09-07T10:11:45.622Z"
+    },
+    {
+      "side": "B",
+      "move": "f7",
+      "flips": [
+        "e6"
+      ],
+      "at": "2026-09-07T10:12:16.637Z"
+    },
+    {
+      "side": "W",
+      "move": "c7",
+      "flips": [
+        "d6"
+      ],
+      "at": "2026-09-07T10:12:52.768Z"
+    },
+    {
+      "side": "B",
+      "move": "d8",
+      "flips": [
+        "d7",
+        "d6"
+      ],
+      "at": "2026-09-07T10:13:07.769Z"
+    },
+    {
+      "side": "W",
+      "move": "e8",
+      "flips": [
+        "d8",
+        "d7"
+      ],
+      "at": "2026-09-07T10:13:31.369Z"
+    },
+    {
+      "side": "B",
+      "move": "b6",
+      "flips": [
+        "c6",
+        "c5"
+      ],
+      "at": "2026-09-07T10:13:46.610Z"
+    },
+    {
+      "side": "W",
+      "move": "e7",
+      "flips": [
+        "d6",
+        "c5",
+        "e6"
+      ],
+      "at": "2026-09-07T10:14:44.835Z"
+    },
+    {
+      "side": "B",
+      "move": "b5",
+      "flips": [
+        "c5",
+        "c4"
+      ],
+      "at": "2026-09-07T10:14:56.598Z"
+    },
+    {
+      "side": "W",
+      "move": "a5",
+      "flips": [
+        "b6",
+        "b5",
+        "c5",
+        "d5"
+      ],
+      "at": "2026-09-07T10:15:31.996Z"
+    },
+    {
+      "side": "B",
+      "move": "h2",
+      "flips": [
+        "h3"
+      ],
+      "at": "2026-09-07T10:15:54.452Z"
+    },
+    {
+      "side": "W",
+      "move": "f8",
+      "flips": [
+        "f7",
+        "f6"
+      ],
+      "at": "2026-09-07T10:16:37.875Z"
+    },
+    {
+      "side": "B",
+      "move": "a7",
+      "flips": [
+        "b6",
+        "c5"
+      ],
+      "at": "2026-09-07T10:16:57.143Z"
+    },
+    {
+      "side": "W",
+      "move": "c2",
+      "flips": [
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "d3"
+      ],
+      "at": "2026-09-07T10:19:58.373Z"
+    },
+    {
+      "side": "B",
+      "move": "b1",
+      "flips": [
+        "c2",
+        "d3",
+        "e4",
+        "f5"
+      ],
+      "at": "2026-09-07T10:20:17.053Z"
+    },
+    {
+      "side": "W",
+      "move": "d2",
+      "flips": [
+        "d3",
+        "d4",
+        "e3"
+      ],
+      "at": "2026-09-07T10:21:04.112Z"
+    },
+    {
+      "side": "B",
+      "move": "c1",
+      "flips": [
+        "d2",
+        "e3",
+        "f4"
+      ],
+      "at": "2026-09-07T10:21:11.036Z"
+    },
+    {
+      "side": "W",
+      "move": "e1",
+      "flips": [
+        "d2"
+      ],
+      "at": "2026-09-07T10:22:35.116Z"
+    },
+    {
+      "side": "B",
+      "move": "e2",
+      "flips": [
+        "d2"
+      ],
+      "at": "2026-09-07T10:22:48.550Z"
+    },
+    {
+      "side": "W",
+      "move": "f1",
+      "flips": [
+        "e2"
+      ],
+      "at": "2026-09-07T10:25:05.437Z"
+    },
+    {
+      "side": "B",
+      "move": "d1",
+      "flips": [
+        "e2"
+      ],
+      "at": "2026-09-07T10:25:19.900Z"
+    },
+    {
+      "side": "W",
+      "move": "a1",
+      "flips": [
+        "b1",
+        "c1",
+        "d1"
+      ],
+      "at": "2026-09-07T10:25:24.759Z"
+    },
+    {
+      "side": "B",
+      "move": "a6",
+      "flips": [
+        "b5",
+        "c4",
+        "d3"
+      ],
+      "at": "2026-09-07T10:25:36.139Z"
+    },
+    {
+      "side": "W",
+      "move": "a8",
+      "flips": [
+        "a7",
+        "a6"
+      ],
+      "at": "2026-09-07T10:25:44.127Z"
+    },
+    {
+      "side": "B",
+      "move": "b8",
+      "flips": [
+        "c7",
+        "d6",
+        "e5"
+      ],
+      "at": "2026-09-07T10:25:57.185Z"
+    },
+    {
+      "side": "W",
+      "move": "b7",
+      "flips": [
+        "c7",
+        "b6",
+        "b5"
+      ],
+      "at": "2026-09-07T10:26:47.366Z"
+    },
+    {
+      "side": "B",
+      "move": "b3",
+      "flips": [
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "c3"
+      ],
+      "at": "2026-09-07T10:27:02.120Z"
+    },
+    {
+      "side": "W",
+      "move": "a3",
+      "flips": [
+        "b4"
+      ],
+      "at": "2026-09-07T10:27:31.653Z"
+    },
+    {
+      "side": "B",
+      "move": "g8",
+      "flips": [
+        "f8",
+        "e8",
+        "d8",
+        "c8",
+        "f7",
+        "e6",
+        "d5"
+      ],
+      "at": "2026-09-07T10:27:42.041Z"
+    },
+    {
+      "side": "W",
+      "move": "h8",
+      "flips": [
+        "g8",
+        "f8",
+        "e8",
+        "d8",
+        "c8",
+        "b8"
+      ],
+      "at": "2026-09-07T10:27:55.576Z"
+    },
+    {
+      "side": "B",
+      "move": "g7",
+      "flips": [
+        "f6"
+      ],
+      "at": "2026-09-07T10:27:59.906Z"
+    },
+    {
+      "side": "W",
+      "move": "h7",
+      "flips": [
+        "g7",
+        "f7",
+        "g6",
+        "f5",
+        "e4",
+        "d3",
+        "c2"
+      ],
+      "at": "2026-09-07T10:29:16.793Z"
+    },
+    {
+      "side": "B",
+      "move": "b2",
+      "flips": [
+        "c2"
+      ],
+      "at": "2026-09-07T10:29:22.083Z"
+    },
+    {
+      "side": "W",
+      "move": "h1",
+      "flips": [
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6"
+      ],
+      "at": "2026-09-07T10:29:26.668Z"
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-07T10:29:26.669Z"
+    },
+    {
+      "side": "W",
+      "move": "g2",
+      "flips": [
+        "f3",
+        "g3"
+      ],
+      "at": "2026-09-07T10:30:28.773Z"
+    },
+    {
+      "side": "B",
+      "move": "g1",
+      "flips": [
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "at": "2026-09-07T10:30:45.294Z"
+    },
+    {
+      "side": "W",
+      "move": "f2",
+      "flips": [
+        "e3",
+        "g3",
+        "g2"
+      ],
+      "at": "2026-09-07T10:30:48.295Z"
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-07T10:30:48.296Z"
+    },
+    {
+      "side": "W",
+      "move": "a2",
+      "flips": [
+        "b3",
+        "c4",
+        "d5",
+        "e6",
+        "b2",
+        "c2",
+        "d2",
+        "e2"
+      ],
+      "at": "2026-09-07T10:30:50.907Z"
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-07T10:30:50.908Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-07T10:30:50.908Z"
+    }
+  ],
+  "players": {
+    "B": {
+      "name": "Black",
+      "model": "",
+      "say": ""
+    },
+    "W": {
+      "name": "White",
+      "model": "",
+      "say": ""
+    }
+  }
+}

@@ -4705,6 +4705,25 @@
         "W": {"input": 39537, "cacheRead": 1667200, "cacheCreation": 0, "output": 4435, "reasoning": 1669, "apiCalls": 53}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g177",
+      "card": "x-claude-fable-5-1-xhigh-vs-gpt-5.6-sol-high",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "codex", "model": "gpt-5.6-sol", "effort": "high", "display": "gpt-5.6-sol · high"},
+        "W": {"agentType": "claude", "model": "claude-fable-5-1", "effort": "xhigh", "display": "claude-fable-5.1 · xhigh"}
+      },
+      "winner": "W",
+      "score": {"B": 11, "W": 53},
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-09-07T10:30:50.908Z",
+      "tokens": {
+        "B": {"input": 96991, "cacheRead": 3704192, "cacheCreation": 0, "output": 16991, "reasoning": 9880, "apiCalls": 106},
+        "W": {"input": 1922, "cacheRead": 7936329, "cacheCreation": 206283, "output": 181525, "reasoning": 0, "apiCalls": 61}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
