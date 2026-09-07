@@ -4686,6 +4686,25 @@
         "W": {"input": 109366, "cacheRead": 2871936, "cacheCreation": 0, "output": 21171, "reasoning": 16863, "apiCalls": 74}
       },
       "cost": {"B": null, "W": null}
+    },
+    {
+      "id": "s1/g176",
+      "card": "x-gpt-6-astra-low-vs-grok-4.6-medium",
+      "blind": true,
+      "seats": {
+        "B": {"agentType": "grok", "model": "grok-4.6", "effort": "medium", "display": "grok-4.6 · medium"},
+        "W": {"agentType": "codex", "model": "gpt-6-astra", "effort": "low", "display": "gpt-6-astra · low"}
+      },
+      "winner": "draw",
+      "score": {"B": 32, "W": 32},
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-09-07T09:49:12.209Z",
+      "tokens": {
+        "B": {"input": 297933, "cacheRead": 2141568, "cacheCreation": 0, "output": 18931, "reasoning": 18158, "apiCalls": 63},
+        "W": {"input": 39537, "cacheRead": 1667200, "cacheCreation": 0, "output": 4435, "reasoning": 1669, "apiCalls": 53}
+      },
+      "cost": {"B": null, "W": null}
     }
   ]
 }
