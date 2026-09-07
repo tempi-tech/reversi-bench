@@ -4862,6 +4862,41 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g182",
+      "card": "x-gemini-3.8-flash-high-vs-gemini-3.7-flash-high",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-3.8-flash",
+          "effort": "high",
+          "display": "gemini-3.8-flash · high"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-3.7-flash",
+          "effort": "high",
+          "display": "gemini-3.7-flash · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 35,
+        "W": 29
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-09-07T15:21:11.330Z",
+      "tokens": {
+        "B": null,
+        "W": null
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
