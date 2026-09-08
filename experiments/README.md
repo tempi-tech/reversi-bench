@@ -27,6 +27,8 @@ Run strictly sequentially with Auto accounts and the same player prompt, referee
 
 Finish recording, independent replay, forecast validation, commit and push for each game before starting only its listed successor. Stop after c007 and summarize the six-game batch separately from c001. Six games still do not establish calibrated probabilities or a definitive metacognition ranking. Ultra remains prohibited and discarded g142 remains excluded.
 
+Discord streaming was paused by the user during c003 on 2026-09-08. Keep it disabled for subsequent games until explicitly resumed. Continue a parent-shell completion-only supervisor and the sequential recording workflow; do not require or claim a final Discord delivery while streaming is paused.
+
 ## Protocol
 
 The referee is initialized with `--confidence-after 10`. Count both players' played moves together, excluding automatic passes. The first ten played moves accept no forecast; from played move 11 onward, each legal move requires `--win P --draw P --loss P`, in percentages from 0 to 100 summing to 100. Players estimate their own eventual outcome against the current unknown opponent after choosing the submitted move, with both players continuing normally.
@@ -44,6 +46,6 @@ Players use `prompts/player-confidence.md`, with no extra custom system prompt. 
 3. Preserve every accepted forecast and timestamp, including confident mistakes. Check that player I/O did not expose opponent forecasts.
 4. Collect the actual sessions and usage from `run-metadata.json`. Missing usage stays null, not zero or an estimate.
 5. Save the finished experimental match and update the experimental manifest. Do not append to the ranked series or change standings. Verify the experimental marker before committing the result.
-6. Verify Discord final delivery and let the parent-shell relay supervisor exit. Never create a Cockpit terminal relay task. The original c001-only approval is complete; further launches require the separately approved queue above. Stop after c007, and never duplicate an existing game or player task.
+6. When streaming is enabled, verify Discord final delivery and let the parent-shell relay supervisor exit. While streaming is paused by the user, record that state instead and verify completion-only supervisor exit; do not restart streaming. Never create a Cockpit terminal relay task. The original c001-only approval is complete; further launches require the separately approved queue above. Stop after c007, and never duplicate an existing game or player task.
 
 Report the result, forecast coverage and each side's trajectory. Optional descriptive scoring uses the multiclass Brier loss `((p_win-y_win)^2 + (p_draw-y_draw)^2 + (p_loss-y_loss)^2) / 2`, with probabilities divided by 100 and the actual side-relative result as a one-hot target. This convention ranges from 0 to 1. Break down played moves 11–20, 21–40 and 41 onward instead of only pooling easy terminal forecasts. A single game's repeated forecasts share one final outcome: do not claim calibrated probabilities, statistical superiority or independent samples from those turns. No automated ranking of calibration is produced by this pilot.
