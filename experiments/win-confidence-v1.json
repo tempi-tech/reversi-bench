@@ -3428,7 +3428,7 @@
     {
       "id": "experiments/win-confidence-v1/c006",
       "ranked": false,
-      "status": "planned",
+      "status": "running",
       "batch": "opus-astra-sol-high-six",
       "baseline": "bafc8f8",
       "seats": {
@@ -3445,6 +3445,22 @@
           "effort": "high",
           "display": "claude-opus-5 · high",
           "baselineRank": 4
+        }
+      },
+      "referee": "430a08f",
+      "relayEnabled": false,
+      "sessions": {
+        "B": {
+          "taskId": "c6d71f02",
+          "sessionId": "01a080b2-a799-7780-9619-6b0b7eba9e12",
+          "accountSelection": "auto",
+          "initialAccount": "default"
+        },
+        "W": {
+          "taskId": "ef89efcd",
+          "sessionId": "be146815-fe09-4bfd-bb1d-f765d560fe52",
+          "accountSelection": "auto",
+          "initialAccount": "default"
         }
       }
     },
@@ -3473,7 +3489,7 @@
       "reverseOf": "c006"
     }
   ],
-  "activeGame": null,
+  "activeGame": "c006",
   "activeBatch": "opus-astra-sol-high-six",
   "pilotCompletedAt": "2026-09-08T04:05:19.413Z",
   "relayEnabled": false,
