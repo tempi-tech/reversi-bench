@@ -1,7 +1,7 @@
 {
   "protocol": "win-confidence-v1",
   "ranked": false,
-  "status": "planned",
+  "status": "running",
   "maxConcurrentGames": 1,
   "stopAfter": "c001",
   "baseline": "2c1310c",
@@ -12,7 +12,7 @@
     {
       "id": "experiments/win-confidence-v1/c001",
       "ranked": false,
-      "status": "planned",
+      "status": "playing",
       "seats": {
         "B": {
           "agentType": "claude",
@@ -28,7 +28,8 @@
           "display": "gpt-5.6-sol · high",
           "baselineRank": 11
         }
-      }
+      },
+      "referee": "905c62d"
     }
   ]
 }
