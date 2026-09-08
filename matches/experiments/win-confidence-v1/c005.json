@@ -1,0 +1,1672 @@
+{
+  "id": "current",
+  "size": 8,
+  "title": "Reversi 8×8",
+  "protocol": {
+    "id": "win-confidence-v1",
+    "ranked": false,
+    "startAfterMoves": 10,
+    "probabilityUnit": "percent",
+    "perspective": "acting-player",
+    "target": "eventual-result-against-current-opponent-after-selected-move"
+  },
+  "createdAt": "2026-09-08T10:42:44.315Z",
+  "updatedAt": "2026-09-08T11:02:39.052Z",
+  "cells": [
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "B",
+    "B",
+    "W",
+    "W",
+    "B",
+    "B",
+    "W",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "B",
+    "B",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B"
+  ],
+  "turn": "W",
+  "status": "over",
+  "winner": "B",
+  "thinking": null,
+  "lastMove": {
+    "side": "W",
+    "move": "g2",
+    "flips": [
+      "f3",
+      "e4",
+      "d5"
+    ]
+  },
+  "history": [
+    {
+      "side": "B",
+      "move": "d6",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-09-08T10:43:02.717Z"
+    },
+    {
+      "side": "W",
+      "move": "c4",
+      "flips": [
+        "d4"
+      ],
+      "at": "2026-09-08T10:43:27.412Z"
+    },
+    {
+      "side": "B",
+      "move": "c3",
+      "flips": [
+        "d4"
+      ],
+      "at": "2026-09-08T10:43:33.424Z"
+    },
+    {
+      "side": "W",
+      "move": "c6",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-09-08T10:43:38.233Z"
+    },
+    {
+      "side": "B",
+      "move": "e3",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-09-08T10:43:51.963Z"
+    },
+    {
+      "side": "W",
+      "move": "e6",
+      "flips": [
+        "d6"
+      ],
+      "at": "2026-09-08T10:43:58.461Z"
+    },
+    {
+      "side": "B",
+      "move": "e7",
+      "flips": [
+        "e6"
+      ],
+      "at": "2026-09-08T10:44:06.397Z"
+    },
+    {
+      "side": "W",
+      "move": "d3",
+      "flips": [
+        "d4"
+      ],
+      "at": "2026-09-08T10:44:16.381Z"
+    },
+    {
+      "side": "B",
+      "move": "c5",
+      "flips": [
+        "d6",
+        "d5",
+        "c4",
+        "d4"
+      ],
+      "at": "2026-09-08T10:44:24.507Z"
+    },
+    {
+      "side": "W",
+      "move": "f5",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-09-08T10:44:39.163Z"
+    },
+    {
+      "side": "B",
+      "move": "f3",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-09-08T10:44:59.044Z",
+      "ply": 11,
+      "confidence": {
+        "win": 49,
+        "draw": 4,
+        "loss": 47
+      }
+    },
+    {
+      "side": "W",
+      "move": "b5",
+      "flips": [
+        "c5",
+        "d5",
+        "e5",
+        "c4"
+      ],
+      "at": "2026-09-08T10:45:12.335Z",
+      "ply": 12,
+      "confidence": {
+        "win": 53,
+        "draw": 5,
+        "loss": 42
+      }
+    },
+    {
+      "side": "B",
+      "move": "f4",
+      "flips": [
+        "e5"
+      ],
+      "at": "2026-09-08T10:45:26.737Z",
+      "ply": 13,
+      "confidence": {
+        "win": 48,
+        "draw": 4,
+        "loss": 48
+      }
+    },
+    {
+      "side": "W",
+      "move": "b3",
+      "flips": [
+        "c3"
+      ],
+      "at": "2026-09-08T10:45:37.044Z",
+      "ply": 14,
+      "confidence": {
+        "win": 50,
+        "draw": 5,
+        "loss": 45
+      }
+    },
+    {
+      "side": "B",
+      "move": "g4",
+      "flips": [
+        "f5"
+      ],
+      "at": "2026-09-08T10:46:04.227Z",
+      "ply": 15,
+      "confidence": {
+        "win": 50,
+        "draw": 4,
+        "loss": 46
+      }
+    },
+    {
+      "side": "W",
+      "move": "d7",
+      "flips": [
+        "d6"
+      ],
+      "at": "2026-09-08T10:46:15.461Z",
+      "ply": 16,
+      "confidence": {
+        "win": 49,
+        "draw": 5,
+        "loss": 46
+      }
+    },
+    {
+      "side": "B",
+      "move": "d8",
+      "flips": [
+        "d7",
+        "d6",
+        "d5"
+      ],
+      "at": "2026-09-08T10:46:35.551Z",
+      "ply": 17,
+      "confidence": {
+        "win": 52,
+        "draw": 4,
+        "loss": 44
+      }
+    },
+    {
+      "side": "W",
+      "move": "f8",
+      "flips": [
+        "e7",
+        "d6"
+      ],
+      "at": "2026-09-08T10:46:56.481Z",
+      "ply": 18,
+      "confidence": {
+        "win": 48,
+        "draw": 5,
+        "loss": 47
+      }
+    },
+    {
+      "side": "B",
+      "move": "a4",
+      "flips": [
+        "b5",
+        "c6"
+      ],
+      "at": "2026-09-08T10:47:18.800Z",
+      "ply": 19,
+      "confidence": {
+        "win": 51,
+        "draw": 4,
+        "loss": 45
+      }
+    },
+    {
+      "side": "W",
+      "move": "a6",
+      "flips": [
+        "b5"
+      ],
+      "at": "2026-09-08T10:47:34.077Z",
+      "ply": 20,
+      "confidence": {
+        "win": 50,
+        "draw": 5,
+        "loss": 45
+      }
+    },
+    {
+      "side": "B",
+      "move": "a3",
+      "flips": [
+        "b3",
+        "c3",
+        "d3"
+      ],
+      "at": "2026-09-08T10:47:50.960Z",
+      "ply": 21,
+      "confidence": {
+        "win": 56,
+        "draw": 4,
+        "loss": 40
+      }
+    },
+    {
+      "side": "W",
+      "move": "b6",
+      "flips": [
+        "c6"
+      ],
+      "at": "2026-09-08T10:48:08.562Z",
+      "ply": 22,
+      "confidence": {
+        "win": 52,
+        "draw": 5,
+        "loss": 43
+      }
+    },
+    {
+      "side": "B",
+      "move": "f7",
+      "flips": [
+        "e7"
+      ],
+      "at": "2026-09-08T10:48:32.696Z",
+      "ply": 23,
+      "confidence": {
+        "win": 55,
+        "draw": 4,
+        "loss": 41
+      }
+    },
+    {
+      "side": "W",
+      "move": "f6",
+      "flips": [
+        "f7",
+        "e6"
+      ],
+      "at": "2026-09-08T10:48:38.905Z",
+      "ply": 24,
+      "confidence": {
+        "win": 54,
+        "draw": 5,
+        "loss": 41
+      }
+    },
+    {
+      "side": "B",
+      "move": "b4",
+      "flips": [
+        "c5",
+        "d6",
+        "c4"
+      ],
+      "at": "2026-09-08T10:49:05.817Z",
+      "ply": 25,
+      "confidence": {
+        "win": 56,
+        "draw": 4,
+        "loss": 40
+      }
+    },
+    {
+      "side": "W",
+      "move": "c7",
+      "flips": [
+        "d7",
+        "e7"
+      ],
+      "at": "2026-09-08T10:49:24.198Z",
+      "ply": 26,
+      "confidence": {
+        "win": 56,
+        "draw": 5,
+        "loss": 39
+      }
+    },
+    {
+      "side": "B",
+      "move": "c8",
+      "flips": [
+        "c7",
+        "c6",
+        "d7",
+        "e6"
+      ],
+      "at": "2026-09-08T10:49:42.933Z",
+      "ply": 27,
+      "confidence": {
+        "win": 58,
+        "draw": 4,
+        "loss": 38
+      }
+    },
+    {
+      "side": "W",
+      "move": "e8",
+      "flips": [
+        "d7",
+        "c6"
+      ],
+      "at": "2026-09-08T10:50:01.483Z",
+      "ply": 28,
+      "confidence": {
+        "win": 46,
+        "draw": 5,
+        "loss": 49
+      }
+    },
+    {
+      "side": "B",
+      "move": "g6",
+      "flips": [
+        "f6"
+      ],
+      "at": "2026-09-08T10:50:29.062Z",
+      "ply": 29,
+      "confidence": {
+        "win": 56,
+        "draw": 4,
+        "loss": 40
+      }
+    },
+    {
+      "side": "W",
+      "move": "b8",
+      "flips": [
+        "c8",
+        "d8"
+      ],
+      "at": "2026-09-08T10:50:45.247Z",
+      "ply": 30,
+      "confidence": {
+        "win": 62,
+        "draw": 5,
+        "loss": 33
+      }
+    },
+    {
+      "side": "B",
+      "move": "g7",
+      "flips": [
+        "f7",
+        "e7",
+        "d7"
+      ],
+      "at": "2026-09-08T10:51:10.179Z",
+      "ply": 31,
+      "confidence": {
+        "win": 55,
+        "draw": 4,
+        "loss": 41
+      }
+    },
+    {
+      "side": "W",
+      "move": "h5",
+      "flips": [
+        "g6",
+        "f7"
+      ],
+      "at": "2026-09-08T10:51:32.224Z",
+      "ply": 32,
+      "confidence": {
+        "win": 60,
+        "draw": 5,
+        "loss": 35
+      }
+    },
+    {
+      "side": "B",
+      "move": "h7",
+      "flips": [
+        "g6"
+      ],
+      "at": "2026-09-08T10:52:00.644Z",
+      "ply": 33,
+      "confidence": {
+        "win": 60,
+        "draw": 3,
+        "loss": 37
+      }
+    },
+    {
+      "side": "W",
+      "move": "g5",
+      "flips": [
+        "f6",
+        "e7",
+        "f5",
+        "e5",
+        "d5",
+        "c5"
+      ],
+      "at": "2026-09-08T10:52:31.858Z",
+      "ply": 34,
+      "confidence": {
+        "win": 70,
+        "draw": 4,
+        "loss": 26
+      }
+    },
+    {
+      "side": "B",
+      "move": "a5",
+      "flips": [
+        "b6"
+      ],
+      "at": "2026-09-08T10:52:48.862Z",
+      "ply": 35,
+      "confidence": {
+        "win": 49,
+        "draw": 4,
+        "loss": 47
+      }
+    },
+    {
+      "side": "W",
+      "move": "h8",
+      "flips": [
+        "g7"
+      ],
+      "at": "2026-09-08T10:52:54.577Z",
+      "ply": 36,
+      "confidence": {
+        "win": 76,
+        "draw": 4,
+        "loss": 20
+      }
+    },
+    {
+      "side": "B",
+      "move": "h6",
+      "flips": [
+        "g5"
+      ],
+      "at": "2026-09-08T10:53:16.735Z",
+      "ply": 37,
+      "confidence": {
+        "win": 40,
+        "draw": 4,
+        "loss": 56
+      }
+    },
+    {
+      "side": "W",
+      "move": "h3",
+      "flips": [
+        "g4"
+      ],
+      "at": "2026-09-08T10:53:40.960Z",
+      "ply": 38,
+      "confidence": {
+        "win": 72,
+        "draw": 4,
+        "loss": 24
+      }
+    },
+    {
+      "side": "B",
+      "move": "h4",
+      "flips": [
+        "h5",
+        "g4"
+      ],
+      "at": "2026-09-08T10:53:49.909Z",
+      "ply": 39,
+      "confidence": {
+        "win": 45,
+        "draw": 4,
+        "loss": 51
+      }
+    },
+    {
+      "side": "W",
+      "move": "g3",
+      "flips": [
+        "f4",
+        "g4",
+        "g5",
+        "g6"
+      ],
+      "at": "2026-09-08T10:54:09.488Z",
+      "ply": 40,
+      "confidence": {
+        "win": 74,
+        "draw": 4,
+        "loss": 22
+      }
+    },
+    {
+      "side": "B",
+      "move": "g8",
+      "flips": [
+        "f7"
+      ],
+      "at": "2026-09-08T10:54:33.195Z",
+      "ply": 41,
+      "confidence": {
+        "win": 47,
+        "draw": 4,
+        "loss": 49
+      }
+    },
+    {
+      "side": "W",
+      "move": "c2",
+      "flips": [
+        "c3",
+        "c4",
+        "d3",
+        "e4"
+      ],
+      "at": "2026-09-08T10:55:00.850Z",
+      "ply": 42,
+      "confidence": {
+        "win": 58,
+        "draw": 5,
+        "loss": 37
+      }
+    },
+    {
+      "side": "B",
+      "move": "a8",
+      "flips": [
+        "b8",
+        "c8",
+        "d8",
+        "e8",
+        "f8"
+      ],
+      "at": "2026-09-08T10:55:09.016Z",
+      "ply": 43,
+      "confidence": {
+        "win": 76,
+        "draw": 3,
+        "loss": 21
+      }
+    },
+    {
+      "side": "W",
+      "move": "d2",
+      "flips": [
+        "e3"
+      ],
+      "at": "2026-09-08T10:55:37.642Z",
+      "ply": 44,
+      "confidence": {
+        "win": 55,
+        "draw": 5,
+        "loss": 40
+      }
+    },
+    {
+      "side": "B",
+      "move": "a7",
+      "flips": [
+        "a6"
+      ],
+      "at": "2026-09-08T10:55:45.347Z",
+      "ply": 45,
+      "confidence": {
+        "win": 82,
+        "draw": 2,
+        "loss": 16
+      }
+    },
+    {
+      "side": "W",
+      "move": "b7",
+      "flips": [
+        "c7",
+        "d7",
+        "b6"
+      ],
+      "at": "2026-09-08T10:56:08.278Z",
+      "ply": 46,
+      "confidence": {
+        "win": 57,
+        "draw": 6,
+        "loss": 37
+      }
+    },
+    {
+      "side": "B",
+      "move": "b1",
+      "flips": [
+        "c2",
+        "d3",
+        "e4",
+        "f5",
+        "g6"
+      ],
+      "at": "2026-09-08T10:56:34.204Z",
+      "ply": 47,
+      "confidence": {
+        "win": 80,
+        "draw": 2,
+        "loss": 18
+      }
+    },
+    {
+      "side": "W",
+      "move": "c1",
+      "flips": [
+        "c2"
+      ],
+      "at": "2026-09-08T10:56:59.971Z",
+      "ply": 48,
+      "confidence": {
+        "win": 52,
+        "draw": 6,
+        "loss": 42
+      }
+    },
+    {
+      "side": "B",
+      "move": "d1",
+      "flips": [
+        "c2",
+        "d2",
+        "c1"
+      ],
+      "at": "2026-09-08T10:57:11.224Z",
+      "ply": 49,
+      "confidence": {
+        "win": 85,
+        "draw": 2,
+        "loss": 13
+      }
+    },
+    {
+      "side": "W",
+      "move": "e1",
+      "flips": [
+        "d2"
+      ],
+      "at": "2026-09-08T10:58:01.457Z",
+      "ply": 50,
+      "confidence": {
+        "win": 44,
+        "draw": 7,
+        "loss": 49
+      }
+    },
+    {
+      "side": "B",
+      "move": "f1",
+      "flips": [
+        "e1"
+      ],
+      "at": "2026-09-08T10:58:15.174Z",
+      "ply": 51,
+      "confidence": {
+        "win": 90,
+        "draw": 1,
+        "loss": 9
+      }
+    },
+    {
+      "side": "W",
+      "move": "e2",
+      "flips": [
+        "d3",
+        "f3"
+      ],
+      "at": "2026-09-08T10:58:57.440Z",
+      "ply": 52,
+      "confidence": {
+        "win": 38,
+        "draw": 8,
+        "loss": 54
+      }
+    },
+    {
+      "side": "B",
+      "move": "f2",
+      "flips": [
+        "e3",
+        "f3",
+        "f4",
+        "g3",
+        "e2",
+        "d2"
+      ],
+      "at": "2026-09-08T10:59:12.761Z",
+      "ply": 53,
+      "confidence": {
+        "win": 96,
+        "draw": 1,
+        "loss": 3
+      }
+    },
+    {
+      "side": "W",
+      "move": "b2",
+      "flips": [
+        "b3",
+        "b4"
+      ],
+      "at": "2026-09-08T11:00:31.613Z",
+      "ply": 54,
+      "confidence": {
+        "win": 16,
+        "draw": 6,
+        "loss": 78
+      }
+    },
+    {
+      "side": "B",
+      "move": "a1",
+      "flips": [
+        "b2",
+        "c3"
+      ],
+      "at": "2026-09-08T11:00:38.561Z",
+      "ply": 55,
+      "confidence": {
+        "win": 99,
+        "draw": 0.5,
+        "loss": 0.5
+      }
+    },
+    {
+      "side": "W",
+      "move": "g1",
+      "flips": [
+        "f2",
+        "e3",
+        "d4"
+      ],
+      "at": "2026-09-08T11:01:55.713Z",
+      "ply": 56,
+      "confidence": {
+        "win": 4,
+        "draw": 6,
+        "loss": 90
+      }
+    },
+    {
+      "side": "B",
+      "move": "a2",
+      "flips": [
+        "b3",
+        "c4",
+        "d5"
+      ],
+      "at": "2026-09-08T11:02:03.721Z",
+      "ply": 57,
+      "confidence": {
+        "win": 99.8,
+        "draw": 0.1,
+        "loss": 0.1
+      }
+    },
+    {
+      "side": "W",
+      "move": "h2",
+      "flips": [
+        "g3",
+        "f4"
+      ],
+      "at": "2026-09-08T11:02:19.651Z",
+      "ply": 58,
+      "confidence": {
+        "win": 0,
+        "draw": 0,
+        "loss": 100
+      }
+    },
+    {
+      "side": "B",
+      "move": "h1",
+      "flips": [
+        "h2",
+        "h3",
+        "g1"
+      ],
+      "at": "2026-09-08T11:02:30.255Z",
+      "ply": 59,
+      "confidence": {
+        "win": 99.9,
+        "draw": 0.05,
+        "loss": 0.05
+      }
+    },
+    {
+      "side": "W",
+      "move": "g2",
+      "flips": [
+        "f3",
+        "e4",
+        "d5"
+      ],
+      "at": "2026-09-08T11:02:39.052Z",
+      "ply": 60,
+      "confidence": {
+        "win": 0,
+        "draw": 0,
+        "loss": 100
+      }
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-08T11:02:39.052Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-08T11:02:39.052Z"
+    }
+  ],
+  "players": {
+    "B": {
+      "name": "Black",
+      "model": "",
+      "say": ""
+    },
+    "W": {
+      "name": "White",
+      "model": "",
+      "say": ""
+    }
+  },
+  "summary": {
+    "game": "experiments/win-confidence-v1/c005",
+    "protocol": "win-confidence-v1",
+    "ranked": false,
+    "batch": "opus-astra-sol-high-six",
+    "card": "x-gpt-5-6-sol-high-vs-gpt-6-astra-high",
+    "winner": "B",
+    "score": {
+      "B": 39,
+      "W": 25
+    },
+    "seats": {
+      "B": "gpt-5.6-sol · high",
+      "W": "gpt-6-astra · high"
+    },
+    "nativeSeats": {
+      "B": {
+        "agentType": "codex",
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "serviceTier": "standard"
+      },
+      "W": {
+        "agentType": "codex",
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "serviceTier": "standard"
+      }
+    },
+    "moves": 62,
+    "blind": true,
+    "referee": "29b2dbb",
+    "playerPrompt": "prompts/player-confidence.md",
+    "sessions": {
+      "B": {
+        "taskId": "1778c5f6",
+        "sessionId": "01a0809d-0811-7b13-9aa0-c5d2ff84b28b",
+        "accountSelection": "auto",
+        "initialAccount": "default",
+        "actualAccount": "default",
+        "actualAccountProfileId": null
+      },
+      "W": {
+        "taskId": "05186dd8",
+        "sessionId": "01a0809d-602f-7c92-b251-97b80274d9e6",
+        "accountSelection": "auto",
+        "initialAccount": "default",
+        "actualAccount": "default",
+        "actualAccountProfileId": null
+      }
+    },
+    "tokens": {
+      "B": 16196,
+      "W": 19272
+    },
+    "cost": {
+      "B": null,
+      "W": null
+    },
+    "verification": {
+      "replayed": true,
+      "ordinaryReplay": true,
+      "playedMoves": 60,
+      "passes": 2,
+      "historyRecords": 62,
+      "boardWinnerAndMoveHistoryMatched": true,
+      "forecastCoverageValidated": true,
+      "playerIOAudit": {
+        "B": {
+          "toolResults": 67,
+          "refereeResults": 61,
+          "forecastValueKeysExposed": 0,
+          "opponentModelNamesExposed": 0,
+          "acceptedMovesMatchedSubmissions": true,
+          "executedCommandsRefereeOnly": true
+        },
+        "W": {
+          "toolResults": 88,
+          "refereeResults": 61,
+          "forecastValueKeysExposed": 0,
+          "opponentModelNamesExposed": 0,
+          "acceptedMovesMatchedSubmissions": true,
+          "executedCommandsRefereeOnly": true
+        }
+      },
+      "officialStandingsUnchanged": true,
+      "discord": {
+        "status": "paused-by-user",
+        "started": false,
+        "finalDeliveryRequired": false
+      },
+      "completionOnlySupervisorExited": true
+    },
+    "usageProvenance": {
+      "B": {
+        "method": "Unique cumulative token_count snapshots; sum of last_token_usage verified equal to final session total",
+        "tokenEvents": 68,
+        "uniqueSnapshots": 68,
+        "duplicateSnapshotsExcluded": 0
+      },
+      "W": {
+        "method": "Unique cumulative token_count snapshots; sum of last_token_usage verified equal to final session total",
+        "tokenEvents": 89,
+        "uniqueSnapshots": 89,
+        "duplicateSnapshotsExcluded": 0
+      }
+    },
+    "analysis": {
+      "forecastCoverage": {
+        "expected": 50,
+        "recorded": 50,
+        "B": 25,
+        "W": 25,
+        "unmeasuredOpeningMoves": 10,
+        "unmeasuredPasses": 2
+      },
+      "scoring": {
+        "name": "multiclass Brier loss",
+        "formula": "sum((p_k - y_k)^2) / 2; k=win,draw,loss; p=percentage/100",
+        "range": [
+          0,
+          1
+        ],
+        "lowerIsBetter": true,
+        "independentGames": 1,
+        "caveat": "Descriptive single-game loss, not calibration accuracy or statistical model superiority. All forecasts share one final outcome."
+      },
+      "players": {
+        "B": {
+          "samples": 25,
+          "meanBrierLoss": 0.14574715,
+          "first": {
+            "win": 49,
+            "draw": 4,
+            "loss": 47
+          },
+          "last": {
+            "win": 99.9,
+            "draw": 0.05,
+            "loss": 0.05
+          },
+          "phases": [
+            {
+              "playedMoves": [
+                11,
+                20
+              ],
+              "samples": 5,
+              "meanWinPercent": 50,
+              "meanBrierLoss": 0.2318
+            },
+            {
+              "playedMoves": [
+                21,
+                40
+              ],
+              "samples": 10,
+              "meanWinPercent": 53,
+              "meanBrierLoss": 0.20761
+            },
+            {
+              "playedMoves": [
+                41,
+                60
+              ],
+              "samples": 10,
+              "meanWinPercent": 85.47,
+              "meanBrierLoss": 0.04085788
+            }
+          ],
+          "trajectory": [
+            {
+              "ply": 11,
+              "move": "f3",
+              "at": "2026-09-08T10:44:59.044Z",
+              "win": 49,
+              "draw": 4,
+              "loss": 47,
+              "brierLoss": 0.2413
+            },
+            {
+              "ply": 13,
+              "move": "f4",
+              "at": "2026-09-08T10:45:26.737Z",
+              "win": 48,
+              "draw": 4,
+              "loss": 48,
+              "brierLoss": 0.2512
+            },
+            {
+              "ply": 15,
+              "move": "g4",
+              "at": "2026-09-08T10:46:04.227Z",
+              "win": 50,
+              "draw": 4,
+              "loss": 46,
+              "brierLoss": 0.2316
+            },
+            {
+              "ply": 17,
+              "move": "d8",
+              "at": "2026-09-08T10:46:35.551Z",
+              "win": 52,
+              "draw": 4,
+              "loss": 44,
+              "brierLoss": 0.2128
+            },
+            {
+              "ply": 19,
+              "move": "a4",
+              "at": "2026-09-08T10:47:18.800Z",
+              "win": 51,
+              "draw": 4,
+              "loss": 45,
+              "brierLoss": 0.2221
+            },
+            {
+              "ply": 21,
+              "move": "a3",
+              "at": "2026-09-08T10:47:50.960Z",
+              "win": 56,
+              "draw": 4,
+              "loss": 40,
+              "brierLoss": 0.1776
+            },
+            {
+              "ply": 23,
+              "move": "f7",
+              "at": "2026-09-08T10:48:32.696Z",
+              "win": 55,
+              "draw": 4,
+              "loss": 41,
+              "brierLoss": 0.1861
+            },
+            {
+              "ply": 25,
+              "move": "b4",
+              "at": "2026-09-08T10:49:05.817Z",
+              "win": 56,
+              "draw": 4,
+              "loss": 40,
+              "brierLoss": 0.1776
+            },
+            {
+              "ply": 27,
+              "move": "c8",
+              "at": "2026-09-08T10:49:42.933Z",
+              "win": 58,
+              "draw": 4,
+              "loss": 38,
+              "brierLoss": 0.1612
+            },
+            {
+              "ply": 29,
+              "move": "g6",
+              "at": "2026-09-08T10:50:29.062Z",
+              "win": 56,
+              "draw": 4,
+              "loss": 40,
+              "brierLoss": 0.1776
+            },
+            {
+              "ply": 31,
+              "move": "g7",
+              "at": "2026-09-08T10:51:10.179Z",
+              "win": 55,
+              "draw": 4,
+              "loss": 41,
+              "brierLoss": 0.1861
+            },
+            {
+              "ply": 33,
+              "move": "h7",
+              "at": "2026-09-08T10:52:00.644Z",
+              "win": 60,
+              "draw": 3,
+              "loss": 37,
+              "brierLoss": 0.1489
+            },
+            {
+              "ply": 35,
+              "move": "a5",
+              "at": "2026-09-08T10:52:48.862Z",
+              "win": 49,
+              "draw": 4,
+              "loss": 47,
+              "brierLoss": 0.2413
+            },
+            {
+              "ply": 37,
+              "move": "h6",
+              "at": "2026-09-08T10:53:16.735Z",
+              "win": 40,
+              "draw": 4,
+              "loss": 56,
+              "brierLoss": 0.3376
+            },
+            {
+              "ply": 39,
+              "move": "h4",
+              "at": "2026-09-08T10:53:49.909Z",
+              "win": 45,
+              "draw": 4,
+              "loss": 51,
+              "brierLoss": 0.2821
+            },
+            {
+              "ply": 41,
+              "move": "g8",
+              "at": "2026-09-08T10:54:33.195Z",
+              "win": 47,
+              "draw": 4,
+              "loss": 49,
+              "brierLoss": 0.2613
+            },
+            {
+              "ply": 43,
+              "move": "a8",
+              "at": "2026-09-08T10:55:09.016Z",
+              "win": 76,
+              "draw": 3,
+              "loss": 21,
+              "brierLoss": 0.0513
+            },
+            {
+              "ply": 45,
+              "move": "a7",
+              "at": "2026-09-08T10:55:45.347Z",
+              "win": 82,
+              "draw": 2,
+              "loss": 16,
+              "brierLoss": 0.0292
+            },
+            {
+              "ply": 47,
+              "move": "b1",
+              "at": "2026-09-08T10:56:34.204Z",
+              "win": 80,
+              "draw": 2,
+              "loss": 18,
+              "brierLoss": 0.0364
+            },
+            {
+              "ply": 49,
+              "move": "d1",
+              "at": "2026-09-08T10:57:11.224Z",
+              "win": 85,
+              "draw": 2,
+              "loss": 13,
+              "brierLoss": 0.0199
+            },
+            {
+              "ply": 51,
+              "move": "f1",
+              "at": "2026-09-08T10:58:15.174Z",
+              "win": 90,
+              "draw": 1,
+              "loss": 9,
+              "brierLoss": 0.0091
+            },
+            {
+              "ply": 53,
+              "move": "f2",
+              "at": "2026-09-08T10:59:12.761Z",
+              "win": 96,
+              "draw": 1,
+              "loss": 3,
+              "brierLoss": 0.0013
+            },
+            {
+              "ply": 55,
+              "move": "a1",
+              "at": "2026-09-08T11:00:38.561Z",
+              "win": 99,
+              "draw": 0.5,
+              "loss": 0.5,
+              "brierLoss": 0.000075
+            },
+            {
+              "ply": 57,
+              "move": "a2",
+              "at": "2026-09-08T11:02:03.721Z",
+              "win": 99.8,
+              "draw": 0.1,
+              "loss": 0.1,
+              "brierLoss": 0.000003
+            },
+            {
+              "ply": 59,
+              "move": "h1",
+              "at": "2026-09-08T11:02:30.255Z",
+              "win": 99.9,
+              "draw": 0.05,
+              "loss": 0.05,
+              "brierLoss": 7.5e-7
+            }
+          ]
+        },
+        "W": {
+          "samples": 25,
+          "meanBrierLoss": 0.2993,
+          "first": {
+            "win": 53,
+            "draw": 5,
+            "loss": 42
+          },
+          "last": {
+            "win": 0,
+            "draw": 0,
+            "loss": 100
+          },
+          "phases": [
+            {
+              "playedMoves": [
+                11,
+                20
+              ],
+              "samples": 5,
+              "meanWinPercent": 50,
+              "meanBrierLoss": 0.27778
+            },
+            {
+              "playedMoves": [
+                21,
+                40
+              ],
+              "samples": 10,
+              "meanWinPercent": 62.2,
+              "meanBrierLoss": 0.42684
+            },
+            {
+              "playedMoves": [
+                41,
+                60
+              ],
+              "samples": 10,
+              "meanWinPercent": 32.4,
+              "meanBrierLoss": 0.18252
+            }
+          ],
+          "trajectory": [
+            {
+              "ply": 12,
+              "move": "b5",
+              "at": "2026-09-08T10:45:12.335Z",
+              "win": 53,
+              "draw": 5,
+              "loss": 42,
+              "brierLoss": 0.3099
+            },
+            {
+              "ply": 14,
+              "move": "b3",
+              "at": "2026-09-08T10:45:37.044Z",
+              "win": 50,
+              "draw": 5,
+              "loss": 45,
+              "brierLoss": 0.2775
+            },
+            {
+              "ply": 16,
+              "move": "d7",
+              "at": "2026-09-08T10:46:15.461Z",
+              "win": 49,
+              "draw": 5,
+              "loss": 46,
+              "brierLoss": 0.2671
+            },
+            {
+              "ply": 18,
+              "move": "f8",
+              "at": "2026-09-08T10:46:56.481Z",
+              "win": 48,
+              "draw": 5,
+              "loss": 47,
+              "brierLoss": 0.2569
+            },
+            {
+              "ply": 20,
+              "move": "a6",
+              "at": "2026-09-08T10:47:34.077Z",
+              "win": 50,
+              "draw": 5,
+              "loss": 45,
+              "brierLoss": 0.2775
+            },
+            {
+              "ply": 22,
+              "move": "b6",
+              "at": "2026-09-08T10:48:08.562Z",
+              "win": 52,
+              "draw": 5,
+              "loss": 43,
+              "brierLoss": 0.2989
+            },
+            {
+              "ply": 24,
+              "move": "f6",
+              "at": "2026-09-08T10:48:38.905Z",
+              "win": 54,
+              "draw": 5,
+              "loss": 41,
+              "brierLoss": 0.3211
+            },
+            {
+              "ply": 26,
+              "move": "c7",
+              "at": "2026-09-08T10:49:24.198Z",
+              "win": 56,
+              "draw": 5,
+              "loss": 39,
+              "brierLoss": 0.3441
+            },
+            {
+              "ply": 28,
+              "move": "e8",
+              "at": "2026-09-08T10:50:01.483Z",
+              "win": 46,
+              "draw": 5,
+              "loss": 49,
+              "brierLoss": 0.2371
+            },
+            {
+              "ply": 30,
+              "move": "b8",
+              "at": "2026-09-08T10:50:45.247Z",
+              "win": 62,
+              "draw": 5,
+              "loss": 33,
+              "brierLoss": 0.4179
+            },
+            {
+              "ply": 32,
+              "move": "h5",
+              "at": "2026-09-08T10:51:32.224Z",
+              "win": 60,
+              "draw": 5,
+              "loss": 35,
+              "brierLoss": 0.3925
+            },
+            {
+              "ply": 34,
+              "move": "g5",
+              "at": "2026-09-08T10:52:31.858Z",
+              "win": 70,
+              "draw": 4,
+              "loss": 26,
+              "brierLoss": 0.5196
+            },
+            {
+              "ply": 36,
+              "move": "h8",
+              "at": "2026-09-08T10:52:54.577Z",
+              "win": 76,
+              "draw": 4,
+              "loss": 20,
+              "brierLoss": 0.6096
+            },
+            {
+              "ply": 38,
+              "move": "h3",
+              "at": "2026-09-08T10:53:40.960Z",
+              "win": 72,
+              "draw": 4,
+              "loss": 24,
+              "brierLoss": 0.5488
+            },
+            {
+              "ply": 40,
+              "move": "g3",
+              "at": "2026-09-08T10:54:09.488Z",
+              "win": 74,
+              "draw": 4,
+              "loss": 22,
+              "brierLoss": 0.5788
+            },
+            {
+              "ply": 42,
+              "move": "c2",
+              "at": "2026-09-08T10:55:00.850Z",
+              "win": 58,
+              "draw": 5,
+              "loss": 37,
+              "brierLoss": 0.3679
+            },
+            {
+              "ply": 44,
+              "move": "d2",
+              "at": "2026-09-08T10:55:37.642Z",
+              "win": 55,
+              "draw": 5,
+              "loss": 40,
+              "brierLoss": 0.3325
+            },
+            {
+              "ply": 46,
+              "move": "b7",
+              "at": "2026-09-08T10:56:08.278Z",
+              "win": 57,
+              "draw": 6,
+              "loss": 37,
+              "brierLoss": 0.3627
+            },
+            {
+              "ply": 48,
+              "move": "c1",
+              "at": "2026-09-08T10:56:59.971Z",
+              "win": 52,
+              "draw": 6,
+              "loss": 42,
+              "brierLoss": 0.3052
+            },
+            {
+              "ply": 50,
+              "move": "e1",
+              "at": "2026-09-08T10:58:01.457Z",
+              "win": 44,
+              "draw": 7,
+              "loss": 49,
+              "brierLoss": 0.2293
+            },
+            {
+              "ply": 52,
+              "move": "e2",
+              "at": "2026-09-08T10:58:57.440Z",
+              "win": 38,
+              "draw": 8,
+              "loss": 54,
+              "brierLoss": 0.1812
+            },
+            {
+              "ply": 54,
+              "move": "b2",
+              "at": "2026-09-08T11:00:31.613Z",
+              "win": 16,
+              "draw": 6,
+              "loss": 78,
+              "brierLoss": 0.0388
+            },
+            {
+              "ply": 56,
+              "move": "g1",
+              "at": "2026-09-08T11:01:55.713Z",
+              "win": 4,
+              "draw": 6,
+              "loss": 90,
+              "brierLoss": 0.0076
+            },
+            {
+              "ply": 58,
+              "move": "h2",
+              "at": "2026-09-08T11:02:19.651Z",
+              "win": 0,
+              "draw": 0,
+              "loss": 100,
+              "brierLoss": 0
+            },
+            {
+              "ply": 60,
+              "move": "g2",
+              "at": "2026-09-08T11:02:39.052Z",
+              "win": 0,
+              "draw": 0,
+              "loss": 100,
+              "brierLoss": 0
+            }
+          ]
+        }
+      }
+    },
+    "pairComparison": {
+      "games": [
+        "c004",
+        "c005"
+      ],
+      "protocol": "win-confidence-v1",
+      "ranked": false,
+      "wins": {
+        "gpt-6-astra · high": 1,
+        "gpt-5.6-sol · high": 1
+      },
+      "draws": 0,
+      "colorResults": "Black won both games; each player won as Black and lost as White.",
+      "aggregateStones": {
+        "gpt-6-astra · high": 76,
+        "gpt-5.6-sol · high": 52
+      },
+      "meanBrierLoss": {
+        "gpt-6-astra · high": 0.200784215,
+        "gpt-5.6-sol · high": 0.17499403
+      },
+      "averaging": "Equal weight per game, not per forecast; c004 has 28 Astra and 22 Sol forecasts due to passes, while c005 has 25 each.",
+      "caveat": "Only two games with correlated within-game forecasts. Split wins and aggregate stones do not establish general playing superiority or calibrated probabilities. Brier differences are descriptive, not a definitive metacognition ranking. c001 is excluded."
+    },
+    "notes": [
+      "Unranked c005: Sol high Black defeated Astra high White 39-25. This reverses c004 colors.",
+      "Fresh ordinary referee replay reproduced 60 played moves and two automatic passes, side/move/flips history, board, turn and winner. Every original accepted forecast and timestamp is preserved.",
+      "All 50 required forecasts are valid, 25 per side. No forecasts on the first ten played moves or passes; exact ply indices and side-bound submitted values verified.",
+      "Actual Auto sessions used default accounts. Both unchanged player instructions and all executed tool commands and referee I/O were audited; no forecasts or opponent model identities were exposed.",
+      "Codex cumulative usage was deduplicated and unique increments matched both final session totals. No repeated snapshots were present. Unavailable subscription cost remains null.",
+      "Sol win confidence started at 49 percent and finished at 99.9; Astra started at 53 and finished at 0. Full accepted trajectories and phase summaries are retained.",
+      "Normalized Brier loss: Sol 0.14574715; Astra 0.2993. These describe one realized outcome, not statistical calibration or general metacognitive superiority.",
+      "c004/c005 split 1-1 with both wins as Black. Aggregate stones favor Astra 76-52. Equal-game descriptive Brier means: Astra 0.200784215 and Sol 0.17499403. Two games are insufficient for a definitive ranking. c001 remains separate.",
+      "Discord streaming was never started and remains paused by user request; final delivery is not required. Completion-only parent-shell supervisor exited successfully.",
+      "Official standings and ranked series remain unchanged. Ultra is prohibited; discarded g142 remains excluded."
+    ]
+  }
+}
