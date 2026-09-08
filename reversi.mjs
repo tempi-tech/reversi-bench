@@ -206,6 +206,50 @@ const settleTurn = ({ cells, size, intended }) => {
 
 const nowIso = () => new Date().toISOString();
 
+const playedMovesOf = (match) => match.history.filter((entry) => entry.move !== "pass").length;
+
+const confidenceProtocolOf = ({ value, size }) => {
+  if (value === undefined) {
+    return null;
+  }
+  const startAfterMoves = Number(value);
+  if (typeof value !== "string" || !/^\d+$/.test(value)
+    || !Number.isInteger(startAfterMoves) || startAfterMoves >= size * size - 4) {
+    throw new Error("--confidence-after must be an integer from 0 to board capacity minus 5");
+  }
+  return {
+    id: "win-confidence-v1",
+    ranked: false,
+    startAfterMoves,
+    probabilityUnit: "percent",
+    perspective: "acting-player",
+    target: "eventual-result-against-current-opponent-after-selected-move",
+  };
+};
+
+const confidenceOf = ({ match, text, values }) => {
+  const supplied = Object.values(values).some((value) => value !== undefined);
+  const required = match.protocol?.id === "win-confidence-v1"
+    && playedMovesOf(match) >= match.protocol.startAfterMoves && text !== "pass";
+  if (!required) {
+    if (supplied) {
+      throw new Error("confidence is not accepted for this move; check measurement.required");
+    }
+    return null;
+  }
+  const valid = Object.values(values).every((value) => typeof value === "string"
+    && /^(?:\d+(?:\.\d+)?|\.\d+)$/.test(value)
+    && Number.isFinite(Number(value)) && Number(value) >= 0 && Number(value) <= 100);
+  if (!valid) {
+    throw new Error("confidence required: --win P --draw P --loss P; each must be 0 to 100 percent");
+  }
+  const probabilities = Object.fromEntries(Object.entries(values).map(([key, value]) => [key, Number(value)]));
+  if (Math.abs(Object.values(probabilities).reduce((sum, value) => sum + value, 0) - 100) > 1e-9) {
+    throw new Error("confidence percentages must sum to 100");
+  }
+  return probabilities;
+};
+
 const createMatch = ({
   id,
   size,
@@ -213,16 +257,19 @@ const createMatch = ({
   whiteName,
   blackModel,
   whiteModel,
+  confidenceAfter,
 }) => {
   if (!Number.isInteger(size) || size < 4 || size > 8 || size % 2 !== 0) {
     throw new Error("size must be an even integer from 4 to 8");
   }
   const cells = placeCenter({ cells: cellsOf(size), size });
   const settled = settleTurn({ cells, size, intended: black });
+  const protocol = confidenceProtocolOf({ value: confidenceAfter, size });
   return {
     id,
     size,
     title: `Reversi ${size}×${size}`,
+    ...(protocol ? { protocol } : {}),
     createdAt: nowIso(),
     updatedAt: nowIso(),
     cells,
@@ -330,12 +377,23 @@ const viewOf = (match) => {
     )),
     boardRows: boardRowsOf({ cells: match.cells, size: match.size }),
     lastMove: match.lastMove,
-    history: match.history,
+    history: match.history.map(({ confidence, ...entry }) => entry),
     players: match.players,
     seats: match.seats ?? null,
     updatedAt: match.updatedAt,
+    ...(match.protocol ? {
+      protocol: match.protocol,
+      measurement: {
+        playedMoves: playedMovesOf(match),
+        nextPly: playedMovesOf(match) + 1,
+        required: match.status === "playing" && legal.length > 0
+          && playedMovesOf(match) >= match.protocol.startAfterMoves,
+      },
+    } : {}),
   };
 };
+
+const spectatorViewOf = (match) => ({ ...viewOf(match), history: match.history });
 
 const briefViewOf = (match) => {
   const { history, boardRows, ...brief } = viewOf(match);
@@ -359,7 +417,7 @@ const printView = (view) => {
   process.stdout.write(`${lines.join("\n")}\n`);
 };
 
-const playMatch = ({ match, text }) => {
+const playMatch = ({ match, text, confidenceValues = { win: undefined, draw: undefined, loss: undefined } }) => {
   if (match.status !== "playing") {
     throw new Error("match is over");
   }
@@ -372,6 +430,7 @@ const playMatch = ({ match, text }) => {
     if (legal.length > 0) {
       throw new Error("pass is not allowed while a legal move exists");
     }
+    confidenceOf({ match, text: "pass", values: confidenceValues });
     const nextTurn = otherTurn(match.turn);
     const settled = settleTurn({ cells: match.cells, size: match.size, intended: nextTurn });
     const history = [
@@ -401,6 +460,7 @@ const playMatch = ({ match, text }) => {
   if (!chosen) {
     throw new Error(`illegal move: ${parsed.coord}`);
   }
+  const confidence = confidenceOf({ match, text: chosen.coord, values: confidenceValues });
   const flips = chosen.flips.map((coord) => parseCoord({ text: coord, size: match.size }));
   const cells = applyStone({
     cells: match.cells,
@@ -412,7 +472,13 @@ const playMatch = ({ match, text }) => {
   });
   const history = [
     ...match.history,
-    { side: match.turn, move: chosen.coord, flips: chosen.flips, at: nowIso() },
+    {
+      side: match.turn,
+      move: chosen.coord,
+      flips: chosen.flips,
+      at: nowIso(),
+      ...(confidence ? { ply: playedMovesOf(match) + 1, confidence } : {}),
+    },
   ];
   const nextIntended = otherTurn(match.turn);
   const settled = settleTurn({ cells, size: match.size, intended: nextIntended });
@@ -497,7 +563,7 @@ const startServer = ({ matchId, port, seatsFile, seatsKey }) => {
     }
   };
   const viewFor = (overlay) => {
-    const view = viewOf(readMatch(matchId));
+    const view = spectatorViewOf(readMatch(matchId));
     if (overlay?.seats) {
       return { ...view, seats: overlay.seats };
     }
@@ -631,8 +697,10 @@ const helpText = `reversi — local match referee
   node reversi.mjs new [--size 4] [--id current]
                        [--black Name] [--white Name]
                        [--black-model id] [--white-model id]
-  node reversi.mjs state [--id current] [--json]
+                       [--confidence-after 10] (experimental, unranked)
+  node reversi.mjs state [--id current] [--json] [--spectator]
   node reversi.mjs play <coord|pass> --as B|W [--id current] [--json]
+                       [--win P --draw P --loss P] (percentages, sum 100)
   node reversi.mjs wait --as B|W [--timeout 120] [--id current]
   node reversi.mjs thinking <B|W|clear> [--id current]
   node reversi.mjs say <B|W> <text...> [--id current]
@@ -665,6 +733,7 @@ try {
       whiteName: typeof flags.white === "string" ? flags.white : "White",
       blackModel: typeof flags["black-model"] === "string" ? flags["black-model"] : "",
       whiteModel: typeof flags["white-model"] === "string" ? flags["white-model"] : "",
+      confidenceAfter: flags["confidence-after"],
     });
     writeMatch(match);
     const view = viewOf(match);
@@ -677,7 +746,8 @@ try {
   }
 
   if (command === "state") {
-    const view = viewOf(readMatch(matchId));
+    const match = readMatch(matchId);
+    const view = flags.spectator ? spectatorViewOf(match) : viewOf(match);
     if (flags.json) {
       process.stdout.write(`${JSON.stringify({ ok: true, data: view })}\n`);
     } else {
@@ -699,7 +769,11 @@ try {
     if (match.turn !== side) {
       throw new Error(`not your turn (you=${side}, turn=${match.turn})`);
     }
-    const next = writeMatch(playMatch({ match, text }));
+    const next = writeMatch(playMatch({
+      match,
+      text,
+      confidenceValues: { win: flags.win, draw: flags.draw, loss: flags.loss },
+    }));
     if (flags.json) {
       process.stdout.write(`${JSON.stringify({ ok: true, data: briefViewOf(next) })}\n`);
     } else {

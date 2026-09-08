@@ -37,3 +37,5 @@ The stream opens one forum post and writes every move into it, each with a 480px
 - Moves made while the stream was down are posted together on the next update
 - Failed posts back off (20/40/60/80s), which keeps the stream inside the Wings per-minute run limit
 - A failed board image falls back to a text board, with the reason logged
+- The observer uses `state --json --spectator`. Experimental confidence matches are labeled UNRANKED in the opening post. Each measured move shows the acting player's self-reported win/draw/loss percentages, not an engine evaluation
+- Catch-up posts contain at most eight history entries, and the final post waits until every history entry has been delivered

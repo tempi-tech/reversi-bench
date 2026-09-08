@@ -50,7 +50,7 @@ def invoke(event):
 
 
 def state():
-    result = run(["node", f"{ARENA}/reversi.mjs", "state", "--json"], 30)
+    result = run(["node", f"{ARENA}/reversi.mjs", "state", "--json", "--spectator"], 30)
     return json.loads(result.stdout)["data"]
 
 
@@ -97,7 +97,12 @@ def save(state_dict):
 
 def line_of(index, entry):
     side = "●" if entry["side"] == "B" else "○"
-    return f"#{index} {side} {entry['move']}({len(entry.get('flips', []))} flipped)"
+    line = f"#{index} {side} {entry['move']}({len(entry.get('flips', []))} flipped)"
+    confidence = entry.get("confidence")
+    if confidence:
+        line += (f" | 自己申告（{side}視点）: 勝ち {confidence['win']:g}%"
+                 f" / 引分 {confidence['draw']:g}% / 負け {confidence['loss']:g}%")
+    return line
 
 
 def post_update(thread, snapshot, lines, tail):
@@ -109,6 +114,10 @@ def post_update(thread, snapshot, lines, tail):
 
 
 live = marks()
+protocol = state().get("protocol", {})
+experiment_note = ("\n**勝率申告実験 / UNRANKED** — 通常ランキング対象外。"
+                   f"最初の{protocol.get('startAfterMoves')}着手後から自己申告を記録。"
+                   "申告値はエンジン評価ではなく、対戦相手には非公開。") if protocol.get("id") == "win-confidence-v1" else ""
 if not live["thread"]:
     opening = invoke({
         "op": "forum",
@@ -118,7 +127,7 @@ if not live["thread"]:
             f"**{args.title}**\n"
             f"● Black: `{args.black}`\n"
             f"○ White: `{args.white}`\n"
-            "Both players are blind to who they face. One board screenshot per move follows." + LINK
+            "Both players are blind to who they face. One board screenshot per move follows." + experiment_note + LINK
         ),
     })
     if not opening:
@@ -136,16 +145,17 @@ while time.time() < deadline:
         continue
     history = snapshot["history"]
     if live["posted"] < len(history):
-        fresh = range(live["posted"] + 1, len(history) + 1)
+        next_posted = min(live["posted"] + 8, len(history))
+        fresh = range(live["posted"] + 1, next_posted + 1)
         lines = [line_of(index, history[index - 1]) for index in fresh]
         last = history[len(history) - 1]
         name = args.black if last["side"] == "B" else args.white
         counts = snapshot["counts"]
         tail = f"**{name}**  |  ●{counts['B']} - ○{counts['W']}"
         if post_update(live["thread"], snapshot, lines, tail):
-            live["posted"] = len(history)
+            live["posted"] = next_posted
             save(live)
-    if snapshot["status"] == "over" and not live["final"]:
+    if snapshot["status"] == "over" and live["posted"] >= len(history) and not live["final"]:
         counts = snapshot["counts"]
         winner = snapshot.get("winner")
         winner_name = args.black if winner == "B" else args.white if winner == "W" else "draw"

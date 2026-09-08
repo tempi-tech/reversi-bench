@@ -1,0 +1,34 @@
+{
+  "protocol": "win-confidence-v1",
+  "ranked": false,
+  "status": "planned",
+  "maxConcurrentGames": 1,
+  "stopAfter": "c001",
+  "baseline": "2c1310c",
+  "startAfterMoves": 10,
+  "accountSelection": "auto",
+  "playerPrompt": "prompts/player-confidence.md",
+  "games": [
+    {
+      "id": "experiments/win-confidence-v1/c001",
+      "ranked": false,
+      "status": "planned",
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-fable-5-1",
+          "effort": "xhigh",
+          "display": "claude-fable-5.1 · xhigh",
+          "baselineRank": 10
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "display": "gpt-5.6-sol · high",
+          "baselineRank": 11
+        }
+      }
+    }
+  ]
+}

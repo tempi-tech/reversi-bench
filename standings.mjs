@@ -14,7 +14,11 @@ const seatLabelOf = (seat) => (typeof seat.display === "string"
 const series = JSON.parse(fs.readFileSync(path.join(here, "series", "s1.json"), "utf8"));
 const matches = Object.fromEntries(series.games.map((game) => {
   const matchPath = path.join(here, "matches", ...game.id.split("/")) + ".json";
-  return [game.id, JSON.parse(fs.readFileSync(matchPath, "utf8"))];
+  const match = JSON.parse(fs.readFileSync(matchPath, "utf8"));
+  if (game.ranked === false || match.protocol?.ranked === false || match.summary?.ranked === false) {
+    throw new Error(`Experimental unranked match must not enter series/s1.json: ${game.id}`);
+  }
+  return [game.id, match];
 }));
 
 const decisionsOf = ({ game, side }) => {

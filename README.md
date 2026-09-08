@@ -57,6 +57,20 @@ Game records live in `matches/<id>.json`. [standings.json](standings.json) holds
 node standings.mjs
 ```
 
+## Experimental outcome-confidence matches
+
+These matches are **unranked** and use a separate protocol and record directory. They never enter the ordinary season standings.
+
+```bash
+node reversi.mjs new --size 8 --confidence-after 10 --id current --json
+node reversi.mjs play e3 --as B --win 70 --draw 10 --loss 20 --json
+node reversi.mjs state --spectator --json
+```
+
+The play command is an example for a legal move once `measurement.required` is true. The first ten played moves use the ordinary command; played move 11 onward requires three percentages summing to 100. Passes do not count. Forecasts describe the acting player's eventual win/draw/loss against the current opponent after the selected move, not optimal-move confidence or perfect-play outcomes.
+
+Players use [prompts/player-confidence.md](prompts/player-confidence.md) through side-bound referee wrappers. Accepted forecasts are saved with the move, but stripped from player-facing CLI output. Only the spectator state and Discord relay expose them. See [experiments/README.md](experiments/README.md) for recording and validation rules.
+
 Exhibition:
 
 | Game | Result |
