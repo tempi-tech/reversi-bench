@@ -1,9 +1,9 @@
 {
   "protocol": "win-confidence-v1",
   "ranked": false,
-  "status": "complete",
+  "status": "running",
   "maxConcurrentGames": 1,
-  "stopAfter": "c001",
+  "stopAfter": "c007",
   "baseline": "2c1310c",
   "startAfterMoves": 10,
   "accountSelection": "auto",
@@ -658,7 +658,168 @@
           }
         }
       }
+    },
+    {
+      "id": "experiments/win-confidence-v1/c002",
+      "ranked": false,
+      "status": "running",
+      "batch": "opus-astra-sol-high-six",
+      "baseline": "bafc8f8",
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "display": "gpt-5.6-sol · high",
+          "baselineRank": 11
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "high",
+          "display": "claude-opus-5 · high",
+          "baselineRank": 4
+        }
+      },
+      "ordinaryContext": [
+        "g074"
+      ],
+      "referee": "bafc8f8",
+      "sessions": {
+        "B": {
+          "taskId": "82f37693",
+          "sessionId": "01a07ff4-30c4-7b42-a424-a62dcb9d1327",
+          "accountSelection": "auto",
+          "initialAccount": "default"
+        },
+        "W": {
+          "taskId": "d48877d2",
+          "sessionId": "945eabf4-59a3-4384-b456-56501099613a",
+          "accountSelection": "auto",
+          "initialAccount": "default"
+        }
+      }
+    },
+    {
+      "id": "experiments/win-confidence-v1/c003",
+      "ranked": false,
+      "status": "planned",
+      "batch": "opus-astra-sol-high-six",
+      "baseline": "bafc8f8",
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "high",
+          "display": "claude-opus-5 · high",
+          "baselineRank": 4
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "display": "gpt-5.6-sol · high",
+          "baselineRank": 11
+        }
+      },
+      "reverseOf": "c002"
+    },
+    {
+      "id": "experiments/win-confidence-v1/c004",
+      "ranked": false,
+      "status": "planned",
+      "batch": "opus-astra-sol-high-six",
+      "baseline": "bafc8f8",
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "high",
+          "display": "gpt-6-astra · high",
+          "baselineRank": 9
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "display": "gpt-5.6-sol · high",
+          "baselineRank": 11
+        }
+      }
+    },
+    {
+      "id": "experiments/win-confidence-v1/c005",
+      "ranked": false,
+      "status": "planned",
+      "batch": "opus-astra-sol-high-six",
+      "baseline": "bafc8f8",
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "display": "gpt-5.6-sol · high",
+          "baselineRank": 11
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "high",
+          "display": "gpt-6-astra · high",
+          "baselineRank": 9
+        }
+      },
+      "reverseOf": "c004"
+    },
+    {
+      "id": "experiments/win-confidence-v1/c006",
+      "ranked": false,
+      "status": "planned",
+      "batch": "opus-astra-sol-high-six",
+      "baseline": "bafc8f8",
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "high",
+          "display": "gpt-6-astra · high",
+          "baselineRank": 9
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "high",
+          "display": "claude-opus-5 · high",
+          "baselineRank": 4
+        }
+      }
+    },
+    {
+      "id": "experiments/win-confidence-v1/c007",
+      "ranked": false,
+      "status": "planned",
+      "batch": "opus-astra-sol-high-six",
+      "baseline": "bafc8f8",
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "high",
+          "display": "claude-opus-5 · high",
+          "baselineRank": 4
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "high",
+          "display": "gpt-6-astra · high",
+          "baselineRank": 9
+        }
+      },
+      "reverseOf": "c006"
     }
   ],
-  "completedAt": "2026-09-08T04:05:19.413Z"
+  "activeGame": "c002",
+  "activeBatch": "opus-astra-sol-high-six",
+  "pilotCompletedAt": "2026-09-08T04:05:19.413Z"
 }

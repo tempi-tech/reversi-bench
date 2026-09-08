@@ -10,6 +10,22 @@ Protocol: `win-confidence-v1`. All matches using this protocol are **unranked**.
 - Completion summaries must also set `ranked: false` and reference the referee commit, player prompt, native model/effort and actual sessions collected from the arena's `run-metadata.json`.
 - `standings.mjs` rejects an experimental match if it is accidentally inserted into the ranked series. Do not rename or relabel old games, and do not backfill invented forecasts.
 - c001 is one approved game: Black Fable 5.1 xhigh (rank 10) versus White Sol high (rank 11), selected from standings at `2c1310c`. Previous ordinary encounters g164/g177 are context, not matched causal controls for the added measurement task.
+- The separately approved follow-up is c002–c007: a reverse-color round robin among Opus 5 high, Astra high and Sol high. Fable is excluded from this batch because its quota is exhausted; c001 and all its accepted forecasts remain unchanged. Ordinary games, including g074, are context rather than matched causal controls.
+
+## Approved follow-up queue
+
+Run strictly sequentially with Auto accounts and the same player prompt, referee rules and measurement threshold as c001. The local operational queue is `/Users/yoishika/.agi-tools/reversi-arena/confidence-six-queue.json`; the public game registry remains `experiments/win-confidence-v1.json`.
+
+| Game | Black | White |
+| --- | --- | --- |
+| c002 | GPT-5.6 Sol high | Claude Opus 5 high |
+| c003 | Claude Opus 5 high | GPT-5.6 Sol high |
+| c004 | GPT-6 Astra high | GPT-5.6 Sol high |
+| c005 | GPT-5.6 Sol high | GPT-6 Astra high |
+| c006 | GPT-6 Astra high | Claude Opus 5 high |
+| c007 | Claude Opus 5 high | GPT-6 Astra high |
+
+Finish recording, independent replay, forecast validation, commit and push for each game before starting only its listed successor. Stop after c007 and summarize the six-game batch separately from c001. Six games still do not establish calibrated probabilities or a definitive metacognition ranking. Ultra remains prohibited and discarded g142 remains excluded.
 
 ## Protocol
 
@@ -28,6 +44,6 @@ Players use `prompts/player-confidence.md`, with no extra custom system prompt. 
 3. Preserve every accepted forecast and timestamp, including confident mistakes. Check that player I/O did not expose opponent forecasts.
 4. Collect the actual sessions and usage from `run-metadata.json`. Missing usage stays null, not zero or an estimate.
 5. Save the finished experimental match and update the experimental manifest. Do not append to the ranked series or change standings. Verify the experimental marker before committing the result.
-6. Verify Discord final delivery and let the parent-shell relay supervisor exit. Never create a Cockpit terminal relay task. Do not start another game after c001.
+6. Verify Discord final delivery and let the parent-shell relay supervisor exit. Never create a Cockpit terminal relay task. The original c001-only approval is complete; further launches require the separately approved queue above. Stop after c007, and never duplicate an existing game or player task.
 
 Report the result, forecast coverage and each side's trajectory. Optional descriptive scoring uses the multiclass Brier loss `((p_win-y_win)^2 + (p_draw-y_draw)^2 + (p_loss-y_loss)^2) / 2`, with probabilities divided by 100 and the actual side-relative result as a one-hot target. This convention ranges from 0 to 1. Break down played moves 11–20, 21–40 and 41 onward instead of only pooling easy terminal forecasts. A single game's repeated forecasts share one final outcome: do not claim calibrated probabilities, statistical superiority or independent samples from those turns. No automated ranking of calibration is produced by this pilot.
