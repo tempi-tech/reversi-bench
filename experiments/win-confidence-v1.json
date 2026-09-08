@@ -1337,7 +1337,7 @@
     {
       "id": "experiments/win-confidence-v1/c003",
       "ranked": false,
-      "status": "planned",
+      "status": "running",
       "batch": "opus-astra-sol-high-six",
       "baseline": "bafc8f8",
       "seats": {
@@ -1356,7 +1356,22 @@
           "baselineRank": 11
         }
       },
-      "reverseOf": "c002"
+      "reverseOf": "c002",
+      "referee": "bff9d79",
+      "sessions": {
+        "B": {
+          "taskId": "96e72cdb",
+          "sessionId": "ad9cb99d-57a6-4c56-a868-cb08e7123a1c",
+          "accountSelection": "auto",
+          "initialAccount": "default"
+        },
+        "W": {
+          "taskId": "98a337d1",
+          "sessionId": "01a08042-a0fc-7b50-926b-7ff45174efb9",
+          "accountSelection": "auto",
+          "initialAccount": "default"
+        }
+      }
     },
     {
       "id": "experiments/win-confidence-v1/c004",
@@ -1453,7 +1468,7 @@
       "reverseOf": "c006"
     }
   ],
-  "activeGame": null,
+  "activeGame": "c003",
   "activeBatch": "opus-astra-sol-high-six",
   "pilotCompletedAt": "2026-09-08T04:05:19.413Z"
 }
