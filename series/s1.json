@@ -4988,6 +4988,55 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g185",
+      "card": "a-deepseek-v4.1-flash-high-max",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "opencode",
+          "model": "deepseek-v4.1-flash",
+          "effort": "max",
+          "display": "deepseek-v4.1-flash · max"
+        },
+        "W": {
+          "agentType": "opencode",
+          "model": "deepseek-v4.1-flash",
+          "effort": "high",
+          "display": "deepseek-v4.1-flash · high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 18,
+        "W": 46
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-09-10T07:50:32.832Z",
+      "tokens": {
+        "B": {
+          "input": 28017,
+          "cacheRead": 14693248,
+          "cacheCreation": 0,
+          "output": 356018,
+          "reasoning": 353346,
+          "apiCalls": 63
+        },
+        "W": {
+          "input": 27842,
+          "cacheRead": 7823360,
+          "cacheCreation": 0,
+          "output": 182906,
+          "reasoning": 178254,
+          "apiCalls": 61
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }

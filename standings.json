@@ -3,7 +3,7 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-09-10T07:11:58.885Z",
+  "generatedAt": "2026-09-10T07:53:55.978Z",
   "standings": [
     {
       "player": "gpt-6-astra · medium",
@@ -214,37 +214,6 @@
       }
     },
     {
-      "player": "deepseek-v4.1-flash · max",
-      "rating": 1591,
-      "games": 1,
-      "wins": 1,
-      "losses": 0,
-      "draws": 0,
-      "stoneDiff": 18,
-      "reasoning": {
-        "averagePerMove": 8719.233333333334,
-        "total": 261577,
-        "medianPerGame": 261577,
-        "q1PerGame": 261577,
-        "q3PerGame": 261577,
-        "iqrPerGame": 0,
-        "games": 1,
-        "moves": 30
-      },
-      "time": {
-        "averagePerMoveMs": 34859.4,
-        "totalMs": 1045782,
-        "medianPerMoveMs": 27450,
-        "q1PerMoveMs": 18835.75,
-        "q3PerMoveMs": 44619.75,
-        "iqrPerMoveMs": 25784,
-        "standardDeviationPerMoveMs": 26622.041937211856,
-        "games": 1,
-        "moves": 30,
-        "decisions": 30
-      }
-    },
-    {
       "player": "claude-fable-5 · medium",
       "rating": 1583,
       "games": 7,
@@ -432,7 +401,7 @@
     },
     {
       "player": "grok-4.6 · medium",
-      "rating": 1562,
+      "rating": 1563,
       "games": 15,
       "wins": 6,
       "losses": 7,
@@ -627,6 +596,68 @@
         "games": 17,
         "moves": 501,
         "decisions": 509
+      }
+    },
+    {
+      "player": "deepseek-v4.1-flash · high",
+      "rating": 1499,
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": 10,
+      "reasoning": {
+        "averagePerMove": 3881.366666666667,
+        "total": 232882,
+        "medianPerGame": 116441,
+        "q1PerGame": 85534.5,
+        "q3PerGame": 147347.5,
+        "iqrPerGame": 61813,
+        "games": 2,
+        "moves": 60
+      },
+      "time": {
+        "averagePerMoveMs": 17247.949152542373,
+        "totalMs": 1017629,
+        "medianPerMoveMs": 11567,
+        "q1PerMoveMs": 6756.5,
+        "q3PerMoveMs": 19938.5,
+        "iqrPerMoveMs": 13182,
+        "standardDeviationPerMoveMs": 16741.732749987106,
+        "games": 2,
+        "moves": 59,
+        "decisions": 60
+      }
+    },
+    {
+      "player": "deepseek-v4.1-flash · max",
+      "rating": 1499,
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "draws": 0,
+      "stoneDiff": -10,
+      "reasoning": {
+        "averagePerMove": 10248.716666666667,
+        "total": 614923,
+        "medianPerGame": 307461.5,
+        "q1PerGame": 284519.25,
+        "q3PerGame": 330403.75,
+        "iqrPerGame": 45884.5,
+        "games": 2,
+        "moves": 60
+      },
+      "time": {
+        "averagePerMoveMs": 42031.457627118645,
+        "totalMs": 2479856,
+        "medianPerMoveMs": 31336,
+        "q1PerMoveMs": 20265,
+        "q3PerMoveMs": 54510,
+        "iqrPerMoveMs": 34245,
+        "standardDeviationPerMoveMs": 30449.388579941504,
+        "games": 2,
+        "moves": 59,
+        "decisions": 60
       }
     },
     {
@@ -1104,37 +1135,6 @@
         "games": 5,
         "moves": 147,
         "decisions": 150
-      }
-    },
-    {
-      "player": "deepseek-v4.1-flash · high",
-      "rating": 1408,
-      "games": 1,
-      "wins": 0,
-      "losses": 1,
-      "draws": 0,
-      "stoneDiff": -18,
-      "reasoning": {
-        "averagePerMove": 1820.9333333333334,
-        "total": 54628,
-        "medianPerGame": 54628,
-        "q1PerGame": 54628,
-        "q3PerGame": 54628,
-        "iqrPerGame": 0,
-        "games": 1,
-        "moves": 30
-      },
-      "time": {
-        "averagePerMoveMs": 9599.862068965518,
-        "totalMs": 278396,
-        "medianPerMoveMs": 6785,
-        "q1PerMoveMs": 5581,
-        "q3PerMoveMs": 9430,
-        "iqrPerMoveMs": 3849,
-        "standardDeviationPerMoveMs": 9252.85270353899,
-        "games": 1,
-        "moves": 29,
-        "decisions": 30
       }
     },
     {
@@ -7085,6 +7085,37 @@
           "detail": "Native shell timeout at 120 seconds while waiting for opponent; player retried wait without intervention. No lost or illegal move."
         }
       ]
+    },
+    {
+      "id": "s1/g185",
+      "card": "a-deepseek-v4.1-flash-high-max",
+      "blind": true,
+      "playedAt": "2026-09-10T07:50:32.832Z",
+      "black": "deepseek-v4.1-flash · max",
+      "white": "deepseek-v4.1-flash · high",
+      "winner": "W",
+      "score": {
+        "B": 18,
+        "W": 46
+      },
+      "moves": 62,
+      "outputTokens": {
+        "B": 356018,
+        "W": 182906
+      },
+      "reasoningTokens": {
+        "B": 353346,
+        "W": 178254
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
+      "credits": {
+        "B": null,
+        "W": null
+      },
+      "incidents": []
     }
   ]
 }
