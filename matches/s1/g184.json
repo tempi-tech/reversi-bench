@@ -1,0 +1,3460 @@
+{
+  "summary": {
+    "game": "s1/g184",
+    "card": "a-deepseek-v4.1-flash-high-max",
+    "winner": "W",
+    "score": {
+      "B": 23,
+      "W": 41
+    },
+    "seats": {
+      "B": "deepseek-v4.1-flash · high",
+      "W": "deepseek-v4.1-flash · max"
+    },
+    "moves": 62,
+    "blind": true,
+    "referee": "1a218de",
+    "tokens": {
+      "B": {
+        "input": 28457,
+        "cacheRead": 3110528,
+        "cacheCreation": 0,
+        "output": 59709,
+        "reasoning": 54628,
+        "apiCalls": 63
+      },
+      "W": {
+        "input": 28024,
+        "cacheRead": 10411264,
+        "cacheCreation": 0,
+        "output": 266228,
+        "reasoning": 261577,
+        "apiCalls": 61
+      }
+    },
+    "cost": {
+      "B": null,
+      "W": null
+    },
+    "notes": [
+      "DeepSeek V4.1 Flash max defeated high 41-23 as White. First of two approved reverse-color effort games; no firm effort ranking from one game.",
+      "Independently replayed all 60 played moves in a fresh ordinary referee. Final board, winner, turn and all 62 history entries including two automatic passes matched exactly.",
+      "Both seats ran native OpenCode 1.18.5 HTTP sessions through the configured OpenCode Go subscription, outside Cockpit player tasks. Same Cockpit built-in agent prompt and unchanged prompts/player.md; no extra custom system prompt. This runner difference is explicit provenance, not a Cockpit high/xhigh alias.",
+      "Go catalog deepseek-flash mapped to DeepSeek V4.1 Flash on 2026-09-10. All 63 Black requests sent reasoning_effort high and all 61 White requests sent max; all returned HTTP 200. Audit proxy forwarded request bodies unchanged.",
+      "Full player I/O audit found only side-bound referee wait/play commands, neutral Black/White responses and no extra user prompts. Black had one 120-second shell timeout while waiting for White and retried without intervention; no illegal moves or forfeit.",
+      "Usage is deduplicated by native message ID. Every raw total equalled input + cache.read + cache.write + output + reasoning; normalized output includes reasoning. Raw per-message usage is preserved below. SDK estimated USD is not actual subscription billing; cost stays null.",
+      "Discord streaming remained paused. Completion-only parent-shell supervisor notified the parent successfully and exited. No Cockpit terminal task was used."
+    ]
+  },
+  "id": "current",
+  "size": 8,
+  "title": "Reversi 8×8",
+  "createdAt": "2026-09-10T06:42:40.304Z",
+  "updatedAt": "2026-09-10T07:08:38.154Z",
+  "cells": [
+    "W",
+    "B",
+    "B",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "B",
+    "W",
+    "W",
+    "B",
+    "W",
+    "B",
+    "W",
+    "W",
+    "B",
+    "W",
+    "W",
+    "B",
+    "B",
+    "W",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "B",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W"
+  ],
+  "turn": "W",
+  "status": "over",
+  "winner": "W",
+  "thinking": null,
+  "lastMove": {
+    "side": "W",
+    "move": "b1",
+    "flips": [
+      "b2"
+    ]
+  },
+  "history": [
+    {
+      "side": "B",
+      "move": "e3",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-09-10T06:46:33.975Z"
+    },
+    {
+      "side": "W",
+      "move": "d3",
+      "flips": [
+        "d4"
+      ],
+      "at": "2026-09-10T06:47:41.817Z"
+    },
+    {
+      "side": "B",
+      "move": "c4",
+      "flips": [
+        "d4"
+      ],
+      "at": "2026-09-10T06:47:47.757Z"
+    },
+    {
+      "side": "W",
+      "move": "b5",
+      "flips": [
+        "c4"
+      ],
+      "at": "2026-09-10T06:48:16.753Z"
+    },
+    {
+      "side": "B",
+      "move": "c6",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-09-10T06:48:19.753Z"
+    },
+    {
+      "side": "W",
+      "move": "d6",
+      "flips": [
+        "d5",
+        "d4"
+      ],
+      "at": "2026-09-10T06:49:18.958Z"
+    },
+    {
+      "side": "B",
+      "move": "c5",
+      "flips": [
+        "d5",
+        "d4"
+      ],
+      "at": "2026-09-10T06:49:24.353Z"
+    },
+    {
+      "side": "W",
+      "move": "f5",
+      "flips": [
+        "e5",
+        "d5",
+        "c5",
+        "e4"
+      ],
+      "at": "2026-09-10T06:51:06.504Z"
+    },
+    {
+      "side": "B",
+      "move": "b6",
+      "flips": [
+        "c5"
+      ],
+      "at": "2026-09-10T06:52:01.971Z"
+    },
+    {
+      "side": "W",
+      "move": "a6",
+      "flips": [
+        "b6",
+        "c6"
+      ],
+      "at": "2026-09-10T06:52:45.270Z"
+    },
+    {
+      "side": "B",
+      "move": "g5",
+      "flips": [
+        "f5",
+        "e5",
+        "d5"
+      ],
+      "at": "2026-09-10T06:52:51.998Z"
+    },
+    {
+      "side": "W",
+      "move": "h5",
+      "flips": [
+        "g5",
+        "f5",
+        "e5",
+        "d5",
+        "c5"
+      ],
+      "at": "2026-09-10T06:53:22.046Z"
+    },
+    {
+      "side": "B",
+      "move": "e6",
+      "flips": [
+        "e5",
+        "e4"
+      ],
+      "at": "2026-09-10T06:53:34.135Z"
+    },
+    {
+      "side": "W",
+      "move": "f4",
+      "flips": [
+        "e5",
+        "e4",
+        "d4"
+      ],
+      "at": "2026-09-10T06:53:55.217Z"
+    },
+    {
+      "side": "B",
+      "move": "a7",
+      "flips": [
+        "b6",
+        "c5",
+        "d4"
+      ],
+      "at": "2026-09-10T06:54:01.515Z"
+    },
+    {
+      "side": "W",
+      "move": "a8",
+      "flips": [
+        "a7"
+      ],
+      "at": "2026-09-10T06:54:09.247Z"
+    },
+    {
+      "side": "B",
+      "move": "b3",
+      "flips": [
+        "c4",
+        "d5"
+      ],
+      "at": "2026-09-10T06:54:18.347Z"
+    },
+    {
+      "side": "W",
+      "move": "b4",
+      "flips": [
+        "c5",
+        "c4",
+        "d4"
+      ],
+      "at": "2026-09-10T06:54:57.930Z"
+    },
+    {
+      "side": "B",
+      "move": "a5",
+      "flips": [
+        "b5",
+        "c5"
+      ],
+      "at": "2026-09-10T06:55:07.852Z"
+    },
+    {
+      "side": "W",
+      "move": "a4",
+      "flips": [
+        "a5",
+        "b5"
+      ],
+      "at": "2026-09-10T06:55:33.929Z"
+    },
+    {
+      "side": "B",
+      "move": "h6",
+      "flips": [
+        "g5",
+        "f4"
+      ],
+      "at": "2026-09-10T06:55:43.314Z"
+    },
+    {
+      "side": "W",
+      "move": "h7",
+      "flips": [
+        "h6"
+      ],
+      "at": "2026-09-10T06:57:52.726Z"
+    },
+    {
+      "side": "B",
+      "move": "c3",
+      "flips": [
+        "c4",
+        "d3"
+      ],
+      "at": "2026-09-10T06:57:57.963Z"
+    },
+    {
+      "side": "W",
+      "move": "c2",
+      "flips": [
+        "b3",
+        "c3",
+        "c4",
+        "c5",
+        "d3"
+      ],
+      "at": "2026-09-10T06:58:14.808Z"
+    },
+    {
+      "side": "B",
+      "move": "a3",
+      "flips": [
+        "b3",
+        "c3",
+        "d3"
+      ],
+      "at": "2026-09-10T06:58:31.200Z"
+    },
+    {
+      "side": "W",
+      "move": "d2",
+      "flips": [
+        "c3",
+        "d3",
+        "e3",
+        "f4",
+        "g5"
+      ],
+      "at": "2026-09-10T06:58:50.756Z"
+    },
+    {
+      "side": "B",
+      "move": "d1",
+      "flips": [
+        "c2",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "at": "2026-09-10T06:58:55.874Z"
+    },
+    {
+      "side": "W",
+      "move": "c1",
+      "flips": [
+        "c2",
+        "d2"
+      ],
+      "at": "2026-09-10T06:59:46.016Z"
+    },
+    {
+      "side": "B",
+      "move": "e2",
+      "flips": [
+        "e3",
+        "e4",
+        "e5"
+      ],
+      "at": "2026-09-10T06:59:55.737Z"
+    },
+    {
+      "side": "W",
+      "move": "f3",
+      "flips": [
+        "e4",
+        "d5",
+        "e3",
+        "d3"
+      ],
+      "at": "2026-09-10T07:00:40.797Z"
+    },
+    {
+      "side": "B",
+      "move": "g3",
+      "flips": [
+        "f4",
+        "f3",
+        "e3",
+        "d3",
+        "c3"
+      ],
+      "at": "2026-09-10T07:00:48.884Z"
+    },
+    {
+      "side": "W",
+      "move": "f2",
+      "flips": [
+        "e3",
+        "d4",
+        "f3",
+        "f4",
+        "e2"
+      ],
+      "at": "2026-09-10T07:01:10.969Z"
+    },
+    {
+      "side": "B",
+      "move": "g1",
+      "flips": [
+        "f2",
+        "e3",
+        "d4",
+        "c5"
+      ],
+      "at": "2026-09-10T07:01:17.065Z"
+    },
+    {
+      "side": "W",
+      "move": "f1",
+      "flips": [
+        "f2"
+      ],
+      "at": "2026-09-10T07:01:48.401Z"
+    },
+    {
+      "side": "B",
+      "move": "e1",
+      "flips": [
+        "d2",
+        "e2",
+        "f2",
+        "f1"
+      ],
+      "at": "2026-09-10T07:01:55.093Z"
+    },
+    {
+      "side": "W",
+      "move": "h1",
+      "flips": [
+        "g1",
+        "f1",
+        "e1",
+        "d1"
+      ],
+      "at": "2026-09-10T07:02:01.473Z"
+    },
+    {
+      "side": "B",
+      "move": "f6",
+      "flips": [
+        "f5",
+        "f4",
+        "f3"
+      ],
+      "at": "2026-09-10T07:02:05.951Z"
+    },
+    {
+      "side": "W",
+      "move": "f7",
+      "flips": [
+        "e6",
+        "f6",
+        "f5",
+        "f4",
+        "f3",
+        "f2"
+      ],
+      "at": "2026-09-10T07:02:24.136Z"
+    },
+    {
+      "side": "B",
+      "move": "g6",
+      "flips": [
+        "f6",
+        "e6",
+        "d6",
+        "c6",
+        "f5",
+        "e4"
+      ],
+      "at": "2026-09-10T07:02:32.540Z"
+    },
+    {
+      "side": "W",
+      "move": "e7",
+      "flips": [
+        "d6",
+        "c5",
+        "e6",
+        "e5",
+        "e4",
+        "e3",
+        "e2",
+        "f6"
+      ],
+      "at": "2026-09-10T07:02:48.090Z"
+    },
+    {
+      "side": "B",
+      "move": "f8",
+      "flips": [
+        "e7",
+        "d6",
+        "c5",
+        "b4",
+        "f7",
+        "f6"
+      ],
+      "at": "2026-09-10T07:02:56.587Z"
+    },
+    {
+      "side": "W",
+      "move": "c7",
+      "flips": [
+        "b6",
+        "c6",
+        "c5",
+        "d6"
+      ],
+      "at": "2026-09-10T07:03:23.542Z"
+    },
+    {
+      "side": "B",
+      "move": "c8",
+      "flips": [
+        "c7",
+        "c6",
+        "c5",
+        "c4"
+      ],
+      "at": "2026-09-10T07:03:36.125Z"
+    },
+    {
+      "side": "W",
+      "move": "d8",
+      "flips": [
+        "c7",
+        "e7",
+        "f6"
+      ],
+      "at": "2026-09-10T07:04:26.728Z"
+    },
+    {
+      "side": "B",
+      "move": "b8",
+      "flips": [
+        "c7",
+        "d6",
+        "e5",
+        "f4"
+      ],
+      "at": "2026-09-10T07:04:33.513Z"
+    },
+    {
+      "side": "W",
+      "move": "b2",
+      "flips": [
+        "b3",
+        "b4",
+        "c3",
+        "d4",
+        "e5"
+      ],
+      "at": "2026-09-10T07:05:07.501Z"
+    },
+    {
+      "side": "B",
+      "move": "g2",
+      "flips": [
+        "f3",
+        "e4",
+        "d5",
+        "f2",
+        "e2"
+      ],
+      "at": "2026-09-10T07:05:15.916Z"
+    },
+    {
+      "side": "W",
+      "move": "h2",
+      "flips": [
+        "g3",
+        "f4",
+        "g2",
+        "f2",
+        "e2",
+        "d2"
+      ],
+      "at": "2026-09-10T07:05:35.042Z"
+    },
+    {
+      "side": "B",
+      "move": "g4",
+      "flips": [
+        "g5",
+        "f4"
+      ],
+      "at": "2026-09-10T07:05:44.472Z"
+    },
+    {
+      "side": "W",
+      "move": "b7",
+      "flips": [
+        "c6",
+        "d5",
+        "e4",
+        "f3"
+      ],
+      "at": "2026-09-10T07:06:03.211Z"
+    },
+    {
+      "side": "B",
+      "move": "h3",
+      "flips": [
+        "g3",
+        "f3",
+        "e3"
+      ],
+      "at": "2026-09-10T07:06:08.792Z"
+    },
+    {
+      "side": "W",
+      "move": "g7",
+      "flips": [
+        "f7",
+        "g6",
+        "g5",
+        "g4",
+        "g3"
+      ],
+      "at": "2026-09-10T07:06:30.772Z"
+    },
+    {
+      "side": "B",
+      "move": "g8",
+      "flips": [
+        "f7",
+        "e6",
+        "d5"
+      ],
+      "at": "2026-09-10T07:06:35.995Z"
+    },
+    {
+      "side": "W",
+      "move": "d7",
+      "flips": [
+        "c7",
+        "d6",
+        "d5",
+        "e6",
+        "f5"
+      ],
+      "at": "2026-09-10T07:07:21.818Z"
+    },
+    {
+      "side": "B",
+      "move": "h4",
+      "flips": [
+        "g4"
+      ],
+      "at": "2026-09-10T07:07:38.889Z"
+    },
+    {
+      "side": "W",
+      "move": "e8",
+      "flips": [
+        "f7"
+      ],
+      "at": "2026-09-10T07:07:53.375Z"
+    },
+    {
+      "side": "B",
+      "move": "h8",
+      "flips": [
+        "h7",
+        "h6",
+        "h5"
+      ],
+      "at": "2026-09-10T07:07:58.452Z"
+    },
+    {
+      "side": "W",
+      "move": "a2",
+      "flips": [
+        "a3"
+      ],
+      "at": "2026-09-10T07:08:26.397Z"
+    },
+    {
+      "side": "B",
+      "move": "a1",
+      "flips": [
+        "b2",
+        "c3",
+        "d4",
+        "e5",
+        "f6",
+        "g7"
+      ],
+      "at": "2026-09-10T07:08:32.582Z"
+    },
+    {
+      "side": "W",
+      "move": "b1",
+      "flips": [
+        "b2"
+      ],
+      "at": "2026-09-10T07:08:38.153Z"
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-10T07:08:38.154Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-10T07:08:38.154Z"
+    }
+  ],
+  "players": {
+    "B": {
+      "name": "Black",
+      "model": "",
+      "say": ""
+    },
+    "W": {
+      "name": "White",
+      "model": "",
+      "say": ""
+    }
+  },
+  "seats": {
+    "B": {
+      "agentType": "opencode",
+      "model": "deepseek-v4.1-flash",
+      "effort": "high",
+      "display": "deepseek-v4.1-flash · high"
+    },
+    "W": {
+      "agentType": "opencode",
+      "model": "deepseek-v4.1-flash",
+      "effort": "max",
+      "display": "deepseek-v4.1-flash · max"
+    }
+  },
+  "tokens": {
+    "B": {
+      "input": 28457,
+      "cacheRead": 3110528,
+      "cacheCreation": 0,
+      "output": 59709,
+      "reasoning": 54628,
+      "apiCalls": 63
+    },
+    "W": {
+      "input": 28024,
+      "cacheRead": 10411264,
+      "cacheCreation": 0,
+      "output": 266228,
+      "reasoning": 261577,
+      "apiCalls": 61
+    }
+  },
+  "cost": {
+    "B": null,
+    "W": null
+  },
+  "incidents": [
+    {
+      "side": "B",
+      "kind": "wait-tool-timeout",
+      "at": "2026-09-10T06:57:46.012Z",
+      "detail": "Native shell timeout at 120 seconds while waiting for opponent; player retried wait without intervention. No lost or illegal move."
+    }
+  ],
+  "blind": true,
+  "verification": {
+    "independentOrdinaryReplay": true,
+    "boardWinnerTurnSideMoveFlipsAndPassHistoryMatched": true,
+    "historyRecords": 62,
+    "playedMoves": 60,
+    "passes": 2,
+    "ordinaryProtocol": true,
+    "completionSupervisorExited": true,
+    "discord": "paused-by-user",
+    "sourceMatchSha256": "93669c061390829f506eba7d1d6f97d74135bb554d81c7ed99a8a0f922228caa",
+    "playerPromptSha256": "96170fa47f5ab693824647d0220b4f7ead469c527f28f16ca7d4bc3f31c76f5f"
+  },
+  "usageProvenance": {
+    "runtime": "OpenCode",
+    "version": "1.18.5",
+    "provider": "opencode-go",
+    "nativeModel": "deepseek-flash",
+    "accountSelection": "configured OpenCode Go subscription",
+    "cockpitPlayerTasks": false,
+    "normalization": "output = raw.output + raw.reasoning; input excludes caches; validated against raw.total for every unique assistant message",
+    "sessions": {
+      "B": {
+        "sessionId": "ses_f75ef0329fferjTOUCVt3bLX7F",
+        "effort": "high",
+        "transcriptSha256": "238cce141a3ae247b80e1c2c65fecaceb979dcbc32cbfbe98c7ed92cb41f1fa9",
+        "apiRequests": 63,
+        "actualWireEffortVerified": true,
+        "allHttpStatuses": 200,
+        "usage": [
+          {
+            "messageId": "msg_08a115800001COtIefwctgfHR0",
+            "raw": {
+              "total": 11442,
+              "input": 11358,
+              "output": 74,
+              "reasoning": 10,
+              "cache": {
+                "read": 0,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 11358,
+              "cacheRead": 0,
+              "cacheCreation": 0,
+              "output": 84,
+              "reasoning": 10
+            },
+            "estimatedCostUSD": 0.0017541
+          },
+          {
+            "messageId": "msg_08a116343001x2Nlax8fa9pf1i",
+            "raw": {
+              "total": 12062,
+              "input": 220,
+              "output": 76,
+              "reasoning": 374,
+              "cache": {
+                "read": 11392,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 220,
+              "cacheRead": 11392,
+              "cacheCreation": 0,
+              "output": 450,
+              "reasoning": 374
+            },
+            "estimatedCostUSD": 0.000337176
+          },
+          {
+            "messageId": "msg_08a117116001Ixs0wyPckE6wI0",
+            "raw": {
+              "total": 12329,
+              "input": 210,
+              "output": 74,
+              "reasoning": 13,
+              "cache": {
+                "read": 12032,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 210,
+              "cacheRead": 12032,
+              "cacheCreation": 0,
+              "output": 87,
+              "reasoning": 13
+            },
+            "estimatedCostUSD": 0.000119796
+          },
+          {
+            "messageId": "msg_08a127a36001CE2kOVhqAyAq9H",
+            "raw": {
+              "total": 13342,
+              "input": 232,
+              "output": 76,
+              "reasoning": 746,
+              "cache": {
+                "read": 12288,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 232,
+              "cacheRead": 12288,
+              "cacheCreation": 0,
+              "output": 822,
+              "reasoning": 746
+            },
+            "estimatedCostUSD": 0.000564864
+          },
+          {
+            "messageId": "msg_08a12914e00138x0RUhnNGvWmz",
+            "raw": {
+              "total": 13714,
+              "input": 213,
+              "output": 74,
+              "reasoning": 115,
+              "cache": {
+                "read": 13312,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 213,
+              "cacheRead": 13312,
+              "cacheCreation": 0,
+              "output": 189,
+              "reasoning": 115
+            },
+            "estimatedCostUSD": 0.000185286
+          },
+          {
+            "messageId": "msg_08a1302bc0012bod2wJIJ1KeTv",
+            "raw": {
+              "total": 14346,
+              "input": 218,
+              "output": 76,
+              "reasoning": 356,
+              "cache": {
+                "read": 13696,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 218,
+              "cacheRead": 13696,
+              "cacheCreation": 0,
+              "output": 432,
+              "reasoning": 356
+            },
+            "estimatedCostUSD": 0.000332988
+          },
+          {
+            "messageId": "msg_08a130e51001nkFBZnit1yIyJM",
+            "raw": {
+              "total": 14733,
+              "input": 204,
+              "output": 74,
+              "reasoning": 119,
+              "cache": {
+                "read": 14336,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 204,
+              "cacheRead": 14336,
+              "cacheCreation": 0,
+              "output": 193,
+              "reasoning": 119
+            },
+            "estimatedCostUSD": 0.000189408
+          },
+          {
+            "messageId": "msg_08a13f631001mStWAtMzh4tokL",
+            "raw": {
+              "total": 15679,
+              "input": 218,
+              "output": 76,
+              "reasoning": 665,
+              "cache": {
+                "read": 14720,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 218,
+              "cacheRead": 14720,
+              "cacheCreation": 0,
+              "output": 741,
+              "reasoning": 665
+            },
+            "estimatedCostUSD": 0.00052146
+          },
+          {
+            "messageId": "msg_08a140aa1001IJymaFHnKOjx28",
+            "raw": {
+              "total": 16108,
+              "input": 265,
+              "output": 74,
+              "reasoning": 153,
+              "cache": {
+                "read": 15616,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 265,
+              "cacheRead": 15616,
+              "cacheCreation": 0,
+              "output": 227,
+              "reasoning": 153
+            },
+            "estimatedCostUSD": 0.000222798
+          },
+          {
+            "messageId": "msg_08a1599e4001UkyG6eXH3AaE0k",
+            "raw": {
+              "total": 27755,
+              "input": 328,
+              "output": 76,
+              "reasoning": 11351,
+              "cache": {
+                "read": 16000,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 328,
+              "cacheRead": 16000,
+              "cacheCreation": 0,
+              "output": 11427,
+              "reasoning": 11351
+            },
+            "estimatedCostUSD": 0.0069534
+          },
+          {
+            "messageId": "msg_08a1672750013nMNeQXMgLTZ4P",
+            "raw": {
+              "total": 28202,
+              "input": 308,
+              "output": 74,
+              "reasoning": 172,
+              "cache": {
+                "read": 27648,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 308,
+              "cacheRead": 27648,
+              "cacheCreation": 0,
+              "output": 246,
+              "reasoning": 172
+            },
+            "estimatedCostUSD": 0.000276744
+          },
+          {
+            "messageId": "msg_08a171b6d001k9vxtZRW45TjRv",
+            "raw": {
+              "total": 29534,
+              "input": 262,
+              "output": 76,
+              "reasoning": 1036,
+              "cache": {
+                "read": 28160,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 262,
+              "cacheRead": 28160,
+              "cacheCreation": 0,
+              "output": 1112,
+              "reasoning": 1036
+            },
+            "estimatedCostUSD": 0.00079098
+          },
+          {
+            "messageId": "msg_08a1735c9001YeqPYTj3ulcoBY",
+            "raw": {
+              "total": 29937,
+              "input": 300,
+              "output": 74,
+              "reasoning": 123,
+              "cache": {
+                "read": 29440,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 300,
+              "cacheRead": 29440,
+              "cacheCreation": 0,
+              "output": 197,
+              "reasoning": 123
+            },
+            "estimatedCostUSD": 0.00025152
+          },
+          {
+            "messageId": "msg_08a17ab43001jbKHqwgSjhKnrI",
+            "raw": {
+              "total": 32279,
+              "input": 330,
+              "output": 76,
+              "reasoning": 2049,
+              "cache": {
+                "read": 29824,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 330,
+              "cacheRead": 29824,
+              "cacheCreation": 0,
+              "output": 2125,
+              "reasoning": 2049
+            },
+            "estimatedCostUSD": 0.001413972
+          },
+          {
+            "messageId": "msg_08a17da7f001U2t01WKwPgIF0j",
+            "raw": {
+              "total": 32775,
+              "input": 221,
+              "output": 74,
+              "reasoning": 224,
+              "cache": {
+                "read": 32256,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 221,
+              "cacheRead": 32256,
+              "cacheCreation": 0,
+              "output": 298,
+              "reasoning": 224
+            },
+            "estimatedCostUSD": 0.000308718
+          },
+          {
+            "messageId": "msg_08a182cda001ZnlOwN4Y7TMg9i",
+            "raw": {
+              "total": 34035,
+              "input": 210,
+              "output": 76,
+              "reasoning": 981,
+              "cache": {
+                "read": 32768,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 210,
+              "cacheRead": 32768,
+              "cacheCreation": 0,
+              "output": 1057,
+              "reasoning": 981
+            },
+            "estimatedCostUSD": 0.000764004
+          },
+          {
+            "messageId": "msg_08a184556001oo6D2S7NspYwoo",
+            "raw": {
+              "total": 34651,
+              "input": 332,
+              "output": 74,
+              "reasoning": 325,
+              "cache": {
+                "read": 33920,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 332,
+              "cacheRead": 33920,
+              "cacheCreation": 0,
+              "output": 399,
+              "reasoning": 325
+            },
+            "estimatedCostUSD": 0.00039096
+          },
+          {
+            "messageId": "msg_08a18637300175VLoj0XdU7Ime",
+            "raw": {
+              "total": 36575,
+              "input": 308,
+              "output": 76,
+              "reasoning": 1631,
+              "cache": {
+                "read": 34560,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 308,
+              "cacheRead": 34560,
+              "cacheCreation": 0,
+              "output": 1707,
+              "reasoning": 1631
+            },
+            "estimatedCostUSD": 0.00117408
+          },
+          {
+            "messageId": "msg_08a18871a001st1RtBCgKbWSUl",
+            "raw": {
+              "total": 37099,
+              "input": 309,
+              "output": 74,
+              "reasoning": 236,
+              "cache": {
+                "read": 36480,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 309,
+              "cacheRead": 36480,
+              "cacheCreation": 0,
+              "output": 310,
+              "reasoning": 236
+            },
+            "estimatedCostUSD": 0.00034179
+          },
+          {
+            "messageId": "msg_08a1921d5001YwySdRkq7VzIv6",
+            "raw": {
+              "total": 38871,
+              "input": 324,
+              "output": 76,
+              "reasoning": 1479,
+              "cache": {
+                "read": 36992,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 324,
+              "cacheRead": 36992,
+              "cacheCreation": 0,
+              "output": 1555,
+              "reasoning": 1479
+            },
+            "estimatedCostUSD": 0.001092576
+          },
+          {
+            "messageId": "msg_08a19487b0010mJbQjNnjBK5gr",
+            "raw": {
+              "total": 39345,
+              "input": 307,
+              "output": 74,
+              "reasoning": 180,
+              "cache": {
+                "read": 38784,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 307,
+              "cacheRead": 38784,
+              "cacheCreation": 0,
+              "output": 254,
+              "reasoning": 180
+            },
+            "estimatedCostUSD": 0.000314802
+          },
+          {
+            "messageId": "msg_08a19ae70001iS22kQUJG85QXH",
+            "raw": {
+              "total": 41156,
+              "input": 267,
+              "output": 76,
+              "reasoning": 1517,
+              "cache": {
+                "read": 39296,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 267,
+              "cacheRead": 39296,
+              "cacheCreation": 0,
+              "output": 1593,
+              "reasoning": 1517
+            },
+            "estimatedCostUSD": 0.001113738
+          },
+          {
+            "messageId": "msg_08a19d2db001TpZawHJaqpdjBG",
+            "raw": {
+              "total": 41674,
+              "input": 297,
+              "output": 74,
+              "reasoning": 215,
+              "cache": {
+                "read": 41088,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 297,
+              "cacheRead": 41088,
+              "cacheCreation": 0,
+              "output": 289,
+              "reasoning": 215
+            },
+            "estimatedCostUSD": 0.000341214
+          },
+          {
+            "messageId": "msg_08a1bb224001Dihl1mZCkhovkb",
+            "raw": {
+              "total": 41936,
+              "input": 136,
+              "output": 92,
+              "reasoning": 108,
+              "cache": {
+                "read": 41600,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 136,
+              "cacheRead": 41600,
+              "cacheCreation": 0,
+              "output": 200,
+              "reasoning": 108
+            },
+            "estimatedCostUSD": 0.0002652
+          },
+          {
+            "messageId": "msg_08a1bcc6c0018P7icBnDmqJtla",
+            "raw": {
+              "total": 43200,
+              "input": 297,
+              "output": 76,
+              "reasoning": 971,
+              "cache": {
+                "read": 41856,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 297,
+              "cacheRead": 41856,
+              "cacheCreation": 0,
+              "output": 1047,
+              "reasoning": 971
+            },
+            "estimatedCostUSD": 0.000798318
+          },
+          {
+            "messageId": "msg_08a1be0d3001taVjP1dy9b0jLG",
+            "raw": {
+              "total": 43674,
+              "input": 288,
+              "output": 92,
+              "reasoning": 158,
+              "cache": {
+                "read": 43136,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 288,
+              "cacheRead": 43136,
+              "cacheCreation": 0,
+              "output": 250,
+              "reasoning": 158
+            },
+            "estimatedCostUSD": 0.000322608
+          },
+          {
+            "messageId": "msg_08a1c22ad0017sJHPfHk7kHLOn",
+            "raw": {
+              "total": 47180,
+              "input": 256,
+              "output": 76,
+              "reasoning": 3200,
+              "cache": {
+                "read": 43648,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 256,
+              "cacheRead": 43648,
+              "cacheCreation": 0,
+              "output": 3276,
+              "reasoning": 3200
+            },
+            "estimatedCostUSD": 0.002134944
+          },
+          {
+            "messageId": "msg_08a1c62cb001wGBmDvxmxhxPTC",
+            "raw": {
+              "total": 47565,
+              "input": 306,
+              "output": 92,
+              "reasoning": 63,
+              "cache": {
+                "read": 47104,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 306,
+              "cacheRead": 47104,
+              "cacheCreation": 0,
+              "output": 155,
+              "reasoning": 63
+            },
+            "estimatedCostUSD": 0.000280212
+          },
+          {
+            "messageId": "msg_08a1cafa9001RTish6ztghkJGw",
+            "raw": {
+              "total": 48494,
+              "input": 301,
+              "output": 76,
+              "reasoning": 629,
+              "cache": {
+                "read": 47488,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 301,
+              "cacheRead": 47488,
+              "cacheCreation": 0,
+              "output": 705,
+              "reasoning": 629
+            },
+            "estimatedCostUSD": 0.000610614
+          },
+          {
+            "messageId": "msg_08a1cc31a0012BKUx36kf1JMww",
+            "raw": {
+              "total": 49012,
+              "input": 340,
+              "output": 92,
+              "reasoning": 196,
+              "cache": {
+                "read": 48384,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 340,
+              "cacheRead": 48384,
+              "cacheCreation": 0,
+              "output": 288,
+              "reasoning": 196
+            },
+            "estimatedCostUSD": 0.000368952
+          },
+          {
+            "messageId": "msg_08a1d8740001jhHoXalrd5AbTn",
+            "raw": {
+              "total": 51092,
+              "input": 342,
+              "output": 76,
+              "reasoning": 1778,
+              "cache": {
+                "read": 48896,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 342,
+              "cacheRead": 48896,
+              "cacheCreation": 0,
+              "output": 1854,
+              "reasoning": 1778
+            },
+            "estimatedCostUSD": 0.001310388
+          },
+          {
+            "messageId": "msg_08a1dacfd001rfzBDHfDPmTCmS",
+            "raw": {
+              "total": 52076,
+              "input": 247,
+              "output": 92,
+              "reasoning": 665,
+              "cache": {
+                "read": 51072,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 247,
+              "cacheRead": 51072,
+              "cacheCreation": 0,
+              "output": 757,
+              "reasoning": 665
+            },
+            "estimatedCostUSD": 0.000644466
+          },
+          {
+            "messageId": "msg_08a1e5ce9001PH0b9pE3E6rjgG",
+            "raw": {
+              "total": 53837,
+              "input": 333,
+              "output": 76,
+              "reasoning": 1460,
+              "cache": {
+                "read": 51968,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 333,
+              "cacheRead": 51968,
+              "cacheCreation": 0,
+              "output": 1536,
+              "reasoning": 1460
+            },
+            "estimatedCostUSD": 0.001127454
+          },
+          {
+            "messageId": "msg_08a1e7c7f001TvqWTfSD3ETwn9",
+            "raw": {
+              "total": 54271,
+              "input": 318,
+              "output": 92,
+              "reasoning": 101,
+              "cache": {
+                "read": 53760,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 318,
+              "cacheRead": 53760,
+              "cacheCreation": 0,
+              "output": 193,
+              "reasoning": 101
+            },
+            "estimatedCostUSD": 0.00032478
+          },
+          {
+            "messageId": "msg_08a1ed2fb001KYdw4KNQwviAF1",
+            "raw": {
+              "total": 55737,
+              "input": 359,
+              "output": 76,
+              "reasoning": 1158,
+              "cache": {
+                "read": 54144,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 359,
+              "cacheRead": 54144,
+              "cacheCreation": 0,
+              "output": 1234,
+              "reasoning": 1158
+            },
+            "estimatedCostUSD": 0.000956682
+          },
+          {
+            "messageId": "msg_08a1eeae5001Hs3UPJyrYSER8S",
+            "raw": {
+              "total": 56409,
+              "input": 293,
+              "output": 92,
+              "reasoning": 344,
+              "cache": {
+                "read": 55680,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 293,
+              "cacheRead": 55680,
+              "cacheCreation": 0,
+              "output": 436,
+              "reasoning": 344
+            },
+            "estimatedCostUSD": 0.00047259
+          },
+          {
+            "messageId": "msg_08a1f6539001WRVUd1Nbx55U6L",
+            "raw": {
+              "total": 58035,
+              "input": 303,
+              "output": 76,
+              "reasoning": 1336,
+              "cache": {
+                "read": 56320,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 303,
+              "cacheRead": 56320,
+              "cacheCreation": 0,
+              "output": 1412,
+              "reasoning": 1336
+            },
+            "estimatedCostUSD": 0.00106161
+          },
+          {
+            "messageId": "msg_08a1f7f3e001CzueEgaMiHEbfr",
+            "raw": {
+              "total": 58818,
+              "input": 284,
+              "output": 92,
+              "reasoning": 458,
+              "cache": {
+                "read": 57984,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 284,
+              "cacheRead": 57984,
+              "cacheCreation": 0,
+              "output": 550,
+              "reasoning": 458
+            },
+            "estimatedCostUSD": 0.000546552
+          },
+          {
+            "messageId": "msg_08a1f980b001dlVi96kMBitc3C",
+            "raw": {
+              "total": 59867,
+              "input": 292,
+              "output": 76,
+              "reasoning": 747,
+              "cache": {
+                "read": 58752,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 292,
+              "cacheRead": 58752,
+              "cacheCreation": 0,
+              "output": 823,
+              "reasoning": 747
+            },
+            "estimatedCostUSD": 0.000713856
+          },
+          {
+            "messageId": "msg_08a1fa988001ZPEMR2FYMpuNxO",
+            "raw": {
+              "total": 60345,
+              "input": 316,
+              "output": 92,
+              "reasoning": 161,
+              "cache": {
+                "read": 59776,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 316,
+              "cacheRead": 59776,
+              "cacheCreation": 0,
+              "output": 253,
+              "reasoning": 161
+            },
+            "estimatedCostUSD": 0.000378528
+          },
+          {
+            "messageId": "msg_08a1ff0a6001GzCOMFB6gWpErg",
+            "raw": {
+              "total": 62149,
+              "input": 296,
+              "output": 76,
+              "reasoning": 1489,
+              "cache": {
+                "read": 60288,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 296,
+              "cacheRead": 60288,
+              "cacheCreation": 0,
+              "output": 1565,
+              "reasoning": 1489
+            },
+            "estimatedCostUSD": 0.001164264
+          },
+          {
+            "messageId": "msg_08a2011d00018MQ3G5BSYLHedi",
+            "raw": {
+              "total": 62592,
+              "input": 304,
+              "output": 92,
+              "reasoning": 116,
+              "cache": {
+                "read": 62080,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 304,
+              "cacheRead": 62080,
+              "cacheCreation": 0,
+              "output": 208,
+              "reasoning": 116
+            },
+            "estimatedCostUSD": 0.00035664
+          },
+          {
+            "messageId": "msg_08a204e2e001jpqLT4YMB06eLO",
+            "raw": {
+              "total": 64464,
+              "input": 245,
+              "output": 76,
+              "reasoning": 1551,
+              "cache": {
+                "read": 62592,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 245,
+              "cacheRead": 62592,
+              "cacheCreation": 0,
+              "output": 1627,
+              "reasoning": 1551
+            },
+            "estimatedCostUSD": 0.001200726
+          },
+          {
+            "messageId": "msg_08a206f6a001iLqCZqj7ftxXxG",
+            "raw": {
+              "total": 65024,
+              "input": 326,
+              "output": 92,
+              "reasoning": 222,
+              "cache": {
+                "read": 64384,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 326,
+              "cacheRead": 64384,
+              "cacheCreation": 0,
+              "output": 314,
+              "reasoning": 222
+            },
+            "estimatedCostUSD": 0.000430452
+          },
+          {
+            "messageId": "msg_08a20d8dd001ga7aktuflBZFen",
+            "raw": {
+              "total": 67652,
+              "input": 233,
+              "output": 76,
+              "reasoning": 2319,
+              "cache": {
+                "read": 65024,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 233,
+              "cacheRead": 65024,
+              "cacheCreation": 0,
+              "output": 2395,
+              "reasoning": 2319
+            },
+            "estimatedCostUSD": 0.001667022
+          },
+          {
+            "messageId": "msg_08a210a49001vc6rYH4oE2rFVI",
+            "raw": {
+              "total": 68167,
+              "input": 310,
+              "output": 92,
+              "reasoning": 181,
+              "cache": {
+                "read": 67584,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 310,
+              "cacheRead": 67584,
+              "cacheCreation": 0,
+              "output": 273,
+              "reasoning": 181
+            },
+            "estimatedCostUSD": 0.000413052
+          },
+          {
+            "messageId": "msg_08a21cf9d0014aOLzJtMeTJUaO",
+            "raw": {
+              "total": 69612,
+              "input": 303,
+              "output": 76,
+              "reasoning": 1137,
+              "cache": {
+                "read": 68096,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 303,
+              "cacheRead": 68096,
+              "cacheCreation": 0,
+              "output": 1213,
+              "reasoning": 1137
+            },
+            "estimatedCostUSD": 0.000977538
+          },
+          {
+            "messageId": "msg_08a21ea1a001woWzlJhTiaevEW",
+            "raw": {
+              "total": 70117,
+              "input": 339,
+              "output": 92,
+              "reasoning": 182,
+              "cache": {
+                "read": 69504,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 339,
+              "cacheRead": 69504,
+              "cacheCreation": 0,
+              "output": 274,
+              "reasoning": 182
+            },
+            "estimatedCostUSD": 0.000423762
+          },
+          {
+            "messageId": "msg_08a226ef70015b3iB0K64zneOl",
+            "raw": {
+              "total": 71817,
+              "input": 331,
+              "output": 76,
+              "reasoning": 1394,
+              "cache": {
+                "read": 70016,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 331,
+              "cacheRead": 70016,
+              "cacheCreation": 0,
+              "output": 1470,
+              "reasoning": 1394
+            },
+            "estimatedCostUSD": 0.001141698
+          },
+          {
+            "messageId": "msg_08a228fc7001MKFvcadbgDHDtX",
+            "raw": {
+              "total": 72481,
+              "input": 243,
+              "output": 92,
+              "reasoning": 338,
+              "cache": {
+                "read": 71808,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 243,
+              "cacheRead": 71808,
+              "cacheCreation": 0,
+              "output": 430,
+              "reasoning": 338
+            },
+            "estimatedCostUSD": 0.000509874
+          },
+          {
+            "messageId": "msg_08a22da840019tIZZkuFxCghuc",
+            "raw": {
+              "total": 74372,
+              "input": 265,
+              "output": 76,
+              "reasoning": 1583,
+              "cache": {
+                "read": 72448,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 265,
+              "cacheRead": 72448,
+              "cacheCreation": 0,
+              "output": 1659,
+              "reasoning": 1583
+            },
+            "estimatedCostUSD": 0.001252494
+          },
+          {
+            "messageId": "msg_08a22ff75001JiywGCnwhAcB2M",
+            "raw": {
+              "total": 74765,
+              "input": 225,
+              "output": 92,
+              "reasoning": 80,
+              "cache": {
+                "read": 74368,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 225,
+              "cacheRead": 74368,
+              "cacheCreation": 0,
+              "output": 172,
+              "reasoning": 80
+            },
+            "estimatedCostUSD": 0.000360054
+          },
+          {
+            "messageId": "msg_08a2348a0001gFvLvcYGDS3nl6",
+            "raw": {
+              "total": 75865,
+              "input": 237,
+              "output": 76,
+              "reasoning": 800,
+              "cache": {
+                "read": 74752,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 237,
+              "cacheRead": 74752,
+              "cacheCreation": 0,
+              "output": 876,
+              "reasoning": 800
+            },
+            "estimatedCostUSD": 0.000785406
+          },
+          {
+            "messageId": "msg_08a235e32001y7LAr5h78pYPLb",
+            "raw": {
+              "total": 76243,
+              "input": 307,
+              "output": 92,
+              "reasoning": 68,
+              "cache": {
+                "read": 75776,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 307,
+              "cacheRead": 75776,
+              "cacheCreation": 0,
+              "output": 160,
+              "reasoning": 68
+            },
+            "estimatedCostUSD": 0.000369378
+          },
+          {
+            "messageId": "msg_08a23b45c001gJEHszBJQEccQZ",
+            "raw": {
+              "total": 77276,
+              "input": 312,
+              "output": 76,
+              "reasoning": 728,
+              "cache": {
+                "read": 76160,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 312,
+              "cacheRead": 76160,
+              "cacheCreation": 0,
+              "output": 804,
+              "reasoning": 728
+            },
+            "estimatedCostUSD": 0.00075768
+          },
+          {
+            "messageId": "msg_08a23c882001Cl6mR90Dv0i8en",
+            "raw": {
+              "total": 77729,
+              "input": 305,
+              "output": 92,
+              "reasoning": 148,
+              "cache": {
+                "read": 77184,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 305,
+              "cacheRead": 77184,
+              "cacheCreation": 0,
+              "output": 240,
+              "reasoning": 148
+            },
+            "estimatedCostUSD": 0.000421302
+          },
+          {
+            "messageId": "msg_08a247bc8001C3lJacxfxU0iMV",
+            "raw": {
+              "total": 81044,
+              "input": 256,
+              "output": 76,
+              "reasoning": 3016,
+              "cache": {
+                "read": 77696,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 256,
+              "cacheRead": 77696,
+              "cacheCreation": 0,
+              "output": 3092,
+              "reasoning": 3016
+            },
+            "estimatedCostUSD": 0.002126688
+          },
+          {
+            "messageId": "msg_08a24be3a001RjUcXbUxSTMng5",
+            "raw": {
+              "total": 81433,
+              "input": 219,
+              "output": 92,
+              "reasoning": 98,
+              "cache": {
+                "read": 81024,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 219,
+              "cacheRead": 81024,
+              "cacheCreation": 0,
+              "output": 190,
+              "reasoning": 98
+            },
+            "estimatedCostUSD": 0.000389922
+          },
+          {
+            "messageId": "msg_08a24f6b6001xTX81fQFxP4ECj",
+            "raw": {
+              "total": 82075,
+              "input": 231,
+              "output": 76,
+              "reasoning": 360,
+              "cache": {
+                "read": 81408,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 231,
+              "cacheRead": 81408,
+              "cacheCreation": 0,
+              "output": 436,
+              "reasoning": 360
+            },
+            "estimatedCostUSD": 0.000540474
+          },
+          {
+            "messageId": "msg_08a250a84001HtYrfYzUvHnl2Y",
+            "raw": {
+              "total": 82470,
+              "input": 227,
+              "output": 92,
+              "reasoning": 103,
+              "cache": {
+                "read": 82048,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 227,
+              "cacheRead": 82048,
+              "cacheCreation": 0,
+              "output": 195,
+              "reasoning": 103
+            },
+            "estimatedCostUSD": 0.000397194
+          },
+          {
+            "messageId": "msg_08a2577e9001pbI6YpvOpSOVFh",
+            "raw": {
+              "total": 83586,
+              "input": 239,
+              "output": 76,
+              "reasoning": 839,
+              "cache": {
+                "read": 82432,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 239,
+              "cacheRead": 82432,
+              "cacheCreation": 0,
+              "output": 915,
+              "reasoning": 839
+            },
+            "estimatedCostUSD": 0.000832146
+          },
+          {
+            "messageId": "msg_08a258fd00010HuLQRsZAckT7y",
+            "raw": {
+              "total": 84141,
+              "input": 211,
+              "output": 92,
+              "reasoning": 254,
+              "cache": {
+                "read": 83584,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 211,
+              "cacheRead": 83584,
+              "cacheCreation": 0,
+              "output": 346,
+              "reasoning": 254
+            },
+            "estimatedCostUSD": 0.000490002
+          },
+          {
+            "messageId": "msg_08a25a59c001n6zv0eORd79Ps0",
+            "raw": {
+              "total": 84429,
+              "input": 241,
+              "output": 73,
+              "reasoning": 19,
+              "cache": {
+                "read": 84096,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 241,
+              "cacheRead": 84096,
+              "cacheCreation": 0,
+              "output": 92,
+              "reasoning": 19
+            },
+            "estimatedCostUSD": 0.000343638
+          }
+        ]
+      },
+      "W": {
+        "sessionId": "ses_f75ef0313ffeRk8HX3WI3DDomv",
+        "effort": "max",
+        "transcriptSha256": "dedea3f3eee43c32e7a2196d2862ceca371b03d6085050940f2b8fde3567119f",
+        "apiRequests": 61,
+        "actualWireEffortVerified": true,
+        "allHttpStatuses": 200,
+        "usage": [
+          {
+            "messageId": "msg_08a11580f0013yet1qmOp3lwjP",
+            "raw": {
+              "total": 11442,
+              "input": 11358,
+              "output": 74,
+              "reasoning": 10,
+              "cache": {
+                "read": 0,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 11358,
+              "cacheRead": 0,
+              "cacheCreation": 0,
+              "output": 84,
+              "reasoning": 10
+            },
+            "estimatedCostUSD": 0.0017541
+          },
+          {
+            "messageId": "msg_08a11710c001X0msRPltq1cIG9",
+            "raw": {
+              "total": 25593,
+              "input": 235,
+              "output": 76,
+              "reasoning": 13890,
+              "cache": {
+                "read": 11392,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 235,
+              "cacheRead": 11392,
+              "cacheCreation": 0,
+              "output": 13966,
+              "reasoning": 13890
+            },
+            "estimatedCostUSD": 0.008449026
+          },
+          {
+            "messageId": "msg_08a127a5e0015h98L85XCGO6kO",
+            "raw": {
+              "total": 26140,
+              "input": 307,
+              "output": 74,
+              "reasoning": 287,
+              "cache": {
+                "read": 25472,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 307,
+              "cacheRead": 25472,
+              "cacheCreation": 0,
+              "output": 361,
+              "reasoning": 287
+            },
+            "estimatedCostUSD": 0.000339066
+          },
+          {
+            "messageId": "msg_08a129141001jszXzVbMQGybHG",
+            "raw": {
+              "total": 32759,
+              "input": 216,
+              "output": 76,
+              "reasoning": 6355,
+              "cache": {
+                "read": 26112,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 216,
+              "cacheRead": 26112,
+              "cacheCreation": 0,
+              "output": 6431,
+              "reasoning": 6355
+            },
+            "estimatedCostUSD": 0.003969336
+          },
+          {
+            "messageId": "msg_08a1302a6001NNrokhRajnVunM",
+            "raw": {
+              "total": 33152,
+              "input": 314,
+              "output": 74,
+              "reasoning": 124,
+              "cache": {
+                "read": 32640,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 314,
+              "cacheRead": 32640,
+              "cacheCreation": 0,
+              "output": 198,
+              "reasoning": 124
+            },
+            "estimatedCostUSD": 0.00026382
+          },
+          {
+            "messageId": "msg_08a130e3c001iInVjVpzY1l0ku",
+            "raw": {
+              "total": 47039,
+              "input": 199,
+              "output": 76,
+              "reasoning": 13612,
+              "cache": {
+                "read": 33152,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 199,
+              "cacheRead": 33152,
+              "cacheCreation": 0,
+              "output": 13688,
+              "reasoning": 13612
+            },
+            "estimatedCostUSD": 0.008342106
+          },
+          {
+            "messageId": "msg_08a13f68a001R1hIIK7M7iA1U6",
+            "raw": {
+              "total": 48321,
+              "input": 263,
+              "output": 74,
+              "reasoning": 1008,
+              "cache": {
+                "read": 46976,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 263,
+              "cacheRead": 46976,
+              "cacheCreation": 0,
+              "output": 1082,
+              "reasoning": 1008
+            },
+            "estimatedCostUSD": 0.000829578
+          },
+          {
+            "messageId": "msg_08a140cee001oh9FP4bGFGd0BG",
+            "raw": {
+              "total": 73345,
+              "input": 272,
+              "output": 76,
+              "reasoning": 24741,
+              "cache": {
+                "read": 48256,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 272,
+              "cacheRead": 48256,
+              "cacheCreation": 0,
+              "output": 24817,
+              "reasoning": 24741
+            },
+            "estimatedCostUSD": 0.015075768
+          },
+          {
+            "messageId": "msg_08a159a030016hm3sUd0lqY2lI",
+            "raw": {
+              "total": 78140,
+              "input": 216,
+              "output": 74,
+              "reasoning": 4506,
+              "cache": {
+                "read": 73344,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 216,
+              "cacheRead": 73344,
+              "cacheCreation": 0,
+              "output": 4580,
+              "reasoning": 4506
+            },
+            "estimatedCostUSD": 0.003000432
+          },
+          {
+            "messageId": "msg_08a16727d001izfz7cMbg2gcZy",
+            "raw": {
+              "total": 88104,
+              "input": 266,
+              "output": 76,
+              "reasoning": 9682,
+              "cache": {
+                "read": 78080,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 266,
+              "cacheRead": 78080,
+              "cacheCreation": 0,
+              "output": 9758,
+              "reasoning": 9682
+            },
+            "estimatedCostUSD": 0.00612894
+          },
+          {
+            "messageId": "msg_08a171ba4001w9smCusqtv6FQy",
+            "raw": {
+              "total": 90793,
+              "input": 255,
+              "output": 74,
+              "reasoning": 2400,
+              "cache": {
+                "read": 88064,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 255,
+              "cacheRead": 88064,
+              "cacheCreation": 0,
+              "output": 2474,
+              "reasoning": 2400
+            },
+            "estimatedCostUSD": 0.001786842
+          },
+          {
+            "messageId": "msg_08a174a52001wqrxG7yJ624hY8",
+            "raw": {
+              "total": 96619,
+              "input": 252,
+              "output": 76,
+              "reasoning": 5539,
+              "cache": {
+                "read": 90752,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 252,
+              "cacheRead": 90752,
+              "cacheCreation": 0,
+              "output": 5615,
+              "reasoning": 5539
+            },
+            "estimatedCostUSD": 0.003679056
+          },
+          {
+            "messageId": "msg_08a17ab6c0016xt6VsVe3ctaAc",
+            "raw": {
+              "total": 97454,
+              "input": 319,
+              "output": 74,
+              "reasoning": 549,
+              "cache": {
+                "read": 96512,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 319,
+              "cacheRead": 96512,
+              "cacheCreation": 0,
+              "output": 623,
+              "reasoning": 549
+            },
+            "estimatedCostUSD": 0.000711186
+          },
+          {
+            "messageId": "msg_08a17da4a001ia1auypaH0xRYq",
+            "raw": {
+              "total": 102572,
+              "input": 249,
+              "output": 76,
+              "reasoning": 4839,
+              "cache": {
+                "read": 97408,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 249,
+              "cacheRead": 97408,
+              "cacheCreation": 0,
+              "output": 4915,
+              "reasoning": 4839
+            },
+            "estimatedCostUSD": 0.003278574
+          },
+          {
+            "messageId": "msg_08a182cca001BmEVAmWfAENYHR",
+            "raw": {
+              "total": 103260,
+              "input": 242,
+              "output": 74,
+              "reasoning": 416,
+              "cache": {
+                "read": 102528,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 242,
+              "cacheRead": 102528,
+              "cacheCreation": 0,
+              "output": 490,
+              "reasoning": 416
+            },
+            "estimatedCostUSD": 0.000637884
+          },
+          {
+            "messageId": "msg_08a184540001gpEkfD29Lkc3Za",
+            "raw": {
+              "total": 105074,
+              "input": 314,
+              "output": 76,
+              "reasoning": 1516,
+              "cache": {
+                "read": 103168,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 314,
+              "cacheRead": 103168,
+              "cacheCreation": 0,
+              "output": 1592,
+              "reasoning": 1516
+            },
+            "estimatedCostUSD": 0.001311804
+          },
+          {
+            "messageId": "msg_08a1863ba001C0WOcKDZ0gjj9N",
+            "raw": {
+              "total": 105964,
+              "input": 326,
+              "output": 74,
+              "reasoning": 604,
+              "cache": {
+                "read": 104960,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 326,
+              "cacheRead": 104960,
+              "cacheCreation": 0,
+              "output": 678,
+              "reasoning": 604
+            },
+            "estimatedCostUSD": 0.00077058
+          },
+          {
+            "messageId": "msg_08a188701001Lsp2HhQEFc8gxs",
+            "raw": {
+              "total": 116126,
+              "input": 327,
+              "output": 76,
+              "reasoning": 9867,
+              "cache": {
+                "read": 105856,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 327,
+              "cacheRead": 105856,
+              "cacheCreation": 0,
+              "output": 9943,
+              "reasoning": 9867
+            },
+            "estimatedCostUSD": 0.006332418
+          },
+          {
+            "messageId": "msg_08a19224a0016dnxCahsrw6hlD",
+            "raw": {
+              "total": 116885,
+              "input": 242,
+              "output": 74,
+              "reasoning": 473,
+              "cache": {
+                "read": 116096,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 242,
+              "cacheRead": 116096,
+              "cacheCreation": 0,
+              "output": 547,
+              "reasoning": 473
+            },
+            "estimatedCostUSD": 0.000712788
+          },
+          {
+            "messageId": "msg_08a19485b001eszQXBJi78oaJK",
+            "raw": {
+              "total": 122710,
+              "input": 246,
+              "output": 76,
+              "reasoning": 5524,
+              "cache": {
+                "read": 116864,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 246,
+              "cacheRead": 116864,
+              "cacheCreation": 0,
+              "output": 5600,
+              "reasoning": 5524
+            },
+            "estimatedCostUSD": 0.003747492
+          },
+          {
+            "messageId": "msg_08a19ae34001gc2vlF2MpShJgE",
+            "raw": {
+              "total": 124367,
+              "input": 299,
+              "output": 74,
+              "reasoning": 1370,
+              "cache": {
+                "read": 122624,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 299,
+              "cacheRead": 122624,
+              "cacheCreation": 0,
+              "output": 1444,
+              "reasoning": 1370
+            },
+            "estimatedCostUSD": 0.001279122
+          },
+          {
+            "messageId": "msg_08a19d2e900156lGkOIAGKo8af",
+            "raw": {
+              "total": 154112,
+              "input": 313,
+              "output": 76,
+              "reasoning": 29435,
+              "cache": {
+                "read": 124288,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 313,
+              "cacheRead": 124288,
+              "cacheCreation": 0,
+              "output": 29511,
+              "reasoning": 29435
+            },
+            "estimatedCostUSD": 0.018126414
+          },
+          {
+            "messageId": "msg_08a1bcc73001CmWDf07T8hfxJm",
+            "raw": {
+              "total": 154734,
+              "input": 212,
+              "output": 74,
+              "reasoning": 336,
+              "cache": {
+                "read": 154112,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 212,
+              "cacheRead": 154112,
+              "cacheCreation": 0,
+              "output": 410,
+              "reasoning": 336
+            },
+            "estimatedCostUSD": 0.000740136
+          },
+          {
+            "messageId": "msg_08a1be0df001RKez1ChUBHHRJJ",
+            "raw": {
+              "total": 159072,
+              "input": 339,
+              "output": 76,
+              "reasoning": 4033,
+              "cache": {
+                "read": 154624,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 339,
+              "cacheRead": 154624,
+              "cacheCreation": 0,
+              "output": 4109,
+              "reasoning": 4033
+            },
+            "estimatedCostUSD": 0.002980122
+          },
+          {
+            "messageId": "msg_08a1c22ce001TObp6ZuYiImHdQ",
+            "raw": {
+              "total": 160005,
+              "input": 321,
+              "output": 74,
+              "reasoning": 634,
+              "cache": {
+                "read": 158976,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 321,
+              "cacheRead": 158976,
+              "cacheCreation": 0,
+              "output": 708,
+              "reasoning": 634
+            },
+            "estimatedCostUSD": 0.000949878
+          },
+          {
+            "messageId": "msg_08a1c62b4001jvve5yQLvxzxIc",
+            "raw": {
+              "total": 165224,
+              "input": 240,
+              "output": 76,
+              "reasoning": 4908,
+              "cache": {
+                "read": 160000,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 240,
+              "cacheRead": 160000,
+              "cacheCreation": 0,
+              "output": 4984,
+              "reasoning": 4908
+            },
+            "estimatedCostUSD": 0.0035064
+          },
+          {
+            "messageId": "msg_08a1caf800019RO6vFmpevKhlV",
+            "raw": {
+              "total": 166461,
+              "input": 323,
+              "output": 74,
+              "reasoning": 944,
+              "cache": {
+                "read": 165120,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 323,
+              "cacheRead": 165120,
+              "cacheCreation": 0,
+              "output": 1018,
+              "reasoning": 944
+            },
+            "estimatedCostUSD": 0.00115461
+          },
+          {
+            "messageId": "msg_08a1cc426001gZfPRE2vUA5Ey5",
+            "raw": {
+              "total": 177630,
+              "input": 296,
+              "output": 76,
+              "reasoning": 10858,
+              "cache": {
+                "read": 166400,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 296,
+              "cacheRead": 166400,
+              "cacheCreation": 0,
+              "output": 10934,
+              "reasoning": 10858
+            },
+            "estimatedCostUSD": 0.007104
+          },
+          {
+            "messageId": "msg_08a1d8718001oLKRo9aozBm7oP",
+            "raw": {
+              "total": 179029,
+              "input": 315,
+              "output": 74,
+              "reasoning": 1104,
+              "cache": {
+                "read": 177536,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 315,
+              "cacheRead": 177536,
+              "cacheCreation": 0,
+              "output": 1178,
+              "reasoning": 1104
+            },
+            "estimatedCostUSD": 0.001286658
+          },
+          {
+            "messageId": "msg_08a1dacf30014c7oDiP3ljOtwR",
+            "raw": {
+              "total": 189894,
+              "input": 317,
+              "output": 76,
+              "reasoning": 10557,
+              "cache": {
+                "read": 178944,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 317,
+              "cacheRead": 178944,
+              "cacheCreation": 0,
+              "output": 10633,
+              "reasoning": 10557
+            },
+            "estimatedCostUSD": 0.006964182
+          },
+          {
+            "messageId": "msg_08a1e5da7001Kt5YNQf20WYw1x",
+            "raw": {
+              "total": 190863,
+              "input": 290,
+              "output": 74,
+              "reasoning": 675,
+              "cache": {
+                "read": 189824,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 290,
+              "cacheRead": 189824,
+              "cacheCreation": 0,
+              "output": 749,
+              "reasoning": 675
+            },
+            "estimatedCostUSD": 0.001062372
+          },
+          {
+            "messageId": "msg_08a1e7c91001jlLW71GOX3EudK",
+            "raw": {
+              "total": 196318,
+              "input": 261,
+              "output": 76,
+              "reasoning": 5133,
+              "cache": {
+                "read": 190848,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 261,
+              "cacheRead": 190848,
+              "cacheCreation": 0,
+              "output": 5209,
+              "reasoning": 5133
+            },
+            "estimatedCostUSD": 0.003737094
+          },
+          {
+            "messageId": "msg_08a1ed2c3001dDHfGCFkgRJz9A",
+            "raw": {
+              "total": 197838,
+              "input": 321,
+              "output": 74,
+              "reasoning": 1219,
+              "cache": {
+                "read": 196224,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 321,
+              "cacheRead": 196224,
+              "cacheCreation": 0,
+              "output": 1293,
+              "reasoning": 1219
+            },
+            "estimatedCostUSD": 0.001412622
+          },
+          {
+            "messageId": "msg_08a1eedbf00161fh3bYc5HC4ND",
+            "raw": {
+              "total": 204748,
+              "input": 319,
+              "output": 76,
+              "reasoning": 6593,
+              "cache": {
+                "read": 197760,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 319,
+              "cacheRead": 197760,
+              "cacheCreation": 0,
+              "output": 6669,
+              "reasoning": 6593
+            },
+            "estimatedCostUSD": 0.00464253
+          },
+          {
+            "messageId": "msg_08a1f653f001Bqa5A15sNCXNbs",
+            "raw": {
+              "total": 205559,
+              "input": 285,
+              "output": 74,
+              "reasoning": 528,
+              "cache": {
+                "read": 204672,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 285,
+              "cacheRead": 204672,
+              "cacheCreation": 0,
+              "output": 602,
+              "reasoning": 528
+            },
+            "estimatedCostUSD": 0.001017966
+          },
+          {
+            "messageId": "msg_08a1f7f28001zlO7uEOI1g5xW6",
+            "raw": {
+              "total": 207037,
+              "input": 357,
+              "output": 76,
+              "reasoning": 1164,
+              "cache": {
+                "read": 205440,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 357,
+              "cacheRead": 205440,
+              "cacheCreation": 0,
+              "output": 1240,
+              "reasoning": 1164
+            },
+            "estimatedCostUSD": 0.00141387
+          },
+          {
+            "messageId": "msg_08a1f9828001Hj75BGiio0os2Q",
+            "raw": {
+              "total": 208112,
+              "input": 282,
+              "output": 74,
+              "reasoning": 780,
+              "cache": {
+                "read": 206976,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 282,
+              "cacheRead": 206976,
+              "cacheCreation": 0,
+              "output": 854,
+              "reasoning": 780
+            },
+            "estimatedCostUSD": 0.001175628
+          },
+          {
+            "messageId": "msg_08a1fab02001Uw4EEl3Afm2kQH",
+            "raw": {
+              "total": 212391,
+              "input": 342,
+              "output": 76,
+              "reasoning": 3973,
+              "cache": {
+                "read": 208000,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 342,
+              "cacheRead": 208000,
+              "cacheCreation": 0,
+              "output": 4049,
+              "reasoning": 3973
+            },
+            "estimatedCostUSD": 0.0031047
+          },
+          {
+            "messageId": "msg_08a1ff1530010FwYHGjaFO2gww",
+            "raw": {
+              "total": 214822,
+              "input": 273,
+              "output": 74,
+              "reasoning": 2123,
+              "cache": {
+                "read": 212352,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 273,
+              "cacheRead": 212352,
+              "cacheCreation": 0,
+              "output": 2197,
+              "reasoning": 2123
+            },
+            "estimatedCostUSD": 0.001996206
+          },
+          {
+            "messageId": "msg_08a201ae5001yIHByxnKILy1NL",
+            "raw": {
+              "total": 218045,
+              "input": 278,
+              "output": 76,
+              "reasoning": 2907,
+              "cache": {
+                "read": 214784,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 278,
+              "cacheRead": 214784,
+              "cacheCreation": 0,
+              "output": 2983,
+              "reasoning": 2907
+            },
+            "estimatedCostUSD": 0.002475852
+          },
+          {
+            "messageId": "msg_08a204e69001LVIdTjiUNMY3bu",
+            "raw": {
+              "total": 220120,
+              "input": 301,
+              "output": 74,
+              "reasoning": 1761,
+              "cache": {
+                "read": 217984,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 301,
+              "cacheRead": 217984,
+              "cacheCreation": 0,
+              "output": 1835,
+              "reasoning": 1761
+            },
+            "estimatedCostUSD": 0.001800102
+          },
+          {
+            "messageId": "msg_08a207005001KbnPAZef92ewzU",
+            "raw": {
+              "total": 226579,
+              "input": 339,
+              "output": 76,
+              "reasoning": 6132,
+              "cache": {
+                "read": 220032,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 339,
+              "cacheRead": 220032,
+              "cacheCreation": 0,
+              "output": 6208,
+              "reasoning": 6132
+            },
+            "estimatedCostUSD": 0.004435746
+          },
+          {
+            "messageId": "msg_08a20d8a0001OOj6PtoRQ8wwFR",
+            "raw": {
+              "total": 227389,
+              "input": 247,
+              "output": 74,
+              "reasoning": 508,
+              "cache": {
+                "read": 226560,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 247,
+              "cacheRead": 226560,
+              "cacheCreation": 0,
+              "output": 582,
+              "reasoning": 508
+            },
+            "estimatedCostUSD": 0.00106593
+          },
+          {
+            "messageId": "msg_08a2109d10018nbRXwPo3XnLqD",
+            "raw": {
+              "total": 239103,
+              "input": 308,
+              "output": 76,
+              "reasoning": 11391,
+              "cache": {
+                "read": 227328,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 308,
+              "cacheRead": 227328,
+              "cacheCreation": 0,
+              "output": 11467,
+              "reasoning": 11391
+            },
+            "estimatedCostUSD": 0.007608384
+          },
+          {
+            "messageId": "msg_08a21cfd1001Vr5FKuE2irkQp6",
+            "raw": {
+              "total": 242365,
+              "input": 354,
+              "output": 74,
+              "reasoning": 2961,
+              "cache": {
+                "read": 238976,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 354,
+              "cacheRead": 238976,
+              "cacheCreation": 0,
+              "output": 3035,
+              "reasoning": 2961
+            },
+            "estimatedCostUSD": 0.002591028
+          },
+          {
+            "messageId": "msg_08a220cb90016QHat7aNbuvEDc",
+            "raw": {
+              "total": 248459,
+              "input": 297,
+              "output": 76,
+              "reasoning": 5782,
+              "cache": {
+                "read": 242304,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 297,
+              "cacheRead": 242304,
+              "cacheCreation": 0,
+              "output": 5858,
+              "reasoning": 5782
+            },
+            "estimatedCostUSD": 0.004286262
+          },
+          {
+            "messageId": "msg_08a226eec0011VbHp5egz6L2bA",
+            "raw": {
+              "total": 249511,
+              "input": 236,
+              "output": 74,
+              "reasoning": 753,
+              "cache": {
+                "read": 248448,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 236,
+              "cacheRead": 248448,
+              "cacheCreation": 0,
+              "output": 827,
+              "reasoning": 753
+            },
+            "estimatedCostUSD": 0.001276944
+          },
+          {
+            "messageId": "msg_08a228fa10016SGhSKGUPg2R4b",
+            "raw": {
+              "total": 254631,
+              "input": 278,
+              "output": 76,
+              "reasoning": 4805,
+              "cache": {
+                "read": 249472,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 278,
+              "cacheRead": 249472,
+              "cacheCreation": 0,
+              "output": 4881,
+              "reasoning": 4805
+            },
+            "estimatedCostUSD": 0.003718716
+          },
+          {
+            "messageId": "msg_08a22daca001njLuSFnSKBF4Ck",
+            "raw": {
+              "total": 255614,
+              "input": 266,
+              "output": 74,
+              "reasoning": 682,
+              "cache": {
+                "read": 254592,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 266,
+              "cacheRead": 254592,
+              "cacheCreation": 0,
+              "output": 756,
+              "reasoning": 682
+            },
+            "estimatedCostUSD": 0.001257276
+          },
+          {
+            "messageId": "msg_08a22ff2c001YCZgxE7p9YtPU5",
+            "raw": {
+              "total": 260227,
+              "input": 352,
+              "output": 76,
+              "reasoning": 4311,
+              "cache": {
+                "read": 255488,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 352,
+              "cacheRead": 255488,
+              "cacheCreation": 0,
+              "output": 4387,
+              "reasoning": 4311
+            },
+            "estimatedCostUSD": 0.003451464
+          },
+          {
+            "messageId": "msg_08a234876001aPVh30UY9DM7ZJ",
+            "raw": {
+              "total": 261158,
+              "input": 222,
+              "output": 74,
+              "reasoning": 638,
+              "cache": {
+                "read": 260224,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 222,
+              "cacheRead": 260224,
+              "cacheCreation": 0,
+              "output": 712,
+              "reasoning": 638
+            },
+            "estimatedCostUSD": 0.001241172
+          },
+          {
+            "messageId": "msg_08a235e2e0010MgvYm3MK8kVto",
+            "raw": {
+              "total": 265998,
+              "input": 261,
+              "output": 76,
+              "reasoning": 4541,
+              "cache": {
+                "read": 261120,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 261,
+              "cacheRead": 261120,
+              "cacheCreation": 0,
+              "output": 4617,
+              "reasoning": 4541
+            },
+            "estimatedCostUSD": 0.00359271
+          },
+          {
+            "messageId": "msg_08a23b42c0010RcZ24rBDHiU44",
+            "raw": {
+              "total": 267292,
+              "input": 238,
+              "output": 74,
+              "reasoning": 996,
+              "cache": {
+                "read": 265984,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 238,
+              "cacheRead": 265984,
+              "cacheCreation": 0,
+              "output": 1070,
+              "reasoning": 996
+            },
+            "estimatedCostUSD": 0.001475652
+          },
+          {
+            "messageId": "msg_08a23d0ef0018IZj1DoIj8lwpI",
+            "raw": {
+              "total": 277399,
+              "input": 246,
+              "output": 76,
+              "reasoning": 9813,
+              "cache": {
+                "read": 267264,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 246,
+              "cacheRead": 267264,
+              "cacheCreation": 0,
+              "output": 9889,
+              "reasoning": 9813
+            },
+            "estimatedCostUSD": 0.006772092
+          },
+          {
+            "messageId": "msg_08a247ba8001QoOn6doSL7yS4M",
+            "raw": {
+              "total": 278499,
+              "input": 241,
+              "output": 74,
+              "reasoning": 808,
+              "cache": {
+                "read": 277376,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 241,
+              "cacheRead": 277376,
+              "cacheCreation": 0,
+              "output": 882,
+              "reasoning": 808
+            },
+            "estimatedCostUSD": 0.001397478
+          },
+          {
+            "messageId": "msg_08a24be1d001367SaC3Xdu1dnL",
+            "raw": {
+              "total": 281611,
+              "input": 303,
+              "output": 76,
+              "reasoning": 2832,
+              "cache": {
+                "read": 278400,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 303,
+              "cacheRead": 278400,
+              "cacheCreation": 0,
+              "output": 2908,
+              "reasoning": 2832
+            },
+            "estimatedCostUSD": 0.00262545
+          },
+          {
+            "messageId": "msg_08a24f6d1001wVQwuu0QlswhWb",
+            "raw": {
+              "total": 283166,
+              "input": 212,
+              "output": 74,
+              "reasoning": 1280,
+              "cache": {
+                "read": 281600,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 212,
+              "cacheRead": 281600,
+              "cacheCreation": 0,
+              "output": 1354,
+              "reasoning": 1280
+            },
+            "estimatedCostUSD": 0.001689
+          },
+          {
+            "messageId": "msg_08a2516a8001ZqBFZHQJyCbzTa",
+            "raw": {
+              "total": 288539,
+              "input": 235,
+              "output": 76,
+              "reasoning": 5092,
+              "cache": {
+                "read": 283136,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 235,
+              "cacheRead": 283136,
+              "cacheCreation": 0,
+              "output": 5168,
+              "reasoning": 5092
+            },
+            "estimatedCostUSD": 0.003985458
+          },
+          {
+            "messageId": "msg_08a2577d80016gk0LoqUwVzpyB",
+            "raw": {
+              "total": 289206,
+              "input": 223,
+              "output": 74,
+              "reasoning": 397,
+              "cache": {
+                "read": 288512,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 223,
+              "cacheRead": 288512,
+              "cacheCreation": 0,
+              "output": 471,
+              "reasoning": 397
+            },
+            "estimatedCostUSD": 0.001181586
+          },
+          {
+            "messageId": "msg_08a258fda001NKpa5rT0CNP64b",
+            "raw": {
+              "total": 290181,
+              "input": 268,
+              "output": 76,
+              "reasoning": 685,
+              "cache": {
+                "read": 289152,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 268,
+              "cacheRead": 289152,
+              "cacheCreation": 0,
+              "output": 761,
+              "reasoning": 685
+            },
+            "estimatedCostUSD": 0.001364256
+          },
+          {
+            "messageId": "msg_08a25a5b40013Ka6dzgOULscb8",
+            "raw": {
+              "total": 290716,
+              "input": 196,
+              "output": 151,
+              "reasoning": 193,
+              "cache": {
+                "read": 290176,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 196,
+              "cacheRead": 290176,
+              "cacheCreation": 0,
+              "output": 344,
+              "reasoning": 193
+            },
+            "estimatedCostUSD": 0.001106328
+          }
+        ]
+      }
+    }
+  }
+}

@@ -4932,6 +4932,62 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g184",
+      "card": "a-deepseek-v4.1-flash-high-max",
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "opencode",
+          "model": "deepseek-v4.1-flash",
+          "effort": "high",
+          "display": "deepseek-v4.1-flash · high"
+        },
+        "W": {
+          "agentType": "opencode",
+          "model": "deepseek-v4.1-flash",
+          "effort": "max",
+          "display": "deepseek-v4.1-flash · max"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 23,
+        "W": 41
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "side": "B",
+          "kind": "wait-tool-timeout",
+          "at": "2026-09-10T06:57:46.012Z",
+          "detail": "Native shell timeout at 120 seconds while waiting for opponent; player retried wait without intervention. No lost or illegal move."
+        }
+      ],
+      "finishedAt": "2026-09-10T07:08:38.154Z",
+      "tokens": {
+        "B": {
+          "input": 28457,
+          "cacheRead": 3110528,
+          "cacheCreation": 0,
+          "output": 59709,
+          "reasoning": 54628,
+          "apiCalls": 63
+        },
+        "W": {
+          "input": 28024,
+          "cacheRead": 10411264,
+          "cacheCreation": 0,
+          "output": 266228,
+          "reasoning": 261577,
+          "apiCalls": 61
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
