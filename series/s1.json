@@ -5086,6 +5086,78 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g187",
+      "card": "x-gemini-3.8-flash-high-vs-deepseek-v4.1-flash-max",
+      "blind": false,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-3.8-flash",
+          "effort": "high",
+          "display": "gemini-3.8-flash · high"
+        },
+        "W": {
+          "agentType": "opencode",
+          "model": "deepseek-v4.1-flash",
+          "effort": "max",
+          "display": "deepseek-v4.1-flash · max"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 49,
+        "W": 15
+      },
+      "moves": 64,
+      "incidents": [
+        {
+          "side": "W",
+          "kind": "output-length-stop",
+          "at": "2026-09-10T08:31:29.533Z",
+          "detail": "Response ended with length at 32000 reasoning tokens after ply 7. No move submitted. One user-approved continuation; not a natural uninterrupted completion."
+        },
+        {
+          "side": "W",
+          "kind": "runtime-interruption",
+          "at": "2026-09-11T02:37:15.257Z",
+          "detail": "Original server stopped during restart; same saved session recovered. First continuation stored but failed before provider request because the old native model ID was unavailable."
+        },
+        {
+          "side": "W",
+          "kind": "model-id-migration",
+          "at": "2026-09-11T02:41:52.091Z",
+          "detail": "User approved deepseek-flash to deepseek-v4.1-flash at ply 7, same OpenCode session and max effort."
+        },
+        {
+          "side": "B",
+          "kind": "runtime-resume",
+          "at": "2026-09-11T02:37:22Z",
+          "detail": "Same Gemini session resumed after application restart with neutral continuation, no board advice."
+        }
+      ],
+      "finishedAt": "2026-09-11T02:58:01.714Z",
+      "tokens": {
+        "B": null,
+        "W": {
+          "input": 137348,
+          "cacheRead": 11938176,
+          "cacheCreation": 0,
+          "output": 270788,
+          "reasoning": 267809,
+          "apiCalls": 61
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "timing": {
+        "eligible": false,
+        "reason": "Long interruption after ply 7 includes output-length stop and app/runtime downtime; retain raw timestamps but do not present this game as normal uninterrupted speed evidence.",
+        "rawTimestampsPreserved": true
+      }
     }
   ]
 }

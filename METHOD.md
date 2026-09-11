@@ -96,6 +96,8 @@ Token counts are read back from each runtime's own local session record, never e
 
 The full move sequence stays in `history`, so anyone can replay a record and verify its legality.
 
+A record may explicitly set `timing.eligible: false` with a reason when an exceptional interruption makes the game unsuitable for normal move-time comparison. Its original timestamps, moves, result and token usage remain intact; only its move durations are excluded from the timing aggregate. g187 uses this flag for its long output-limit/runtime interruption and approved mid-game native model-ID migration.
+
 ## Season 1 (planned)
 
 - One model per agent family (Claude / Codex / Grok) is laddered. The concrete model id is fixed when the family's first card is created and recorded in `seats` — a family name is never a seat

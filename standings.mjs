@@ -110,7 +110,7 @@ const standings = players
     });
     const timeSamples = games.flatMap((game) => {
       const side = game.black === player ? "B" : game.white === player ? "W" : null;
-      return side ? [{ durations: moveDurationsOf({ history: matches[game.id].history, side }), moves: game.decisions[side] }] : [];
+      return side ? [{ durations: moveDurationsOf({ history: matches[game.id].history, side, eligible: matches[game.id].timing?.eligible !== false }), moves: game.decisions[side] }] : [];
     });
     return {
       player,

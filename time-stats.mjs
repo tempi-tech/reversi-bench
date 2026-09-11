@@ -6,7 +6,7 @@ const quantileOf = ({ sorted, percentile }) => {
   return sorted[lower] * (1 - weight) + sorted[upper] * weight;
 };
 
-export const moveDurationsOf = ({ history, side }) => history.flatMap((entry, index) => {
+export const moveDurationsOf = ({ history, side, eligible = true }) => (eligible ? history : []).flatMap((entry, index) => {
   if (index === 0 || entry.side !== side || entry.move === "pass") {
     return [];
   }

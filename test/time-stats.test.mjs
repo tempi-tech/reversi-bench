@@ -3,6 +3,17 @@ import test from "node:test";
 
 import { moveDurationsOf, timeStatsOf } from "../time-stats.mjs";
 
+test("explicit timing exclusion preserves history without contributing durations", () => {
+  const history = [
+    { side: "B", move: "c4", at: "2026-09-10T08:29:00.000Z" },
+    { side: "W", move: "c3", at: "2026-09-11T02:42:00.000Z" },
+  ];
+  const original = JSON.stringify(history);
+  assert.deepEqual(moveDurationsOf({ history, side: "W", eligible: false }), []);
+  assert.equal(JSON.stringify(history), original);
+  assert.equal(moveDurationsOf({ history, side: "W" }).length, 1);
+});
+
 test("attributes elapsed time to each played move after the opener", () => {
   const history = [
     { side: "B", move: "c4", at: "2026-09-03T00:00:10.000Z" },

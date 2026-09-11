@@ -1,0 +1,2831 @@
+{
+  "summary": {
+    "game": "s1/g187",
+    "card": "x-gemini-3.8-flash-high-vs-deepseek-v4.1-flash-max",
+    "winner": "B",
+    "score": {
+      "B": 49,
+      "W": 15
+    },
+    "seats": {
+      "B": "gemini-3.8-flash · high",
+      "W": "deepseek-v4.1-flash · max"
+    },
+    "moves": 64,
+    "blind": false,
+    "referee": "3ea3859",
+    "tokens": {
+      "B": null,
+      "W": {
+        "input": 137348,
+        "cacheRead": 11938176,
+        "cacheCreation": 0,
+        "output": 270788,
+        "reasoning": 267809,
+        "apiCalls": 61
+      }
+    },
+    "cost": {
+      "B": null,
+      "W": null
+    },
+    "notes": [
+      "Gemini 3.8 Flash high defeated DeepSeek V4.1 Flash max 49-15 as Black. Interrupted, externally resumed and native-model-ID-migrated game; not identical-condition uninterrupted evidence. Ranked as explicitly requested, with caveats preserved.",
+      "Independent ordinary replay reproduced 60 played moves and four automatic passes, complete side/move/flips history, final board, turn and winner.",
+      "White started as deepseek-flash and resumed as deepseek-v4.1-flash after the user approved the catalog ID change. All 61 actual requests used max, and all returned HTTP 200. Each request was checked against its migration phase. Same session and OpenCode 1.18.5 throughout; no claim of an unchanged provider model ID.",
+      "White has three stored user messages: original instruction, failed pre-provider continuation under old ID, and approved new-ID continuation. Original and resumed usage, including the length-limited response, are retained and deduplicated by message ID. Every raw.total was validated before adding reasoning to normalized output.",
+      "Black used Antigravity Cockpit task a4cd6f60, same session a1acaa3c-e37b-459d-8c5f-0d1e29632644 across two turns, Auto/default, Gemini 3.8 Flash high. Both turn.completed events lack usage, so tokens and cost remain null.",
+      "Player I/O audit found referee-only move/wait commands and native wait-status checks, neutral referee player labels and no opponent identity. Gemini runtime injected its own model label in USER_SETTINGS_CHANGE; strict full blinding therefore fails and blind is false. Both continuations contained no strategic advice.",
+      "Original timestamps retained. timing.eligible false excludes this whole game from Avg time / move to avoid treating the long output-limit, restart and migration gap as normal speed evidence. Win/loss, stones and usage remain recorded.",
+      "Completion-only supervisor exited after notification; Discord remained disabled. Final approved game, queue complete, no new game. Ultra and discarded g142 excluded."
+    ]
+  },
+  "id": "current",
+  "size": 8,
+  "title": "Reversi 8×8",
+  "createdAt": "2026-09-10T08:23:44.259Z",
+  "updatedAt": "2026-09-11T02:58:01.714Z",
+  "cells": [
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "B",
+    "B",
+    "W",
+    "B",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "B",
+    "B",
+    "W",
+    "B",
+    "B",
+    "W",
+    "W",
+    "W",
+    "B",
+    "B",
+    "B",
+    "B"
+  ],
+  "turn": "W",
+  "status": "over",
+  "winner": "B",
+  "thinking": null,
+  "lastMove": {
+    "side": "W",
+    "move": "b1",
+    "flips": [
+      "b2"
+    ]
+  },
+  "history": [
+    {
+      "side": "B",
+      "move": "c5",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-09-10T08:23:57.247Z"
+    },
+    {
+      "side": "W",
+      "move": "e6",
+      "flips": [
+        "e5"
+      ],
+      "at": "2026-09-10T08:26:22.505Z"
+    },
+    {
+      "side": "B",
+      "move": "f5",
+      "flips": [
+        "e5"
+      ],
+      "at": "2026-09-10T08:26:27.472Z"
+    },
+    {
+      "side": "W",
+      "move": "c4",
+      "flips": [
+        "d5",
+        "d4"
+      ],
+      "at": "2026-09-10T08:27:51.749Z"
+    },
+    {
+      "side": "B",
+      "move": "d3",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-09-10T08:27:56.756Z"
+    },
+    {
+      "side": "W",
+      "move": "e3",
+      "flips": [
+        "e4",
+        "e5"
+      ],
+      "at": "2026-09-10T08:28:52.022Z"
+    },
+    {
+      "side": "B",
+      "move": "d6",
+      "flips": [
+        "d5",
+        "d4"
+      ],
+      "at": "2026-09-10T08:29:00.428Z"
+    },
+    {
+      "side": "W",
+      "move": "c6",
+      "flips": [
+        "d6",
+        "c5",
+        "d5"
+      ],
+      "at": "2026-09-11T02:42:11.921Z"
+    },
+    {
+      "side": "B",
+      "move": "f4",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-09-11T02:42:17.696Z"
+    },
+    {
+      "side": "W",
+      "move": "c3",
+      "flips": [
+        "d4",
+        "d3"
+      ],
+      "at": "2026-09-11T02:42:55.551Z"
+    },
+    {
+      "side": "B",
+      "move": "b4",
+      "flips": [
+        "c4",
+        "d4"
+      ],
+      "at": "2026-09-11T02:43:08.250Z"
+    },
+    {
+      "side": "W",
+      "move": "g6",
+      "flips": [
+        "f5",
+        "e4"
+      ],
+      "at": "2026-09-11T02:43:56.057Z"
+    },
+    {
+      "side": "B",
+      "move": "f6",
+      "flips": [
+        "e5",
+        "f5"
+      ],
+      "at": "2026-09-11T02:44:01.582Z"
+    },
+    {
+      "side": "W",
+      "move": "a4",
+      "flips": [
+        "b4",
+        "c4",
+        "d4"
+      ],
+      "at": "2026-09-11T02:45:01.300Z"
+    },
+    {
+      "side": "B",
+      "move": "b5",
+      "flips": [
+        "c5",
+        "d5"
+      ],
+      "at": "2026-09-11T02:45:09.887Z"
+    },
+    {
+      "side": "W",
+      "move": "g7",
+      "flips": [
+        "f6",
+        "e5"
+      ],
+      "at": "2026-09-11T02:45:48.456Z"
+    },
+    {
+      "side": "B",
+      "move": "f7",
+      "flips": [
+        "e6",
+        "f6"
+      ],
+      "at": "2026-09-11T02:45:55.565Z"
+    },
+    {
+      "side": "W",
+      "move": "a5",
+      "flips": [
+        "b5",
+        "c5",
+        "d5"
+      ],
+      "at": "2026-09-11T02:46:56.251Z"
+    },
+    {
+      "side": "B",
+      "move": "h8",
+      "flips": [
+        "g7"
+      ],
+      "at": "2026-09-11T02:46:59.119Z"
+    },
+    {
+      "side": "W",
+      "move": "g5",
+      "flips": [
+        "f5",
+        "f4"
+      ],
+      "at": "2026-09-11T02:47:36.981Z"
+    },
+    {
+      "side": "B",
+      "move": "h6",
+      "flips": [
+        "g6"
+      ],
+      "at": "2026-09-11T02:47:45.049Z"
+    },
+    {
+      "side": "W",
+      "move": "g8",
+      "flips": [
+        "f7",
+        "e6",
+        "g7",
+        "g6"
+      ],
+      "at": "2026-09-11T02:48:06.556Z"
+    },
+    {
+      "side": "B",
+      "move": "f8",
+      "flips": [
+        "g8",
+        "f7",
+        "g7"
+      ],
+      "at": "2026-09-11T02:48:13.034Z"
+    },
+    {
+      "side": "W",
+      "move": "e8",
+      "flips": [
+        "f7"
+      ],
+      "at": "2026-09-11T02:48:24.512Z"
+    },
+    {
+      "side": "B",
+      "move": "d8",
+      "flips": [
+        "e8"
+      ],
+      "at": "2026-09-11T02:48:30.333Z"
+    },
+    {
+      "side": "W",
+      "move": "h7",
+      "flips": [
+        "g7"
+      ],
+      "at": "2026-09-11T02:48:48.635Z"
+    },
+    {
+      "side": "B",
+      "move": "f3",
+      "flips": [
+        "f4",
+        "f5"
+      ],
+      "at": "2026-09-11T02:48:56.302Z"
+    },
+    {
+      "side": "W",
+      "move": "g4",
+      "flips": [
+        "f5",
+        "f4"
+      ],
+      "at": "2026-09-11T02:50:02.526Z"
+    },
+    {
+      "side": "B",
+      "move": "g3",
+      "flips": [
+        "g4",
+        "g5",
+        "g6",
+        "g7"
+      ],
+      "at": "2026-09-11T02:50:07.460Z"
+    },
+    {
+      "side": "W",
+      "move": "h3",
+      "flips": [
+        "g4",
+        "g3",
+        "f3"
+      ],
+      "at": "2026-09-11T02:50:44.582Z"
+    },
+    {
+      "side": "B",
+      "move": "b6",
+      "flips": [
+        "c6",
+        "d6",
+        "e6"
+      ],
+      "at": "2026-09-11T02:50:55.825Z"
+    },
+    {
+      "side": "W",
+      "move": "d7",
+      "flips": [
+        "c6",
+        "d6",
+        "e6"
+      ],
+      "at": "2026-09-11T02:51:14.849Z"
+    },
+    {
+      "side": "B",
+      "move": "e7",
+      "flips": [
+        "f7"
+      ],
+      "at": "2026-09-11T02:51:20.593Z"
+    },
+    {
+      "side": "W",
+      "move": "a6",
+      "flips": [
+        "b6"
+      ],
+      "at": "2026-09-11T02:51:53.233Z"
+    },
+    {
+      "side": "B",
+      "move": "c7",
+      "flips": [
+        "d7"
+      ],
+      "at": "2026-09-11T02:51:57.875Z"
+    },
+    {
+      "side": "W",
+      "move": "h5",
+      "flips": [
+        "h6",
+        "g5"
+      ],
+      "at": "2026-09-11T02:52:46.306Z"
+    },
+    {
+      "side": "B",
+      "move": "h4",
+      "flips": [
+        "g5",
+        "h5",
+        "h6",
+        "h7"
+      ],
+      "at": "2026-09-11T02:52:51.796Z"
+    },
+    {
+      "side": "W",
+      "move": "c8",
+      "flips": [
+        "c7",
+        "d7"
+      ],
+      "at": "2026-09-11T02:53:15.326Z"
+    },
+    {
+      "side": "B",
+      "move": "b8",
+      "flips": [
+        "c8"
+      ],
+      "at": "2026-09-11T02:53:22.263Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-11T02:53:22.263Z"
+    },
+    {
+      "side": "B",
+      "move": "h2",
+      "flips": [
+        "g3",
+        "f4",
+        "e5",
+        "d6",
+        "c7",
+        "h3"
+      ],
+      "at": "2026-09-11T02:53:35.778Z"
+    },
+    {
+      "side": "W",
+      "move": "b7",
+      "flips": [
+        "c7"
+      ],
+      "at": "2026-09-11T02:54:31.989Z"
+    },
+    {
+      "side": "B",
+      "move": "f2",
+      "flips": [
+        "f3"
+      ],
+      "at": "2026-09-11T02:54:47.576Z"
+    },
+    {
+      "side": "W",
+      "move": "f1",
+      "flips": [
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "at": "2026-09-11T02:55:01.975Z"
+    },
+    {
+      "side": "B",
+      "move": "d2",
+      "flips": [
+        "d3",
+        "d4",
+        "d5",
+        "e3",
+        "f4"
+      ],
+      "at": "2026-09-11T02:55:25.713Z"
+    },
+    {
+      "side": "W",
+      "move": "d1",
+      "flips": [
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ],
+      "at": "2026-09-11T02:55:36.833Z"
+    },
+    {
+      "side": "B",
+      "move": "c2",
+      "flips": [
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "d3",
+        "e4",
+        "f5"
+      ],
+      "at": "2026-09-11T02:55:51.644Z"
+    },
+    {
+      "side": "W",
+      "move": "e2",
+      "flips": [
+        "d3",
+        "c4",
+        "e3",
+        "e4",
+        "e5"
+      ],
+      "at": "2026-09-11T02:56:09.101Z"
+    },
+    {
+      "side": "B",
+      "move": "a8",
+      "flips": [
+        "b7"
+      ],
+      "at": "2026-09-11T02:56:12.970Z"
+    },
+    {
+      "side": "W",
+      "move": "c1",
+      "flips": [
+        "c2",
+        "c3"
+      ],
+      "at": "2026-09-11T02:56:40.279Z"
+    },
+    {
+      "side": "B",
+      "move": "a7",
+      "flips": [
+        "b6"
+      ],
+      "at": "2026-09-11T02:56:48.556Z"
+    },
+    {
+      "side": "W",
+      "move": "g2",
+      "flips": [
+        "g3"
+      ],
+      "at": "2026-09-11T02:56:53.384Z"
+    },
+    {
+      "side": "B",
+      "move": "h1",
+      "flips": [
+        "g2",
+        "f3",
+        "e4",
+        "d5"
+      ],
+      "at": "2026-09-11T02:56:56.539Z"
+    },
+    {
+      "side": "W",
+      "move": "g1",
+      "flips": [
+        "g2"
+      ],
+      "at": "2026-09-11T02:57:03.933Z"
+    },
+    {
+      "side": "B",
+      "move": "e1",
+      "flips": [
+        "e2",
+        "e3",
+        "f2",
+        "g3",
+        "f1",
+        "g1"
+      ],
+      "at": "2026-09-11T02:57:07.169Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-11T02:57:07.170Z"
+    },
+    {
+      "side": "B",
+      "move": "a3",
+      "flips": [
+        "a4",
+        "a5",
+        "a6",
+        "b4"
+      ],
+      "at": "2026-09-11T02:57:16.860Z"
+    },
+    {
+      "side": "W",
+      "move": "b3",
+      "flips": [
+        "b4"
+      ],
+      "at": "2026-09-11T02:57:43.425Z"
+    },
+    {
+      "side": "B",
+      "move": "a2",
+      "flips": [
+        "b3",
+        "c4"
+      ],
+      "at": "2026-09-11T02:57:47.838Z"
+    },
+    {
+      "side": "W",
+      "move": "b2",
+      "flips": [
+        "b3"
+      ],
+      "at": "2026-09-11T02:57:52.556Z"
+    },
+    {
+      "side": "B",
+      "move": "a1",
+      "flips": [
+        "b2",
+        "c3",
+        "d4",
+        "e5"
+      ],
+      "at": "2026-09-11T02:57:56.723Z"
+    },
+    {
+      "side": "W",
+      "move": "b1",
+      "flips": [
+        "b2"
+      ],
+      "at": "2026-09-11T02:58:01.714Z"
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-11T02:58:01.714Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-11T02:58:01.714Z"
+    }
+  ],
+  "players": {
+    "B": {
+      "name": "Black",
+      "model": "",
+      "say": ""
+    },
+    "W": {
+      "name": "White",
+      "model": "",
+      "say": ""
+    }
+  },
+  "seats": {
+    "B": {
+      "agentType": "antigravity",
+      "model": "gemini-3.8-flash",
+      "effort": "high",
+      "display": "gemini-3.8-flash · high"
+    },
+    "W": {
+      "agentType": "opencode",
+      "model": "deepseek-v4.1-flash",
+      "effort": "max",
+      "display": "deepseek-v4.1-flash · max"
+    }
+  },
+  "tokens": {
+    "B": null,
+    "W": {
+      "input": 137348,
+      "cacheRead": 11938176,
+      "cacheCreation": 0,
+      "output": 270788,
+      "reasoning": 267809,
+      "apiCalls": 61
+    }
+  },
+  "cost": {
+    "B": null,
+    "W": null
+  },
+  "incidents": [
+    {
+      "side": "W",
+      "kind": "output-length-stop",
+      "at": "2026-09-10T08:31:29.533Z",
+      "detail": "Response ended with length at 32000 reasoning tokens after ply 7. No move submitted. One user-approved continuation; not a natural uninterrupted completion."
+    },
+    {
+      "side": "W",
+      "kind": "runtime-interruption",
+      "at": "2026-09-11T02:37:15.257Z",
+      "detail": "Original server stopped during restart; same saved session recovered. First continuation stored but failed before provider request because the old native model ID was unavailable."
+    },
+    {
+      "side": "W",
+      "kind": "model-id-migration",
+      "at": "2026-09-11T02:41:52.091Z",
+      "detail": "User approved deepseek-flash to deepseek-v4.1-flash at ply 7, same OpenCode session and max effort."
+    },
+    {
+      "side": "B",
+      "kind": "runtime-resume",
+      "at": "2026-09-11T02:37:22Z",
+      "detail": "Same Gemini session resumed after application restart with neutral continuation, no board advice."
+    }
+  ],
+  "blind": false,
+  "timing": {
+    "eligible": false,
+    "reason": "Long interruption after ply 7 includes output-length stop and app/runtime downtime; retain raw timestamps but do not present this game as normal uninterrupted speed evidence.",
+    "rawTimestampsPreserved": true
+  },
+  "blindingAudit": {
+    "opponentIdentityHidden": true,
+    "neutralRefereeLabels": true,
+    "ownModelExposedByRuntime": {
+      "B": true,
+      "W": null
+    },
+    "strictFullBlind": false
+  },
+  "recovery": {
+    "attempts": [
+      {
+        "at": "2026-09-11T02:37:15.257Z",
+        "side": "W",
+        "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+        "reason": "Previous response finished with length after 32000 reasoning tokens; server later stopped during restart. Same session/model/max/runtime restored.",
+        "previousAssistantMessage": "msg_08a6f6540001jhjGpFIIjs30GV",
+        "instruction": "Continue the existing match from its current state. Follow the original referee-only rules and keep playing until the match is over.",
+        "state": "blocked-before-provider-request",
+        "moveCountAtResume": 7,
+        "httpStatus": 204,
+        "error": "ProviderModelNotFoundError: opencode-go/deepseek-flash absent from current catalog",
+        "newCatalogModel": "deepseek-v4.1-flash",
+        "providerRequestSent": false
+      }
+    ],
+    "black": {
+      "task": "a4cd6f60",
+      "session": "a1acaa3c-e37b-459d-8c5f-0d1e29632644",
+      "action": "Resume existing task and send neutral continuation after app restart",
+      "state": "confirmed-running-same-session"
+    },
+    "modelIdMigration": {
+      "at": "2026-09-11T02:41:52.091Z",
+      "askId": "ask_bff017995cad",
+      "approval": "新IDで続行",
+      "from": "deepseek-flash",
+      "to": "deepseek-v4.1-flash",
+      "sameSession": "ses_f75952b9affexmsIXH4nbPeD4U",
+      "effort": "max",
+      "ply": 7,
+      "catalogName": "DeepSeek V4.1 Flash",
+      "status": "provider-response-confirmed",
+      "httpStatus": 204,
+      "firstRequestId": "f6c0f886-6a6b-4acc-8e1e-a3d421c89288",
+      "providerHttpStatus": 200
+    }
+  },
+  "verification": {
+    "independentOrdinaryReplay": true,
+    "boardWinnerTurnSideMoveFlipsAndPassHistoryMatched": true,
+    "historyRecords": 64,
+    "playedMoves": 60,
+    "passes": 4,
+    "ordinaryProtocol": true,
+    "completionSupervisorExited": true,
+    "discord": "paused-by-user",
+    "sourceMatchSha256": "8e8e93d507f114d1a85887491b1153976632de291b5ac16574a7ffb0313b706a",
+    "playerPromptSha256": "96170fa47f5ab693824647d0220b4f7ead469c527f28f16ca7d4bc3f31c76f5f"
+  },
+  "usageProvenance": {
+    "sessions": {
+      "B": {
+        "runtime": "Antigravity visual",
+        "taskId": "a4cd6f60",
+        "sessionId": "a1acaa3c-e37b-459d-8c5f-0d1e29632644",
+        "model": "gemini-3.8-flash",
+        "effort": "high",
+        "accountSelection": "auto",
+        "initialAccount": "default",
+        "transcriptSha256": "2195a84baceeb01546689d9b6bc08474595066451ab1529776a3bf6b041f21d7",
+        "reason": "Neither of the two Antigravity turn.completed events exposes usage; do not infer tokens from text or time.",
+        "userPrompts": 2,
+        "toolCalls": 362
+      },
+      "W": {
+        "runtime": "OpenCode",
+        "version": "1.18.5",
+        "provider": "opencode-go",
+        "sessionId": "ses_f75952b9affexmsIXH4nbPeD4U",
+        "effort": "max",
+        "transcriptSha256": "76e63c4288abd40621397cf2514a0244b8f58ad7636e3e1cbf04e58e70d87181",
+        "requestCountsByNativeModel": {
+          "deepseek-flash": 8,
+          "deepseek-v4.1-flash": 53
+        },
+        "allHttpStatuses": 200,
+        "normalization": "output = raw.output + raw.reasoning, verified by raw.total for every message",
+        "usage": [
+          {
+            "messageId": "msg_08a6ad505001xhSRr2saaBXDC0",
+            "raw": {
+              "total": 11409,
+              "input": 11359,
+              "output": 40,
+              "reasoning": 10,
+              "cache": {
+                "read": 0,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 11359,
+              "cacheRead": 0,
+              "cacheCreation": 0,
+              "output": 50,
+              "reasoning": 10
+            },
+            "estimatedCostUSD": 0.00173385
+          },
+          {
+            "messageId": "msg_08a6ae1360014WKsEG13hmXdSB",
+            "raw": {
+              "total": 39220,
+              "input": 200,
+              "output": 42,
+              "reasoning": 27586,
+              "cache": {
+                "read": 11392,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 200,
+              "cacheRead": 11392,
+              "cacheCreation": 0,
+              "output": 27628,
+              "reasoning": 27586
+            },
+            "estimatedCostUSD": 0.016640976
+          },
+          {
+            "messageId": "msg_08a6cd227001mU701c693ZfIxJ",
+            "raw": {
+              "total": 39565,
+              "input": 239,
+              "output": 40,
+              "reasoning": 118,
+              "cache": {
+                "read": 39168,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 239,
+              "cacheRead": 39168,
+              "cacheCreation": 0,
+              "output": 158,
+              "reasoning": 118
+            },
+            "estimatedCostUSD": 0.000248154
+          },
+          {
+            "messageId": "msg_08a6ce526001YjB4BzAv3vtmDK",
+            "raw": {
+              "total": 59949,
+              "input": 202,
+              "output": 42,
+              "reasoning": 20153,
+              "cache": {
+                "read": 39552,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 202,
+              "cacheRead": 39552,
+              "cacheCreation": 0,
+              "output": 20195,
+              "reasoning": 20153
+            },
+            "estimatedCostUSD": 0.012265956
+          },
+          {
+            "messageId": "msg_08a6e2f12001fdyh23mw02qbXf",
+            "raw": {
+              "total": 60829,
+              "input": 236,
+              "output": 40,
+              "reasoning": 649,
+              "cache": {
+                "read": 59904,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 236,
+              "cacheRead": 59904,
+              "cacheCreation": 0,
+              "output": 689,
+              "reasoning": 649
+            },
+            "estimatedCostUSD": 0.000628512
+          },
+          {
+            "messageId": "msg_08a6e41ea001a5Kdbp2sBIjEdh",
+            "raw": {
+              "total": 75719,
+              "input": 242,
+              "output": 42,
+              "reasoning": 14635,
+              "cache": {
+                "read": 60800,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 242,
+              "cacheRead": 60800,
+              "cacheCreation": 0,
+              "output": 14677,
+              "reasoning": 14635
+            },
+            "estimatedCostUSD": 0.0090249
+          },
+          {
+            "messageId": "msg_08a6f1a29001bCxUTDgpeYFnIx",
+            "raw": {
+              "total": 80119,
+              "input": 268,
+              "output": 40,
+              "reasoning": 4163,
+              "cache": {
+                "read": 75648,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 268,
+              "cacheRead": 75648,
+              "cacheCreation": 0,
+              "output": 4203,
+              "reasoning": 4163
+            },
+            "estimatedCostUSD": 0.002788944
+          },
+          {
+            "messageId": "msg_08a6f6540001jhjGpFIIjs30GV",
+            "raw": {
+              "total": 112332,
+              "input": 332,
+              "output": 0,
+              "reasoning": 32000,
+              "cache": {
+                "read": 80000,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 332,
+              "cacheRead": 80000,
+              "cacheCreation": 0,
+              "output": 32000,
+              "reasoning": 32000
+            },
+            "estimatedCostUSD": 0.0194898
+          },
+          {
+            "messageId": "msg_08e57c65c0012tbuddCpc9Ntr8",
+            "raw": {
+              "total": 115495,
+              "input": 110081,
+              "output": 50,
+              "reasoning": 3060,
+              "cache": {
+                "read": 2304,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 110081,
+              "cacheRead": 2304,
+              "cacheCreation": 0,
+              "output": 3110,
+              "reasoning": 3060
+            },
+            "estimatedCostUSD": 0.018385062
+          },
+          {
+            "messageId": "msg_08e58081f001JyKtHZVlVx4bqm",
+            "raw": {
+              "total": 115832,
+              "input": 252,
+              "output": 69,
+              "reasoning": 55,
+              "cache": {
+                "read": 115456,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 252,
+              "cacheRead": 115456,
+              "cacheCreation": 0,
+              "output": 124,
+              "reasoning": 55
+            },
+            "estimatedCostUSD": 0.000458568
+          },
+          {
+            "messageId": "msg_08e58135e001UiHfMiWs0smrKN",
+            "raw": {
+              "total": 117128,
+              "input": 326,
+              "output": 51,
+              "reasoning": 1039,
+              "cache": {
+                "read": 115712,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 326,
+              "cacheRead": 115712,
+              "cacheCreation": 0,
+              "output": 1090,
+              "reasoning": 1039
+            },
+            "estimatedCostUSD": 0.001050036
+          },
+          {
+            "messageId": "msg_08e582cb20019yBK6sutGlUZEJ",
+            "raw": {
+              "total": 127011,
+              "input": 210,
+              "output": 42,
+              "reasoning": 9639,
+              "cache": {
+                "read": 117120,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 210,
+              "cacheRead": 117120,
+              "cacheCreation": 0,
+              "output": 9681,
+              "reasoning": 9639
+            },
+            "estimatedCostUSD": 0.00619146
+          },
+          {
+            "messageId": "msg_08e58bdff001bKxpbyEwEd4dzd",
+            "raw": {
+              "total": 128032,
+              "input": 242,
+              "output": 51,
+              "reasoning": 763,
+              "cache": {
+                "read": 126976,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 242,
+              "cacheRead": 126976,
+              "cacheCreation": 0,
+              "output": 814,
+              "reasoning": 763
+            },
+            "estimatedCostUSD": 0.000905628
+          },
+          {
+            "messageId": "msg_08e58ef70001uFZkDIEWYC3ZPL",
+            "raw": {
+              "total": 139830,
+              "input": 244,
+              "output": 72,
+              "reasoning": 11514,
+              "cache": {
+                "read": 128000,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 244,
+              "cacheRead": 128000,
+              "cacheCreation": 0,
+              "output": 11586,
+              "reasoning": 11514
+            },
+            "estimatedCostUSD": 0.0073722
+          },
+          {
+            "messageId": "msg_08e59aabd001Kn9cF7HtrObn97",
+            "raw": {
+              "total": 140263,
+              "input": 268,
+              "output": 40,
+              "reasoning": 179,
+              "cache": {
+                "read": 139776,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 268,
+              "cacheRead": 139776,
+              "cacheCreation": 0,
+              "output": 219,
+              "reasoning": 179
+            },
+            "estimatedCostUSD": 0.000590928
+          },
+          {
+            "messageId": "msg_08e59c3f2001MDMh1Vn3eGa3KU",
+            "raw": {
+              "total": 155124,
+              "input": 316,
+              "output": 70,
+              "reasoning": 14578,
+              "cache": {
+                "read": 140160,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 316,
+              "cacheRead": 140160,
+              "cacheCreation": 0,
+              "output": 14648,
+              "reasoning": 14578
+            },
+            "estimatedCostUSD": 0.00925668
+          },
+          {
+            "messageId": "msg_08e5aa8fe001Sg0AFS18khZm4F",
+            "raw": {
+              "total": 155522,
+              "input": 333,
+              "output": 40,
+              "reasoning": 141,
+              "cache": {
+                "read": 155008,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 333,
+              "cacheRead": 155008,
+              "cacheCreation": 0,
+              "output": 181,
+              "reasoning": 141
+            },
+            "estimatedCostUSD": 0.000623574
+          },
+          {
+            "messageId": "msg_08e5aca90001HnA58SVyUAqnQo",
+            "raw": {
+              "total": 165179,
+              "input": 205,
+              "output": 59,
+              "reasoning": 9395,
+              "cache": {
+                "read": 155520,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 205,
+              "cacheRead": 155520,
+              "cacheCreation": 0,
+              "output": 9454,
+              "reasoning": 9395
+            },
+            "estimatedCostUSD": 0.00616971
+          },
+          {
+            "messageId": "msg_08e5b61790015hviN1JpByk49j",
+            "raw": {
+              "total": 165602,
+              "input": 280,
+              "output": 40,
+              "reasoning": 162,
+              "cache": {
+                "read": 165120,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 280,
+              "cacheRead": 165120,
+              "cacheCreation": 0,
+              "output": 202,
+              "reasoning": 162
+            },
+            "estimatedCostUSD": 0.00065856
+          },
+          {
+            "messageId": "msg_08e5b7d03001itbA8K1z6iZM2y",
+            "raw": {
+              "total": 180133,
+              "input": 312,
+              "output": 58,
+              "reasoning": 14259,
+              "cache": {
+                "read": 165504,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 312,
+              "cacheRead": 165504,
+              "cacheCreation": 0,
+              "output": 14317,
+              "reasoning": 14259
+            },
+            "estimatedCostUSD": 0.009133512
+          },
+          {
+            "messageId": "msg_08e5c6a65001qeI7UcAvLC7xym",
+            "raw": {
+              "total": 180566,
+              "input": 256,
+              "output": 40,
+              "reasoning": 174,
+              "cache": {
+                "read": 180096,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 256,
+              "cacheRead": 180096,
+              "cacheCreation": 0,
+              "output": 214,
+              "reasoning": 174
+            },
+            "estimatedCostUSD": 0.000707088
+          },
+          {
+            "messageId": "msg_08e5c7a15001orvWv84Q035au4",
+            "raw": {
+              "total": 189524,
+              "input": 290,
+              "output": 59,
+              "reasoning": 8695,
+              "cache": {
+                "read": 180480,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 290,
+              "cacheRead": 180480,
+              "cacheCreation": 0,
+              "output": 8754,
+              "reasoning": 8695
+            },
+            "estimatedCostUSD": 0.00583734
+          },
+          {
+            "messageId": "msg_08e5d0923001Kd7NHDnD2NWQTE",
+            "raw": {
+              "total": 190223,
+              "input": 296,
+              "output": 40,
+              "reasoning": 447,
+              "cache": {
+                "read": 189440,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 296,
+              "cacheRead": 189440,
+              "cacheCreation": 0,
+              "output": 487,
+              "reasoning": 447
+            },
+            "estimatedCostUSD": 0.00090492
+          },
+          {
+            "messageId": "msg_08e5d28a5001n6xlcToGBLJ8X9",
+            "raw": {
+              "total": 195621,
+              "input": 216,
+              "output": 61,
+              "reasoning": 5136,
+              "cache": {
+                "read": 190208,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 216,
+              "cacheRead": 190208,
+              "cacheCreation": 0,
+              "output": 5197,
+              "reasoning": 5136
+            },
+            "estimatedCostUSD": 0.003721224
+          },
+          {
+            "messageId": "msg_08e5d7cc2001GnLZMjhfEgX7cm",
+            "raw": {
+              "total": 196049,
+              "input": 245,
+              "output": 40,
+              "reasoning": 180,
+              "cache": {
+                "read": 195584,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 245,
+              "cacheRead": 195584,
+              "cacheCreation": 0,
+              "output": 220,
+              "reasoning": 180
+            },
+            "estimatedCostUSD": 0.000755502
+          },
+          {
+            "messageId": "msg_08e5d95ff00155p1sqUOrpLUD8",
+            "raw": {
+              "total": 198843,
+              "input": 279,
+              "output": 62,
+              "reasoning": 2534,
+              "cache": {
+                "read": 195968,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 279,
+              "cacheRead": 195968,
+              "cacheCreation": 0,
+              "output": 2596,
+              "reasoning": 2534
+            },
+            "estimatedCostUSD": 0.002187354
+          },
+          {
+            "messageId": "msg_08e5dc2e2001gMPpHAWml3XHLJ",
+            "raw": {
+              "total": 199418,
+              "input": 268,
+              "output": 40,
+              "reasoning": 326,
+              "cache": {
+                "read": 198784,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 268,
+              "cacheRead": 198784,
+              "cacheCreation": 0,
+              "output": 366,
+              "reasoning": 326
+            },
+            "estimatedCostUSD": 0.000856152
+          },
+          {
+            "messageId": "msg_08e5de325001KzuJFAS0UBDjHh",
+            "raw": {
+              "total": 202661,
+              "input": 315,
+              "output": 42,
+              "reasoning": 3008,
+              "cache": {
+                "read": 199296,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 315,
+              "cacheRead": 199296,
+              "cacheCreation": 0,
+              "output": 3050,
+              "reasoning": 3008
+            },
+            "estimatedCostUSD": 0.002475138
+          },
+          {
+            "messageId": "msg_08e5e217a001a4mJ3D3N24So1H",
+            "raw": {
+              "total": 203097,
+              "input": 243,
+              "output": 40,
+              "reasoning": 190,
+              "cache": {
+                "read": 202624,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 243,
+              "cacheRead": 202624,
+              "cacheCreation": 0,
+              "output": 230,
+              "reasoning": 190
+            },
+            "estimatedCostUSD": 0.000782322
+          },
+          {
+            "messageId": "msg_08e5e3f030018HEQVsaEZfBY1h",
+            "raw": {
+              "total": 212526,
+              "input": 297,
+              "output": 58,
+              "reasoning": 9163,
+              "cache": {
+                "read": 203008,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 297,
+              "cacheRead": 203008,
+              "cacheCreation": 0,
+              "output": 9221,
+              "reasoning": 9163
+            },
+            "estimatedCostUSD": 0.006186174
+          },
+          {
+            "messageId": "msg_08e5f41ac001aIVgMGxF5ZNzPr",
+            "raw": {
+              "total": 213004,
+              "input": 256,
+              "output": 40,
+              "reasoning": 228,
+              "cache": {
+                "read": 212480,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 256,
+              "cacheRead": 212480,
+              "cacheCreation": 0,
+              "output": 268,
+              "reasoning": 228
+            },
+            "estimatedCostUSD": 0.00083664
+          },
+          {
+            "messageId": "msg_08e5f865d001jyWqKW5ZXGL547",
+            "raw": {
+              "total": 219105,
+              "input": 228,
+              "output": 63,
+              "reasoning": 5822,
+              "cache": {
+                "read": 212992,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 228,
+              "cacheRead": 212992,
+              "cacheCreation": 0,
+              "output": 5885,
+              "reasoning": 5822
+            },
+            "estimatedCostUSD": 0.004204176
+          },
+          {
+            "messageId": "msg_08e5fe633001o1LiXIHLGRNiIv",
+            "raw": {
+              "total": 220659,
+              "input": 310,
+              "output": 40,
+              "reasoning": 1301,
+              "cache": {
+                "read": 219008,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 310,
+              "cacheRead": 219008,
+              "cacheCreation": 0,
+              "output": 1341,
+              "reasoning": 1301
+            },
+            "estimatedCostUSD": 0.001508124
+          },
+          {
+            "messageId": "msg_08e6011e8001lIWlHgKKorJGdL",
+            "raw": {
+              "total": 225365,
+              "input": 327,
+              "output": 62,
+              "reasoning": 4432,
+              "cache": {
+                "read": 220544,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 327,
+              "cacheRead": 220544,
+              "cacheCreation": 0,
+              "output": 4494,
+              "reasoning": 4432
+            },
+            "estimatedCostUSD": 0.003407082
+          },
+          {
+            "messageId": "msg_08e605c60001wW2qS8VJHV6mJw",
+            "raw": {
+              "total": 225851,
+              "input": 297,
+              "output": 40,
+              "reasoning": 234,
+              "cache": {
+                "read": 225280,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 297,
+              "cacheRead": 225280,
+              "cacheCreation": 0,
+              "output": 274,
+              "reasoning": 234
+            },
+            "estimatedCostUSD": 0.00088479
+          },
+          {
+            "messageId": "msg_08e6072a0001ui1KV69kxS4GE3",
+            "raw": {
+              "total": 233658,
+              "input": 264,
+              "output": 54,
+              "reasoning": 7548,
+              "cache": {
+                "read": 225792,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 264,
+              "cacheRead": 225792,
+              "cacheCreation": 0,
+              "output": 7602,
+              "reasoning": 7548
+            },
+            "estimatedCostUSD": 0.005278176
+          },
+          {
+            "messageId": "msg_08e60f27e001mHdzAb7w4N8O3Y",
+            "raw": {
+              "total": 234113,
+              "input": 269,
+              "output": 40,
+              "reasoning": 204,
+              "cache": {
+                "read": 233600,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 269,
+              "cacheRead": 233600,
+              "cacheCreation": 0,
+              "output": 244,
+              "reasoning": 204
+            },
+            "estimatedCostUSD": 0.00088755
+          },
+          {
+            "messageId": "msg_08e610448001mcwNFKQAQ6sIj2",
+            "raw": {
+              "total": 245623,
+              "input": 202,
+              "output": 56,
+              "reasoning": 11253,
+              "cache": {
+                "read": 234112,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 202,
+              "cacheRead": 234112,
+              "cacheCreation": 0,
+              "output": 11309,
+              "reasoning": 11253
+            },
+            "estimatedCostUSD": 0.007518036
+          },
+          {
+            "messageId": "msg_08e61c16c001hV8NbfKXMS06yQ",
+            "raw": {
+              "total": 246150,
+              "input": 336,
+              "output": 40,
+              "reasoning": 270,
+              "cache": {
+                "read": 245504,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 336,
+              "cacheRead": 245504,
+              "cacheCreation": 0,
+              "output": 310,
+              "reasoning": 270
+            },
+            "estimatedCostUSD": 0.000972912
+          },
+          {
+            "messageId": "msg_08e61d6e9001lfnwH2PC6eLO18",
+            "raw": {
+              "total": 251337,
+              "input": 208,
+              "output": 54,
+              "reasoning": 4931,
+              "cache": {
+                "read": 246144,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 208,
+              "cacheRead": 246144,
+              "cacheCreation": 0,
+              "output": 4985,
+              "reasoning": 4931
+            },
+            "estimatedCostUSD": 0.003760632
+          },
+          {
+            "messageId": "msg_08e6232eb001W0LB8InfySZ63F",
+            "raw": {
+              "total": 251923,
+              "input": 292,
+              "output": 40,
+              "reasoning": 327,
+              "cache": {
+                "read": 251264,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 292,
+              "cacheRead": 251264,
+              "cacheCreation": 0,
+              "output": 367,
+              "reasoning": 327
+            },
+            "estimatedCostUSD": 0.001017792
+          },
+          {
+            "messageId": "msg_08e6282b7001048jR1NPcoG4Xb",
+            "raw": {
+              "total": 265073,
+              "input": 228,
+              "output": 70,
+              "reasoning": 12871,
+              "cache": {
+                "read": 251904,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 228,
+              "cacheRead": 251904,
+              "cacheCreation": 0,
+              "output": 12941,
+              "reasoning": 12871
+            },
+            "estimatedCostUSD": 0.008554512
+          },
+          {
+            "messageId": "msg_08e635e820016m4wCBLO7FuY1U",
+            "raw": {
+              "total": 265593,
+              "input": 321,
+              "output": 40,
+              "reasoning": 272,
+              "cache": {
+                "read": 264960,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 321,
+              "cacheRead": 264960,
+              "cacheCreation": 0,
+              "output": 312,
+              "reasoning": 272
+            },
+            "estimatedCostUSD": 0.00103023
+          },
+          {
+            "messageId": "msg_08e639b360013QkwHnvTwhzQUu",
+            "raw": {
+              "total": 268768,
+              "input": 323,
+              "output": 55,
+              "reasoning": 2918,
+              "cache": {
+                "read": 265472,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 323,
+              "cacheRead": 265472,
+              "cacheCreation": 0,
+              "output": 2973,
+              "reasoning": 2918
+            },
+            "estimatedCostUSD": 0.002628666
+          },
+          {
+            "messageId": "msg_08e63d3e300117yBxEXMlAgAtk",
+            "raw": {
+              "total": 269183,
+              "input": 313,
+              "output": 40,
+              "reasoning": 158,
+              "cache": {
+                "read": 268672,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 313,
+              "cacheRead": 268672,
+              "cacheCreation": 0,
+              "output": 198,
+              "reasoning": 158
+            },
+            "estimatedCostUSD": 0.000971766
+          },
+          {
+            "messageId": "msg_08e64305c001yAxAUn7Rytt6HD",
+            "raw": {
+              "total": 271309,
+              "input": 349,
+              "output": 58,
+              "reasoning": 1846,
+              "cache": {
+                "read": 269056,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 349,
+              "cacheRead": 269056,
+              "cacheCreation": 0,
+              "output": 1904,
+              "reasoning": 1846
+            },
+            "estimatedCostUSD": 0.002001918
+          },
+          {
+            "messageId": "msg_08e645c44001axz0zonCSR3wR6",
+            "raw": {
+              "total": 271797,
+              "input": 305,
+              "output": 40,
+              "reasoning": 220,
+              "cache": {
+                "read": 271232,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 305,
+              "cacheRead": 271232,
+              "cacheCreation": 0,
+              "output": 260,
+              "reasoning": 220
+            },
+            "estimatedCostUSD": 0.001015446
+          },
+          {
+            "messageId": "msg_08e649575001fCtNoBh85rOT9p",
+            "raw": {
+              "total": 276002,
+              "input": 280,
+              "output": 66,
+              "reasoning": 3912,
+              "cache": {
+                "read": 271744,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 280,
+              "cacheRead": 271744,
+              "cacheCreation": 0,
+              "output": 3978,
+              "reasoning": 3912
+            },
+            "estimatedCostUSD": 0.003244032
+          },
+          {
+            "messageId": "msg_08e64d9d6001M102uaYZQG50u7",
+            "raw": {
+              "total": 276729,
+              "input": 261,
+              "output": 40,
+              "reasoning": 460,
+              "cache": {
+                "read": 275968,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 261,
+              "cacheRead": 275968,
+              "cacheCreation": 0,
+              "output": 500,
+              "reasoning": 460
+            },
+            "estimatedCostUSD": 0.001167054
+          },
+          {
+            "messageId": "msg_08e64eb4c0011bvqK24HyR3Mv4",
+            "raw": {
+              "total": 282518,
+              "input": 336,
+              "output": 62,
+              "reasoning": 5512,
+              "cache": {
+                "read": 276608,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 336,
+              "cacheRead": 276608,
+              "cacheCreation": 0,
+              "output": 5574,
+              "reasoning": 5512
+            },
+            "estimatedCostUSD": 0.004224624
+          },
+          {
+            "messageId": "msg_08e655399001ReBZAM0ECDBMsl",
+            "raw": {
+              "total": 282926,
+              "input": 239,
+              "output": 40,
+              "reasoning": 151,
+              "cache": {
+                "read": 282496,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 239,
+              "cacheRead": 282496,
+              "cacheCreation": 0,
+              "output": 191,
+              "reasoning": 151
+            },
+            "estimatedCostUSD": 0.000997938
+          },
+          {
+            "messageId": "msg_08e6573c1001rcRPOXLWacsF1D",
+            "raw": {
+              "total": 283426,
+              "input": 243,
+              "output": 49,
+              "reasoning": 254,
+              "cache": {
+                "read": 282880,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 243,
+              "cacheRead": 282880,
+              "cacheCreation": 0,
+              "output": 303,
+              "reasoning": 254
+            },
+            "estimatedCostUSD": 0.00106689
+          },
+          {
+            "messageId": "msg_08e6586a40016aAw7AISu5jER7",
+            "raw": {
+              "total": 283966,
+              "input": 244,
+              "output": 40,
+              "reasoning": 290,
+              "cache": {
+                "read": 283392,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 244,
+              "cacheRead": 283392,
+              "cacheCreation": 0,
+              "output": 330,
+              "reasoning": 290
+            },
+            "estimatedCostUSD": 0.001084776
+          },
+          {
+            "messageId": "msg_08e659647001bd58AqT9PFVuxF",
+            "raw": {
+              "total": 285099,
+              "input": 268,
+              "output": 53,
+              "reasoning": 874,
+              "cache": {
+                "read": 283904,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 268,
+              "cacheRead": 283904,
+              "cacheCreation": 0,
+              "output": 927,
+              "reasoning": 874
+            },
+            "estimatedCostUSD": 0.001448112
+          },
+          {
+            "messageId": "msg_08e65afdf001nwNW7WDPwATw1S",
+            "raw": {
+              "total": 285462,
+              "input": 247,
+              "output": 40,
+              "reasoning": 119,
+              "cache": {
+                "read": 285056,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 247,
+              "cacheRead": 285056,
+              "cacheCreation": 0,
+              "output": 159,
+              "reasoning": 119
+            },
+            "estimatedCostUSD": 0.000987618
+          },
+          {
+            "messageId": "msg_08e65e254001HOQEk8N9bFPdtP",
+            "raw": {
+              "total": 291880,
+              "input": 228,
+              "output": 64,
+              "reasoning": 6148,
+              "cache": {
+                "read": 285440,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 228,
+              "cacheRead": 285440,
+              "cacheCreation": 0,
+              "output": 6212,
+              "reasoning": 6148
+            },
+            "estimatedCostUSD": 0.00461772
+          },
+          {
+            "messageId": "msg_08e664a7b001telz3qRf4SveIM",
+            "raw": {
+              "total": 292297,
+              "input": 239,
+              "output": 40,
+              "reasoning": 178,
+              "cache": {
+                "read": 291840,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 239,
+              "cacheRead": 291840,
+              "cacheCreation": 0,
+              "output": 218,
+              "reasoning": 178
+            },
+            "estimatedCostUSD": 0.00104217
+          },
+          {
+            "messageId": "msg_08e665b59001HotLaPm5e078QY",
+            "raw": {
+              "total": 292920,
+              "input": 274,
+              "output": 53,
+              "reasoning": 369,
+              "cache": {
+                "read": 292224,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 274,
+              "cacheRead": 292224,
+              "cacheCreation": 0,
+              "output": 422,
+              "reasoning": 369
+            },
+            "estimatedCostUSD": 0.001170972
+          },
+          {
+            "messageId": "msg_08e666df9001KVQ3sTHwIbiq9Y",
+            "raw": {
+              "total": 293296,
+              "input": 253,
+              "output": 40,
+              "reasoning": 139,
+              "cache": {
+                "read": 292864,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 253,
+              "cacheRead": 292864,
+              "cacheCreation": 0,
+              "output": 179,
+              "reasoning": 139
+            },
+            "estimatedCostUSD": 0.001023942
+          },
+          {
+            "messageId": "msg_08e667e05001DyCL6k5rD78G1X",
+            "raw": {
+              "total": 293998,
+              "input": 255,
+              "output": 50,
+              "reasoning": 445,
+              "cache": {
+                "read": 293248,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 255,
+              "cacheRead": 293248,
+              "cacheCreation": 0,
+              "output": 495,
+              "reasoning": 445
+            },
+            "estimatedCostUSD": 0.001214994
+          },
+          {
+            "messageId": "msg_08e669182001zm5p85e6Ep8qNy",
+            "raw": {
+              "total": 294461,
+              "input": 301,
+              "output": 100,
+              "reasoning": 172,
+              "cache": {
+                "read": 293888,
+                "write": 0
+              }
+            },
+            "normalized": {
+              "input": 301,
+              "cacheRead": 293888,
+              "cacheCreation": 0,
+              "output": 272,
+              "reasoning": 172
+            },
+            "estimatedCostUSD": 0.001090014
+          }
+        ],
+        "requestAudit": [
+          {
+            "at": "2026-09-10T08:24:12.408Z",
+            "id": "d3c06eb9-fa38-46b0-a2f3-1bbdc602d6f2",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 2,
+            "stream": true
+          },
+          {
+            "at": "2026-09-10T08:24:15.422Z",
+            "id": "d3825619-0ecc-4b5f-8f12-3a3f69faa8a8",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 4,
+            "stream": true
+          },
+          {
+            "at": "2026-09-10T08:26:22.646Z",
+            "id": "6448586f-0719-42f4-a8a1-94f2b94c3aa8",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 6,
+            "stream": true
+          },
+          {
+            "at": "2026-09-10T08:26:27.504Z",
+            "id": "7b2cf92b-d222-45ea-befa-7f36a56e3f55",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 8,
+            "stream": true
+          },
+          {
+            "at": "2026-09-10T08:27:51.968Z",
+            "id": "017e1923-f309-4021-a0ab-0c5a23c6c421",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 10,
+            "stream": true
+          },
+          {
+            "at": "2026-09-10T08:27:56.789Z",
+            "id": "b4cdb342-a509-4d29-a420-9ff071468423",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 12,
+            "stream": true
+          },
+          {
+            "at": "2026-09-10T08:28:52.155Z",
+            "id": "95fa1d3e-9eb8-41a1-9797-d17da1400b48",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 14,
+            "stream": true
+          },
+          {
+            "at": "2026-09-10T08:29:11.376Z",
+            "id": "da9f35e7-fd4f-4ac5-ae6b-3fcf0b35f4d5",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 16,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:41:52.796Z",
+            "id": "f6c0f886-6a6b-4acc-8e1e-a3d421c89288",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 19,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:42:09.074Z",
+            "id": "aac02904-4709-404f-85bf-1cfceafb77f7",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 21,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:42:11.947Z",
+            "id": "e58ff6d8-5f51-4aba-9970-2b03921050ca",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 23,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:42:18.432Z",
+            "id": "244554eb-23d0-43fd-83b3-9e919a1aaf77",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 25,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:42:55.637Z",
+            "id": "06be7bc5-b202-4237-981b-cb56f730bd0e",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 27,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:43:08.295Z",
+            "id": "23bb5300-bc96-4194-8b39-86ef02cd2591",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 29,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:43:56.238Z",
+            "id": "c411caef-78d1-4068-bc03-8410739b8386",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 31,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:44:02.689Z",
+            "id": "7a0dce47-af29-44ff-8b25-a58b62b5e109",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 33,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:45:01.327Z",
+            "id": "e01b89dc-1204-4ba1-9801-c78cf8c66a6b",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 35,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:45:09.923Z",
+            "id": "46ac5543-dc70-42e3-b374-a623d380eca0",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 37,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:45:48.554Z",
+            "id": "e7861126-1f85-44cd-9fdd-1be1e4596113",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 39,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:45:55.603Z",
+            "id": "61467446-36dc-4bfa-bf00-fa7559f3cf0a",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 41,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:46:56.384Z",
+            "id": "0c19cf2e-cfd4-48e0-9cfe-a6fb9176887e",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 43,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:47:00.391Z",
+            "id": "3bfa086d-dcf6-47fa-a08f-db277b463eb0",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 45,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:47:37.025Z",
+            "id": "aecdef05-b89a-43cd-8622-84a1b26cdae0",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 47,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:47:45.081Z",
+            "id": "80b1c1d9-e6fc-4336-8267-1eb33cb40155",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 49,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:48:06.612Z",
+            "id": "d6d768d6-6998-41c4-94e9-3e9b0155fd38",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 51,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:48:13.073Z",
+            "id": "16587b05-10bf-43dc-a0b8-2c38d7a0a223",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 53,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:48:24.568Z",
+            "id": "c247d509-1c39-446f-83e8-44a62775b16c",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 55,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:48:32.829Z",
+            "id": "818905f4-fef9-4bd6-bbe0-b11fca72ddfd",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 57,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:48:48.780Z",
+            "id": "e21f1405-ee03-4f4b-81d9-7dae068370f4",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 59,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:48:56.355Z",
+            "id": "8f8fda24-2ebf-4e08-abee-43efdd713dc5",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 61,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:50:02.565Z",
+            "id": "4ebfbf67-edf6-4d6d-975f-2d3a9fe2bc2a",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 63,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:50:20.154Z",
+            "id": "ab70c562-c519-45ae-8e88-670d746d0f45",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 65,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:50:44.685Z",
+            "id": "23691202-54fe-4493-a521-e687362ee545",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 67,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:50:55.867Z",
+            "id": "7aa23eb1-abde-4481-b9c7-281a44a7c9eb",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 69,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:51:14.937Z",
+            "id": "7eee7bde-385e-48e1-85af-8357908ce1e2",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 71,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:51:20.629Z",
+            "id": "77d679c2-292d-4dfc-bf55-be0b64fc88ac",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 73,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:51:53.364Z",
+            "id": "9927a88d-e8f1-4529-a6ee-93854fe1ccda",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 75,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:51:57.917Z",
+            "id": "3ede3d06-0f84-40ef-a958-9a18bb917862",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 77,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:52:46.344Z",
+            "id": "8b1281b4-c68c-47de-ae49-51f78117e44d",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 79,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:52:51.836Z",
+            "id": "1c7e031b-758e-4117-9ee3-7cb6768604ee",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 81,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:53:15.393Z",
+            "id": "78015103-e3c7-49b9-ab19-af7e96d67a4b",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 83,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:53:35.823Z",
+            "id": "ead1e298-2555-4b5f-b5f4-9e203e9fabcc",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 85,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:54:32.089Z",
+            "id": "29390081-d832-4d56-8a15-4df56b2b95de",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 87,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:54:47.634Z",
+            "id": "2ffedd66-ae51-4b12-97aa-308daff3dabc",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 89,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:55:02.148Z",
+            "id": "2625e5b8-c24f-4823-93ec-7df6402cdec4",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 91,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:55:25.816Z",
+            "id": "a4dc37e9-ab3e-403e-ad19-5b608c51ac29",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 93,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:55:37.056Z",
+            "id": "f7f4c54b-0eab-4789-939f-5c2c595eff4d",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 95,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:55:51.697Z",
+            "id": "46c12016-3819-4f7c-acd1-0bccf2799173",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 97,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:56:09.199Z",
+            "id": "7837822c-3f3b-4b92-992c-445a86d392d4",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 99,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:56:13.680Z",
+            "id": "3615b17a-0fcb-4170-95e4-43b3be576d60",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 101,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:56:40.381Z",
+            "id": "570c32b5-c3ff-4b0c-a5e4-f249a41fd0e9",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 103,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:56:48.602Z",
+            "id": "05bf3dbd-e11d-4b77-a901-f85550fa5b62",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 105,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:56:53.438Z",
+            "id": "a856f32f-d27c-43b4-a469-04a762dc5692",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 107,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:56:57.438Z",
+            "id": "8bc9d082-0f04-4e31-aefa-9dc2743bb3f5",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 109,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:57:03.996Z",
+            "id": "27ae4d10-8388-44b9-81bb-040e47c80f22",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 111,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:57:16.909Z",
+            "id": "9df82b61-00e8-4746-8989-2295125694b8",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 113,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:57:43.573Z",
+            "id": "5f70a6ac-1d65-4ca3-9383-d73a0e49ee64",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 115,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:57:47.888Z",
+            "id": "dc8395a9-6424-4e8e-a2a3-dcb22014c1cc",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 117,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:57:52.655Z",
+            "id": "f7f069b3-9e90-4067-b613-763d19c1efb3",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 119,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:57:56.764Z",
+            "id": "8edd3fb3-ce16-4ca5-ad8d-6a6291e41fe8",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 121,
+            "stream": true
+          },
+          {
+            "at": "2026-09-11T02:58:01.756Z",
+            "id": "c300012c-a08d-472f-bf95-466873a3f32d",
+            "event": "request",
+            "session": "ses_f75952b9affexmsIXH4nbPeD4U",
+            "model": "deepseek-v4.1-flash",
+            "reasoningEffort": "max",
+            "thinking": null,
+            "messageCount": 123,
+            "stream": true
+          }
+        ]
+      }
+    }
+  }
+}
