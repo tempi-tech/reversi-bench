@@ -5610,6 +5610,58 @@
         "sourceGame": "j001",
         "countOnce": true
       }
+    },
+    {
+      "id": "s1/j002",
+      "card": "x-jev-1-13-0-direct-choice-vs-gpt-5-6-sol-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        },
+        "W": {
+          "agentType": "typesafe-api",
+          "model": "jev-1.13.0",
+          "effort": null,
+          "interface": "direct-choice",
+          "display": "jev-1.13.0 · direct-choice"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 50,
+        "W": 14
+      },
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-09-21T14:16:43.944Z",
+      "tokens": {
+        "B": {
+          "input": 39477,
+          "cacheRead": 1754752,
+          "cacheCreation": 0,
+          "output": 8801,
+          "reasoning": 4756,
+          "apiCalls": 61
+        },
+        "W": {
+          "input": 19291,
+          "output": 2548,
+          "reasoning": null,
+          "cacheRead": null,
+          "cacheCreation": null,
+          "apiCalls": 30
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "interface": "mixed-agent-and-direct-choice"
     }
   ]
 }
