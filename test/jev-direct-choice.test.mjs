@@ -1,5 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import crypto from 'node:crypto';
 import { requestOf, choiceOf, model } from '../experiments/jev-direct-choice.mjs';
 
 const data = { status: 'playing', turn: 'B', board: ['........', '........', '........', '...BW...', '...WB...', '........', '........', '........'], legal: ['c4', 'd3', 'e6', 'f5'], counts: { B: 2, W: 2 }, lastMove: null, seats: { B: 'secret', W: 'opponent' } };
@@ -22,4 +24,23 @@ test('JEV response cannot substitute illegal or non-selected moves', () => {
 test('forced legal move remains a one-choice model request', () => {
   const forced = requestOf({ data: { ...data, legal: ['c4'] }, side: 'B' });
   assert.deepEqual(forced.questions.move.criteria, { c4: null });
+});
+
+test('explicitly promoted JEV result is counted once without altering its experimental evidence', () => {
+  const read = relative => JSON.parse(fs.readFileSync(new URL(relative, import.meta.url), 'utf8'));
+  const ranked = read('../matches/s1/j001.json');
+  const originalText = fs.readFileSync(new URL('../matches/experiments/jev-direct-choice-v1/j001.json', import.meta.url), 'utf8');
+  const original = JSON.parse(originalText);
+  const entries = read('../series/s1.json').games.filter(x => x.id === 's1/j001');
+  assert.equal(entries.length, 1);
+  assert.equal(entries[0].ranked, true);
+  assert.equal(ranked.summary.ranked, true);
+  assert.equal(original.summary.ranked, false);
+  assert.equal(ranked.promotion.sourceSha256, crypto.createHash('sha256').update(originalText).digest('hex'));
+  for (const key of ['history', 'cells', 'winner', 'turn', 'status']) assert.deepEqual(ranked[key], original.match[key]);
+  assert.deepEqual(entries[0].score, original.summary.score);
+  assert.equal(entries[0].seats.B.display, 'jev-1.13.0 · direct-choice');
+  assert.equal(entries[0].seats.B.effort, null);
+  assert.equal(entries[0].tokens.B.reasoning, null);
+  assert.ok(!read('../series/s1.json').games.some(x => x.id === original.summary.game));
 });

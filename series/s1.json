@@ -5550,6 +5550,66 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/j001",
+      "card": "x-jev-1-13-0-direct-choice-vs-gpt-5-6-sol-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "typesafe-api",
+          "model": "jev-1.13.0",
+          "effort": null,
+          "interface": "direct-choice",
+          "display": "jev-1.13.0 · direct-choice"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-sol",
+          "effort": "medium",
+          "display": "gpt-5.6-sol · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 37,
+        "W": 27
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-09-21T13:44:03.974Z",
+      "tokens": {
+        "B": {
+          "input": 19515,
+          "output": 2740,
+          "reasoning": null,
+          "cacheRead": null,
+          "cacheCreation": null,
+          "apiCalls": 30
+        },
+        "W": {
+          "input": 99820,
+          "cacheRead": 1625344,
+          "cacheCreation": 0,
+          "output": 8827,
+          "reasoning": 4818,
+          "apiCalls": 61
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "interface": "mixed-agent-and-direct-choice",
+      "promotion": {
+        "approvedAt": "2026-09-21T13:53:34.485Z",
+        "authorization": "User explicitly requested leaderboard inclusion after the pilot result, superseding unranked-only restriction for j001.",
+        "sourceRecord": "matches/experiments/jev-direct-choice-v1/j001.json",
+        "sourceSha256": "0b1d33e4c9ea42d19fe30ee6237478e5a1c867d10816aa61c156b44b00881dd9",
+        "sourceGame": "j001",
+        "countOnce": true
+      }
     }
   ]
 }

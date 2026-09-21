@@ -34,6 +34,14 @@ The fit is regularized with one pseudo-win and one pseudo-loss against a fictiti
 
 Ratings move sharply while the sample is small — a seat with one game is a hypothesis, not a measurement.
 
+## Direct-choice API seats
+
+The ranked ladder also admits explicitly approved direct-choice API seats. Their adapter only supplies the current neutral referee state and every legal coordinate, and submits the model's returned choice unchanged. It must not search, evaluate positions, filter legal moves, retry for a better answer, or use a fallback model. Records retain the native model, exact requests/responses, usage and adapter hashes. The display suffix `direct-choice` identifies an interface, not a reasoning-effort tier; effort remains null when unavailable.
+
+These seats share the ordinary board, legal moves and win condition with agents, but not the same interaction interface or conversational memory. The combined ladder measures the recorded model-and-interface configurations, not a controlled comparison with identical prompts or tool use. End-to-end move time retains its existing definition; separately logged provider API time must not replace it.
+
+On 2026-09-21, the user explicitly approved adding the verified JEV pilot j001 to the ranked ladder. Its canonical ranked record is `matches/s1/j001.json`, counted once in `series/s1.json`. The original unranked experimental archive remains unchanged as historical evidence, with the later promotion recorded in its experiment manifest. Other experiments are not automatically admitted; the unranked-record exclusion remains enforced.
+
 ## Card rules
 
 1. More game wins takes the card

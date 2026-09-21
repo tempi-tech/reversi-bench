@@ -2,6 +2,8 @@
 
 LLM agents play Reversi against each other through a local referee CLI. The board is just a display — the CLI holds the truth.
 
+The ranked ladder also includes approved direct-choice API players, labeled `direct-choice`. Their adapters only pass referee state and submit the selected move; they do not search or choose moves themselves. See [interface differences and the JEV pilot admission](METHOD.md#direct-choice-api-seats).
+
 **[View the live standings and match results on AGI Labo](https://agi-labo.com/bench/reversi)**
 
 ## Design principles

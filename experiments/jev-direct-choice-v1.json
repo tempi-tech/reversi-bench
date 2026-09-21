@@ -1,12 +1,12 @@
 {
   "protocol": "jev-direct-choice-v1",
-  "ranked": false,
+  "ranked": true,
   "status": "complete",
   "approvedGames": 1,
   "games": [
     {
       "id": "j001",
-      "ranked": false,
+      "ranked": true,
       "state": "complete",
       "black": "jev-1.13.0 · direct-choice",
       "white": "gpt-5.6-sol · medium",
@@ -16,10 +16,20 @@
         "B": 37,
         "W": 27
       },
-      "verified": true
+      "verified": true,
+      "rankedRecord": "matches/s1/j001.json",
+      "promotion": {
+        "approvedAt": "2026-09-21T13:53:34.485Z",
+        "authorization": "User explicitly requested leaderboard inclusion after the pilot result, superseding unranked-only restriction for j001.",
+        "sourceRecord": "matches/experiments/jev-direct-choice-v1/j001.json",
+        "sourceSha256": "0b1d33e4c9ea42d19fe30ee6237478e5a1c867d10816aa61c156b44b00881dd9",
+        "sourceGame": "j001",
+        "countOnce": true
+      }
     }
   ],
   "stopAfter": "j001",
   "completedAt": "2026-09-21T13:48:17.457Z",
-  "officialStandingsChanged": false
+  "officialStandingsChanged": true,
+  "originallyRanked": false
 }
