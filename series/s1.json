@@ -5714,6 +5714,58 @@
         "W": null
       },
       "interface": "mixed-agent-and-direct-choice"
+    },
+    {
+      "id": "s1/j004",
+      "card": "x-jev-1-13-0-direct-choice-vs-gemini-3-8-flash-high",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-3.8-flash",
+          "effort": "high",
+          "display": "gemini-3.8-flash · high"
+        },
+        "W": {
+          "agentType": "typesafe-api",
+          "model": "jev-1.13.0",
+          "effort": null,
+          "interface": "direct-choice",
+          "display": "jev-1.13.0 · direct-choice"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 57,
+        "W": 7
+      },
+      "moves": 65,
+      "incidents": [],
+      "finishedAt": "2026-09-21T14:30:54.812Z",
+      "tokens": {
+        "B": {
+          "input": null,
+          "cacheRead": 1504912,
+          "cacheCreation": null,
+          "output": 25271,
+          "reasoning": 20506,
+          "apiCalls": null
+        },
+        "W": {
+          "input": 17277,
+          "output": 1912,
+          "reasoning": null,
+          "cacheRead": null,
+          "cacheCreation": null,
+          "apiCalls": 28
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "interface": "mixed-agent-and-direct-choice"
     }
   ]
 }
