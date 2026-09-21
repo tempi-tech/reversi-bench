@@ -1,0 +1,11 @@
+# JEV direct-choice pilot
+
+One approved unranked game: j001, JEV Black versus GPT-5.6 Sol medium White. No second game is authorized. Never append this pilot to series/s1.json or official standings. Archive at matches/experiments/jev-direct-choice-v1/j001.json and register in experiments/jev-direct-choice-v1.json.
+
+JEV uses pinned jev-1.13.0 via the existing TypeSafe connection through Wings. Each played JEV move, including forced moves, requires exactly one Choice request. All legal coordinates are offered in referee order with null descriptions. The returned choice is submitted unchanged. No search, evaluation script, successor boards, tactical hints, re-sampling, confidence gate, fallback model or automatic request retries. Auto passes need no API request. Errors stop for review.
+
+The adapter supplies current neutral referee board, counts, last move, legal coordinates, own side, coordinate convention and elementary rules. It supplies no transcript or persistent reasoning memory. Sol uses unchanged prompts/player.md in a fresh Cockpit Codex visual task, account Auto and standard tier. These interfaces differ; results must not be silently pooled with ranked agent games. Store both input formats and code hashes.
+
+The adapter is orchestration only: referee wait, one API call, referee play. Store exact requests, raw responses, run IDs, model version and usage. Separate API elapsed time from total Wings/client elapsed time; neither is comparable to pure reasoning time. Choice probabilities/confidence are not game win probabilities. Preserve unavailable reasoning usage as null.
+
+Replay the finished ordinary match independently and compare final board, winner, turn and complete side/move/flips/pass history. Audit Sol tools and neutral referee I/O. Verify one accepted JEV move per response and no unrecorded retries; preserve uncertainty on failed calls. Public summary and manifest must set ranked false. Stop the completion supervisor after notification. Discord stays disabled; never launch a Cockpit terminal task.

@@ -1,0 +1,25 @@
+{
+  "protocol": "jev-direct-choice-v1",
+  "ranked": false,
+  "status": "complete",
+  "approvedGames": 1,
+  "games": [
+    {
+      "id": "j001",
+      "ranked": false,
+      "state": "complete",
+      "black": "jev-1.13.0 · direct-choice",
+      "white": "gpt-5.6-sol · medium",
+      "record": "matches/experiments/jev-direct-choice-v1/j001.json",
+      "winner": "B",
+      "score": {
+        "B": 37,
+        "W": 27
+      },
+      "verified": true
+    }
+  ],
+  "stopAfter": "j001",
+  "completedAt": "2026-09-21T13:48:17.457Z",
+  "officialStandingsChanged": false
+}
