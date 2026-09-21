@@ -5941,6 +5941,72 @@
         "W": null
       },
       "interface": "mixed-agent-and-direct-choice"
+    },
+    {
+      "id": "s1/j008",
+      "card": "x-jev-1-13-0-direct-choice-vs-gpt-5-6-luna-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-5.6-luna",
+          "effort": "medium",
+          "display": "gpt-5.6-luna · medium"
+        },
+        "W": {
+          "agentType": "typesafe-api",
+          "model": "jev-1.13.0",
+          "effort": null,
+          "interface": "direct-choice",
+          "display": "jev-1.13.0 · direct-choice"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 36,
+        "W": 28
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "illegal_move",
+          "move": "a1",
+          "accepted": false,
+          "detail": "Referee rejected a1; player chose another move as allowed by the unchanged prompt."
+        },
+        {
+          "side": "B",
+          "type": "runtime_command_error",
+          "accepted": false,
+          "detail": "One referee wait used a mistyped nonexistent working directory; process creation failed before execution. Corrected by the player."
+        }
+      ],
+      "finishedAt": "2026-09-21T15:23:42.437Z",
+      "tokens": {
+        "B": {
+          "input": 69696,
+          "cacheRead": 1756160,
+          "cacheCreation": 0,
+          "output": 5442,
+          "reasoning": 2027,
+          "apiCalls": 64
+        },
+        "W": {
+          "input": 19290,
+          "output": 2500,
+          "reasoning": null,
+          "cacheRead": null,
+          "cacheCreation": null,
+          "apiCalls": 30
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "interface": "mixed-agent-and-direct-choice"
     }
   ]
 }
