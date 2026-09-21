@@ -26,6 +26,13 @@ test('forced legal move remains a one-choice model request', () => {
   assert.deepEqual(forced.questions.move.criteria, { c4: null });
 });
 
+test('JEV White receives its own side and cannot request on the other turn', () => {
+  const white = requestOf({ data: { ...data, turn: 'W' }, side: 'W' });
+  assert.equal(white.state.yourSide, 'W');
+  assert.deepEqual(Object.keys(white.questions.move.criteria), data.legal);
+  assert.throws(() => requestOf({ data, side: 'W' }));
+});
+
 test('explicitly promoted JEV result is counted once without altering its experimental evidence', () => {
   const read = relative => JSON.parse(fs.readFileSync(new URL(relative, import.meta.url), 'utf8'));
   const ranked = read('../matches/s1/j001.json');

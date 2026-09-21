@@ -8,7 +8,9 @@ import { requestOf, choiceOf } from './jev-direct-choice.mjs';
 const exec = promisify(execFile);
 const arena = path.resolve(process.argv[2]);
 const metadata = JSON.parse(fs.readFileSync(path.join(arena, 'run-metadata.json'), 'utf8'));
-const directory = metadata.blackDirectory;
+const side = metadata.jevSide ?? 'B';
+assert.ok(['B', 'W'].includes(side));
+const directory = side === 'B' ? metadata.blackDirectory : metadata.whiteDirectory;
 const log = path.join(arena, 'jev-turns.jsonl');
 const lock = fs.openSync(path.join(arena, 'jev-player.lock'), 'wx');
 fs.writeSync(lock, String(process.pid));
@@ -32,7 +34,7 @@ try {
     const state = await waitForTurn();
     if (state.data.status === 'over') break;
     assert.ok(decision <= 60);
-    const request = requestOf({ data: state.data, side: 'B' });
+    const request = requestOf({ data: state.data, side });
     append({ kind: 'request', decision, request });
     const started = Date.now();
     const result = await exec('/Users/yoishika/.agi-tools/bin/wings', [
