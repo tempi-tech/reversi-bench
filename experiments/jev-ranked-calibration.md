@@ -2,6 +2,8 @@
 
 Approved on 2026-09-21: eleven additional ranked games, strictly sequential. Together with the already ranked j001, each of six opposing seats plays JEV once with each color. This is a separate batch after the completed one-game pilot, not an extension of its original unranked authorization.
 
+Revised by explicit user approval (ask_5630c67419d8): finish the already running j006, then replace the six unstarted Astra/Opus games with Luna medium, Luna max and Terra low, once with each color. These are provisional lower-rated calibration seats, not established weaker models. The total remains eleven additional games; no parallel games or additional games are authorized.
+
 | Game | Black | White |
 |---|---|---|
 | j002 | GPT-5.6 Sol medium | JEV 1.13.0 direct-choice |
@@ -9,12 +11,12 @@ Approved on 2026-09-21: eleven additional ranked games, strictly sequential. Tog
 | j004 | Gemini 3.8 Flash high | JEV 1.13.0 direct-choice |
 | j005 | JEV 1.13.0 direct-choice | Grok 4.6 xhigh |
 | j006 | Grok 4.6 xhigh | JEV 1.13.0 direct-choice |
-| j007 | JEV 1.13.0 direct-choice | GPT-6 Astra medium |
-| j008 | GPT-6 Astra medium | JEV 1.13.0 direct-choice |
-| j009 | JEV 1.13.0 direct-choice | Claude Opus 5 medium |
-| j010 | Claude Opus 5 medium | JEV 1.13.0 direct-choice |
-| j011 | JEV 1.13.0 direct-choice | GPT-6 Astra max |
-| j012 | GPT-6 Astra max | JEV 1.13.0 direct-choice |
+| j007 | JEV 1.13.0 direct-choice | GPT-5.6 Luna medium |
+| j008 | GPT-5.6 Luna medium | JEV 1.13.0 direct-choice |
+| j009 | JEV 1.13.0 direct-choice | GPT-5.6 Luna max |
+| j010 | GPT-5.6 Luna max | JEV 1.13.0 direct-choice |
+| j011 | JEV 1.13.0 direct-choice | GPT-5.6 Terra low |
+| j012 | GPT-5.6 Terra low | JEV 1.13.0 direct-choice |
 
 Use pinned `jev-1.13.0` and the same state-only Choice request as j001. Exactly one API call per played JEV move; no tactical adapter, filtering, search, retries, fallback, win-confidence interpretation or model substitution. Only the JEV side/directory changes for reversed colors. Preserve the pilot's immutable adapter snapshots and archives.
 
