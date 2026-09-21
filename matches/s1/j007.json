@@ -1,0 +1,4654 @@
+{
+  "summary": {
+    "game": "s1/j007",
+    "protocol": "jev-direct-choice-v1",
+    "ranked": true,
+    "winner": "W",
+    "score": {
+      "B": 0,
+      "W": 26
+    },
+    "seats": {
+      "B": "jev-1.13.0 · direct-choice",
+      "W": "gpt-5.6-luna · medium"
+    },
+    "playedMoves": 22,
+    "passes": 2,
+    "blind": true,
+    "referee": "bc25d760175d6439c7075f31bf23772c0c957fce",
+    "finishedAt": "2026-09-21T15:17:44.160Z",
+    "limitations": [
+      "First game against Luna medium; one game does not establish a definitive ordering.",
+      "Memoryless Choice API versus a conversational agent with unchanged player prompt; interfaces differ.",
+      "Choice probabilities and confidence are not game win probabilities.",
+      "API and client elapsed time are not reasoning time."
+    ],
+    "card": "x-jev-1-13-0-direct-choice-vs-gpt-5-6-luna-medium",
+    "moves": 24,
+    "tokens": {
+      "B": {
+        "input": 6966,
+        "output": 950,
+        "reasoning": null,
+        "cacheRead": null,
+        "cacheCreation": null,
+        "apiCalls": 11
+      },
+      "W": {
+        "input": 52098,
+        "cacheRead": 461056,
+        "cacheCreation": 0,
+        "output": 2312,
+        "reasoning": 1440,
+        "apiCalls": 23
+      }
+    },
+    "cost": {
+      "B": null,
+      "W": null
+    },
+    "notes": [
+      "Luna medium White won 26-0 after 22 played moves and two automatic passes; JEV had no stones remaining. Empty squares are not reassigned.",
+      "Independent replay and both blind referee-only I/O audits passed. Eleven unique pinned JEV requests for eleven moves; no retries or recovery.",
+      "Codex Luna medium, standard tier, Auto; unchanged prompt. Usage deduplicated by cumulative snapshots."
+    ]
+  },
+  "id": "current",
+  "size": 8,
+  "title": "Reversi 8×8",
+  "createdAt": "2026-09-21T15:16:22.779Z",
+  "updatedAt": "2026-09-21T15:17:44.160Z",
+  "cells": [
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    ".",
+    ".",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    ".",
+    "W",
+    ".",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    ".",
+    ".",
+    "W",
+    "W",
+    "W",
+    "W",
+    "W",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    "W",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    ".",
+    "W",
+    ".",
+    "."
+  ],
+  "turn": "W",
+  "status": "over",
+  "winner": "W",
+  "thinking": null,
+  "lastMove": {
+    "side": "W",
+    "move": "f1",
+    "flips": [
+      "e2",
+      "d3",
+      "c4"
+    ]
+  },
+  "history": [
+    {
+      "side": "B",
+      "move": "d6",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-09-21T15:16:28.884Z"
+    },
+    {
+      "side": "W",
+      "move": "c6",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-09-21T15:16:36.240Z"
+    },
+    {
+      "side": "B",
+      "move": "c5",
+      "flips": [
+        "d5"
+      ],
+      "at": "2026-09-21T15:16:37.330Z"
+    },
+    {
+      "side": "W",
+      "move": "e6",
+      "flips": [
+        "d6",
+        "e5"
+      ],
+      "at": "2026-09-21T15:16:43.875Z"
+    },
+    {
+      "side": "B",
+      "move": "f6",
+      "flips": [
+        "e5"
+      ],
+      "at": "2026-09-21T15:16:45.236Z"
+    },
+    {
+      "side": "W",
+      "move": "g6",
+      "flips": [
+        "f6"
+      ],
+      "at": "2026-09-21T15:16:49.542Z"
+    },
+    {
+      "side": "B",
+      "move": "f4",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-09-21T15:16:50.455Z"
+    },
+    {
+      "side": "W",
+      "move": "c3",
+      "flips": [
+        "d4",
+        "e5"
+      ],
+      "at": "2026-09-21T15:16:54.997Z"
+    },
+    {
+      "side": "B",
+      "move": "c4",
+      "flips": [
+        "d4"
+      ],
+      "at": "2026-09-21T15:16:56.253Z"
+    },
+    {
+      "side": "W",
+      "move": "e3",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-09-21T15:17:02.325Z"
+    },
+    {
+      "side": "B",
+      "move": "f3",
+      "flips": [
+        "e4"
+      ],
+      "at": "2026-09-21T15:17:03.726Z"
+    },
+    {
+      "side": "W",
+      "move": "b6",
+      "flips": [
+        "c5",
+        "d4"
+      ],
+      "at": "2026-09-21T15:17:09.991Z"
+    },
+    {
+      "side": "B",
+      "move": "b5",
+      "flips": [
+        "c5"
+      ],
+      "at": "2026-09-21T15:17:10.779Z"
+    },
+    {
+      "side": "W",
+      "move": "a4",
+      "flips": [
+        "b5"
+      ],
+      "at": "2026-09-21T15:17:17.951Z"
+    },
+    {
+      "side": "B",
+      "move": "f5",
+      "flips": [
+        "e5"
+      ],
+      "at": "2026-09-21T15:17:19.002Z"
+    },
+    {
+      "side": "W",
+      "move": "g5",
+      "flips": [
+        "f5",
+        "e5",
+        "d5",
+        "c5",
+        "f4"
+      ],
+      "at": "2026-09-21T15:17:24.172Z"
+    },
+    {
+      "side": "B",
+      "move": "g4",
+      "flips": [
+        "f4"
+      ],
+      "at": "2026-09-21T15:17:24.942Z"
+    },
+    {
+      "side": "W",
+      "move": "h4",
+      "flips": [
+        "g4",
+        "f4",
+        "e4"
+      ],
+      "at": "2026-09-21T15:17:30.542Z"
+    },
+    {
+      "side": "B",
+      "move": "d3",
+      "flips": [
+        "e3"
+      ],
+      "at": "2026-09-21T15:17:31.755Z"
+    },
+    {
+      "side": "W",
+      "move": "g3",
+      "flips": [
+        "f3",
+        "e3",
+        "d3"
+      ],
+      "at": "2026-09-21T15:17:37.197Z"
+    },
+    {
+      "side": "B",
+      "move": "e2",
+      "flips": [
+        "d3"
+      ],
+      "at": "2026-09-21T15:17:38.211Z"
+    },
+    {
+      "side": "W",
+      "move": "f1",
+      "flips": [
+        "e2",
+        "d3",
+        "c4"
+      ],
+      "at": "2026-09-21T15:17:44.159Z"
+    },
+    {
+      "side": "B",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-21T15:17:44.160Z"
+    },
+    {
+      "side": "W",
+      "move": "pass",
+      "flips": [],
+      "at": "2026-09-21T15:17:44.160Z"
+    }
+  ],
+  "players": {
+    "B": {
+      "name": "Black",
+      "model": "",
+      "say": ""
+    },
+    "W": {
+      "name": "White",
+      "model": "",
+      "say": ""
+    }
+  },
+  "seats": {
+    "B": {
+      "agentType": "typesafe-api",
+      "model": "jev-1.13.0",
+      "effort": null,
+      "interface": "direct-choice",
+      "display": "jev-1.13.0 · direct-choice"
+    },
+    "W": {
+      "agentType": "codex",
+      "model": "gpt-5.6-luna",
+      "effort": "medium",
+      "display": "gpt-5.6-luna · medium"
+    }
+  },
+  "tokens": {
+    "B": {
+      "input": 6966,
+      "output": 950,
+      "reasoning": null,
+      "cacheRead": null,
+      "cacheCreation": null,
+      "apiCalls": 11
+    },
+    "W": {
+      "input": 52098,
+      "cacheRead": 461056,
+      "cacheCreation": 0,
+      "output": 2312,
+      "reasoning": 1440,
+      "apiCalls": 23
+    }
+  },
+  "cost": {
+    "B": null,
+    "W": null
+  },
+  "incidents": [],
+  "blind": true,
+  "verification": {
+    "replayMatched": true,
+    "compared": [
+      "cells",
+      "status",
+      "winner",
+      "turn",
+      "side/move/flips/pass history"
+    ],
+    "refereeOnly": true,
+    "oneRequestPerJevMove": true,
+    "noRetriesOrFallback": true,
+    "pinnedModel": "jev-1.13.0",
+    "adapterExited": true,
+    "supervisorExited": true,
+    "discord": "disabled",
+    "protectedArchivesUnchanged": true,
+    "protectedFileHashes": {
+      "matches/s1/j001.json": "c884e88a85a1656b65737b6b2eb785ec531b5fc56ab06f372755074534b38ca7",
+      "matches/experiments/jev-direct-choice-v1/j001.json": "0b1d33e4c9ea42d19fe30ee6237478e5a1c867d10816aa61c156b44b00881dd9",
+      "matches/excluded/g189.json": "4f0ac8fe67832ae52b9c78e119f08ea11c93bbd19d2618bccfabea9cc535cc4b"
+    }
+  },
+  "provenance": {
+    "rawMatchSha256": "8c98f3242624445c72fe9f5e0df518b416d58b149fd2fefabfd136f3e20359eb",
+    "jevLogSha256": "69139d33e0cf93d887d39e8487ffd85f3372175e2b584ab94ba556817e4c83f3",
+    "engineSha256": "823624857b13a951c543501e4235b48d2ca5f0124b49a2a75b5357bb7e0a5195",
+    "playerPromptSha256": "96170fa47f5ab693824647d0220b4f7ead469c527f28f16ca7d4bc3f31c76f5f",
+    "modelIdSha256": "026f7ca6eb3706254a707a304f2bc478cf825b4f51fab5dbebf9fb9c55b8c009",
+    "adapterSha256": "b821f0697fdcc109ae83ae96de9a29dbd7477a0d05cfc38f91f48ba618b94a02",
+    "runnerSha256": "8ce352f1f5e97ec05dd1a645b9fd6acd4a40c7133831c46174db476bff5d81e4",
+    "handlerSha256": "c6f4cef014181b6382dc1c99cf96054fc45e2dd3369e65b1b7e6053196e9c798",
+    "excludedPreflightRunIds": []
+  },
+  "black": {
+    "side": "B",
+    "model": "jev-1.13.0",
+    "effort": null,
+    "runtime": "TypeSafe API through Wings jev-main",
+    "tokens": {
+      "input": 6966,
+      "output": 950,
+      "reasoning": null,
+      "cacheRead": null,
+      "cacheCreation": null,
+      "apiCalls": 11
+    },
+    "usageProvenance": {
+      "method": "Unique Wings run IDs, raw native input/output; no reasoning estimate or addition.",
+      "raw": [
+        {
+          "runId": "a7d19525-05a1-4903-b5ef-4531297e3d2a",
+          "usage": {
+            "input_tokens": 541,
+            "output_tokens": 50
+          }
+        },
+        {
+          "runId": "acd8c0bb-70c8-46d7-878d-5436758d602d",
+          "usage": {
+            "input_tokens": 572,
+            "output_tokens": 50
+          }
+        },
+        {
+          "runId": "382d5e54-fd91-493c-b703-9b80b19d6f24",
+          "usage": {
+            "input_tokens": 637,
+            "output_tokens": 90
+          }
+        },
+        {
+          "runId": "03c4a711-8497-4314-a1a2-194445ae390c",
+          "usage": {
+            "input_tokens": 633,
+            "output_tokens": 90
+          }
+        },
+        {
+          "runId": "63336ac8-3772-4e91-acfc-c2872ce7fd57",
+          "usage": {
+            "input_tokens": 641,
+            "output_tokens": 90
+          }
+        },
+        {
+          "runId": "ab460c29-e701-449a-a36a-1b9c68fe7897",
+          "usage": {
+            "input_tokens": 673,
+            "output_tokens": 114
+          }
+        },
+        {
+          "runId": "84e67070-8fd9-46b6-ae29-b4f8e698f383",
+          "usage": {
+            "input_tokens": 669,
+            "output_tokens": 106
+          }
+        },
+        {
+          "runId": "4a994a3d-2fc1-4219-a529-67cb2f69e6f7",
+          "usage": {
+            "input_tokens": 700,
+            "output_tokens": 130
+          }
+        },
+        {
+          "runId": "9b6384fe-51b7-4907-848d-fc3f436e0dd8",
+          "usage": {
+            "input_tokens": 673,
+            "output_tokens": 98
+          }
+        },
+        {
+          "runId": "f07eb794-0ea1-4887-a0f4-fc0fbc27e7a9",
+          "usage": {
+            "input_tokens": 626,
+            "output_tokens": 74
+          }
+        },
+        {
+          "runId": "d322e020-d142-42e4-99a3-0159e05e6a4c",
+          "usage": {
+            "input_tokens": 601,
+            "output_tokens": 58
+          }
+        }
+      ]
+    },
+    "averageTimingMs": {
+      "apiElapsedMs": 266.54545454545456,
+      "wingsDurationMs": 322.8181818181818,
+      "clientElapsedMs": 1145.090909090909,
+      "wingsOverheadMs": 56.27272727272727,
+      "clientOutsideWingsMs": 822.2727272727273
+    },
+    "turns": [
+      {
+        "ply": 1,
+        "requestSha256": "2a4aae5f3ba925fd17903dd06511e5bcdbc327042b17f27b13a465c2724d8753",
+        "request": {
+          "at": "2026-09-21T15:16:26.682Z",
+          "kind": "request",
+          "decision": 1,
+          "request": {
+            "model": "jev-1.13.0",
+            "state": {
+              "game": "Reversi on an 8 by 8 board",
+              "yourSide": "B",
+              "coordinates": "Columns a through h left to right; board rows are 8 through 1 top to bottom. B is Black, W is White, dot is empty.",
+              "rules": "Place a disc on a legal empty square. Every straight line of opponent discs bracketed by your discs is flipped. Turns alternate; a player without a legal move passes. The game ends when neither can move. More discs wins; equal discs is a draw.",
+              "board": [
+                "........",
+                "........",
+                "........",
+                "...WB...",
+                "...BW...",
+                "........",
+                "........",
+                "........"
+              ],
+              "counts": {
+                "B": 2,
+                "W": 2
+              },
+              "legal": [
+                "d6",
+                "c5",
+                "f4",
+                "e3"
+              ],
+              "lastMove": null
+            },
+            "questions": {
+              "move": {
+                "type": "choice",
+                "instructions": "It is your turn. Select the legal move you judge best for winning the game at the end. Choose exactly one coordinate.",
+                "criteria": {
+                  "d6": null,
+                  "c5": null,
+                  "f4": null,
+                  "e3": null
+                }
+              }
+            }
+          }
+        },
+        "response": {
+          "at": "2026-09-21T15:16:28.851Z",
+          "kind": "response",
+          "decision": 1,
+          "elapsedMs": 2169,
+          "envelope": {
+            "success": true,
+            "data": {
+              "ok": true,
+              "result": {
+                "status": 200,
+                "elapsedMs": 219,
+                "body": {
+                  "model": "jev-1.13.0",
+                  "answers": {
+                    "move": {
+                      "type": "choice",
+                      "choice": "d6",
+                      "confidence": 0.14,
+                      "probabilities": {
+                        "c5": 0.27,
+                        "d6": 0.36,
+                        "e3": 0.2,
+                        "f4": 0.17
+                      }
+                    }
+                  },
+                  "usage": {
+                    "input_tokens": 541,
+                    "output_tokens": 50
+                  }
+                }
+              },
+              "durationMs": 509,
+              "runId": "a7d19525-05a1-4903-b5ef-4531297e3d2a"
+            }
+          }
+        },
+        "accepted": {
+          "at": "2026-09-21T15:16:28.888Z",
+          "kind": "accepted",
+          "decision": 1,
+          "choice": "d6"
+        },
+        "timing": {
+          "apiElapsedMs": 219,
+          "wingsDurationMs": 509,
+          "clientElapsedMs": 2169,
+          "wingsOverheadMs": 290,
+          "clientOutsideWingsMs": 1660
+        }
+      },
+      {
+        "ply": 3,
+        "requestSha256": "47314585b68bbaeb3fb8c15eec791f0c8226fa063c87f4fc646c836f0bd28ebb",
+        "request": {
+          "at": "2026-09-21T15:16:36.250Z",
+          "kind": "request",
+          "decision": 2,
+          "request": {
+            "model": "jev-1.13.0",
+            "state": {
+              "game": "Reversi on an 8 by 8 board",
+              "yourSide": "B",
+              "coordinates": "Columns a through h left to right; board rows are 8 through 1 top to bottom. B is Black, W is White, dot is empty.",
+              "rules": "Place a disc on a legal empty square. Every straight line of opponent discs bracketed by your discs is flipped. Turns alternate; a player without a legal move passes. The game ends when neither can move. More discs wins; equal discs is a draw.",
+              "board": [
+                "........",
+                "........",
+                "..WB....",
+                "...WB...",
+                "...BW...",
+                "........",
+                "........",
+                "........"
+              ],
+              "counts": {
+                "B": 3,
+                "W": 3
+              },
+              "legal": [
+                "b6",
+                "c5",
+                "f4",
+                "e3"
+              ],
+              "lastMove": {
+                "side": "W",
+                "move": "c6",
+                "flips": [
+                  "d5"
+                ]
+              }
+            },
+            "questions": {
+              "move": {
+                "type": "choice",
+                "instructions": "It is your turn. Select the legal move you judge best for winning the game at the end. Choose exactly one coordinate.",
+                "criteria": {
+                  "b6": null,
+                  "c5": null,
+                  "f4": null,
+                  "e3": null
+                }
+              }
+            }
+          }
+        },
+        "response": {
+          "at": "2026-09-21T15:16:37.300Z",
+          "kind": "response",
+          "decision": 2,
+          "elapsedMs": 1050,
+          "envelope": {
+            "success": true,
+            "data": {
+              "ok": true,
+              "result": {
+                "status": 200,
+                "elapsedMs": 187,
+                "body": {
+                  "model": "jev-1.13.0",
+                  "answers": {
+                    "move": {
+                      "type": "choice",
+                      "choice": "c5",
+                      "confidence": 0.18,
+                      "probabilities": {
+                        "c5": 0.39,
+                        "b6": 0.26,
+                        "e3": 0.15,
+                        "f4": 0.2
+                      }
+                    }
+                  },
+                  "usage": {
+                    "input_tokens": 572,
+                    "output_tokens": 50
+                  }
+                }
+              },
+              "durationMs": 220,
+              "runId": "acd8c0bb-70c8-46d7-878d-5436758d602d"
+            }
+          }
+        },
+        "accepted": {
+          "at": "2026-09-21T15:16:37.333Z",
+          "kind": "accepted",
+          "decision": 2,
+          "choice": "c5"
+        },
+        "timing": {
+          "apiElapsedMs": 187,
+          "wingsDurationMs": 220,
+          "clientElapsedMs": 1050,
+          "wingsOverheadMs": 33,
+          "clientOutsideWingsMs": 830
+        }
+      },
+      {
+        "ply": 5,
+        "requestSha256": "6c4bbb1e43558044372499e888b54accca2c5af3cadd2b5716bf4c25826ce080",
+        "request": {
+          "at": "2026-09-21T15:16:43.887Z",
+          "kind": "request",
+          "decision": 3,
+          "request": {
+            "model": "jev-1.13.0",
+            "state": {
+              "game": "Reversi on an 8 by 8 board",
+              "yourSide": "B",
+              "coordinates": "Columns a through h left to right; board rows are 8 through 1 top to bottom. B is Black, W is White, dot is empty.",
+              "rules": "Place a disc on a legal empty square. Every straight line of opponent discs bracketed by your discs is flipped. Turns alternate; a player without a legal move passes. The game ends when neither can move. More discs wins; equal discs is a draw.",
+              "board": [
+                "........",
+                "........",
+                "..WWW...",
+                "..BBW...",
+                "...BW...",
+                "........",
+                "........",
+                "........"
+              ],
+              "counts": {
+                "B": 3,
+                "W": 5
+              },
+              "legal": [
+                "b7",
+                "c7",
+                "d7",
+                "e7",
+                "f7",
+                "f6",
+                "f5",
+                "f4",
+                "f3"
+              ],
+              "lastMove": {
+                "side": "W",
+                "move": "e6",
+                "flips": [
+                  "d6",
+                  "e5"
+                ]
+              }
+            },
+            "questions": {
+              "move": {
+                "type": "choice",
+                "instructions": "It is your turn. Select the legal move you judge best for winning the game at the end. Choose exactly one coordinate.",
+                "criteria": {
+                  "b7": null,
+                  "c7": null,
+                  "d7": null,
+                  "e7": null,
+                  "f7": null,
+                  "f6": null,
+                  "f5": null,
+                  "f4": null,
+                  "f3": null
+                }
+              }
+            }
+          }
+        },
+        "response": {
+          "at": "2026-09-21T15:16:45.203Z",
+          "kind": "response",
+          "decision": 3,
+          "elapsedMs": 1316,
+          "envelope": {
+            "success": true,
+            "data": {
+              "ok": true,
+              "result": {
+                "status": 200,
+                "elapsedMs": 415,
+                "body": {
+                  "model": "jev-1.13.0",
+                  "answers": {
+                    "move": {
+                      "type": "choice",
+                      "choice": "f6",
+                      "confidence": 0.11,
+                      "probabilities": {
+                        "e7": 0.15,
+                        "b7": 0.07,
+                        "f4": 0.08,
+                        "f5": 0.13,
+                        "d7": 0.14,
+                        "f7": 0.08,
+                        "c7": 0.07,
+                        "f3": 0.07,
+                        "f6": 0.21
+                      }
+                    }
+                  },
+                  "usage": {
+                    "input_tokens": 637,
+                    "output_tokens": 90
+                  }
+                }
+              },
+              "durationMs": 452,
+              "runId": "382d5e54-fd91-493c-b703-9b80b19d6f24"
+            }
+          }
+        },
+        "accepted": {
+          "at": "2026-09-21T15:16:45.239Z",
+          "kind": "accepted",
+          "decision": 3,
+          "choice": "f6"
+        },
+        "timing": {
+          "apiElapsedMs": 415,
+          "wingsDurationMs": 452,
+          "clientElapsedMs": 1316,
+          "wingsOverheadMs": 37,
+          "clientOutsideWingsMs": 864
+        }
+      },
+      {
+        "ply": 7,
+        "requestSha256": "44cae8ec839f5e4e071957c38e1ae4c0b8bd3c3a39fe28e73ba24850ee8603f4",
+        "request": {
+          "at": "2026-09-21T15:16:49.558Z",
+          "kind": "request",
+          "decision": 4,
+          "request": {
+            "model": "jev-1.13.0",
+            "state": {
+              "game": "Reversi on an 8 by 8 board",
+              "yourSide": "B",
+              "coordinates": "Columns a through h left to right; board rows are 8 through 1 top to bottom. B is Black, W is White, dot is empty.",
+              "rules": "Place a disc on a legal empty square. Every straight line of opponent discs bracketed by your discs is flipped. Turns alternate; a player without a legal move passes. The game ends when neither can move. More discs wins; equal discs is a draw.",
+              "board": [
+                "........",
+                "........",
+                "..WWWWW.",
+                "..BBB...",
+                "...BW...",
+                "........",
+                "........",
+                "........"
+              ],
+              "counts": {
+                "B": 4,
+                "W": 6
+              },
+              "legal": [
+                "b7",
+                "c7",
+                "d7",
+                "e7",
+                "f7",
+                "g7",
+                "f4",
+                "e3",
+                "f3"
+              ],
+              "lastMove": {
+                "side": "W",
+                "move": "g6",
+                "flips": [
+                  "f6"
+                ]
+              }
+            },
+            "questions": {
+              "move": {
+                "type": "choice",
+                "instructions": "It is your turn. Select the legal move you judge best for winning the game at the end. Choose exactly one coordinate.",
+                "criteria": {
+                  "b7": null,
+                  "c7": null,
+                  "d7": null,
+                  "e7": null,
+                  "f7": null,
+                  "g7": null,
+                  "f4": null,
+                  "e3": null,
+                  "f3": null
+                }
+              }
+            }
+          }
+        },
+        "response": {
+          "at": "2026-09-21T15:16:50.426Z",
+          "kind": "response",
+          "decision": 4,
+          "elapsedMs": 868,
+          "envelope": {
+            "success": true,
+            "data": {
+              "ok": true,
+              "result": {
+                "status": 200,
+                "elapsedMs": 195,
+                "body": {
+                  "model": "jev-1.13.0",
+                  "answers": {
+                    "move": {
+                      "type": "choice",
+                      "choice": "f4",
+                      "confidence": 0.07,
+                      "probabilities": {
+                        "f4": 0.17,
+                        "c7": 0.05,
+                        "f3": 0.11,
+                        "g7": 0.18000000000000002,
+                        "e3": 0.14,
+                        "b7": 0.06,
+                        "d7": 0.08,
+                        "e7": 0.08,
+                        "f7": 0.13
+                      }
+                    }
+                  },
+                  "usage": {
+                    "input_tokens": 633,
+                    "output_tokens": 90
+                  }
+                }
+              },
+              "durationMs": 224,
+              "runId": "03c4a711-8497-4314-a1a2-194445ae390c"
+            }
+          }
+        },
+        "accepted": {
+          "at": "2026-09-21T15:16:50.459Z",
+          "kind": "accepted",
+          "decision": 4,
+          "choice": "f4"
+        },
+        "timing": {
+          "apiElapsedMs": 195,
+          "wingsDurationMs": 224,
+          "clientElapsedMs": 868,
+          "wingsOverheadMs": 29,
+          "clientOutsideWingsMs": 644
+        }
+      },
+      {
+        "ply": 9,
+        "requestSha256": "ad5cd9c2e3bfee0318a34285cdc555b745427bc2ba65276f6d30c98e83afda91",
+        "request": {
+          "at": "2026-09-21T15:16:55.004Z",
+          "kind": "request",
+          "decision": 5,
+          "request": {
+            "model": "jev-1.13.0",
+            "state": {
+              "game": "Reversi on an 8 by 8 board",
+              "yourSide": "B",
+              "coordinates": "Columns a through h left to right; board rows are 8 through 1 top to bottom. B is Black, W is White, dot is empty.",
+              "rules": "Place a disc on a legal empty square. Every straight line of opponent discs bracketed by your discs is flipped. Turns alternate; a player without a legal move passes. The game ends when neither can move. More discs wins; equal discs is a draw.",
+              "board": [
+                "........",
+                "........",
+                "..WWWWW.",
+                "..BBW...",
+                "...WBB..",
+                "..W.....",
+                "........",
+                "........"
+              ],
+              "counts": {
+                "B": 4,
+                "W": 8
+              },
+              "legal": [
+                "b7",
+                "c7",
+                "d7",
+                "e7",
+                "f7",
+                "f5",
+                "c4",
+                "d3",
+                "e3"
+              ],
+              "lastMove": {
+                "side": "W",
+                "move": "c3",
+                "flips": [
+                  "d4",
+                  "e5"
+                ]
+              }
+            },
+            "questions": {
+              "move": {
+                "type": "choice",
+                "instructions": "It is your turn. Select the legal move you judge best for winning the game at the end. Choose exactly one coordinate.",
+                "criteria": {
+                  "b7": null,
+                  "c7": null,
+                  "d7": null,
+                  "e7": null,
+                  "f7": null,
+                  "f5": null,
+                  "c4": null,
+                  "d3": null,
+                  "e3": null
+                }
+              }
+            }
+          }
+        },
+        "response": {
+          "at": "2026-09-21T15:16:56.221Z",
+          "kind": "response",
+          "decision": 5,
+          "elapsedMs": 1217,
+          "envelope": {
+            "success": true,
+            "data": {
+              "ok": true,
+              "result": {
+                "status": 200,
+                "elapsedMs": 445,
+                "body": {
+                  "model": "jev-1.13.0",
+                  "answers": {
+                    "move": {
+                      "type": "choice",
+                      "choice": "c4",
+                      "confidence": 0.14,
+                      "probabilities": {
+                        "d7": 0.07,
+                        "e3": 0.17,
+                        "c4": 0.24000000000000002,
+                        "f7": 0.04,
+                        "c7": 0.05,
+                        "b7": 0.06,
+                        "d3": 0.18,
+                        "e7": 0.04,
+                        "f5": 0.15
+                      }
+                    }
+                  },
+                  "usage": {
+                    "input_tokens": 641,
+                    "output_tokens": 90
+                  }
+                }
+              },
+              "durationMs": 490,
+              "runId": "63336ac8-3772-4e91-acfc-c2872ce7fd57"
+            }
+          }
+        },
+        "accepted": {
+          "at": "2026-09-21T15:16:56.257Z",
+          "kind": "accepted",
+          "decision": 5,
+          "choice": "c4"
+        },
+        "timing": {
+          "apiElapsedMs": 445,
+          "wingsDurationMs": 490,
+          "clientElapsedMs": 1217,
+          "wingsOverheadMs": 45,
+          "clientOutsideWingsMs": 727
+        }
+      },
+      {
+        "ply": 11,
+        "requestSha256": "15d21101e68e3b37e709d730876f4a4eb033c9aeb0c0327204e65bfcc81c02ce",
+        "request": {
+          "at": "2026-09-21T15:17:02.334Z",
+          "kind": "request",
+          "decision": 6,
+          "request": {
+            "model": "jev-1.13.0",
+            "state": {
+              "game": "Reversi on an 8 by 8 board",
+              "yourSide": "B",
+              "coordinates": "Columns a through h left to right; board rows are 8 through 1 top to bottom. B is Black, W is White, dot is empty.",
+              "rules": "Place a disc on a legal empty square. Every straight line of opponent discs bracketed by your discs is flipped. Turns alternate; a player without a legal move passes. The game ends when neither can move. More discs wins; equal discs is a draw.",
+              "board": [
+                "........",
+                "........",
+                "..WWWWW.",
+                "..BBW...",
+                "..BBWB..",
+                "..W.W...",
+                "........",
+                "........"
+              ],
+              "counts": {
+                "B": 5,
+                "W": 9
+              },
+              "legal": [
+                "b7",
+                "c7",
+                "d7",
+                "e7",
+                "f7",
+                "g7",
+                "f5",
+                "f3",
+                "b2",
+                "c2",
+                "d2",
+                "f2"
+              ],
+              "lastMove": {
+                "side": "W",
+                "move": "e3",
+                "flips": [
+                  "e4"
+                ]
+              }
+            },
+            "questions": {
+              "move": {
+                "type": "choice",
+                "instructions": "It is your turn. Select the legal move you judge best for winning the game at the end. Choose exactly one coordinate.",
+                "criteria": {
+                  "b7": null,
+                  "c7": null,
+                  "d7": null,
+                  "e7": null,
+                  "f7": null,
+                  "g7": null,
+                  "f5": null,
+                  "f3": null,
+                  "b2": null,
+                  "c2": null,
+                  "d2": null,
+                  "f2": null
+                }
+              }
+            }
+          }
+        },
+        "response": {
+          "at": "2026-09-21T15:17:03.694Z",
+          "kind": "response",
+          "decision": 6,
+          "elapsedMs": 1360,
+          "envelope": {
+            "success": true,
+            "data": {
+              "ok": true,
+              "result": {
+                "status": 200,
+                "elapsedMs": 227,
+                "body": {
+                  "model": "jev-1.13.0",
+                  "answers": {
+                    "move": {
+                      "type": "choice",
+                      "choice": "f3",
+                      "confidence": 0.11,
+                      "probabilities": {
+                        "f7": 0.05,
+                        "c7": 0.06,
+                        "g7": 0.03,
+                        "b2": 0.05,
+                        "d7": 0.08,
+                        "f2": 0.07,
+                        "f3": 0.2,
+                        "b7": 0.04,
+                        "f5": 0.19,
+                        "d2": 0.09,
+                        "e7": 0.07,
+                        "c2": 0.07
+                      }
+                    }
+                  },
+                  "usage": {
+                    "input_tokens": 673,
+                    "output_tokens": 114
+                  }
+                }
+              },
+              "durationMs": 259,
+              "runId": "ab460c29-e701-449a-a36a-1b9c68fe7897"
+            }
+          }
+        },
+        "accepted": {
+          "at": "2026-09-21T15:17:03.729Z",
+          "kind": "accepted",
+          "decision": 6,
+          "choice": "f3"
+        },
+        "timing": {
+          "apiElapsedMs": 227,
+          "wingsDurationMs": 259,
+          "clientElapsedMs": 1360,
+          "wingsOverheadMs": 32,
+          "clientOutsideWingsMs": 1101
+        }
+      },
+      {
+        "ply": 13,
+        "requestSha256": "a20d359598ed0e4d6b898367b2ea97f91737f9505c6ab2b7cbd214fa50bf6885",
+        "request": {
+          "at": "2026-09-21T15:17:10.004Z",
+          "kind": "request",
+          "decision": 7,
+          "request": {
+            "model": "jev-1.13.0",
+            "state": {
+              "game": "Reversi on an 8 by 8 board",
+              "yourSide": "B",
+              "coordinates": "Columns a through h left to right; board rows are 8 through 1 top to bottom. B is Black, W is White, dot is empty.",
+              "rules": "Place a disc on a legal empty square. Every straight line of opponent discs bracketed by your discs is flipped. Turns alternate; a player without a legal move passes. The game ends when neither can move. More discs wins; equal discs is a draw.",
+              "board": [
+                "........",
+                "........",
+                ".WWWWWW.",
+                "..WBW...",
+                "..BWBB..",
+                "..W.WB..",
+                "........",
+                "........"
+              ],
+              "counts": {
+                "B": 5,
+                "W": 11
+              },
+              "legal": [
+                "b7",
+                "c7",
+                "d7",
+                "e7",
+                "f7",
+                "b5",
+                "f5",
+                "d3",
+                "c2",
+                "d2",
+                "e2"
+              ],
+              "lastMove": {
+                "side": "W",
+                "move": "b6",
+                "flips": [
+                  "c5",
+                  "d4"
+                ]
+              }
+            },
+            "questions": {
+              "move": {
+                "type": "choice",
+                "instructions": "It is your turn. Select the legal move you judge best for winning the game at the end. Choose exactly one coordinate.",
+                "criteria": {
+                  "b7": null,
+                  "c7": null,
+                  "d7": null,
+                  "e7": null,
+                  "f7": null,
+                  "b5": null,
+                  "f5": null,
+                  "d3": null,
+                  "c2": null,
+                  "d2": null,
+                  "e2": null
+                }
+              }
+            }
+          }
+        },
+        "response": {
+          "at": "2026-09-21T15:17:10.748Z",
+          "kind": "response",
+          "decision": 7,
+          "elapsedMs": 744,
+          "envelope": {
+            "success": true,
+            "data": {
+              "ok": true,
+              "result": {
+                "status": 200,
+                "elapsedMs": 208,
+                "body": {
+                  "model": "jev-1.13.0",
+                  "answers": {
+                    "move": {
+                      "type": "choice",
+                      "choice": "b5",
+                      "confidence": 0.07,
+                      "probabilities": {
+                        "c2": 0.06,
+                        "e7": 0.07,
+                        "f5": 0.12,
+                        "e2": 0.04,
+                        "d7": 0.09,
+                        "c7": 0.1,
+                        "d2": 0.06,
+                        "f7": 0.05,
+                        "b5": 0.15,
+                        "d3": 0.14,
+                        "b7": 0.12
+                      }
+                    }
+                  },
+                  "usage": {
+                    "input_tokens": 669,
+                    "output_tokens": 106
+                  }
+                }
+              },
+              "durationMs": 238,
+              "runId": "84e67070-8fd9-46b6-ae29-b4f8e698f383"
+            }
+          }
+        },
+        "accepted": {
+          "at": "2026-09-21T15:17:10.782Z",
+          "kind": "accepted",
+          "decision": 7,
+          "choice": "b5"
+        },
+        "timing": {
+          "apiElapsedMs": 208,
+          "wingsDurationMs": 238,
+          "clientElapsedMs": 744,
+          "wingsOverheadMs": 30,
+          "clientOutsideWingsMs": 506
+        }
+      },
+      {
+        "ply": 15,
+        "requestSha256": "5eb151104f0c540186e706b09591d8ccbe3a76bacbb3f528e5863fff52c31a40",
+        "request": {
+          "at": "2026-09-21T15:17:17.957Z",
+          "kind": "request",
+          "decision": 8,
+          "request": {
+            "model": "jev-1.13.0",
+            "state": {
+              "game": "Reversi on an 8 by 8 board",
+              "yourSide": "B",
+              "coordinates": "Columns a through h left to right; board rows are 8 through 1 top to bottom. B is Black, W is White, dot is empty.",
+              "rules": "Place a disc on a legal empty square. Every straight line of opponent discs bracketed by your discs is flipped. Turns alternate; a player without a legal move passes. The game ends when neither can move. More discs wins; equal discs is a draw.",
+              "board": [
+                "........",
+                "........",
+                ".WWWWWW.",
+                ".WBBW...",
+                "W.BWBB..",
+                "..W.WB..",
+                "........",
+                "........"
+              ],
+              "counts": {
+                "B": 6,
+                "W": 12
+              },
+              "legal": [
+                "a7",
+                "b7",
+                "c7",
+                "d7",
+                "e7",
+                "f7",
+                "a6",
+                "a5",
+                "f5",
+                "d3",
+                "c2",
+                "d2",
+                "e2",
+                "f2"
+              ],
+              "lastMove": {
+                "side": "W",
+                "move": "a4",
+                "flips": [
+                  "b5"
+                ]
+              }
+            },
+            "questions": {
+              "move": {
+                "type": "choice",
+                "instructions": "It is your turn. Select the legal move you judge best for winning the game at the end. Choose exactly one coordinate.",
+                "criteria": {
+                  "a7": null,
+                  "b7": null,
+                  "c7": null,
+                  "d7": null,
+                  "e7": null,
+                  "f7": null,
+                  "a6": null,
+                  "a5": null,
+                  "f5": null,
+                  "d3": null,
+                  "c2": null,
+                  "d2": null,
+                  "e2": null,
+                  "f2": null
+                }
+              }
+            }
+          }
+        },
+        "response": {
+          "at": "2026-09-21T15:17:18.970Z",
+          "kind": "response",
+          "decision": 8,
+          "elapsedMs": 1013,
+          "envelope": {
+            "success": true,
+            "data": {
+              "ok": true,
+              "result": {
+                "status": 200,
+                "elapsedMs": 201,
+                "body": {
+                  "model": "jev-1.13.0",
+                  "answers": {
+                    "move": {
+                      "type": "choice",
+                      "choice": "f5",
+                      "confidence": 0.09,
+                      "probabilities": {
+                        "e2": 0.04,
+                        "f5": 0.15,
+                        "f7": 0.03,
+                        "d2": 0.05,
+                        "a7": 0.07,
+                        "e7": 0.04,
+                        "d7": 0.05,
+                        "d3": 0.13,
+                        "a5": 0.14,
+                        "b7": 0.07,
+                        "c2": 0.06,
+                        "f2": 0.04,
+                        "a6": 0.07,
+                        "c7": 0.06
+                      }
+                    }
+                  },
+                  "usage": {
+                    "input_tokens": 700,
+                    "output_tokens": 130
+                  }
+                }
+              },
+              "durationMs": 229,
+              "runId": "4a994a3d-2fc1-4219-a529-67cb2f69e6f7"
+            }
+          }
+        },
+        "accepted": {
+          "at": "2026-09-21T15:17:19.005Z",
+          "kind": "accepted",
+          "decision": 8,
+          "choice": "f5"
+        },
+        "timing": {
+          "apiElapsedMs": 201,
+          "wingsDurationMs": 229,
+          "clientElapsedMs": 1013,
+          "wingsOverheadMs": 28,
+          "clientOutsideWingsMs": 784
+        }
+      },
+      {
+        "ply": 17,
+        "requestSha256": "e4a38c24ee0a87f81586812f97b96cf2f53fae6d99dfa489d543980f195de9b1",
+        "request": {
+          "at": "2026-09-21T15:17:24.177Z",
+          "kind": "request",
+          "decision": 9,
+          "request": {
+            "model": "jev-1.13.0",
+            "state": {
+              "game": "Reversi on an 8 by 8 board",
+              "yourSide": "B",
+              "coordinates": "Columns a through h left to right; board rows are 8 through 1 top to bottom. B is Black, W is White, dot is empty.",
+              "rules": "Place a disc on a legal empty square. Every straight line of opponent discs bracketed by your discs is flipped. Turns alternate; a player without a legal move passes. The game ends when neither can move. More discs wins; equal discs is a draw.",
+              "board": [
+                "........",
+                "........",
+                ".WWWWWW.",
+                ".WWWWWW.",
+                "W.BWBW..",
+                "..W.WB..",
+                "........",
+                "........"
+              ],
+              "counts": {
+                "B": 3,
+                "W": 17
+              },
+              "legal": [
+                "b7",
+                "c7",
+                "e7",
+                "f7",
+                "h7",
+                "a6",
+                "g4",
+                "d3",
+                "c2",
+                "e2"
+              ],
+              "lastMove": {
+                "side": "W",
+                "move": "g5",
+                "flips": [
+                  "f5",
+                  "e5",
+                  "d5",
+                  "c5",
+                  "f4"
+                ]
+              }
+            },
+            "questions": {
+              "move": {
+                "type": "choice",
+                "instructions": "It is your turn. Select the legal move you judge best for winning the game at the end. Choose exactly one coordinate.",
+                "criteria": {
+                  "b7": null,
+                  "c7": null,
+                  "e7": null,
+                  "f7": null,
+                  "h7": null,
+                  "a6": null,
+                  "g4": null,
+                  "d3": null,
+                  "c2": null,
+                  "e2": null
+                }
+              }
+            }
+          }
+        },
+        "response": {
+          "at": "2026-09-21T15:17:24.906Z",
+          "kind": "response",
+          "decision": 9,
+          "elapsedMs": 729,
+          "envelope": {
+            "success": true,
+            "data": {
+              "ok": true,
+              "result": {
+                "status": 200,
+                "elapsedMs": 206,
+                "body": {
+                  "model": "jev-1.13.0",
+                  "answers": {
+                    "move": {
+                      "type": "choice",
+                      "choice": "g4",
+                      "confidence": 0.23,
+                      "probabilities": {
+                        "c7": 0.08,
+                        "d3": 0.09,
+                        "e2": 0.04,
+                        "f7": 0.06,
+                        "b7": 0.09,
+                        "g4": 0.31,
+                        "h7": 0.07,
+                        "a6": 0.12,
+                        "c2": 0.05,
+                        "e7": 0.09
+                      }
+                    }
+                  },
+                  "usage": {
+                    "input_tokens": 673,
+                    "output_tokens": 98
+                  }
+                }
+              },
+              "durationMs": 234,
+              "runId": "9b6384fe-51b7-4907-848d-fc3f436e0dd8"
+            }
+          }
+        },
+        "accepted": {
+          "at": "2026-09-21T15:17:24.945Z",
+          "kind": "accepted",
+          "decision": 9,
+          "choice": "g4"
+        },
+        "timing": {
+          "apiElapsedMs": 206,
+          "wingsDurationMs": 234,
+          "clientElapsedMs": 729,
+          "wingsOverheadMs": 28,
+          "clientOutsideWingsMs": 495
+        }
+      },
+      {
+        "ply": 19,
+        "requestSha256": "85f3c70388e959c01d5a9a7f4becc304aca4300021f7493d7f4546b9150844be",
+        "request": {
+          "at": "2026-09-21T15:17:30.557Z",
+          "kind": "request",
+          "decision": 10,
+          "request": {
+            "model": "jev-1.13.0",
+            "state": {
+              "game": "Reversi on an 8 by 8 board",
+              "yourSide": "B",
+              "coordinates": "Columns a through h left to right; board rows are 8 through 1 top to bottom. B is Black, W is White, dot is empty.",
+              "rules": "Place a disc on a legal empty square. Every straight line of opponent discs bracketed by your discs is flipped. Turns alternate; a player without a legal move passes. The game ends when neither can move. More discs wins; equal discs is a draw.",
+              "board": [
+                "........",
+                "........",
+                ".WWWWWW.",
+                ".WWWWWW.",
+                "W.BWWWWW",
+                "..W.WB..",
+                "........",
+                "........"
+              ],
+              "counts": {
+                "B": 2,
+                "W": 20
+              },
+              "legal": [
+                "b7",
+                "c7",
+                "f7",
+                "a6",
+                "h5",
+                "d3",
+                "c2"
+              ],
+              "lastMove": {
+                "side": "W",
+                "move": "h4",
+                "flips": [
+                  "g4",
+                  "f4",
+                  "e4"
+                ]
+              }
+            },
+            "questions": {
+              "move": {
+                "type": "choice",
+                "instructions": "It is your turn. Select the legal move you judge best for winning the game at the end. Choose exactly one coordinate.",
+                "criteria": {
+                  "b7": null,
+                  "c7": null,
+                  "f7": null,
+                  "a6": null,
+                  "h5": null,
+                  "d3": null,
+                  "c2": null
+                }
+              }
+            }
+          }
+        },
+        "response": {
+          "at": "2026-09-21T15:17:31.721Z",
+          "kind": "response",
+          "decision": 10,
+          "elapsedMs": 1164,
+          "envelope": {
+            "success": true,
+            "data": {
+              "ok": true,
+              "result": {
+                "status": 200,
+                "elapsedMs": 408,
+                "body": {
+                  "model": "jev-1.13.0",
+                  "answers": {
+                    "move": {
+                      "type": "choice",
+                      "choice": "d3",
+                      "confidence": 0.08,
+                      "probabilities": {
+                        "h5": 0.2,
+                        "f7": 0.14,
+                        "a6": 0.13,
+                        "c7": 0.1,
+                        "c2": 0.1,
+                        "b7": 0.11,
+                        "d3": 0.22
+                      }
+                    }
+                  },
+                  "usage": {
+                    "input_tokens": 626,
+                    "output_tokens": 74
+                  }
+                }
+              },
+              "durationMs": 438,
+              "runId": "f07eb794-0ea1-4887-a0f4-fc0fbc27e7a9"
+            }
+          }
+        },
+        "accepted": {
+          "at": "2026-09-21T15:17:31.759Z",
+          "kind": "accepted",
+          "decision": 10,
+          "choice": "d3"
+        },
+        "timing": {
+          "apiElapsedMs": 408,
+          "wingsDurationMs": 438,
+          "clientElapsedMs": 1164,
+          "wingsOverheadMs": 30,
+          "clientOutsideWingsMs": 726
+        }
+      },
+      {
+        "ply": 21,
+        "requestSha256": "4853a2c99931ff45b35c8cf1ec850d5ac811d03403b58e055be6fca8258bd59f",
+        "request": {
+          "at": "2026-09-21T15:17:37.212Z",
+          "kind": "request",
+          "decision": 11,
+          "request": {
+            "model": "jev-1.13.0",
+            "state": {
+              "game": "Reversi on an 8 by 8 board",
+              "yourSide": "B",
+              "coordinates": "Columns a through h left to right; board rows are 8 through 1 top to bottom. B is Black, W is White, dot is empty.",
+              "rules": "Place a disc on a legal empty square. Every straight line of opponent discs bracketed by your discs is flipped. Turns alternate; a player without a legal move passes. The game ends when neither can move. More discs wins; equal discs is a draw.",
+              "board": [
+                "........",
+                "........",
+                ".WWWWWW.",
+                ".WWWWWW.",
+                "W.BWWWWW",
+                "..WWWWW.",
+                "........",
+                "........"
+              ],
+              "counts": {
+                "B": 1,
+                "W": 23
+              },
+              "legal": [
+                "c7",
+                "f7",
+                "a6",
+                "c2",
+                "e2"
+              ],
+              "lastMove": {
+                "side": "W",
+                "move": "g3",
+                "flips": [
+                  "f3",
+                  "e3",
+                  "d3"
+                ]
+              }
+            },
+            "questions": {
+              "move": {
+                "type": "choice",
+                "instructions": "It is your turn. Select the legal move you judge best for winning the game at the end. Choose exactly one coordinate.",
+                "criteria": {
+                  "c7": null,
+                  "f7": null,
+                  "a6": null,
+                  "c2": null,
+                  "e2": null
+                }
+              }
+            }
+          }
+        },
+        "response": {
+          "at": "2026-09-21T15:17:38.178Z",
+          "kind": "response",
+          "decision": 11,
+          "elapsedMs": 966,
+          "envelope": {
+            "success": true,
+            "data": {
+              "ok": true,
+              "result": {
+                "status": 200,
+                "elapsedMs": 221,
+                "body": {
+                  "model": "jev-1.13.0",
+                  "answers": {
+                    "move": {
+                      "type": "choice",
+                      "choice": "e2",
+                      "confidence": 0.08,
+                      "probabilities": {
+                        "f7": 0.18,
+                        "e2": 0.27,
+                        "c7": 0.2,
+                        "a6": 0.18,
+                        "c2": 0.17
+                      }
+                    }
+                  },
+                  "usage": {
+                    "input_tokens": 601,
+                    "output_tokens": 58
+                  }
+                }
+              },
+              "durationMs": 258,
+              "runId": "d322e020-d142-42e4-99a3-0159e05e6a4c"
+            }
+          }
+        },
+        "accepted": {
+          "at": "2026-09-21T15:17:38.215Z",
+          "kind": "accepted",
+          "decision": 11,
+          "choice": "e2"
+        },
+        "timing": {
+          "apiElapsedMs": 221,
+          "wingsDurationMs": 258,
+          "clientElapsedMs": 966,
+          "wingsOverheadMs": 37,
+          "clientOutsideWingsMs": 708
+        }
+      }
+    ],
+    "refereeIO": [
+      {
+        "at": "2026-09-21T15:16:26.681Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "B",
+            "thinking": "B",
+            "counts": {
+              "B": 2,
+              "W": 2
+            },
+            "legal": [
+              "d6",
+              "c5",
+              "f4",
+              "e3"
+            ],
+            "board": [
+              "........",
+              "........",
+              "........",
+              "...WB...",
+              "...BW...",
+              "........",
+              "........",
+              "........"
+            ],
+            "lastMove": null,
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:16:22.780Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:16:28.888Z",
+        "kind": "referee",
+        "args": [
+          "play",
+          "d6"
+        ],
+        "response": {
+          "ok": true,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "W",
+            "thinking": "W",
+            "counts": {
+              "B": 4,
+              "W": 1
+            },
+            "legal": [
+              "c6",
+              "e6",
+              "c4"
+            ],
+            "board": [
+              "........",
+              "........",
+              "...B....",
+              "...BB...",
+              "...BW...",
+              "........",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "B",
+              "move": "d6",
+              "flips": [
+                "d5"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:16:28.885Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:16:36.250Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "B",
+            "thinking": "B",
+            "counts": {
+              "B": 3,
+              "W": 3
+            },
+            "legal": [
+              "b6",
+              "c5",
+              "f4",
+              "e3"
+            ],
+            "board": [
+              "........",
+              "........",
+              "..WB....",
+              "...WB...",
+              "...BW...",
+              "........",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "W",
+              "move": "c6",
+              "flips": [
+                "d5"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:16:36.241Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:16:37.333Z",
+        "kind": "referee",
+        "args": [
+          "play",
+          "c5"
+        ],
+        "response": {
+          "ok": true,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "W",
+            "thinking": "W",
+            "counts": {
+              "B": 5,
+              "W": 2
+            },
+            "legal": [
+              "e6",
+              "c4"
+            ],
+            "board": [
+              "........",
+              "........",
+              "..WB....",
+              "..BBB...",
+              "...BW...",
+              "........",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "B",
+              "move": "c5",
+              "flips": [
+                "d5"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:16:37.330Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:16:43.887Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "B",
+            "thinking": "B",
+            "counts": {
+              "B": 3,
+              "W": 5
+            },
+            "legal": [
+              "b7",
+              "c7",
+              "d7",
+              "e7",
+              "f7",
+              "f6",
+              "f5",
+              "f4",
+              "f3"
+            ],
+            "board": [
+              "........",
+              "........",
+              "..WWW...",
+              "..BBW...",
+              "...BW...",
+              "........",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "W",
+              "move": "e6",
+              "flips": [
+                "d6",
+                "e5"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:16:43.876Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:16:45.239Z",
+        "kind": "referee",
+        "args": [
+          "play",
+          "f6"
+        ],
+        "response": {
+          "ok": true,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "W",
+            "thinking": "W",
+            "counts": {
+              "B": 5,
+              "W": 4
+            },
+            "legal": [
+              "g6",
+              "b4",
+              "c4",
+              "f4",
+              "d3"
+            ],
+            "board": [
+              "........",
+              "........",
+              "..WWWB..",
+              "..BBB...",
+              "...BW...",
+              "........",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "B",
+              "move": "f6",
+              "flips": [
+                "e5"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:16:45.237Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:16:49.557Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "B",
+            "thinking": "B",
+            "counts": {
+              "B": 4,
+              "W": 6
+            },
+            "legal": [
+              "b7",
+              "c7",
+              "d7",
+              "e7",
+              "f7",
+              "g7",
+              "f4",
+              "e3",
+              "f3"
+            ],
+            "board": [
+              "........",
+              "........",
+              "..WWWWW.",
+              "..BBB...",
+              "...BW...",
+              "........",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "W",
+              "move": "g6",
+              "flips": [
+                "f6"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:16:49.543Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:16:50.459Z",
+        "kind": "referee",
+        "args": [
+          "play",
+          "f4"
+        ],
+        "response": {
+          "ok": true,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "W",
+            "thinking": "W",
+            "counts": {
+              "B": 6,
+              "W": 5
+            },
+            "legal": [
+              "b4",
+              "c4",
+              "c3",
+              "d3",
+              "e3",
+              "f3",
+              "g3"
+            ],
+            "board": [
+              "........",
+              "........",
+              "..WWWWW.",
+              "..BBB...",
+              "...BBB..",
+              "........",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "B",
+              "move": "f4",
+              "flips": [
+                "e4"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:16:50.456Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:16:55.004Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "B",
+            "thinking": "B",
+            "counts": {
+              "B": 4,
+              "W": 8
+            },
+            "legal": [
+              "b7",
+              "c7",
+              "d7",
+              "e7",
+              "f7",
+              "f5",
+              "c4",
+              "d3",
+              "e3"
+            ],
+            "board": [
+              "........",
+              "........",
+              "..WWWWW.",
+              "..BBW...",
+              "...WBB..",
+              "..W.....",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "W",
+              "move": "c3",
+              "flips": [
+                "d4",
+                "e5"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:16:54.997Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:16:56.256Z",
+        "kind": "referee",
+        "args": [
+          "play",
+          "c4"
+        ],
+        "response": {
+          "ok": true,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "W",
+            "thinking": "W",
+            "counts": {
+              "B": 6,
+              "W": 7
+            },
+            "legal": [
+              "b5",
+              "b4",
+              "b3",
+              "d3",
+              "e3",
+              "f3",
+              "g3"
+            ],
+            "board": [
+              "........",
+              "........",
+              "..WWWWW.",
+              "..BBW...",
+              "..BBBB..",
+              "..W.....",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "B",
+              "move": "c4",
+              "flips": [
+                "d4"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:16:56.254Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:02.334Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "B",
+            "thinking": "B",
+            "counts": {
+              "B": 5,
+              "W": 9
+            },
+            "legal": [
+              "b7",
+              "c7",
+              "d7",
+              "e7",
+              "f7",
+              "g7",
+              "f5",
+              "f3",
+              "b2",
+              "c2",
+              "d2",
+              "f2"
+            ],
+            "board": [
+              "........",
+              "........",
+              "..WWWWW.",
+              "..BBW...",
+              "..BBWB..",
+              "..W.W...",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "W",
+              "move": "e3",
+              "flips": [
+                "e4"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:02.326Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:03.729Z",
+        "kind": "referee",
+        "args": [
+          "play",
+          "f3"
+        ],
+        "response": {
+          "ok": true,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "W",
+            "thinking": "W",
+            "counts": {
+              "B": 7,
+              "W": 8
+            },
+            "legal": [
+              "b6",
+              "b5",
+              "g5",
+              "b4",
+              "b3",
+              "d3",
+              "g3",
+              "g2"
+            ],
+            "board": [
+              "........",
+              "........",
+              "..WWWWW.",
+              "..BBW...",
+              "..BBBB..",
+              "..W.WB..",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "B",
+              "move": "f3",
+              "flips": [
+                "e4"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:03.727Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:10.004Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "B",
+            "thinking": "B",
+            "counts": {
+              "B": 5,
+              "W": 11
+            },
+            "legal": [
+              "b7",
+              "c7",
+              "d7",
+              "e7",
+              "f7",
+              "b5",
+              "f5",
+              "d3",
+              "c2",
+              "d2",
+              "e2"
+            ],
+            "board": [
+              "........",
+              "........",
+              ".WWWWWW.",
+              "..WBW...",
+              "..BWBB..",
+              "..W.WB..",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "W",
+              "move": "b6",
+              "flips": [
+                "c5",
+                "d4"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:09.992Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:10.782Z",
+        "kind": "referee",
+        "args": [
+          "play",
+          "b5"
+        ],
+        "response": {
+          "ok": true,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "W",
+            "thinking": "W",
+            "counts": {
+              "B": 7,
+              "W": 10
+            },
+            "legal": [
+              "a5",
+              "g5",
+              "a4",
+              "b4",
+              "g4",
+              "b3",
+              "g3",
+              "g2"
+            ],
+            "board": [
+              "........",
+              "........",
+              ".WWWWWW.",
+              ".BBBW...",
+              "..BWBB..",
+              "..W.WB..",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "B",
+              "move": "b5",
+              "flips": [
+                "c5"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:10.780Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:17.957Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "B",
+            "thinking": "B",
+            "counts": {
+              "B": 6,
+              "W": 12
+            },
+            "legal": [
+              "a7",
+              "b7",
+              "c7",
+              "d7",
+              "e7",
+              "f7",
+              "a6",
+              "a5",
+              "f5",
+              "d3",
+              "c2",
+              "d2",
+              "e2",
+              "f2"
+            ],
+            "board": [
+              "........",
+              "........",
+              ".WWWWWW.",
+              ".WBBW...",
+              "W.BWBB..",
+              "..W.WB..",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "W",
+              "move": "a4",
+              "flips": [
+                "b5"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:17.952Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:19.005Z",
+        "kind": "referee",
+        "args": [
+          "play",
+          "f5"
+        ],
+        "response": {
+          "ok": true,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "W",
+            "thinking": "W",
+            "counts": {
+              "B": 8,
+              "W": 11
+            },
+            "legal": [
+              "g5",
+              "b4",
+              "g4",
+              "b3",
+              "d3",
+              "g3",
+              "f2",
+              "g2"
+            ],
+            "board": [
+              "........",
+              "........",
+              ".WWWWWW.",
+              ".WBBBB..",
+              "W.BWBB..",
+              "..W.WB..",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "B",
+              "move": "f5",
+              "flips": [
+                "e5"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:19.003Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:24.177Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "B",
+            "thinking": "B",
+            "counts": {
+              "B": 3,
+              "W": 17
+            },
+            "legal": [
+              "b7",
+              "c7",
+              "e7",
+              "f7",
+              "h7",
+              "a6",
+              "g4",
+              "d3",
+              "c2",
+              "e2"
+            ],
+            "board": [
+              "........",
+              "........",
+              ".WWWWWW.",
+              ".WWWWWW.",
+              "W.BWBW..",
+              "..W.WB..",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "W",
+              "move": "g5",
+              "flips": [
+                "f5",
+                "e5",
+                "d5",
+                "c5",
+                "f4"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:24.173Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:24.945Z",
+        "kind": "referee",
+        "args": [
+          "play",
+          "g4"
+        ],
+        "response": {
+          "ok": true,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "W",
+            "thinking": "W",
+            "counts": {
+              "B": 5,
+              "W": 16
+            },
+            "legal": [
+              "b4",
+              "h4",
+              "b3",
+              "d3",
+              "g3",
+              "h3",
+              "f2",
+              "g2"
+            ],
+            "board": [
+              "........",
+              "........",
+              ".WWWWWW.",
+              ".WWWWWW.",
+              "W.BWBBB.",
+              "..W.WB..",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "B",
+              "move": "g4",
+              "flips": [
+                "f4"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:24.942Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:30.557Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "B",
+            "thinking": "B",
+            "counts": {
+              "B": 2,
+              "W": 20
+            },
+            "legal": [
+              "b7",
+              "c7",
+              "f7",
+              "a6",
+              "h5",
+              "d3",
+              "c2"
+            ],
+            "board": [
+              "........",
+              "........",
+              ".WWWWWW.",
+              ".WWWWWW.",
+              "W.BWWWWW",
+              "..W.WB..",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "W",
+              "move": "h4",
+              "flips": [
+                "g4",
+                "f4",
+                "e4"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:30.543Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:31.758Z",
+        "kind": "referee",
+        "args": [
+          "play",
+          "d3"
+        ],
+        "response": {
+          "ok": true,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "W",
+            "thinking": "W",
+            "counts": {
+              "B": 4,
+              "W": 19
+            },
+            "legal": [
+              "b4",
+              "b3",
+              "g3",
+              "c2",
+              "d2",
+              "e2",
+              "f2",
+              "g2"
+            ],
+            "board": [
+              "........",
+              "........",
+              ".WWWWWW.",
+              ".WWWWWW.",
+              "W.BWWWWW",
+              "..WBBB..",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "B",
+              "move": "d3",
+              "flips": [
+                "e3"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:31.756Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:37.212Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "B",
+            "thinking": "B",
+            "counts": {
+              "B": 1,
+              "W": 23
+            },
+            "legal": [
+              "c7",
+              "f7",
+              "a6",
+              "c2",
+              "e2"
+            ],
+            "board": [
+              "........",
+              "........",
+              ".WWWWWW.",
+              ".WWWWWW.",
+              "W.BWWWWW",
+              "..WWWWW.",
+              "........",
+              "........"
+            ],
+            "lastMove": {
+              "side": "W",
+              "move": "g3",
+              "flips": [
+                "f3",
+                "e3",
+                "d3"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:37.198Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:38.215Z",
+        "kind": "referee",
+        "args": [
+          "play",
+          "e2"
+        ],
+        "response": {
+          "ok": true,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "playing",
+            "winner": null,
+            "turn": "W",
+            "thinking": "W",
+            "counts": {
+              "B": 3,
+              "W": 22
+            },
+            "legal": [
+              "b4",
+              "b3",
+              "c2",
+              "d2",
+              "d1",
+              "e1",
+              "f1"
+            ],
+            "board": [
+              "........",
+              "........",
+              ".WWWWWW.",
+              ".WWWWWW.",
+              "W.BWWWWW",
+              "..WBWWW.",
+              "....B...",
+              "........"
+            ],
+            "lastMove": {
+              "side": "B",
+              "move": "e2",
+              "flips": [
+                "d3"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:38.212Z"
+          }
+        }
+      },
+      {
+        "at": "2026-09-21T15:17:44.175Z",
+        "kind": "referee",
+        "args": [
+          "wait"
+        ],
+        "response": {
+          "ok": true,
+          "timeout": false,
+          "data": {
+            "id": "current",
+            "title": "Reversi 8×8",
+            "size": 8,
+            "status": "over",
+            "winner": "W",
+            "turn": "W",
+            "thinking": null,
+            "counts": {
+              "B": 0,
+              "W": 26
+            },
+            "legal": [],
+            "board": [
+              "........",
+              "........",
+              ".WWWWWW.",
+              ".WWWWWW.",
+              "W.WWWWWW",
+              "..WWWWW.",
+              "....W...",
+              ".....W.."
+            ],
+            "lastMove": {
+              "side": "W",
+              "move": "f1",
+              "flips": [
+                "e2",
+                "d3",
+                "c4"
+              ]
+            },
+            "players": {
+              "B": {
+                "name": "Black",
+                "model": "",
+                "say": ""
+              },
+              "W": {
+                "name": "White",
+                "model": "",
+                "say": ""
+              }
+            },
+            "seats": null,
+            "updatedAt": "2026-09-21T15:17:44.160Z"
+          }
+        }
+      }
+    ]
+  },
+  "white": {
+    "side": "W",
+    "model": "gpt-5.6-luna",
+    "effort": "medium",
+    "serviceTier": "standard",
+    "accountSelection": "auto",
+    "accountProfileId": "profile-msi84l0m-a4c2e6",
+    "taskId": "7c26eb21",
+    "sessionId": "01a0c48a-2ffe-7a72-b61f-a5e3b476e31e",
+    "sourceSha256": "523a2a18cb9e56b553e4c3ab4fe8c804930ca907091dd98a3236bf4bfe6571eb",
+    "prompt": "You are a Reversi player in an existing match. The game master will not send another prompt. This turn is the whole game.\n\nA `./referee` helper is already in your working directory. It knows which side you play and always returns JSON:\n\n  ./referee wait\n  ./referee play <coord>\n\nRules:\n- Do not open a browser, start a server, edit match files, or wait for a human.\n- Do not read anything outside the referee commands. The board state in the JSON is everything you need.\n- Do not write a script that chooses moves. You choose each move.\n- Keep going in this same turn until the match is over. One move is not the job.\n\nLoop:\n1. Run `./referee wait`\n2. If `timeout` is true, run wait again.\n3. If `data.status` is `\"over\"`, stop. Report winner and score in one short paragraph.\n4. Choose one coordinate from `data.legal`.\n5. Run `./referee play <coord>` with that coordinate.\n6. If the error is `not your turn`, go back to wait.\n7. If the move is illegal, pick another legal coordinate and play again.\n8. Go to step 1 immediately.\n",
+    "tokens": {
+      "input": 52098,
+      "cacheRead": 461056,
+      "cacheCreation": 0,
+      "output": 2312,
+      "reasoning": 1440,
+      "apiCalls": 23
+    },
+    "usageProvenance": {
+      "method": "Unique cumulative snapshots; sum of last usage verified against final totals. Output already includes reasoning.",
+      "events": 23,
+      "uniqueSnapshots": 23,
+      "rawFinalTotal": {
+        "input_tokens": 513154,
+        "cached_input_tokens": 461056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2312,
+        "reasoning_output_tokens": 1440,
+        "total_tokens": 515466
+      },
+      "rawUniqueUsage": [
+        {
+          "total_token_usage": {
+            "input_tokens": 18958,
+            "cached_input_tokens": 6912,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 73,
+            "reasoning_output_tokens": 35,
+            "total_tokens": 19031
+          },
+          "last_token_usage": {
+            "input_tokens": 18958,
+            "cached_input_tokens": 6912,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 73,
+            "reasoning_output_tokens": 35,
+            "total_tokens": 19031
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 38175,
+            "cached_input_tokens": 25088,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 279,
+            "reasoning_output_tokens": 201,
+            "total_tokens": 38454
+          },
+          "last_token_usage": {
+            "input_tokens": 19217,
+            "cached_input_tokens": 18176,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 206,
+            "reasoning_output_tokens": 166,
+            "total_tokens": 19423
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 57783,
+            "cached_input_tokens": 43264,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 323,
+            "reasoning_output_tokens": 207,
+            "total_tokens": 58106
+          },
+          "last_token_usage": {
+            "input_tokens": 19608,
+            "cached_input_tokens": 18176,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 44,
+            "reasoning_output_tokens": 6,
+            "total_tokens": 19652
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 77618,
+            "cached_input_tokens": 62464,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 523,
+            "reasoning_output_tokens": 367,
+            "total_tokens": 78141
+          },
+          "last_token_usage": {
+            "input_tokens": 19835,
+            "cached_input_tokens": 19200,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 200,
+            "reasoning_output_tokens": 160,
+            "total_tokens": 20035
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 97856,
+            "cached_input_tokens": 81664,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 567,
+            "reasoning_output_tokens": 373,
+            "total_tokens": 98423
+          },
+          "last_token_usage": {
+            "input_tokens": 20238,
+            "cached_input_tokens": 19200,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 44,
+            "reasoning_output_tokens": 6,
+            "total_tokens": 20282
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 118331,
+            "cached_input_tokens": 100864,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 682,
+            "reasoning_output_tokens": 448,
+            "total_tokens": 119013
+          },
+          "last_token_usage": {
+            "input_tokens": 20475,
+            "cached_input_tokens": 19200,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 115,
+            "reasoning_output_tokens": 75,
+            "total_tokens": 20590
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 139121,
+            "cached_input_tokens": 121088,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 726,
+            "reasoning_output_tokens": 454,
+            "total_tokens": 139847
+          },
+          "last_token_usage": {
+            "input_tokens": 20790,
+            "cached_input_tokens": 20224,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 44,
+            "reasoning_output_tokens": 6,
+            "total_tokens": 20834
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 160153,
+            "cached_input_tokens": 141312,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 843,
+            "reasoning_output_tokens": 531,
+            "total_tokens": 160996
+          },
+          "last_token_usage": {
+            "input_tokens": 21032,
+            "cached_input_tokens": 20224,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 117,
+            "reasoning_output_tokens": 77,
+            "total_tokens": 21149
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 181508,
+            "cached_input_tokens": 147200,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 887,
+            "reasoning_output_tokens": 537,
+            "total_tokens": 182395
+          },
+          "last_token_usage": {
+            "input_tokens": 21355,
+            "cached_input_tokens": 5888,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 44,
+            "reasoning_output_tokens": 6,
+            "total_tokens": 21399
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 203107,
+            "cached_input_tokens": 167424,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1103,
+            "reasoning_output_tokens": 713,
+            "total_tokens": 204210
+          },
+          "last_token_usage": {
+            "input_tokens": 21599,
+            "cached_input_tokens": 20224,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 216,
+            "reasoning_output_tokens": 176,
+            "total_tokens": 21815
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 225135,
+            "cached_input_tokens": 188672,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1147,
+            "reasoning_output_tokens": 719,
+            "total_tokens": 226282
+          },
+          "last_token_usage": {
+            "input_tokens": 22028,
+            "cached_input_tokens": 21248,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 44,
+            "reasoning_output_tokens": 6,
+            "total_tokens": 22072
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 247412,
+            "cached_input_tokens": 209920,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1303,
+            "reasoning_output_tokens": 835,
+            "total_tokens": 248715
+          },
+          "last_token_usage": {
+            "input_tokens": 22277,
+            "cached_input_tokens": 21248,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 156,
+            "reasoning_output_tokens": 116,
+            "total_tokens": 22433
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 270060,
+            "cached_input_tokens": 231168,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1347,
+            "reasoning_output_tokens": 841,
+            "total_tokens": 271407
+          },
+          "last_token_usage": {
+            "input_tokens": 22648,
+            "cached_input_tokens": 21248,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 44,
+            "reasoning_output_tokens": 6,
+            "total_tokens": 22692
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 292959,
+            "cached_input_tokens": 253440,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1512,
+            "reasoning_output_tokens": 966,
+            "total_tokens": 294471
+          },
+          "last_token_usage": {
+            "input_tokens": 22899,
+            "cached_input_tokens": 22272,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 165,
+            "reasoning_output_tokens": 125,
+            "total_tokens": 23064
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 316245,
+            "cached_input_tokens": 275712,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1565,
+            "reasoning_output_tokens": 981,
+            "total_tokens": 317810
+          },
+          "last_token_usage": {
+            "input_tokens": 23286,
+            "cached_input_tokens": 22272,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 53,
+            "reasoning_output_tokens": 15,
+            "total_tokens": 23339
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 339792,
+            "cached_input_tokens": 297984,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1666,
+            "reasoning_output_tokens": 1042,
+            "total_tokens": 341458
+          },
+          "last_token_usage": {
+            "input_tokens": 23547,
+            "cached_input_tokens": 22272,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 101,
+            "reasoning_output_tokens": 61,
+            "total_tokens": 23648
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 363662,
+            "cached_input_tokens": 321280,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1712,
+            "reasoning_output_tokens": 1050,
+            "total_tokens": 365374
+          },
+          "last_token_usage": {
+            "input_tokens": 23870,
+            "cached_input_tokens": 23296,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 46,
+            "reasoning_output_tokens": 8,
+            "total_tokens": 23916
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 387785,
+            "cached_input_tokens": 341504,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1867,
+            "reasoning_output_tokens": 1165,
+            "total_tokens": 389652
+          },
+          "last_token_usage": {
+            "input_tokens": 24123,
+            "cached_input_tokens": 20224,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 155,
+            "reasoning_output_tokens": 115,
+            "total_tokens": 24278
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 412269,
+            "cached_input_tokens": 364800,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1911,
+            "reasoning_output_tokens": 1171,
+            "total_tokens": 414180
+          },
+          "last_token_usage": {
+            "input_tokens": 24484,
+            "cached_input_tokens": 23296,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 44,
+            "reasoning_output_tokens": 6,
+            "total_tokens": 24528
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 437003,
+            "cached_input_tokens": 389120,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2080,
+            "reasoning_output_tokens": 1300,
+            "total_tokens": 439083
+          },
+          "last_token_usage": {
+            "input_tokens": 24734,
+            "cached_input_tokens": 24320,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 169,
+            "reasoning_output_tokens": 129,
+            "total_tokens": 24903
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 462104,
+            "cached_input_tokens": 412416,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2128,
+            "reasoning_output_tokens": 1310,
+            "total_tokens": 464232
+          },
+          "last_token_usage": {
+            "input_tokens": 25101,
+            "cached_input_tokens": 23296,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 48,
+            "reasoning_output_tokens": 10,
+            "total_tokens": 25149
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 487457,
+            "cached_input_tokens": 436736,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2285,
+            "reasoning_output_tokens": 1427,
+            "total_tokens": 489742
+          },
+          "last_token_usage": {
+            "input_tokens": 25353,
+            "cached_input_tokens": 24320,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 157,
+            "reasoning_output_tokens": 117,
+            "total_tokens": 25510
+          },
+          "model_context_window": 258400
+        },
+        {
+          "total_token_usage": {
+            "input_tokens": 513154,
+            "cached_input_tokens": 461056,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2312,
+            "reasoning_output_tokens": 1440,
+            "total_tokens": 515466
+          },
+          "last_token_usage": {
+            "input_tokens": 25697,
+            "cached_input_tokens": 24320,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 27,
+            "reasoning_output_tokens": 13,
+            "total_tokens": 25724
+          },
+          "model_context_window": 258400
+        }
+      ]
+    },
+    "audit": {
+      "toolCalls": 22,
+      "refereeResponses": 22,
+      "userMessages": 2,
+      "unchangedPrompt": true
+    },
+    "toolIO": [
+      {
+        "timestamp": "2026-09-21T15:16:30.949Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a4e62a487d0a0c34ae959a7f6c1",
+          "status": "completed",
+          "call_id": "call_toMq5r61RmEbJx4Dg0OE7Ymz",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee wait\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003789.059277
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:31.293Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-45bd-72d2-8605-c309b39e8fd6",
+          "call_id": "call_toMq5r61RmEbJx4Dg0OE7Ymz",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.3 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"timeout\":false,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"W\",\"thinking\":\"W\",\"counts\":{\"B\":4,\"W\":1},\"legal\":[\"c6\",\"e6\",\"c4\"],\"board\":[\"........\",\"........\",\"...B....\",\"...BB...\",\"...BW...\",\"........\",\"........\",\"........\"],\"lastMove\":{\"side\":\"B\",\"move\":\"d6\",\"flips\":[\"d5\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:16:28.885Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003791.293514
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:36.179Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a5394f487d09e0e6f384bd2ce25",
+          "status": "completed",
+          "call_id": "call_hL8FTutiTz0EuHGMSkJjFZOD",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee play c6\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003791.844011
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:36.267Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-592b-7042-a2d5-08d692f31fc0",
+          "call_id": "call_hL8FTutiTz0EuHGMSkJjFZOD",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"B\",\"thinking\":\"B\",\"counts\":{\"B\":3,\"W\":3},\"legal\":[\"b6\",\"c5\",\"f4\",\"e3\"],\"board\":[\"........\",\"........\",\"..WB....\",\"...WB...\",\"...BW...\",\"........\",\"........\",\"........\"],\"lastMove\":{\"side\":\"W\",\"move\":\"c6\",\"flips\":[\"d5\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:16:36.241Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003796.267053
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:38.312Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a55c5a487d0a2137e17d1c4290e",
+          "status": "completed",
+          "call_id": "call_Z9tQE03srtgfN9gH45AQSAIU",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee wait\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003796.798844
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:38.393Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-6179-74a0-a983-83f7116474de",
+          "call_id": "call_Z9tQE03srtgfN9gH45AQSAIU",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"timeout\":false,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"W\",\"thinking\":\"W\",\"counts\":{\"B\":5,\"W\":2},\"legal\":[\"e6\",\"c4\"],\"board\":[\"........\",\"........\",\"..WB....\",\"..BBB...\",\"...BW...\",\"........\",\"........\",\"........\"],\"lastMove\":{\"side\":\"B\",\"move\":\"c5\",\"flips\":[\"d5\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:16:37.330Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003798.393762
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:43.816Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a5b38e887d08efd549672eb9842",
+          "status": "completed",
+          "call_id": "call_DF16CDY99GsWzgb2ZnJk3Akw",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee play e6\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003799.069908
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:43.903Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-76ff-7311-a870-4da33d0469b2",
+          "call_id": "call_DF16CDY99GsWzgb2ZnJk3Akw",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"B\",\"thinking\":\"B\",\"counts\":{\"B\":3,\"W\":5},\"legal\":[\"b7\",\"c7\",\"d7\",\"e7\",\"f7\",\"f6\",\"f5\",\"f4\",\"f3\"],\"board\":[\"........\",\"........\",\"..WWW...\",\"..BBW...\",\"...BW...\",\"........\",\"........\",\"........\"],\"lastMove\":{\"side\":\"W\",\"move\":\"e6\",\"flips\":[\"d6\",\"e5\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:16:43.876Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003803.903066
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:46.001Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a5d70a887d08cef85f48f4a89e0",
+          "status": "completed",
+          "call_id": "call_Lzgf30wAfLFhuMwOQoFUIoy4",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee wait\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003804.623439
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:46.110Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-7f9e-7431-b0ef-14742a362422",
+          "call_id": "call_Lzgf30wAfLFhuMwOQoFUIoy4",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"timeout\":false,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"W\",\"thinking\":\"W\",\"counts\":{\"B\":5,\"W\":4},\"legal\":[\"g6\",\"b4\",\"c4\",\"f4\",\"d3\"],\"board\":[\"........\",\"........\",\"..WWWB..\",\"..BBB...\",\"...BW...\",\"........\",\"........\",\"........\"],\"lastMove\":{\"side\":\"B\",\"move\":\"f6\",\"flips\":[\"e5\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:16:45.237Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003806.1102
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:49.483Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a60df8087d0b34d522ae1f34803",
+          "status": "completed",
+          "call_id": "call_COOgA21Tt80YWgZzOt6VXGVE",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee play g6\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003806.823047
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:49.570Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-8d22-7332-976e-298d5e7ea605",
+          "call_id": "call_COOgA21Tt80YWgZzOt6VXGVE",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"B\",\"thinking\":\"B\",\"counts\":{\"B\":4,\"W\":6},\"legal\":[\"b7\",\"c7\",\"d7\",\"e7\",\"f7\",\"g7\",\"f4\",\"e3\",\"f3\"],\"board\":[\"........\",\"........\",\"..WWWWW.\",\"..BBB...\",\"...BW...\",\"........\",\"........\",\"........\"],\"lastMove\":{\"side\":\"W\",\"move\":\"g6\",\"flips\":[\"f6\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:16:49.543Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003809.570835
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:51.554Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a62ff6887d0bb2a5cd7834c8fd4",
+          "status": "completed",
+          "call_id": "call_9CchYpKXmaf87UlI4ZuynOIV",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee wait\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003810.238125
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:51.660Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-954c-7f73-9ec4-3e00b2e2c958",
+          "call_id": "call_9CchYpKXmaf87UlI4ZuynOIV",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"timeout\":false,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"W\",\"thinking\":\"W\",\"counts\":{\"B\":6,\"W\":5},\"legal\":[\"b4\",\"c4\",\"c3\",\"d3\",\"e3\",\"f3\",\"g3\"],\"board\":[\"........\",\"........\",\"..WWWWW.\",\"..BBB...\",\"...BBB..\",\"........\",\"........\",\"........\"],\"lastMove\":{\"side\":\"B\",\"move\":\"f4\",\"flips\":[\"e4\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:16:50.456Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003811.660445
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:54.940Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a6651e887d08c3999cb0f16e8f1",
+          "status": "completed",
+          "call_id": "call_mL5fK08zSUuBfiIZnmna9LkT",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee play c3\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003812.301476
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:55.023Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-a26f-7771-bee8-bc962dc26b94",
+          "call_id": "call_mL5fK08zSUuBfiIZnmna9LkT",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"B\",\"thinking\":\"B\",\"counts\":{\"B\":4,\"W\":8},\"legal\":[\"b7\",\"c7\",\"d7\",\"e7\",\"f7\",\"f5\",\"c4\",\"d3\",\"e3\"],\"board\":[\"........\",\"........\",\"..WWWWW.\",\"..BBW...\",\"...WBB..\",\"..W.....\",\"........\",\"........\"],\"lastMove\":{\"side\":\"W\",\"move\":\"c3\",\"flips\":[\"d4\",\"e5\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:16:54.997Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003815.023718
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:57.115Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a6883a887d09d8066f32696393b",
+          "status": "completed",
+          "call_id": "call_mWCuYJhoh3gJcQEHBlkjiOoH",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee wait\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003815.711759
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:16:57.206Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-aaf6-7632-9c0f-89c9ab67a9eb",
+          "call_id": "call_mWCuYJhoh3gJcQEHBlkjiOoH",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"timeout\":false,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"W\",\"thinking\":\"W\",\"counts\":{\"B\":6,\"W\":7},\"legal\":[\"b5\",\"b4\",\"b3\",\"d3\",\"e3\",\"f3\",\"g3\"],\"board\":[\"........\",\"........\",\"..WWWWW.\",\"..BBW...\",\"..BBBB..\",\"..W.....\",\"........\",\"........\"],\"lastMove\":{\"side\":\"B\",\"move\":\"c4\",\"flips\":[\"d4\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:16:56.254Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003817.206174
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:02.268Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a6d9c0487d0bddde4ef2752dd51",
+          "status": "completed",
+          "call_id": "call_7xMGUpFcnWkG4mZlBIBNo7nA",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee play e3\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003817.831497
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:02.362Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-bf1a-7d21-92de-ab61ce0993b9",
+          "call_id": "call_7xMGUpFcnWkG4mZlBIBNo7nA",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"B\",\"thinking\":\"B\",\"counts\":{\"B\":5,\"W\":9},\"legal\":[\"b7\",\"c7\",\"d7\",\"e7\",\"f7\",\"g7\",\"f5\",\"f3\",\"b2\",\"c2\",\"d2\",\"f2\"],\"board\":[\"........\",\"........\",\"..WWWWW.\",\"..BBW...\",\"..BBWB..\",\"..W.W...\",\"........\",\"........\"],\"lastMove\":{\"side\":\"W\",\"move\":\"e3\",\"flips\":[\"e4\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:02.326Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003822.362111
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:04.980Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a7071dc87d0a7d25b7b932c546a",
+          "status": "completed",
+          "call_id": "call_qHWCGtyI6uqKeKbbjFN1JB3z",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee wait\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003823.043732
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:05.048Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-c998-7ef2-9ba2-1cbd43a928fc",
+          "call_id": "call_qHWCGtyI6uqKeKbbjFN1JB3z",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"timeout\":false,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"W\",\"thinking\":\"W\",\"counts\":{\"B\":7,\"W\":8},\"legal\":[\"b6\",\"b5\",\"g5\",\"b4\",\"b3\",\"d3\",\"g3\",\"g2\"],\"board\":[\"........\",\"........\",\"..WWWWW.\",\"..BBW...\",\"..BBBB..\",\"..W.WB..\",\"........\",\"........\"],\"lastMove\":{\"side\":\"B\",\"move\":\"f3\",\"flips\":[\"e4\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:03.727Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003825.048873
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:09.933Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a74a54087d09e3b34d4dfaa6c11",
+          "status": "completed",
+          "call_id": "call_d22L95zfPTeiMlPIfdtT4GEY",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee play b6\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003825.745716
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:10.018Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-dd02-7ef1-980f-b75d81733d6d",
+          "call_id": "call_d22L95zfPTeiMlPIfdtT4GEY",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"B\",\"thinking\":\"B\",\"counts\":{\"B\":5,\"W\":11},\"legal\":[\"b7\",\"c7\",\"d7\",\"e7\",\"f7\",\"b5\",\"f5\",\"d3\",\"c2\",\"d2\",\"e2\"],\"board\":[\"........\",\"........\",\".WWWWWW.\",\"..WBW...\",\"..BWBB..\",\"..W.WB..\",\"........\",\"........\"],\"lastMove\":{\"side\":\"W\",\"move\":\"b6\",\"flips\":[\"c5\",\"d4\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:09.992Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003830.01889
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:11.912Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a775c8887d09401df56e9bb34ab",
+          "status": "completed",
+          "call_id": "call_U7tMDl0FuBnQXtbLhPvv0jsE",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee wait\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003830.645193
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:11.997Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-e4bd-7b21-bde0-71bd75c61333",
+          "call_id": "call_U7tMDl0FuBnQXtbLhPvv0jsE",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"timeout\":false,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"W\",\"thinking\":\"W\",\"counts\":{\"B\":7,\"W\":10},\"legal\":[\"a5\",\"g5\",\"a4\",\"b4\",\"g4\",\"b3\",\"g3\",\"g2\"],\"board\":[\"........\",\"........\",\".WWWWWW.\",\".BBBW...\",\"..BWBB..\",\"..W.WB..\",\"........\",\"........\"],\"lastMove\":{\"side\":\"B\",\"move\":\"b5\",\"flips\":[\"c5\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:10.780Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003831.997421
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:17.892Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a7d4a0c87d092b7e30c7e268445",
+          "status": "completed",
+          "call_id": "call_NoqfRyGSUux9fAdQMXYpq2tc",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee play a4\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003832.988779
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:17.978Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48a-fc1a-7151-8ec2-d42d442335cc",
+          "call_id": "call_NoqfRyGSUux9fAdQMXYpq2tc",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"B\",\"thinking\":\"B\",\"counts\":{\"B\":6,\"W\":12},\"legal\":[\"a7\",\"b7\",\"c7\",\"d7\",\"e7\",\"f7\",\"a6\",\"a5\",\"f5\",\"d3\",\"c2\",\"d2\",\"e2\",\"f2\"],\"board\":[\"........\",\"........\",\".WWWWWW.\",\".WBBW...\",\"W.BWBB..\",\"..W.WB..\",\"........\",\"........\"],\"lastMove\":{\"side\":\"W\",\"move\":\"a4\",\"flips\":[\"b5\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:17.952Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003837.978933
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:20.101Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a7f8b3887d0acb9f9050222573f",
+          "status": "completed",
+          "call_id": "call_7kLh8FFQBkAcQd1JE2HeBduO",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee wait\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003838.607825
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:20.189Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48b-04bd-7fa0-b761-3318f8566d02",
+          "call_id": "call_7kLh8FFQBkAcQd1JE2HeBduO",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"timeout\":false,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"W\",\"thinking\":\"W\",\"counts\":{\"B\":8,\"W\":11},\"legal\":[\"g5\",\"b4\",\"g4\",\"b3\",\"d3\",\"g3\",\"f2\",\"g2\"],\"board\":[\"........\",\"........\",\".WWWWWW.\",\".WBBBB..\",\"W.BWBB..\",\"..W.WB..\",\"........\",\"........\"],\"lastMove\":{\"side\":\"B\",\"move\":\"f5\",\"flips\":[\"e5\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:19.003Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003840.189721
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:24.112Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a836d2c87d08f7578448ce09223",
+          "status": "completed",
+          "call_id": "call_vUlxBNMWTn5CtnXgpBe75Efb",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee play g5\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003841.455001
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:24.200Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48b-1468-7c63-acf0-32c6d5d7281a",
+          "call_id": "call_vUlxBNMWTn5CtnXgpBe75Efb",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"B\",\"thinking\":\"B\",\"counts\":{\"B\":3,\"W\":17},\"legal\":[\"b7\",\"c7\",\"e7\",\"f7\",\"h7\",\"a6\",\"g4\",\"d3\",\"c2\",\"e2\"],\"board\":[\"........\",\"........\",\".WWWWWW.\",\".WWWWWW.\",\"W.BWBW..\",\"..W.WB..\",\"........\",\"........\"],\"lastMove\":{\"side\":\"W\",\"move\":\"g5\",\"flips\":[\"f5\",\"e5\",\"d5\",\"c5\",\"f4\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:24.173Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003844.200378
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:26.335Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a85c20c87d0be9e06ea70289986",
+          "status": "completed",
+          "call_id": "call_qn5GF6CzLNXAZU9968A8PC63",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee wait\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003844.926334
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:26.417Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48b-1d11-7940-b5a5-1320ccc5cffd",
+          "call_id": "call_qn5GF6CzLNXAZU9968A8PC63",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"timeout\":false,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"W\",\"thinking\":\"W\",\"counts\":{\"B\":5,\"W\":16},\"legal\":[\"b4\",\"h4\",\"b3\",\"d3\",\"g3\",\"h3\",\"f2\",\"g2\"],\"board\":[\"........\",\"........\",\".WWWWWW.\",\".WWWWWW.\",\"W.BWBBB.\",\"..W.WB..\",\"........\",\"........\"],\"lastMove\":{\"side\":\"B\",\"move\":\"g4\",\"flips\":[\"f4\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:24.942Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003846.417355
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:30.483Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a89e1ec87d08c2768566db2093e",
+          "status": "completed",
+          "call_id": "call_CokPCgsFWOSIIpRGrOfd0tGy",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee play h4\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003847.168928
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:30.568Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48b-2d48-75d2-9ec4-70edd7d7f750",
+          "call_id": "call_CokPCgsFWOSIIpRGrOfd0tGy",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"B\",\"thinking\":\"B\",\"counts\":{\"B\":2,\"W\":20},\"legal\":[\"b7\",\"c7\",\"f7\",\"a6\",\"h5\",\"d3\",\"c2\"],\"board\":[\"........\",\"........\",\".WWWWWW.\",\".WWWWWW.\",\"W.BWWWWW\",\"..W.WB..\",\"........\",\"........\"],\"lastMove\":{\"side\":\"W\",\"move\":\"h4\",\"flips\":[\"g4\",\"f4\",\"e4\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:30.543Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003850.568762
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:32.667Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a8c1f8887d08120a1b52ab668a2",
+          "status": "completed",
+          "call_id": "call_oni4IHbzjP3433l0kehBMwZw",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee wait\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003851.301863
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:32.771Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48b-35e3-78b1-807a-f0c4ac202417",
+          "call_id": "call_oni4IHbzjP3433l0kehBMwZw",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"timeout\":false,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"W\",\"thinking\":\"W\",\"counts\":{\"B\":4,\"W\":19},\"legal\":[\"b4\",\"b3\",\"g3\",\"c2\",\"d2\",\"e2\",\"f2\",\"g2\"],\"board\":[\"........\",\"........\",\".WWWWWW.\",\".WWWWWW.\",\"W.BWWWWW\",\"..WBBB..\",\"........\",\"........\"],\"lastMove\":{\"side\":\"B\",\"move\":\"d3\",\"flips\":[\"e3\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:31.756Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003852.771945
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:37.144Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a90886c87d0b56a5cce546cb029",
+          "status": "completed",
+          "call_id": "call_9xEXMYSYfqVUQaFLNyrLFVDf",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee play g3\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003853.451829
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:37.238Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48b-4756-75e3-a159-30c362a0189c",
+          "call_id": "call_9xEXMYSYfqVUQaFLNyrLFVDf",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"B\",\"thinking\":\"B\",\"counts\":{\"B\":1,\"W\":23},\"legal\":[\"c7\",\"f7\",\"a6\",\"c2\",\"e2\"],\"board\":[\"........\",\"........\",\".WWWWWW.\",\".WWWWWW.\",\"W.BWWWWW\",\"..WWWWW.\",\"........\",\"........\"],\"lastMove\":{\"side\":\"W\",\"move\":\"g3\",\"flips\":[\"f3\",\"e3\",\"d3\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:37.198Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003857.238258
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:39.643Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a93181887d0beebc6c05a386c9d",
+          "status": "completed",
+          "call_id": "call_yEj2pDB5JizODb6Oh9oOg7od",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee wait\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003858.163775
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:39.747Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48b-5123-7ae2-8acf-427c330610ad",
+          "call_id": "call_yEj2pDB5JizODb6Oh9oOg7od",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"timeout\":false,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"playing\",\"winner\":null,\"turn\":\"W\",\"thinking\":\"W\",\"counts\":{\"B\":3,\"W\":22},\"legal\":[\"b4\",\"b3\",\"c2\",\"d2\",\"d1\",\"e1\",\"f1\"],\"board\":[\"........\",\"........\",\".WWWWWW.\",\".WWWWWW.\",\"W.BWWWWW\",\"..WBWWW.\",\"....B...\",\"........\"],\"lastMove\":{\"side\":\"B\",\"move\":\"e2\",\"flips\":[\"d3\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:38.212Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003859.747808
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:44.088Z",
+        "payload": {
+          "type": "custom_tool_call",
+          "id": "ctc_009c8514be8803c8016ab14a97bad087d08ab8cb0e0fd8f8cf",
+          "status": "completed",
+          "call_id": "call_FtrMqljGhz3a01NEFlt4GI7H",
+          "name": "exec",
+          "input": "const r = await tools.exec_command({cmd:\"./referee play f1\",yield_time_ms:10000});\ntext(r.output);\n",
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003860.621214
+          }
+        }
+      },
+      {
+        "timestamp": "2026-09-21T15:17:44.220Z",
+        "payload": {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a0c48b-629c-7053-ab45-5149c7e83a52",
+          "call_id": "call_FtrMqljGhz3a01NEFlt4GI7H",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{\"ok\":true,\"data\":{\"id\":\"current\",\"title\":\"Reversi 8×8\",\"size\":8,\"status\":\"over\",\"winner\":\"W\",\"turn\":\"W\",\"thinking\":null,\"counts\":{\"B\":0,\"W\":26},\"legal\":[],\"board\":[\"........\",\"........\",\".WWWWWW.\",\".WWWWWW.\",\"W.WWWWWW\",\"..WWWWW.\",\"....W...\",\".....W..\"],\"lastMove\":{\"side\":\"W\",\"move\":\"f1\",\"flips\":[\"e2\",\"d3\",\"c4\"]},\"players\":{\"B\":{\"name\":\"Black\",\"model\":\"\",\"say\":\"\"},\"W\":{\"name\":\"White\",\"model\":\"\",\"say\":\"\"}},\"seats\":null,\"updatedAt\":\"2026-09-21T15:17:44.160Z\"}}\n"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a0c48a-3031-7881-8b9e-03cccfcd4c67",
+            "create_time": 1790003864.220809
+          }
+        }
+      }
+    ]
+  }
+}
