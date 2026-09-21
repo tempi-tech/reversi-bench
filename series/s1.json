@@ -6007,6 +6007,58 @@
         "W": null
       },
       "interface": "mixed-agent-and-direct-choice"
+    },
+    {
+      "id": "s1/j009",
+      "card": "x-jev-1-13-0-direct-choice-vs-gpt-5-6-luna-max",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "typesafe-api",
+          "model": "jev-1.13.0",
+          "effort": null,
+          "interface": "direct-choice",
+          "display": "jev-1.13.0 · direct-choice"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-luna",
+          "effort": "max",
+          "display": "gpt-5.6-luna · max"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 33,
+        "W": 31
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-09-21T15:45:01.565Z",
+      "tokens": {
+        "B": {
+          "input": 19849,
+          "output": 2558,
+          "reasoning": null,
+          "cacheRead": null,
+          "cacheCreation": null,
+          "apiCalls": 31
+        },
+        "W": {
+          "input": 90982,
+          "cacheRead": 2390016,
+          "cacheCreation": 0,
+          "output": 27229,
+          "reasoning": 24527,
+          "apiCalls": 60
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "interface": "mixed-agent-and-direct-choice"
     }
   ]
 }
