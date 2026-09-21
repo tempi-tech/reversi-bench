@@ -6111,6 +6111,58 @@
         "W": null
       },
       "interface": "mixed-agent-and-direct-choice"
+    },
+    {
+      "id": "s1/j011",
+      "card": "x-jev-1-13-0-direct-choice-vs-gpt-5-6-terra-low",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "typesafe-api",
+          "model": "jev-1.13.0",
+          "effort": null,
+          "interface": "direct-choice",
+          "display": "jev-1.13.0 · direct-choice"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-5.6-terra",
+          "effort": "low",
+          "display": "gpt-5.6-terra · low"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 41,
+        "W": 23
+      },
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-09-21T16:05:45.315Z",
+      "tokens": {
+        "B": {
+          "input": 20074,
+          "output": 2710,
+          "reasoning": null,
+          "cacheRead": null,
+          "cacheCreation": null,
+          "apiCalls": 31
+        },
+        "W": {
+          "input": 44996,
+          "cacheRead": 805888,
+          "cacheCreation": 0,
+          "output": 3938,
+          "reasoning": 1654,
+          "apiCalls": 32
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "interface": "mixed-agent-and-direct-choice"
     }
   ]
 }
