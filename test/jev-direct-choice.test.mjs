@@ -14,12 +14,18 @@ test('JEV receives only present state, all legal coordinates and no seat identit
   assert.deepEqual(Object.keys(request.questions.move.criteria), data.legal);
   assert.equal(choiceOf({ request, envelope: response('c4') }), 'c4');
 });
-test('JEV response cannot substitute illegal or non-selected moves', () => {
+test('JEV response rejects illegal moves and model substitution', () => {
   assert.throws(() => choiceOf({ request, envelope: response('a1') }));
-  assert.throws(() => choiceOf({ request, envelope: response('d3') }));
   const wrongModel = response('c4');
   wrongModel.data.result.body.model = 'other';
   assert.throws(() => choiceOf({ request, envelope: wrongModel }));
+});
+
+test('returned Choice is authoritative even when another probability is higher', () => {
+  const envelope = response('d3');
+  const before = JSON.stringify(envelope);
+  assert.equal(choiceOf({ request, envelope }), 'd3');
+  assert.equal(JSON.stringify(envelope), before);
 });
 test('forced legal move remains a one-choice model request', () => {
   const forced = requestOf({ data: { ...data, legal: ['c4'] }, side: 'B' });

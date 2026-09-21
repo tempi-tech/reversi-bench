@@ -49,6 +49,5 @@ export function choiceOf({ request, envelope }) {
   const hundredthPrecision = probabilities.every(p => Math.abs(p * 100 - Math.round(p * 100)) < 1e-9);
   const tolerance = hundredthPrecision ? probabilities.length * 0.005 + 1e-9 : 0.0001;
   assert.ok(Math.abs(probabilities.reduce((a, b) => a + b, 0) - 1) <= tolerance);
-  assert.ok(answer.probabilities[answer.choice] >= Math.max(...probabilities) - 0.000001);
   return answer.choice;
 }
