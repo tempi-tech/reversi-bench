@@ -23,3 +23,11 @@ Opponents use unchanged `prompts/player.md`, normal Cockpit visual tasks, Auto a
 Before each next game: independently replay the finished game, audit both players' full referee-only blind I/O and actual sessions, verify JEV request/response/run-ID correspondence, preserve raw usage and null missing fields, record once under `matches/s1/jNNN.json` and `series/s1.json`, regenerate standings, commit and push. Runtime failures or protocol violations stop the queue for review; do not silently retry, replace or rank them. Excluded g189 and discarded g142 remain excluded.
 
 Stop after j012. Summarize each reverse-color pair and all twelve games including j001. Publish uncertainty: two games per opponent do not establish a definitive model ordering, and direct-choice and conversational-agent interfaces remain different.
+
+## Authorized j005 recovery
+
+On 2026-09-21, decision 8 returned HTTP 200 and legal maximum-probability choice b7, but the original strict sum check rejected probabilities totaling 0.99. The user approved reusing that exact saved response without another API call (ask_36173a21f90c). Preserve the original request, response, error, code snapshots and usage; do not normalize probabilities or change the selected move.
+
+For probabilities all reported to hundredth precision (allowing floating-point representation noise), the validator now permits the maximum aggregate rounding difference of 0.005 per option. Other precision retains the original 0.0001 tolerance. All range, legal-option, pinned-model and maximum-choice checks remain. This accommodates a possible rounded distribution; it does not establish that provider rounding was the cause.
+
+Record the interruption and validator revision explicitly. j005 is not uninterrupted latency evidence and must use timing.eligible false. Subsequent games copy the revised validator, with its exact hash recorded. No additional game or API retry is authorized by this recovery.

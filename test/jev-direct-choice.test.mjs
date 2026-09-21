@@ -26,6 +26,21 @@ test('forced legal move remains a one-choice model request', () => {
   assert.deepEqual(forced.questions.move.criteria, { c4: null });
 });
 
+test('hundredth-rounded probabilities preserve original choice and values within rounding bounds', () => {
+  for (const top of [0.69, 0.71]) {
+    const envelope = response('c4');
+    envelope.data.result.body.answers.move.probabilities.c4 = top;
+    const before = JSON.stringify(envelope);
+    assert.equal(choiceOf({ request, envelope }), 'c4');
+    assert.equal(JSON.stringify(envelope), before);
+  }
+  const invalid = response('c4');
+  invalid.data.result.body.answers.move.probabilities.c4 = 0.6;
+  assert.throws(() => choiceOf({ request, envelope: invalid }));
+  invalid.data.result.body.answers.move.probabilities.c4 = 0.691;
+  assert.throws(() => choiceOf({ request, envelope: invalid }));
+});
+
 test('JEV White receives its own side and cannot request on the other turn', () => {
   const white = requestOf({ data: { ...data, turn: 'W' }, side: 'W' });
   assert.equal(white.state.yourSide, 'W');

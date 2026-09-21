@@ -46,7 +46,9 @@ export function choiceOf({ request, envelope }) {
   assert.deepEqual(Object.keys(answer.probabilities).sort(), [...legal].sort());
   const probabilities = Object.values(answer.probabilities);
   assert.ok(probabilities.every(p => Number.isFinite(p) && p >= 0 && p <= 1));
-  assert.ok(Math.abs(probabilities.reduce((a, b) => a + b, 0) - 1) < 0.0001);
+  const hundredthPrecision = probabilities.every(p => Math.abs(p * 100 - Math.round(p * 100)) < 1e-9);
+  const tolerance = hundredthPrecision ? probabilities.length * 0.005 + 1e-9 : 0.0001;
+  assert.ok(Math.abs(probabilities.reduce((a, b) => a + b, 0) - 1) <= tolerance);
   assert.ok(answer.probabilities[answer.choice] >= Math.max(...probabilities) - 0.000001);
   return answer.choice;
 }
