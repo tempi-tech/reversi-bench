@@ -5766,6 +5766,77 @@
         "W": null
       },
       "interface": "mixed-agent-and-direct-choice"
+    },
+    {
+      "id": "s1/j005",
+      "card": "x-jev-1-13-0-direct-choice-vs-grok-4-6-xhigh",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "typesafe-api",
+          "model": "jev-1.13.0",
+          "effort": null,
+          "interface": "direct-choice",
+          "display": "jev-1.13.0 · direct-choice"
+        },
+        "W": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "xhigh",
+          "display": "grok-4.6 · xhigh"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 19,
+        "W": 45
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "side": "B",
+          "kind": "adapter-validation-interruption",
+          "at": "2026-09-21T14:39:08.596Z",
+          "detail": "Probability sum 0.99 rejected by strict validator after successful HTTP response.",
+          "decision": 8,
+          "askId": "ask_36173a21f90c",
+          "apiRetry": false
+        },
+        {
+          "side": "B",
+          "kind": "adapter-validation-interruption",
+          "at": "2026-09-21T14:50:19.185Z",
+          "detail": "Returned choice h2 probability0.19 differs from maximum b4 probability0.20; returned choice remains authoritative.",
+          "decision": 26,
+          "askId": "ask_6106a3e7e0a5",
+          "apiRetry": false
+        }
+      ],
+      "finishedAt": "2026-09-21T14:52:58.494Z",
+      "tokens": {
+        "B": {
+          "input": 19135,
+          "output": 2396,
+          "reasoning": null,
+          "cacheRead": null,
+          "cacheCreation": null,
+          "apiCalls": 30
+        },
+        "W": {
+          "input": 349987,
+          "cacheRead": 3327744,
+          "cacheCreation": null,
+          "output": 44045,
+          "reasoning": 41378,
+          "apiCalls": 67
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "interface": "mixed-agent-and-direct-choice"
     }
   ]
 }
