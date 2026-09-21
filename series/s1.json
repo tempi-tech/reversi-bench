@@ -5837,6 +5837,58 @@
         "W": null
       },
       "interface": "mixed-agent-and-direct-choice"
+    },
+    {
+      "id": "s1/j006",
+      "card": "x-jev-1-13-0-direct-choice-vs-grok-4-6-xhigh",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "xhigh",
+          "display": "grok-4.6 · xhigh"
+        },
+        "W": {
+          "agentType": "typesafe-api",
+          "model": "jev-1.13.0",
+          "effort": null,
+          "interface": "direct-choice",
+          "display": "jev-1.13.0 · direct-choice"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 53,
+        "W": 11
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-09-21T15:11:18.563Z",
+      "tokens": {
+        "B": {
+          "input": 276016,
+          "cacheRead": 2849408,
+          "cacheCreation": null,
+          "output": 35396,
+          "reasoning": 33196,
+          "apiCalls": 62
+        },
+        "W": {
+          "input": 20424,
+          "output": 3260,
+          "reasoning": null,
+          "cacheRead": null,
+          "cacheCreation": null,
+          "apiCalls": 30
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "interface": "mixed-agent-and-direct-choice"
     }
   ]
 }
