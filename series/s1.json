@@ -6975,6 +6975,56 @@
         "eligible": false,
         "reason": "One native Black HTTP 500 retry; not uninterrupted latency evidence."
       }
+    },
+    {
+      "id": "s1/g204",
+      "card": "x-grok-4-7-xhigh-vs-gpt-6-astra-max",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "max",
+          "display": "gpt-6-astra · max"
+        },
+        "W": {
+          "agentType": "grok",
+          "model": "grok-4.7",
+          "effort": "xhigh",
+          "display": "grok-4.7 · xhigh"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 29,
+        "W": 35
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-09-22T10:30:13.915Z",
+      "tokens": {
+        "B": {
+          "input": 222645,
+          "cacheRead": 7896320,
+          "cacheCreation": 0,
+          "output": 62540,
+          "reasoning": 53189,
+          "apiCalls": 173
+        },
+        "W": {
+          "input": 1502195,
+          "cacheRead": 18104576,
+          "cacheCreation": null,
+          "output": 241789,
+          "reasoning": 238415,
+          "apiCalls": 91
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
