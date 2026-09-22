@@ -6910,6 +6910,71 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g203",
+      "card": "x-grok-4-7-xhigh-vs-gpt-6-astra-max",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "grok",
+          "model": "grok-4.7",
+          "effort": "xhigh",
+          "display": "grok-4.7 · xhigh"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "max",
+          "display": "gpt-6-astra · max"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 9,
+        "W": 55
+      },
+      "moves": 68,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T08:07:14.550Z",
+          "sampler_request_id": "9355f3d1-b8d7-49d7-9fca-ed937013dd1e",
+          "attempt": 1,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model's availability is currently degraded."
+        }
+      ],
+      "finishedAt": "2026-09-22T08:52:51.432Z",
+      "tokens": {
+        "B": {
+          "input": null,
+          "cacheRead": null,
+          "cacheCreation": null,
+          "output": null,
+          "reasoning": null,
+          "apiCalls": null
+        },
+        "W": {
+          "input": 196995,
+          "cacheRead": 7101696,
+          "cacheCreation": 0,
+          "output": 46253,
+          "reasoning": 38234,
+          "apiCalls": 156
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "timing": {
+        "eligible": false,
+        "reason": "One native Black HTTP 500 retry; not uninterrupted latency evidence."
+      }
     }
   ]
 }
