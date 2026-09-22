@@ -3,11 +3,11 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-09-22T00:54:59.080Z",
+  "generatedAt": "2026-09-22T02:14:45.692Z",
   "standings": [
     {
       "player": "gpt-6-astra · max",
-      "rating": 1845,
+      "rating": 1846,
       "games": 11,
       "wins": 8,
       "losses": 3,
@@ -38,7 +38,7 @@
     },
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1785,
+      "rating": 1786,
       "games": 31,
       "wins": 22,
       "losses": 8,
@@ -69,7 +69,7 @@
     },
     {
       "player": "gpt-6-astra · medium",
-      "rating": 1766,
+      "rating": 1767,
       "games": 20,
       "wins": 13,
       "losses": 7,
@@ -100,7 +100,7 @@
     },
     {
       "player": "claude-opus-5 · high",
-      "rating": 1701,
+      "rating": 1702,
       "games": 21,
       "wins": 12,
       "losses": 9,
@@ -131,7 +131,7 @@
     },
     {
       "player": "gpt-6-astra · xhigh",
-      "rating": 1664,
+      "rating": 1665,
       "games": 8,
       "wins": 4,
       "losses": 4,
@@ -162,7 +162,7 @@
     },
     {
       "player": "claude-fable-5.1 · high",
-      "rating": 1661,
+      "rating": 1662,
       "games": 10,
       "wins": 6,
       "losses": 3,
@@ -193,7 +193,7 @@
     },
     {
       "player": "gemini-3.8-flash · high",
-      "rating": 1653,
+      "rating": 1654,
       "games": 15,
       "wins": 9,
       "losses": 6,
@@ -224,7 +224,7 @@
     },
     {
       "player": "gpt-6-astra · high",
-      "rating": 1610,
+      "rating": 1611,
       "games": 7,
       "wins": 3,
       "losses": 4,
@@ -255,7 +255,7 @@
     },
     {
       "player": "grok-4.6 · xhigh",
-      "rating": 1605,
+      "rating": 1606,
       "games": 8,
       "wins": 5,
       "losses": 3,
@@ -286,7 +286,7 @@
     },
     {
       "player": "claude-fable-5 · medium",
-      "rating": 1587,
+      "rating": 1588,
       "games": 7,
       "wins": 4,
       "losses": 3,
@@ -317,7 +317,7 @@
     },
     {
       "player": "claude-fable-5.1 · xhigh",
-      "rating": 1579,
+      "rating": 1580,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -348,7 +348,7 @@
     },
     {
       "player": "gpt-5.6-sol · high",
-      "rating": 1576,
+      "rating": 1580,
       "games": 18,
       "wins": 10,
       "losses": 8,
@@ -379,7 +379,7 @@
     },
     {
       "player": "grok-4.6 · medium",
-      "rating": 1575,
+      "rating": 1577,
       "games": 15,
       "wins": 6,
       "losses": 7,
@@ -410,7 +410,7 @@
     },
     {
       "player": "gemini-3.7-flash · high",
-      "rating": 1574,
+      "rating": 1576,
       "games": 24,
       "wins": 11,
       "losses": 13,
@@ -441,7 +441,7 @@
     },
     {
       "player": "claude-fable-5 · high",
-      "rating": 1563,
+      "rating": 1564,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -472,7 +472,7 @@
     },
     {
       "player": "gpt-5.6-sol · medium",
-      "rating": 1555,
+      "rating": 1557,
       "games": 46,
       "wins": 23,
       "losses": 22,
@@ -525,7 +525,7 @@
     },
     {
       "player": "muse-spark-1.3-contributor-free · medium",
-      "rating": 1527,
+      "rating": 1528,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -556,7 +556,7 @@
     },
     {
       "player": "qwen3.8-max · xhigh",
-      "rating": 1519,
+      "rating": 1520,
       "games": 17,
       "wins": 9,
       "losses": 8,
@@ -578,7 +578,7 @@
     },
     {
       "player": "gpt-6-astra · low",
-      "rating": 1516,
+      "rating": 1517,
       "games": 8,
       "wins": 2,
       "losses": 5,
@@ -609,7 +609,7 @@
     },
     {
       "player": "gpt-5.6-luna · medium",
-      "rating": 1508,
+      "rating": 1509,
       "games": 3,
       "wins": 2,
       "losses": 1,
@@ -640,7 +640,7 @@
     },
     {
       "player": "qwen3.8-max-v2 · xhigh",
-      "rating": 1499,
+      "rating": 1500,
       "games": 5,
       "wins": 2,
       "losses": 3,
@@ -658,6 +658,37 @@
         "games": 5,
         "moves": 142,
         "decisions": 145
+      }
+    },
+    {
+      "player": "grok-4.6 · high",
+      "rating": 1491,
+      "games": 9,
+      "wins": 5,
+      "losses": 4,
+      "draws": 0,
+      "stoneDiff": 93,
+      "reasoning": {
+        "averagePerMove": 1398.676724137931,
+        "total": 324493,
+        "medianPerGame": 41400.5,
+        "q1PerGame": 33355.75,
+        "q3PerGame": 45420.5,
+        "iqrPerGame": 12064.75,
+        "games": 8,
+        "moves": 232
+      },
+      "time": {
+        "averagePerMoveMs": 24738.238578680204,
+        "totalMs": 4873433,
+        "medianPerMoveMs": 22505,
+        "q1PerMoveMs": 15011,
+        "q3PerMoveMs": 30301,
+        "iqrPerMoveMs": 15290,
+        "standardDeviationPerMoveMs": 12787.299361608173,
+        "games": 7,
+        "moves": 197,
+        "decisions": 263
       }
     },
     {
@@ -689,6 +720,37 @@
         "games": 4,
         "moves": 109,
         "decisions": 112
+      }
+    },
+    {
+      "player": "gpt-5.6-sol · xhigh",
+      "rating": 1486,
+      "games": 9,
+      "wins": 4,
+      "losses": 5,
+      "draws": 0,
+      "stoneDiff": -18,
+      "reasoning": {
+        "averagePerMove": 791.6185185185185,
+        "total": 213737,
+        "medianPerGame": 24660,
+        "q1PerGame": 19070,
+        "q3PerGame": 26116,
+        "iqrPerGame": 7046,
+        "games": 9,
+        "moves": 270
+      },
+      "time": {
+        "averagePerMoveMs": 31669.20754716981,
+        "totalMs": 8392340,
+        "medianPerMoveMs": 19760,
+        "q1PerMoveMs": 11232,
+        "q3PerMoveMs": 31767,
+        "iqrPerMoveMs": 20535,
+        "standardDeviationPerMoveMs": 82913.74669445134,
+        "games": 9,
+        "moves": 265,
+        "decisions": 270
       }
     },
     {
@@ -736,39 +798,8 @@
       }
     },
     {
-      "player": "gpt-5.6-sol · xhigh",
-      "rating": 1482,
-      "games": 9,
-      "wins": 4,
-      "losses": 5,
-      "draws": 0,
-      "stoneDiff": -18,
-      "reasoning": {
-        "averagePerMove": 791.6185185185185,
-        "total": 213737,
-        "medianPerGame": 24660,
-        "q1PerGame": 19070,
-        "q3PerGame": 26116,
-        "iqrPerGame": 7046,
-        "games": 9,
-        "moves": 270
-      },
-      "time": {
-        "averagePerMoveMs": 31669.20754716981,
-        "totalMs": 8392340,
-        "medianPerMoveMs": 19760,
-        "q1PerMoveMs": 11232,
-        "q3PerMoveMs": 31767,
-        "iqrPerMoveMs": 20535,
-        "standardDeviationPerMoveMs": 82913.74669445134,
-        "games": 9,
-        "moves": 265,
-        "decisions": 270
-      }
-    },
-    {
       "player": "kimi-k3 · high",
-      "rating": 1477,
+      "rating": 1478,
       "games": 5,
       "wins": 2,
       "losses": 2,
@@ -798,39 +829,8 @@
       }
     },
     {
-      "player": "grok-4.6 · high",
-      "rating": 1475,
-      "games": 8,
-      "wins": 4,
-      "losses": 4,
-      "draws": 0,
-      "stoneDiff": 71,
-      "reasoning": {
-        "averagePerMove": 1398.676724137931,
-        "total": 324493,
-        "medianPerGame": 41400.5,
-        "q1PerGame": 33355.75,
-        "q3PerGame": 45420.5,
-        "iqrPerGame": 12064.75,
-        "games": 8,
-        "moves": 232
-      },
-      "time": {
-        "averagePerMoveMs": 24738.238578680204,
-        "totalMs": 4873433,
-        "medianPerMoveMs": 22505,
-        "q1PerMoveMs": 15011,
-        "q3PerMoveMs": 30301,
-        "iqrPerMoveMs": 15290,
-        "standardDeviationPerMoveMs": 12787.299361608173,
-        "games": 7,
-        "moves": 197,
-        "decisions": 232
-      }
-    },
-    {
       "player": "qwen3.8-max · none",
-      "rating": 1472,
+      "rating": 1473,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -852,7 +852,7 @@
     },
     {
       "player": "claude-fable-5.1 · medium",
-      "rating": 1465,
+      "rating": 1466,
       "games": 5,
       "wins": 1,
       "losses": 4,
@@ -1011,7 +1011,7 @@
     },
     {
       "player": "gpt-5.6-sol · low",
-      "rating": 1438,
+      "rating": 1440,
       "games": 6,
       "wins": 2,
       "losses": 4,
@@ -1064,7 +1064,7 @@
     },
     {
       "player": "deepseek-v4.1-flash · max",
-      "rating": 1421,
+      "rating": 1422,
       "games": 4,
       "wins": 1,
       "losses": 3,
@@ -1095,7 +1095,7 @@
     },
     {
       "player": "deepseek-v4-pro · high",
-      "rating": 1415,
+      "rating": 1416,
       "games": 4,
       "wins": 1,
       "losses": 2,
@@ -1117,7 +1117,7 @@
     },
     {
       "player": "gpt-5.6-terra · low",
-      "rating": 1399,
+      "rating": 1400,
       "games": 6,
       "wins": 3,
       "losses": 3,
@@ -1201,7 +1201,7 @@
     },
     {
       "player": "glm-5.3-flash · high",
-      "rating": 1385,
+      "rating": 1386,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -1253,39 +1253,8 @@
       }
     },
     {
-      "player": "qwen3.8-max · high",
-      "rating": 1371,
-      "games": 1,
-      "wins": 0,
-      "losses": 1,
-      "draws": 0,
-      "stoneDiff": -16,
-      "reasoning": {
-        "averagePerMove": 10660.766666666666,
-        "total": 319823,
-        "medianPerGame": 319823,
-        "q1PerGame": 319823,
-        "q3PerGame": 319823,
-        "iqrPerGame": 0,
-        "games": 1,
-        "moves": 30
-      },
-      "time": {
-        "averagePerMoveMs": 193440.5172413793,
-        "totalMs": 5609775,
-        "medianPerMoveMs": 181569,
-        "q1PerMoveMs": 140471,
-        "q3PerMoveMs": 263996,
-        "iqrPerMoveMs": 123525,
-        "standardDeviationPerMoveMs": 93113.7779654994,
-        "games": 1,
-        "moves": 29,
-        "decisions": 30
-      }
-    },
-    {
       "player": "openrouter/google/gemini-3.7-flash · high",
-      "rating": 1371,
+      "rating": 1376,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -1315,15 +1284,35 @@
       }
     },
     {
-      "player": "grok-4.7 · high",
-      "rating": 1371,
+      "player": "qwen3.8-max · high",
+      "rating": 1372,
       "games": 1,
       "wins": 0,
       "losses": 1,
       "draws": 0,
-      "stoneDiff": -34,
-      "reasoning": null,
-      "time": null
+      "stoneDiff": -16,
+      "reasoning": {
+        "averagePerMove": 10660.766666666666,
+        "total": 319823,
+        "medianPerGame": 319823,
+        "q1PerGame": 319823,
+        "q3PerGame": 319823,
+        "iqrPerGame": 0,
+        "games": 1,
+        "moves": 30
+      },
+      "time": {
+        "averagePerMoveMs": 193440.5172413793,
+        "totalMs": 5609775,
+        "medianPerMoveMs": 181569,
+        "q1PerMoveMs": 140471,
+        "q3PerMoveMs": 263996,
+        "iqrPerMoveMs": 123525,
+        "standardDeviationPerMoveMs": 93113.7779654994,
+        "games": 1,
+        "moves": 29,
+        "decisions": 30
+      }
     },
     {
       "player": "deepseek-v4-pro · max",
@@ -1371,7 +1360,7 @@
     },
     {
       "player": "jev-1.13.0 · direct-choice",
-      "rating": 1344,
+      "rating": 1345,
       "games": 12,
       "wins": 3,
       "losses": 9,
@@ -1393,7 +1382,7 @@
     },
     {
       "player": "muse-spark-1.3-contributor-free · high",
-      "rating": 1335,
+      "rating": 1336,
       "games": 2,
       "wins": 0,
       "losses": 2,
@@ -1424,7 +1413,7 @@
     },
     {
       "player": "gemini-3.7-flash · medium",
-      "rating": 1319,
+      "rating": 1324,
       "games": 2,
       "wins": 0,
       "losses": 2,
@@ -1452,6 +1441,17 @@
         "moves": 50,
         "decisions": 50
       }
+    },
+    {
+      "player": "grok-4.7 · high",
+      "rating": 1304,
+      "games": 2,
+      "wins": 0,
+      "losses": 2,
+      "draws": 0,
+      "stoneDiff": -56,
+      "reasoning": null,
+      "time": null
     }
   ],
   "games": [
@@ -7958,6 +7958,355 @@
           "max_retries": 15,
           "kind": "api",
           "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model's availability is currently degraded."
+        }
+      ]
+    },
+    {
+      "id": "s1/g198",
+      "card": "x-grok-4-7-high-vs-grok-4-6-high",
+      "blind": true,
+      "playedAt": "2026-09-22T02:07:37.938Z",
+      "black": "grok-4.6 · high",
+      "white": "grok-4.7 · high",
+      "winner": "B",
+      "score": {
+        "B": 43,
+        "W": 21
+      },
+      "moves": 63,
+      "outputTokens": {
+        "B": null,
+        "W": null
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": null
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
+      "credits": {
+        "B": null,
+        "W": null
+      },
+      "incidents": [
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:55:53.906Z",
+          "sampler_request_id": "a8aa9ad0-d0cc-4b7f-97e3-a3a1a54d5cff",
+          "attempt": 1,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:55:56.535Z",
+          "sampler_request_id": "164bcc7f-1e6c-4a8e-ae14-311b531b3f8e",
+          "attempt": 1,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:56:02.470Z",
+          "sampler_request_id": "a8aa9ad0-d0cc-4b7f-97e3-a3a1a54d5cff",
+          "attempt": 2,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:56:04.407Z",
+          "sampler_request_id": "164bcc7f-1e6c-4a8e-ae14-311b531b3f8e",
+          "attempt": 2,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:56:11.769Z",
+          "sampler_request_id": "a8aa9ad0-d0cc-4b7f-97e3-a3a1a54d5cff",
+          "attempt": 3,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:56:13.162Z",
+          "sampler_request_id": "164bcc7f-1e6c-4a8e-ae14-311b531b3f8e",
+          "attempt": 3,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:56:26.417Z",
+          "sampler_request_id": "a8aa9ad0-d0cc-4b7f-97e3-a3a1a54d5cff",
+          "attempt": 4,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:56:29.273Z",
+          "sampler_request_id": "164bcc7f-1e6c-4a8e-ae14-311b531b3f8e",
+          "attempt": 4,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:56:53.227Z",
+          "sampler_request_id": "a8aa9ad0-d0cc-4b7f-97e3-a3a1a54d5cff",
+          "attempt": 5,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:56:53.516Z",
+          "sampler_request_id": "164bcc7f-1e6c-4a8e-ae14-311b531b3f8e",
+          "attempt": 5,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:57:23.967Z",
+          "sampler_request_id": "a8aa9ad0-d0cc-4b7f-97e3-a3a1a54d5cff",
+          "attempt": 6,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:57:25.929Z",
+          "sampler_request_id": "164bcc7f-1e6c-4a8e-ae14-311b531b3f8e",
+          "attempt": 6,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:57:56.264Z",
+          "sampler_request_id": "a8aa9ad0-d0cc-4b7f-97e3-a3a1a54d5cff",
+          "attempt": 7,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:57:57.017Z",
+          "sampler_request_id": "164bcc7f-1e6c-4a8e-ae14-311b531b3f8e",
+          "attempt": 7,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:58:37.576Z",
+          "sampler_request_id": "a8aa9ad0-d0cc-4b7f-97e3-a3a1a54d5cff",
+          "attempt": 8,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:58:38.074Z",
+          "sampler_request_id": "164bcc7f-1e6c-4a8e-ae14-311b531b3f8e",
+          "attempt": 8,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:59:10.698Z",
+          "sampler_request_id": "a8aa9ad0-d0cc-4b7f-97e3-a3a1a54d5cff",
+          "attempt": 9,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:59:12.978Z",
+          "sampler_request_id": "164bcc7f-1e6c-4a8e-ae14-311b531b3f8e",
+          "attempt": 9,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model did not respond to this request."
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:59:40.599Z",
+          "sampler_request_id": "164bcc7f-1e6c-4a8e-ae14-311b531b3f8e",
+          "attempt": 10,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: The model is currently at capacity due to high demand. Please try again in a few minutes, or use a higher service tier for priority processing: https://docs.x.ai/developers/advanced-api-usage/priority-"
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:00:30.799Z",
+          "sampler_request_id": "5dbea85e-e2c1-466e-849b-0947861b5676",
+          "attempt": 1,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: The model is currently at capacity due to high demand. Please try again in a few minutes, or use a higher service tier for priority processing: https://docs.x.ai/developers/advanced-api-usage/priority-"
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:00:33.587Z",
+          "sampler_request_id": "5dbea85e-e2c1-466e-849b-0947861b5676",
+          "attempt": 2,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: The model is currently at capacity due to high demand. Please try again in a few minutes, or use a higher service tier for priority processing: https://docs.x.ai/developers/advanced-api-usage/priority-"
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:02:23.102Z",
+          "sampler_request_id": "2f027106-1dd5-4ea0-aa56-a635860cbb27",
+          "attempt": 1,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: The model is currently at capacity due to high demand. Please try again in a few minutes, or use a higher service tier for priority processing: https://docs.x.ai/developers/advanced-api-usage/priority-"
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:02:26.332Z",
+          "sampler_request_id": "2f027106-1dd5-4ea0-aa56-a635860cbb27",
+          "attempt": 2,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: The model is currently at capacity due to high demand. Please try again in a few minutes, or use a higher service tier for priority processing: https://docs.x.ai/developers/advanced-api-usage/priority-"
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:02:31.692Z",
+          "sampler_request_id": "2f027106-1dd5-4ea0-aa56-a635860cbb27",
+          "attempt": 3,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: The model is currently at capacity due to high demand. Please try again in a few minutes, or use a higher service tier for priority processing: https://docs.x.ai/developers/advanced-api-usage/priority-"
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:02:40.075Z",
+          "sampler_request_id": "2f027106-1dd5-4ea0-aa56-a635860cbb27",
+          "attempt": 4,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: The model is currently at capacity due to high demand. Please try again in a few minutes, or use a higher service tier for priority processing: https://docs.x.ai/developers/advanced-api-usage/priority-"
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:05:12.435Z",
+          "sampler_request_id": "33c83074-5fad-4e12-8743-634da44ac096",
+          "attempt": 1,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model's availability is currently degraded."
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:19:19.071Z",
+          "sampler_request_id": "cb13f5ff-03c2-4aa2-a60f-b9aaf6844c25",
+          "attempt": 1,
+          "max_retries": 2,
+          "kind": "doom_loop_detected",
+          "reason": "doom loop detected: tail_repetition:64@thinking"
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:22:31.943Z",
+          "sampler_request_id": "48cd7c4a-2a21-4cee-bc06-8a265966a74d",
+          "attempt": 1,
+          "max_retries": 2,
+          "kind": "doom_loop_detected",
+          "reason": "doom loop detected: tail_repetition:64@thinking"
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:22:58.396Z",
+          "sampler_request_id": "48cd7c4a-2a21-4cee-bc06-8a265966a74d",
+          "attempt": 2,
+          "max_retries": 2,
+          "kind": "doom_loop_detected",
+          "reason": "doom loop detected: tail_repetition:64@thinking"
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:30:13.846Z",
+          "sampler_request_id": "22ec3496-4cf0-4ab1-a381-f56c9016d4d7",
+          "attempt": 1,
+          "max_retries": 2,
+          "kind": "doom_loop_detected",
+          "reason": "doom loop detected: tail_repetition:64@thinking"
+        },
+        {
+          "side": "W",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T01:35:51.554Z",
+          "sampler_request_id": "39413cc7-fbca-4e09-ad22-747d1f26502e",
+          "attempt": 1,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model's availability is currently degraded."
+        },
+        {
+          "side": "B",
+          "type": "outside_referee_file_read",
+          "count": 1,
+          "path": "/Users/yoishika/.grok/bundled/skills/long-running-background-tasks/SKILL.md",
+          "approvedBy": "ask_2dc9b7c0694c"
         }
       ]
     }
