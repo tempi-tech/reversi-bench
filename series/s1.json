@@ -6215,6 +6215,87 @@
         "W": null
       },
       "interface": "mixed-agent-and-direct-choice"
+    },
+    {
+      "id": "s1/g197",
+      "card": "x-grok-4-7-high-vs-grok-4-6-high",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "grok",
+          "model": "grok-4.7",
+          "effort": "high",
+          "display": "grok-4.7 · high"
+        },
+        "W": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "high",
+          "display": "grok-4.6 · high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 15,
+        "W": 49
+      },
+      "moves": 66,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-21T23:50:00.609Z",
+          "sampler_request_id": "1bb1cfe0-94c9-4ee8-85cc-a7b4c3ed7ea4",
+          "attempt": 1,
+          "max_retries": 2,
+          "kind": "doom_loop_detected",
+          "reason": "doom loop detected: tail_repetition:64@thinking"
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-21T23:53:39.841Z",
+          "sampler_request_id": "1bb1cfe0-94c9-4ee8-85cc-a7b4c3ed7ea4",
+          "attempt": 2,
+          "max_retries": 2,
+          "kind": "doom_loop_detected",
+          "reason": "doom loop detected: tail_repetition:64@thinking"
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T00:13:00.287Z",
+          "sampler_request_id": "a8b7ee56-d011-4d57-8d91-fc7732a34bf0",
+          "attempt": 1,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model's availability is currently degraded."
+        }
+      ],
+      "finishedAt": "2026-09-22T00:47:08.213Z",
+      "tokens": {
+        "B": {
+          "input": null,
+          "cacheRead": null,
+          "cacheCreation": null,
+          "output": null,
+          "reasoning": null,
+          "apiCalls": null
+        },
+        "W": {
+          "input": 742967,
+          "cacheRead": 6357120,
+          "cacheCreation": null,
+          "output": 46548,
+          "reasoning": 42141,
+          "apiCalls": 110
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
