@@ -3,25 +3,25 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-09-22T04:50:19.668Z",
+  "generatedAt": "2026-09-22T06:24:24.159Z",
   "standings": [
     {
       "player": "gpt-6-astra · max",
-      "rating": 1849,
-      "games": 11,
-      "wins": 8,
+      "rating": 1852,
+      "games": 12,
+      "wins": 9,
       "losses": 3,
       "draws": 0,
-      "stoneDiff": 142,
+      "stoneDiff": 150,
       "reasoning": {
-        "averagePerMove": 1251.448484848485,
-        "total": 412978,
-        "medianPerGame": 31557,
-        "q1PerGame": 28595,
-        "q3PerGame": 43117.5,
-        "iqrPerGame": 14522.5,
-        "games": 11,
-        "moves": 330
+        "averagePerMove": 1252.6833333333334,
+        "total": 450966,
+        "medianPerGame": 33578,
+        "q1PerGame": 29268,
+        "q3PerGame": 40740.25,
+        "iqrPerGame": 11472.25,
+        "games": 12,
+        "moves": 360
       },
       "time": {
         "averagePerMoveMs": 52178.89506172839,
@@ -33,12 +33,12 @@
         "standardDeviationPerMoveMs": 66533.79008124674,
         "games": 11,
         "moves": 324,
-        "decisions": 330
+        "decisions": 360
       }
     },
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1789,
+      "rating": 1790,
       "games": 31,
       "wins": 22,
       "losses": 8,
@@ -69,7 +69,7 @@
     },
     {
       "player": "gpt-6-astra · medium",
-      "rating": 1770,
+      "rating": 1771,
       "games": 20,
       "wins": 13,
       "losses": 7,
@@ -131,7 +131,7 @@
     },
     {
       "player": "gpt-6-astra · xhigh",
-      "rating": 1668,
+      "rating": 1669,
       "games": 8,
       "wins": 4,
       "losses": 4,
@@ -162,7 +162,7 @@
     },
     {
       "player": "claude-fable-5.1 · high",
-      "rating": 1667,
+      "rating": 1668,
       "games": 10,
       "wins": 6,
       "losses": 3,
@@ -255,7 +255,7 @@
     },
     {
       "player": "gpt-6-astra · high",
-      "rating": 1614,
+      "rating": 1615,
       "games": 7,
       "wins": 3,
       "losses": 4,
@@ -525,7 +525,7 @@
     },
     {
       "player": "muse-spark-1.3-contributor-free · medium",
-      "rating": 1529,
+      "rating": 1530,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -662,7 +662,7 @@
     },
     {
       "player": "grok-4.6 · high",
-      "rating": 1493,
+      "rating": 1491,
       "games": 9,
       "wins": 5,
       "losses": 4,
@@ -852,7 +852,7 @@
     },
     {
       "player": "claude-fable-5.1 · medium",
-      "rating": 1468,
+      "rating": 1469,
       "games": 5,
       "wins": 1,
       "losses": 4,
@@ -1042,7 +1042,7 @@
     },
     {
       "player": "deepseek-v4-flash · max",
-      "rating": 1435,
+      "rating": 1436,
       "games": 2,
       "wins": 1,
       "losses": 1,
@@ -1179,7 +1179,7 @@
     },
     {
       "player": "glm-5.3 · max",
-      "rating": 1389,
+      "rating": 1390,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -1254,7 +1254,7 @@
     },
     {
       "player": "openrouter/google/gemini-3.7-flash · high",
-      "rating": 1377,
+      "rating": 1376,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -1444,7 +1444,7 @@
     },
     {
       "player": "gemini-3.7-flash · medium",
-      "rating": 1325,
+      "rating": 1324,
       "games": 2,
       "wins": 0,
       "losses": 2,
@@ -1475,12 +1475,12 @@
     },
     {
       "player": "grok-4.7 · high",
-      "rating": 1305,
-      "games": 2,
+      "rating": 1295,
+      "games": 3,
       "wins": 0,
-      "losses": 2,
+      "losses": 3,
       "draws": 0,
-      "stoneDiff": -56,
+      "stoneDiff": -64,
       "reasoning": null,
       "time": null
     }
@@ -8433,6 +8433,48 @@
         "W": null
       },
       "incidents": []
+    },
+    {
+      "id": "s1/g201",
+      "card": "x-grok-4-7-high-vs-gpt-6-astra-max",
+      "blind": true,
+      "playedAt": "2026-09-22T06:02:37.681Z",
+      "black": "grok-4.7 · high",
+      "white": "gpt-6-astra · max",
+      "winner": "W",
+      "score": {
+        "B": 28,
+        "W": 36
+      },
+      "moves": 62,
+      "outputTokens": {
+        "B": null,
+        "W": 42729
+      },
+      "reasoningTokens": {
+        "B": null,
+        "W": 37988
+      },
+      "decisions": {
+        "B": 30,
+        "W": 30
+      },
+      "credits": {
+        "B": null,
+        "W": null
+      },
+      "incidents": [
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T05:19:57.245Z",
+          "sampler_request_id": "d575a0f8-c3e3-44e3-a8a5-1a00d5e3b35d",
+          "attempt": 1,
+          "max_retries": 15,
+          "kind": "api",
+          "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model's availability is currently degraded."
+        }
+      ]
     }
   ]
 }
