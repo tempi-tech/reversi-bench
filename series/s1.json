@@ -6664,6 +6664,87 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g199",
+      "card": "x-grok-4-7-xhigh-vs-grok-4-6-xhigh",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "grok",
+          "model": "grok-4.7",
+          "effort": "xhigh",
+          "display": "grok-4.7 · xhigh"
+        },
+        "W": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "xhigh",
+          "display": "grok-4.6 · xhigh"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 25,
+        "W": 39
+      },
+      "moves": 63,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T02:25:34.211Z",
+          "sampler_request_id": "8d4f63e6-8c8b-477b-a1a2-b7c1d14d62c6",
+          "attempt": 1,
+          "max_retries": 2,
+          "kind": "doom_loop_detected",
+          "reason": "doom loop detected: tail_repetition:64@thinking"
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T02:26:58.030Z",
+          "sampler_request_id": "8d4f63e6-8c8b-477b-a1a2-b7c1d14d62c6",
+          "attempt": 2,
+          "max_retries": 2,
+          "kind": "doom_loop_detected",
+          "reason": "doom loop detected: tail_repetition:64@thinking"
+        },
+        {
+          "side": "B",
+          "type": "native_inference_retry",
+          "timestamp": "2026-09-22T02:34:38.088Z",
+          "sampler_request_id": "4979cc39-0688-4f67-a01f-d61307f3c260",
+          "attempt": 1,
+          "max_retries": 2,
+          "kind": "doom_loop_detected",
+          "reason": "doom loop detected: tail_repetition:64@thinking"
+        }
+      ],
+      "finishedAt": "2026-09-22T03:10:04.198Z",
+      "tokens": {
+        "B": {
+          "input": null,
+          "cacheRead": null,
+          "cacheCreation": null,
+          "output": null,
+          "reasoning": null,
+          "apiCalls": null
+        },
+        "W": {
+          "input": 584450,
+          "cacheRead": 5978752,
+          "cacheCreation": null,
+          "output": 50530,
+          "reasoning": 46345,
+          "apiCalls": 102
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
