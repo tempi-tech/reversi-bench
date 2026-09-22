@@ -3,42 +3,42 @@
   "series": "s1",
   "tagline": "Does more thinking make a stronger player?",
   "source": "https://github.com/tempi-tech/reversi-bench",
-  "generatedAt": "2026-09-22T06:24:24.159Z",
+  "generatedAt": "2026-09-22T07:40:56.088Z",
   "standings": [
     {
       "player": "gpt-6-astra · max",
-      "rating": 1852,
-      "games": 12,
-      "wins": 9,
+      "rating": 1855,
+      "games": 13,
+      "wins": 10,
       "losses": 3,
       "draws": 0,
-      "stoneDiff": 150,
+      "stoneDiff": 174,
       "reasoning": {
-        "averagePerMove": 1252.6833333333334,
-        "total": 450966,
-        "medianPerGame": 33578,
-        "q1PerGame": 29268,
-        "q3PerGame": 40740.25,
-        "iqrPerGame": 11472.25,
-        "games": 12,
-        "moves": 360
+        "averagePerMove": 1212.2813299232737,
+        "total": 474002,
+        "medianPerGame": 31557,
+        "q1PerGame": 27249,
+        "q3PerGame": 37988,
+        "iqrPerGame": 10739,
+        "games": 13,
+        "moves": 391
       },
       "time": {
-        "averagePerMoveMs": 52178.89506172839,
-        "totalMs": 16905962,
-        "medianPerMoveMs": 38758,
-        "q1PerMoveMs": 23024.5,
-        "q3PerMoveMs": 63798.25,
-        "iqrPerMoveMs": 40773.75,
-        "standardDeviationPerMoveMs": 66533.79008124674,
-        "games": 11,
-        "moves": 324,
-        "decisions": 360
+        "averagePerMoveMs": 50760.75706214689,
+        "totalMs": 17969308,
+        "medianPerMoveMs": 37922,
+        "q1PerMoveMs": 22684.5,
+        "q3PerMoveMs": 63154.75,
+        "iqrPerMoveMs": 40470.25,
+        "standardDeviationPerMoveMs": 64125.79249454915,
+        "games": 12,
+        "moves": 354,
+        "decisions": 391
       }
     },
     {
       "player": "claude-opus-5 · medium",
-      "rating": 1790,
+      "rating": 1791,
       "games": 31,
       "wins": 22,
       "losses": 8,
@@ -69,7 +69,7 @@
     },
     {
       "player": "gpt-6-astra · medium",
-      "rating": 1771,
+      "rating": 1772,
       "games": 20,
       "wins": 13,
       "losses": 7,
@@ -100,7 +100,7 @@
     },
     {
       "player": "claude-opus-5 · high",
-      "rating": 1707,
+      "rating": 1708,
       "games": 21,
       "wins": 12,
       "losses": 9,
@@ -131,7 +131,7 @@
     },
     {
       "player": "gpt-6-astra · xhigh",
-      "rating": 1669,
+      "rating": 1670,
       "games": 8,
       "wins": 4,
       "losses": 4,
@@ -441,7 +441,7 @@
     },
     {
       "player": "claude-fable-5 · high",
-      "rating": 1565,
+      "rating": 1566,
       "games": 4,
       "wins": 2,
       "losses": 2,
@@ -472,7 +472,7 @@
     },
     {
       "player": "gpt-5.6-sol · medium",
-      "rating": 1560,
+      "rating": 1561,
       "games": 46,
       "wins": 23,
       "losses": 22,
@@ -662,7 +662,7 @@
     },
     {
       "player": "grok-4.6 · high",
-      "rating": 1491,
+      "rating": 1490,
       "games": 9,
       "wins": 5,
       "losses": 4,
@@ -1148,7 +1148,7 @@
     },
     {
       "player": "gpt-5.6-terra · max",
-      "rating": 1398,
+      "rating": 1399,
       "games": 1,
       "wins": 0,
       "losses": 1,
@@ -1475,14 +1475,34 @@
     },
     {
       "player": "grok-4.7 · high",
-      "rating": 1295,
-      "games": 3,
+      "rating": 1286,
+      "games": 4,
       "wins": 0,
-      "losses": 3,
+      "losses": 4,
       "draws": 0,
-      "stoneDiff": -64,
-      "reasoning": null,
-      "time": null
+      "stoneDiff": -88,
+      "reasoning": {
+        "averagePerMove": 8059.931034482759,
+        "total": 233738,
+        "medianPerGame": 233738,
+        "q1PerGame": 233738,
+        "q3PerGame": 233738,
+        "iqrPerGame": 0,
+        "games": 1,
+        "moves": 29
+      },
+      "time": {
+        "averagePerMoveMs": 113963.8275862069,
+        "totalMs": 3304951,
+        "medianPerMoveMs": 69311,
+        "q1PerMoveMs": 8287,
+        "q3PerMoveMs": 126773,
+        "iqrPerMoveMs": 118486,
+        "standardDeviationPerMoveMs": 163748.21238341313,
+        "games": 1,
+        "moves": 29,
+        "decisions": 116
+      }
     }
   ],
   "games": [
@@ -8475,6 +8495,37 @@
           "reason": "API error (status 500 Internal Server Error): API error (status 500 Internal Server Error): error: Service temporarily unavailable. The model's availability is currently degraded."
         }
       ]
+    },
+    {
+      "id": "s1/g202",
+      "card": "x-grok-4-7-high-vs-gpt-6-astra-max",
+      "blind": true,
+      "playedAt": "2026-09-22T07:38:18.173Z",
+      "black": "gpt-6-astra · max",
+      "white": "grok-4.7 · high",
+      "winner": "B",
+      "score": {
+        "B": 44,
+        "W": 20
+      },
+      "moves": 64,
+      "outputTokens": {
+        "B": 27519,
+        "W": 236948
+      },
+      "reasoningTokens": {
+        "B": 23036,
+        "W": 233738
+      },
+      "decisions": {
+        "B": 31,
+        "W": 29
+      },
+      "credits": {
+        "B": null,
+        "W": null
+      },
+      "incidents": []
     }
   ]
 }
