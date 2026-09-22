@@ -6745,6 +6745,56 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g200",
+      "card": "x-grok-4-7-xhigh-vs-grok-4-6-xhigh",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "xhigh",
+          "display": "grok-4.6 · xhigh"
+        },
+        "W": {
+          "agentType": "grok",
+          "model": "grok-4.7",
+          "effort": "xhigh",
+          "display": "grok-4.7 · xhigh"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 50,
+        "W": 14
+      },
+      "moves": 65,
+      "incidents": [],
+      "finishedAt": "2026-09-22T04:49:01.946Z",
+      "tokens": {
+        "B": {
+          "input": 460364,
+          "cacheRead": 6796672,
+          "cacheCreation": null,
+          "output": 56078,
+          "reasoning": 51640,
+          "apiCalls": 107
+        },
+        "W": {
+          "input": 1062484,
+          "cacheRead": 12644608,
+          "cacheCreation": null,
+          "output": 212937,
+          "reasoning": 210212,
+          "apiCalls": 78
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
