@@ -7172,6 +7172,56 @@
         "eligible": false,
         "reason": "Native retries on both sides and approved White wait wrappers; not uninterrupted identical-interface latency evidence."
       }
+    },
+    {
+      "id": "s1/g207",
+      "card": "x-gpt-6-astra-max-vs-claude-opus-5-5-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "max",
+          "display": "gpt-6-astra · max"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "medium",
+          "display": "claude-opus-5.5 · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 43,
+        "W": 21
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-09-23T01:07:35.595Z",
+      "tokens": {
+        "B": {
+          "input": 115940,
+          "cacheRead": 4372224,
+          "cacheCreation": 0,
+          "output": 32602,
+          "reasoning": 29691,
+          "apiCalls": 77
+        },
+        "W": {
+          "input": 64,
+          "cacheRead": 1209868,
+          "cacheCreation": 58947,
+          "output": 17219,
+          "reasoning": 15177,
+          "apiCalls": 32
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
