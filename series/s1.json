@@ -7284,6 +7284,101 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g209",
+      "card": "x-claude-opus-5-5-medium-vs-gpt-6-astra-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "medium",
+          "display": "claude-opus-5.5 · medium"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "display": "gpt-6-astra · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 40,
+        "W": 24
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "approved_transport_failures_and_continuation",
+          "askId": "ask_b8481bfe7194",
+          "additionalApproval": "ask_a1e33e3447ca",
+          "description": "ECONNRESET and ENOTFOUND retries before one approved neutral same-session external continuation after played move 50. Both phases retained; synthetic errors excluded from usage.",
+          "recovery": {
+            "askId": "ask_b8481bfe7194",
+            "side": "B",
+            "sessionId": "d3203777-e92a-4659-a6ba-0d753c007a9d",
+            "taskId": "93291ca9",
+            "reason": "ENOTFOUND DNS/API connection failure",
+            "afterPlayedMove": 50,
+            "approvedAttempts": 1,
+            "continuation": "Continue the existing game in this same session, following the original instructions. Use ./referee wait to obtain the current state and continue until the match is over.",
+            "status": "continuation_sent_once",
+            "preparedAt": "2026-09-23T08:13:34.131Z",
+            "connectionCheck": "Unauthenticated HTTPS HEAD to api.anthropic.com resolved and returned HTTP 404; transport reachable, model inference not tested.",
+            "sendEvidence": "/Users/yoishika/.agi-tools/reversi-arena/g209/approved-recovery-send.json"
+          },
+          "errorRows": 23
+        },
+        {
+          "side": "W",
+          "type": "approved_auto_account_failover_and_reconnection",
+          "askId": "ask_a1e33e3447ca",
+          "description": "Workspace credits exhausted; same session migrated between Auto profiles with an additional continue message. Subsequent network reconnect warnings retained. No strategic instruction added.",
+          "accountHistory": {
+            "initial": "profile-mrwtj6rx-f8835c",
+            "final": "profile-msi84l0m-a4c2e6",
+            "selection": "auto",
+            "sameSession": true
+          },
+          "continuationAt": "2026-09-23T03:13:15.855Z"
+        },
+        {
+          "side": "B",
+          "type": "legal_move_retry",
+          "description": "Initial f5 was rejected; f4 accepted. Allowed by unchanged player prompt."
+        }
+      ],
+      "finishedAt": "2026-09-23T08:14:42.386Z",
+      "tokens": {
+        "B": {
+          "input": 68,
+          "cacheRead": 1225078,
+          "cacheCreation": 87768,
+          "output": 11616,
+          "reasoning": 9288,
+          "apiCalls": 34
+        },
+        "W": {
+          "input": 144320,
+          "cacheRead": 4742784,
+          "cacheCreation": 0,
+          "output": 3636,
+          "reasoning": 1215,
+          "apiCalls": 77
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "timing": {
+        "eligible": false,
+        "reason": "Approved interruptions on both sides: Black DNS/API retries and external continuation; White credit exhaustion, Auto account failover with continue and reconnects. Not uninterrupted latency evidence."
+      }
     }
   ]
 }
