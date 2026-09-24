@@ -8215,6 +8215,64 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g225",
+      "card": "x-gpt-6-astra-max-vs-claude-opus-5-5-xhigh",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "max",
+          "display": "gpt-6-astra · max"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "xhigh",
+          "display": "claude-opus-5.5 · xhigh"
+        }
+      },
+      "winner": "draw",
+      "score": {
+        "B": 32,
+        "W": 32
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "side": "W",
+          "type": "approved_own_referee_output_read",
+          "count": 1,
+          "askId": "ask_753f4a451e6a",
+          "description": "Read own background ./referee play d7 && ./referee wait output using cat once. Origin and output path verified. User approved annotated ranked adoption; not strict direct-referee-only play."
+        }
+      ],
+      "finishedAt": "2026-09-24T08:12:49.967Z",
+      "tokens": {
+        "B": {
+          "input": 117259,
+          "cacheRead": 7775488,
+          "cacheCreation": 0,
+          "output": 32827,
+          "reasoning": 27821,
+          "apiCalls": 134
+        },
+        "W": {
+          "input": 68,
+          "cacheRead": 2597974,
+          "cacheCreation": 125098,
+          "output": 95546,
+          "reasoning": 91754,
+          "apiCalls": 34
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
