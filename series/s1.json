@@ -7845,6 +7845,72 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g219",
+      "card": "x-claude-opus-5-high-vs-claude-opus-5-5-high",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "high",
+          "display": "claude-opus-5 · high"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "display": "claude-opus-5.5 · high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 21,
+        "W": 43
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "side": "W",
+          "type": "approved_own_referee_output_read",
+          "count": 1,
+          "askId": "ask_267c650639e6",
+          "description": "Read own background referee play e6 / wait output using cat. Exact originating command and runtime-returned path verified; no external strategic information."
+        },
+        {
+          "side": "W",
+          "type": "approved_wait_wrapper",
+          "count": 1,
+          "askId": "ask_267c650639e6",
+          "command": "./referee wait || true; ",
+          "description": "Ignores wait exit status; no external read or move-selection logic. Original command and output preserved."
+        }
+      ],
+      "finishedAt": "2026-09-24T03:51:17.603Z",
+      "tokens": {
+        "B": {
+          "input": 124,
+          "cacheRead": 19074534,
+          "cacheCreation": 539373,
+          "output": 511311,
+          "reasoning": 501848,
+          "apiCalls": 62
+        },
+        "W": {
+          "input": 122,
+          "cacheRead": 3027994,
+          "cacheCreation": 77418,
+          "output": 38731,
+          "reasoning": 31811,
+          "apiCalls": 61
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
