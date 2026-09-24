@@ -8338,6 +8338,56 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g227",
+      "card": "x-claude-opus-5-high-vs-claude-opus-5-5-max",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "high",
+          "display": "claude-opus-5 · high"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "max",
+          "display": "claude-opus-5.5 · max"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 21,
+        "W": 43
+      },
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-09-24T11:35:18.033Z",
+      "tokens": {
+        "B": {
+          "input": 78,
+          "cacheRead": 7369147,
+          "cacheCreation": 324107,
+          "output": 279487,
+          "reasoning": 272841,
+          "apiCalls": 39
+        },
+        "W": {
+          "input": 150,
+          "cacheRead": 12488367,
+          "cacheCreation": 346250,
+          "output": 299667,
+          "reasoning": 290765,
+          "apiCalls": 75
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
