@@ -7787,6 +7787,64 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g218",
+      "card": "x-claude-opus-5-5-high-vs-claude-opus-5-high",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "display": "claude-opus-5.5 · high"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "high",
+          "display": "claude-opus-5 · high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 28,
+        "W": 36
+      },
+      "moves": 63,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "approved_own_referee_output_read",
+          "count": 1,
+          "askId": "ask_4063479dc733",
+          "description": "Read own background referee play d1 / wait output using cat. Exact originating command and runtime-returned file path verified; no external strategic information. Not strict direct-referee-only play."
+        }
+      ],
+      "finishedAt": "2026-09-24T02:18:10.723Z",
+      "tokens": {
+        "B": {
+          "input": 104,
+          "cacheRead": 2546454,
+          "cacheCreation": 77262,
+          "output": 27093,
+          "reasoning": 21328,
+          "apiCalls": 52
+        },
+        "W": {
+          "input": 62,
+          "cacheRead": 5538019,
+          "cacheCreation": 385444,
+          "output": 344628,
+          "reasoning": 336906,
+          "apiCalls": 31
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
