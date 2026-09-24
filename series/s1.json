@@ -7911,6 +7911,64 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g220",
+      "card": "x-claude-opus-5-5-xhigh-vs-claude-opus-5-high",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "xhigh",
+          "display": "claude-opus-5.5 · xhigh"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "high",
+          "display": "claude-opus-5 · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 44,
+        "W": 20
+      },
+      "moves": 63,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "approved_own_referee_output_read",
+          "count": 1,
+          "askId": "ask_6ab39c190ecc",
+          "description": "Read own background ./referee wait output using cat once. Origin and output path verified. User approved annotated ranked adoption; not strict direct-referee-only play."
+        }
+      ],
+      "finishedAt": "2026-09-24T05:10:43.805Z",
+      "tokens": {
+        "B": {
+          "input": 104,
+          "cacheRead": 3431816,
+          "cacheCreation": 114209,
+          "output": 79033,
+          "reasoning": 71083,
+          "apiCalls": 52
+        },
+        "W": {
+          "input": 120,
+          "cacheRead": 12747754,
+          "cacheCreation": 409154,
+          "output": 365854,
+          "reasoning": 353794,
+          "apiCalls": 60
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
