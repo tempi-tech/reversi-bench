@@ -7969,6 +7969,86 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g221",
+      "card": "x-claude-opus-5-high-vs-claude-opus-5-5-xhigh",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "high",
+          "display": "claude-opus-5 · high"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "xhigh",
+          "display": "claude-opus-5.5 · xhigh"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 36,
+        "W": 28
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "approved_display_script",
+          "count": 60,
+          "created": 1,
+          "description": "Created show.py to format referee board, coordinates, counts and legal moves; piped referee output to it 60 times. Display-only code; all 60 formatted boards matched independent replay snapshots.",
+          "askId": "ask_9078773e372e"
+        },
+        {
+          "side": "W",
+          "type": "approved_own_referee_output_read",
+          "count": 1,
+          "description": "Read own background referee output using cat; origin and path verified.",
+          "askId": "ask_9078773e372e"
+        },
+        {
+          "side": "W",
+          "type": "approved_wait_wrapper",
+          "count": 3,
+          "description": "Used || true wrappers around referee waits.",
+          "askId": "ask_9078773e372e"
+        },
+        {
+          "side": "W",
+          "type": "approved_wait_loop",
+          "count": 20,
+          "description": "Used shell loops and grep to inspect timeout and repeat referee wait.",
+          "askId": "ask_9078773e372e"
+        }
+      ],
+      "finishedAt": "2026-09-24T06:04:17.233Z",
+      "tokens": {
+        "B": {
+          "input": 128,
+          "cacheRead": 12663093,
+          "cacheCreation": 370113,
+          "output": 329943,
+          "reasoning": 322284,
+          "apiCalls": 64
+        },
+        "W": {
+          "input": 78,
+          "cacheRead": 2310895,
+          "cacheCreation": 96736,
+          "output": 65263,
+          "reasoning": 59795,
+          "apiCalls": 39
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
