@@ -8273,6 +8273,71 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g226",
+      "card": "x-claude-opus-5-5-max-vs-claude-opus-5-high",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "max",
+          "display": "claude-opus-5.5 · max"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "high",
+          "display": "claude-opus-5 · high"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 55,
+        "W": 9
+      },
+      "moves": 65,
+      "incidents": [
+        {
+          "side": "W",
+          "type": "approved_own_referee_output_read",
+          "count": 1,
+          "description": "Read own background ./referee wait output using cat with stderr redirected to /dev/null. Origin and output path verified.",
+          "askId": "ask_94ce41496413"
+        },
+        {
+          "side": "W",
+          "type": "approved_wait_loop",
+          "count": 27,
+          "description": "Shell loops inspect timeout using grep and repeat ./referee wait up to six times; no move selection or search in loop. Not strict direct-referee-only play.",
+          "askId": "ask_94ce41496413"
+        }
+      ],
+      "finishedAt": "2026-09-24T09:37:17.453Z",
+      "tokens": {
+        "B": {
+          "input": 152,
+          "cacheRead": 11865763,
+          "cacheCreation": 256486,
+          "output": 222384,
+          "reasoning": 212630,
+          "apiCalls": 76
+        },
+        "W": {
+          "input": 120,
+          "cacheRead": 11049610,
+          "cacheCreation": 356577,
+          "output": 314667,
+          "reasoning": 300103,
+          "apiCalls": 60
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
