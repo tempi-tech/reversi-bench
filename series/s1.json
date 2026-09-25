@@ -8754,6 +8754,64 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g234",
+      "card": "x-grok-4-6-xhigh-vs-claude-opus-5-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "grok",
+          "model": "grok-4.6",
+          "effort": "xhigh",
+          "display": "grok-4.6 · xhigh"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "medium",
+          "display": "claude-opus-5 · medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 12,
+        "W": 52
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "approved_bundled_skill_read",
+          "count": 1,
+          "description": "Read Grok bundled long-running-background-tasks/SKILL.md once. General background-work instructions, not referee output. Remaining tools were referee commands and background wait-output retrieval. No move-selection script or external search detected. Not strict referee-only play.",
+          "askId": "ask_85cd9dd29dfc"
+        }
+      ],
+      "finishedAt": "2026-09-25T05:33:21.056Z",
+      "tokens": {
+        "B": {
+          "input": 399062,
+          "cacheRead": 7995008,
+          "cacheCreation": null,
+          "output": 48786,
+          "reasoning": 43782,
+          "apiCalls": 121
+        },
+        "W": {
+          "input": 68,
+          "cacheRead": 7256853,
+          "cacheCreation": 428467,
+          "output": 385548,
+          "reasoning": 379269,
+          "apiCalls": 34
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
