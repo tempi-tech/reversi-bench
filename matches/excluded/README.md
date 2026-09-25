@@ -5,6 +5,9 @@ These archives preserve actual board outcomes and audit evidence for games exclu
 | Game | Black | White | Actual board result | Exclusion |
 | --- | --- | --- | --- | --- |
 | [g189](g189.json) | Claude Opus 5 medium | GPT-6 Astra medium | 32–32 draw | Black wrote and executed external move-evaluation scripts, violating the referee-only player rules. The user approved exclusion, not a ranked forfeit. |
+| [g239](g239.json) | Claude Opus 5 medium | Claude Opus 5.5 high | Black 54–10 | Black wrote and executed Python move-analysis and continuation-enumeration scripts. White also read its own background referee output once. User approved exclusion, not a ranked forfeit (`ask_bfb61dce9af1`). |
+
+g239's independent replay matches the actual board result and complete history. Its archive preserves native usage, actual session identifiers, tool I/O, and the four Python helper files. It does not change official standings. The separately approved reverse-color game g238 is not interrupted or disposed of by this exclusion; no replacement game is authorized.
 
 g189 independently replays correctly (60 played moves and 3 passes), but legal moves do not establish compliance with the player protocol. The archive retains accepted moves, both actual sessions, deduplicated native usage and Black's non-referee command evidence. It has no effect on official ratings, win/loss/draw totals or timing statistics.
 
