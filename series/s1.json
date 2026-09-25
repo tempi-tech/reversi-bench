@@ -8912,6 +8912,64 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g238",
+      "card": "x-claude-opus-5-5-high-vs-claude-opus-5-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "display": "claude-opus-5.5 · high"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "medium",
+          "display": "claude-opus-5 · medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 6,
+        "W": 57
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "approved_own_referee_output_read",
+          "count": 1,
+          "description": "Read own background ./referee play a5 && ./referee wait output once after its 120-second shell timeout. Contents were blinded referee output only. Not strict direct-referee-only play.",
+          "askId": "ask_f3a2fd07f277"
+        }
+      ],
+      "finishedAt": "2026-09-25T06:51:57.129Z",
+      "tokens": {
+        "B": {
+          "input": 70,
+          "cacheRead": 1483704,
+          "cacheCreation": 46705,
+          "output": 17198,
+          "reasoning": 13480,
+          "apiCalls": 35
+        },
+        "W": {
+          "input": 120,
+          "cacheRead": 7794696,
+          "cacheCreation": 211870,
+          "output": 183880,
+          "reasoning": 176854,
+          "apiCalls": 60
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
