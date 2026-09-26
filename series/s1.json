@@ -9136,6 +9136,71 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g243",
+      "card": "x-claude-opus-5-medium-vs-claude-opus-5-5-max",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5",
+          "effort": "medium",
+          "display": "claude-opus-5 · medium"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "max",
+          "display": "claude-opus-5.5 · max"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 1,
+        "W": 56
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "approved_own_referee_output_read",
+          "count": 2,
+          "description": "Read own background referee output after shell timeout. Contents were blinded referee data only; no external evaluation or move-analysis scripts. Not strict direct-referee-only play.",
+          "askId": "ask_6dc57b7ecfe5"
+        },
+        {
+          "side": "W",
+          "type": "approved_own_referee_output_read",
+          "count": 1,
+          "description": "Read own background referee output after shell timeout. Contents were blinded referee data only; no external evaluation or move-analysis scripts. Not strict direct-referee-only play.",
+          "askId": "ask_6dc57b7ecfe5"
+        }
+      ],
+      "finishedAt": "2026-09-26T07:49:46.020Z",
+      "tokens": {
+        "B": {
+          "input": 66,
+          "cacheRead": 4501863,
+          "cacheCreation": 244234,
+          "output": 203410,
+          "reasoning": 198823,
+          "apiCalls": 33
+        },
+        "W": {
+          "input": 104,
+          "cacheRead": 6388450,
+          "cacheCreation": 244633,
+          "output": 211511,
+          "reasoning": 202533,
+          "apiCalls": 52
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
