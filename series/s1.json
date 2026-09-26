@@ -9201,6 +9201,56 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g244",
+      "card": "x-claude-opus-5-5-max-vs-gpt-6-astra-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "max",
+          "display": "claude-opus-5.5 · max"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "display": "gpt-6-astra · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 49,
+        "W": 15
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-09-26T10:12:54.655Z",
+      "tokens": {
+        "B": {
+          "input": 124,
+          "cacheRead": 8573216,
+          "cacheCreation": 261489,
+          "output": 217114,
+          "reasoning": 209930,
+          "apiCalls": 62
+        },
+        "W": {
+          "input": 89039,
+          "cacheRead": 4253952,
+          "cacheCreation": 0,
+          "output": 9869,
+          "reasoning": 3689,
+          "apiCalls": 124
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
