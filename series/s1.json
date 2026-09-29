@@ -9551,6 +9551,56 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g252",
+      "card": "x-claude-sonnet-5-5-medium-vs-gpt-6-sol-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-sonnet-5-5",
+          "effort": "medium",
+          "display": "claude-sonnet-5.5 · medium"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-6-sol",
+          "effort": "medium",
+          "display": "gpt-6-sol · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 35,
+        "W": 29
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-09-29T03:20:14.520Z",
+      "tokens": {
+        "B": {
+          "input": 124,
+          "cacheRead": 2302874,
+          "cacheCreation": 28613,
+          "output": 4103,
+          "reasoning": 784,
+          "apiCalls": 62
+        },
+        "W": {
+          "input": 70824,
+          "cacheRead": 1791872,
+          "cacheCreation": 0,
+          "output": 8204,
+          "reasoning": 4732,
+          "apiCalls": 62
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
