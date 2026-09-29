@@ -9501,6 +9501,56 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g249",
+      "card": "x-gpt-6-sol-medium-vs-gpt-6-astra-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-6-sol",
+          "effort": "medium",
+          "display": "gpt-6-sol · medium"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "display": "gpt-6-astra · medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 21,
+        "W": 43
+      },
+      "moves": 67,
+      "incidents": [],
+      "finishedAt": "2026-09-29T03:10:08.275Z",
+      "tokens": {
+        "B": {
+          "input": 67818,
+          "cacheRead": 1816064,
+          "cacheCreation": 0,
+          "output": 8247,
+          "reasoning": 5604,
+          "apiCalls": 63
+        },
+        "W": {
+          "input": 97930,
+          "cacheRead": 4840448,
+          "cacheCreation": 0,
+          "output": 4926,
+          "reasoning": 2980,
+          "apiCalls": 65
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
