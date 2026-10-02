@@ -10019,6 +10019,56 @@
         "eligible": false,
         "reason": "Provider access failure and user-approved account switch with external continuation at ply 1."
       }
+    },
+    {
+      "id": "s1/g260",
+      "card": "x-claude-opus-5-5-medium-vs-claude-fable-5-1-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "medium",
+          "display": "claude-opus-5.5 · medium"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-fable-5-1",
+          "effort": "medium",
+          "display": "claude-fable-5.1 · medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 29,
+        "W": 35
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-10-02T02:50:23.342Z",
+      "tokens": {
+        "B": {
+          "input": 64,
+          "cacheRead": 1352185,
+          "cacheCreation": 53618,
+          "output": 20371,
+          "reasoning": 17393,
+          "apiCalls": 32
+        },
+        "W": {
+          "input": 64,
+          "cacheRead": 1363392,
+          "cacheCreation": 53885,
+          "output": 20719,
+          "reasoning": 17840,
+          "apiCalls": 32
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
