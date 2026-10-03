@@ -10227,6 +10227,126 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g263",
+      "card": "x-gpt-6-astra-max-vs-claude-opus-5-5-max",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "max",
+          "display": "gpt-6-astra · max"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "max",
+          "display": "claude-opus-5.5 · max"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 37,
+        "W": 27
+      },
+      "moves": 62,
+      "incidents": [
+        {
+          "side": "B",
+          "type": "approved_account_migration_and_continuation",
+          "askId": "ask_599d43c668e5",
+          "description": "Auto account migration and one continue in same Astra session; interrupted waiter lost after migration. Both usage phases retained and deduplicated. Timing excluded."
+        }
+      ],
+      "finishedAt": "2026-10-03T13:03:37.185Z",
+      "tokens": {
+        "B": {
+          "input": 222558,
+          "cacheRead": 8037120,
+          "cacheCreation": 0,
+          "output": 60326,
+          "reasoning": 51686,
+          "apiCalls": 153
+        },
+        "W": {
+          "input": 72,
+          "cacheRead": 6023093,
+          "cacheCreation": 365303,
+          "output": 334007,
+          "reasoning": 326725,
+          "apiCalls": 36
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "timing": {
+        "eligible": false
+      }
+    },
+    {
+      "id": "s1/g265",
+      "card": "x-gpt-6-astra-medium-vs-claude-opus-5-5-xhigh",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "display": "gpt-6-astra · medium"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "xhigh",
+          "display": "claude-opus-5.5 · xhigh"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 23,
+        "W": 41
+      },
+      "moves": 64,
+      "incidents": [
+        {
+          "side": "W",
+          "type": "approved_referee_display_script",
+          "askId": "ask_599d43c668e5",
+          "description": "Opus created and used an inline Python display formatter and /tmp/show_g265.py. Full code audited: stdin referee JSON display only, no search, evaluation or move selection. Not strictly direct-referee-only."
+        }
+      ],
+      "finishedAt": "2026-10-03T13:04:21.212Z",
+      "tokens": {
+        "B": {
+          "input": 54387,
+          "cacheRead": 2844800,
+          "cacheCreation": 0,
+          "output": 8022,
+          "reasoning": 3660,
+          "apiCalls": 87
+        },
+        "W": {
+          "input": 68,
+          "cacheRead": 1874007,
+          "cacheCreation": 81482,
+          "output": 57084,
+          "reasoning": 52574,
+          "apiCalls": 34
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "timing": {
+        "eligible": true
+      }
     }
   ]
 }
