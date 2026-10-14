@@ -11595,6 +11595,56 @@
         "eligible": false,
         "reason": "Midgame runtime stop, prolonged opponent waiting and user-approved external continuation."
       }
+    },
+    {
+      "id": "s1/g285",
+      "card": "x-gemini-4-argon-high-vs-gpt-6-1-sol-max",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-4-argon",
+          "effort": "high",
+          "display": "gemini-4-argon · high"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-6.1-sol",
+          "effort": "max",
+          "display": "gpt-6.1-sol · max"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 21,
+        "W": 43
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-10-14T09:08:46.085Z",
+      "tokens": {
+        "B": {
+          "input": 560532,
+          "cacheRead": 6349579,
+          "cacheCreation": null,
+          "output": 131606,
+          "reasoning": null,
+          "apiCalls": 88
+        },
+        "W": {
+          "input": 180503,
+          "cacheRead": 5602304,
+          "cacheCreation": 0,
+          "output": 54701,
+          "reasoning": 48811,
+          "apiCalls": 110
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
