@@ -10647,6 +10647,56 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g277",
+      "card": "x-gemini-3-8-flash-high-vs-gemini-4-argon-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-3.8-flash",
+          "effort": "high",
+          "display": "gemini-3.8-flash · high"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-4-argon",
+          "effort": "medium",
+          "display": "gemini-4-argon · medium"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 17,
+        "W": 47
+      },
+      "moves": 65,
+      "incidents": [],
+      "finishedAt": "2026-10-14T02:30:39.514Z",
+      "tokens": {
+        "B": {
+          "input": 536928,
+          "cacheRead": 3903607,
+          "cacheCreation": null,
+          "output": 49023,
+          "reasoning": null,
+          "apiCalls": 87
+        },
+        "W": {
+          "input": 144646,
+          "cacheRead": 1899051,
+          "cacheCreation": null,
+          "output": 74567,
+          "reasoning": null,
+          "apiCalls": 39
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
