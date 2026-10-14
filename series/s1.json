@@ -15356,6 +15356,56 @@
         "eligible": false,
         "reason": "Midgame provider credit exhaustion, Auto account migration, external continue and one stale wait-process polling error."
       }
+    },
+    {
+      "id": "s1/g283",
+      "card": "x-gpt-6-astra-max-vs-gemini-4-argon-high",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "max",
+          "display": "gpt-6-astra · max"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-4-argon",
+          "effort": "high",
+          "display": "gemini-4-argon · high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 24,
+        "W": 40
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-10-14T14:57:22.992Z",
+      "tokens": {
+        "B": {
+          "input": 167555,
+          "cacheRead": 5602304,
+          "cacheCreation": 0,
+          "output": 52806,
+          "reasoning": 45819,
+          "apiCalls": 118
+        },
+        "W": {
+          "input": 399510,
+          "cacheRead": 6636754,
+          "cacheCreation": null,
+          "output": 102422,
+          "reasoning": null,
+          "apiCalls": 85
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
