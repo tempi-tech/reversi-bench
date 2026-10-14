@@ -11645,6 +11645,56 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g280",
+      "card": "x-gemini-4-argon-high-vs-claude-opus-5-5-xhigh",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-4-argon",
+          "effort": "high",
+          "display": "gemini-4-argon · high"
+        },
+        "W": {
+          "agentType": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "xhigh",
+          "display": "claude-opus-5.5 · xhigh"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 42,
+        "W": 22
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-10-14T09:13:06.841Z",
+      "tokens": {
+        "B": {
+          "input": 254998,
+          "cacheRead": 5716223,
+          "cacheCreation": null,
+          "output": 94084,
+          "reasoning": null,
+          "apiCalls": 83
+        },
+        "W": {
+          "input": 66,
+          "cacheRead": 2510915,
+          "cacheCreation": 133835,
+          "output": 104819,
+          "reasoning": 101623,
+          "apiCalls": 33
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
