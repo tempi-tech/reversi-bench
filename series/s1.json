@@ -10547,6 +10547,56 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g274",
+      "card": "x-gemini-4-argon-medium-vs-gpt-6-astra-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-4-argon",
+          "effort": "medium",
+          "display": "gemini-4-argon · medium"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "display": "gpt-6-astra · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 43,
+        "W": 21
+      },
+      "moves": 62,
+      "incidents": [],
+      "finishedAt": "2026-10-14T02:06:12.530Z",
+      "tokens": {
+        "B": {
+          "input": 233507,
+          "cacheRead": 3107710,
+          "cacheCreation": null,
+          "output": 71166,
+          "reasoning": 65921,
+          "apiCalls": null
+        },
+        "W": {
+          "input": 61124,
+          "cacheRead": 4364544,
+          "cacheCreation": 0,
+          "output": 10119,
+          "reasoning": 4015,
+          "apiCalls": 125
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
