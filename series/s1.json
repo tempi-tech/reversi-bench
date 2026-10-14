@@ -10747,6 +10747,60 @@
         "B": null,
         "W": null
       }
+    },
+    {
+      "id": "s1/g284",
+      "card": "x-gpt-6-1-sol-max-vs-gemini-4-argon-high",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-6.1-sol",
+          "effort": "max",
+          "display": "gpt-6.1-sol · max"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-4-argon",
+          "effort": "high",
+          "display": "gemini-4-argon · high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 20,
+        "W": 44
+      },
+      "moves": 63,
+      "incidents": [],
+      "finishedAt": "2026-10-14T08:09:25.145Z",
+      "tokens": {
+        "B": {
+          "input": 398345,
+          "cacheRead": 58148352,
+          "cacheCreation": 0,
+          "output": 101580,
+          "reasoning": 72557,
+          "apiCalls": 488
+        },
+        "W": {
+          "input": 326100,
+          "cacheRead": 5005240,
+          "cacheCreation": null,
+          "output": 94275,
+          "reasoning": null,
+          "apiCalls": 81
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      },
+      "timing": {
+        "eligible": false,
+        "reason": "Midgame stop, prolonged waiting and user-approved external continuation."
+      }
     }
   ]
 }
