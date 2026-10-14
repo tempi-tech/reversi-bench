@@ -10347,6 +10347,106 @@
       "timing": {
         "eligible": true
       }
+    },
+    {
+      "id": "s1/g270",
+      "card": "x-gemini-4-argon-high-vs-gpt-6-astra-medium",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "antigravity",
+          "model": "gemini-4-argon",
+          "effort": "high",
+          "display": "gemini-4-argon · high"
+        },
+        "W": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "display": "gpt-6-astra · medium"
+        }
+      },
+      "winner": "B",
+      "score": {
+        "B": 49,
+        "W": 15
+      },
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-10-14T01:13:12.832Z",
+      "tokens": {
+        "B": {
+          "input": 221531,
+          "cacheRead": 4369791,
+          "cacheCreation": null,
+          "output": 96668,
+          "reasoning": null,
+          "apiCalls": 67
+        },
+        "W": {
+          "input": 112616,
+          "cacheRead": 4057216,
+          "cacheCreation": 0,
+          "output": 13553,
+          "reasoning": 7644,
+          "apiCalls": 118
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
+    },
+    {
+      "id": "s1/g271",
+      "card": "x-gpt-6-astra-medium-vs-gemini-4-argon-high",
+      "ranked": true,
+      "blind": true,
+      "seats": {
+        "B": {
+          "agentType": "codex",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "display": "gpt-6-astra · medium"
+        },
+        "W": {
+          "agentType": "antigravity",
+          "model": "gemini-4-argon",
+          "effort": "high",
+          "display": "gemini-4-argon · high"
+        }
+      },
+      "winner": "W",
+      "score": {
+        "B": 17,
+        "W": 47
+      },
+      "moves": 64,
+      "incidents": [],
+      "finishedAt": "2026-10-14T01:13:50.274Z",
+      "tokens": {
+        "B": {
+          "input": 117916,
+          "cacheRead": 5841792,
+          "cacheCreation": 0,
+          "output": 15155,
+          "reasoning": 7534,
+          "apiCalls": 161
+        },
+        "W": {
+          "input": 250069,
+          "cacheRead": 5523355,
+          "cacheCreation": null,
+          "output": 118489,
+          "reasoning": null,
+          "apiCalls": 69
+        }
+      },
+      "cost": {
+        "B": null,
+        "W": null
+      }
     }
   ]
 }
